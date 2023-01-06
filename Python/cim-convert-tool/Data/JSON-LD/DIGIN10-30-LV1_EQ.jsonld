@@ -5,6 +5,50 @@
         "md": "http://iec.ch/TC57/61970-552/ModelDescription/1#",
         "eu": "http://iec.ch/TC57/CIM100-European#"
     },
+    "@id": "urn:uuid:c47d4310-b8ee-480d-9cf3-e53a81630981",
+    "prov:generatedAt": [
+        {
+            "@value": "2023-01-06T151153Z",
+            "@type": "http://www.w3.org/2001/XMLSchema#date"
+        }
+    ],
+    "dcterm:created": [
+        {
+            "@value": "2022-03-30T16:26:37.958Z",
+            "@type": "http://www.w3.org/2001/XMLSchema#date"
+        }
+    ],
+    "dcterms:title": "DIGIN10-30-LV1_EQ",
+    "dcterms:description": [
+        {
+            "@value": "DIGIN10 CGMES v3.0 Low Voltage 1 (LV1) Core Equipment (EQ) Model",
+            "@language": "en"
+        }
+    ],
+    "dcat:version": "1",
+    "dcterms:publisher": [
+        {
+            "@id": "urn:uuid:bd53cf0a-2e2f-4230-a591-0233290b5f9b",
+            "dcterms:title": "Digin"
+        }
+    ],
+    "dcterms:rights": "© 2023 Copyright",
+    "dcterms:rightHolder": "Digin",
+    "dcterms:license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "dcterms:accessRights": "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
+    "dcat:isVersionOf": "https://digin.no/baseprofile/DIGIN10-30-LV1_EQ",
+    "dcat:keyword": "EQ",
+    "dcterms:LocationPeriodOrJurisdiction": "https://diginenergi.no/DIGIN10/LV1",
+    "dcterms:conformsTo": [
+        "http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0",
+        "http://iec.ch/TC57/ns/CIM/CoreEquipment/4.0"
+    ],
+    "dcterms:references": [
+        {
+            "@id": "urn:uuid:f4c70c71-77e2-410e-9903-cbd85305cdc4",
+            "dcterms:title": "DIGIN10-30-LV1_EQ"
+        }
+    ],
     "@graph": [
         {
             "@id": "urn:uuid:9d58e5bb-834c-4faa-928c-7da0bb1497d9",
@@ -1780,6 +1824,412 @@
             "cim:EquivalentInjection.minP": 0.0013,
             "cim:EquivalentInjection.minQ": 0.00143,
             "cim:EquivalentInjection.regulationCapability": false
+        },
+        {
+            "@id": "urn:uuid:8aad5c29-6039-4321-8f8a-ad1c186dd145",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 1",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu1",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:d4067150-d743-4e1d-a48d-7a8d20de4c06"
+            }
+        },
+        {
+            "@id": "urn:uuid:ba0be174-8971-4820-a42b-db2c5a781e87",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 10",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu10",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:91b33a38-c99c-4bc1-a05c-bc0852aca841"
+            }
+        },
+        {
+            "@id": "urn:uuid:800c36a9-07be-45bd-9106-260cbd66ce4c",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 11",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu11",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:6bda8694-d83f-467f-ba31-a3a155a1b803"
+            }
+        },
+        {
+            "@id": "urn:uuid:7e432a85-77b4-44f2-ae98-07134a1a5087",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 13",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu13",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:61ad7a21-f7bd-40c0-8f86-2d1f07bbef3b"
+            }
+        },
+        {
+            "@id": "urn:uuid:46ae56a9-435f-4fad-aa91-015ef1dca930",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 14",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu14",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:eeded44f-071c-471f-952f-4be5134b40bc"
+            }
+        },
+        {
+            "@id": "urn:uuid:296e7555-8ef5-4ad4-a85b-3111ae892a65",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 15",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu15",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:ce116534-d9bd-4929-be64-4d43ea0f1803"
+            }
+        },
+        {
+            "@id": "urn:uuid:725505f7-df2a-41da-9428-0a9b7984817a",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 16",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu16",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:1cf342d4-9dfe-4cd8-ab14-b11c48e59b84"
+            }
+        },
+        {
+            "@id": "urn:uuid:04355e33-02e4-42ed-8d88-96b0be7044a8",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 17",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu17",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:8cae3059-9886-40db-befa-ddfa56ba94cd"
+            }
+        },
+        {
+            "@id": "urn:uuid:9b24ac8f-043c-4087-ac3b-a695c464f93d",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 18",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu18",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:0acd4d2c-1cc2-4b9b-8277-f3763b0ed6ab"
+            }
+        },
+        {
+            "@id": "urn:uuid:5bd4c12d-99d5-49d7-87fb-a346067c697e",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 19",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu19",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:b1626403-9c0c-4f0c-a072-b7d5d86cdb58"
+            }
+        },
+        {
+            "@id": "urn:uuid:76335f11-64c3-474d-92fd-7ab11ed607e4",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 2",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu2",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:de4c9f33-bceb-4355-afc6-c725bda819e3"
+            }
+        },
+        {
+            "@id": "urn:uuid:f64ec489-a926-4f4f-877b-102d4cd7fd2b",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 21",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu21",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:321f4b75-4cc7-4e4c-874e-cf20693886cf"
+            }
+        },
+        {
+            "@id": "urn:uuid:7c60d1fd-fe74-4094-89f7-2d3949deaa3c",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 22",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu22",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:876f7fb1-8568-4024-bbd2-664b9503adeb"
+            }
+        },
+        {
+            "@id": "urn:uuid:9a717362-88c3-4b20-85a7-9adfb67c63ca",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 23",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu23",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:a9ceb50c-8ed0-47a0-9738-e556cf09a0f0"
+            }
+        },
+        {
+            "@id": "urn:uuid:39a90500-8c87-4576-b912-32abf18a8d12",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 24",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu24",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:32bc8225-a8b7-45eb-a1ad-9adb4648f1dc"
+            }
+        },
+        {
+            "@id": "urn:uuid:9f3753d2-3a46-454b-8d14-f4f00743d48a",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 25",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu25",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:14c73969-0d0b-436e-be34-8e8f5593c351"
+            }
+        },
+        {
+            "@id": "urn:uuid:063fd50f-9b15-4b24-a59c-be21be7fd845",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 26",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu26",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:76cfe1e0-43f8-4783-8110-a93ee808d6d6"
+            }
+        },
+        {
+            "@id": "urn:uuid:1404c232-d6aa-4ed9-855c-8c7ac383a8f5",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 27",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu27",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:d01ae8b2-c93b-4147-bc81-f593dda56773"
+            }
+        },
+        {
+            "@id": "urn:uuid:86b80fe6-e846-415c-a74d-30abad315741",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 28",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu28",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:6ef007de-6d2c-4ab9-ab5b-b2571b714d8d"
+            }
+        },
+        {
+            "@id": "urn:uuid:85024669-7147-4a77-9a30-b773d8b10f58",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 29",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu29",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:c0fe3dc4-dcc1-43b9-afe8-c5d4e76a2470"
+            }
+        },
+        {
+            "@id": "urn:uuid:131a14f6-7032-499d-b691-f65bc52cc635",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 3",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu3",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:719ee1dd-0516-4873-be5e-8e9da1507818"
+            }
+        },
+        {
+            "@id": "urn:uuid:117beb83-cb8e-444f-a054-e98d1ca477e7",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 30",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu30",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:1231dfc8-411f-4de0-88fe-cdfa58ed470e"
+            }
+        },
+        {
+            "@id": "urn:uuid:e286272e-827c-4b12-83cb-6b3e91170e3e",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 31",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu31",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:c937c7d7-777e-45dd-a01d-d792ba4efec4"
+            }
+        },
+        {
+            "@id": "urn:uuid:2a906e57-0892-4de8-89b2-56c273f8c09c",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 4",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu4",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:93e2b374-b3b5-40d7-8723-285903e47a05"
+            }
+        },
+        {
+            "@id": "urn:uuid:a498f1fd-65f0-41df-83ee-29c92d075514",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 5",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu5",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:4e192fee-c90d-4e29-80b6-3e71dc353a79"
+            }
+        },
+        {
+            "@id": "urn:uuid:764a7252-9aae-4da4-a23b-6c770d8b16c1",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 6",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu6",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:2fc9b615-5925-4e2a-baaa-165ee4f51910"
+            }
+        },
+        {
+            "@id": "urn:uuid:2bd7a004-6ad1-47fc-bb52-6f5ee1f94c31",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 7",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu7",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:1358279b-5a65-4b15-b277-a9bd5ca011e4"
+            }
+        },
+        {
+            "@id": "urn:uuid:bf819ffc-270d-4025-bef8-db10ffb5b196",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 8",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu8",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:0d6af688-1749-4a34-93ca-ae6c87989cd2"
+            }
+        },
+        {
+            "@id": "urn:uuid:e832d4e7-1335-4773-b203-bf7035d29bc3",
+            "@type": "cim:Fuse",
+            "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Fuse 9",
+            "cim:IdentifiedObject.name": "TELEMA2 04 Fu9",
+            "cim:Equipment.aggregate": false,
+            "cim:Equipment.normallyInService": true,
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:1a7ff7f1-a631-4d72-84cd-c35000acda8d"
+            }
         },
         {
             "@id": "urn:uuid:64e21d95-8b55-b941-a923-b74087410a66",

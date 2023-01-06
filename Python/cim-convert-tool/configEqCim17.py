@@ -18,7 +18,7 @@ cim_Switch = \
         ['cim:Switch.retained', 'bool']
     ]
 
-xmlConfigCim17 = \
+configEqCim17 = \
     {
         'cim:ACLineSegment': {
             'attributes': [
@@ -166,6 +166,19 @@ xmlConfigCim17 = \
                     ['cim:EquivalentInjection.regulationCapability', 'bool']
                 ],
             'refs': [
+                'cim:ConductingEquipment.BaseVoltage'
+            ]
+        },
+        'cim:Fuse': {
+            'attributes': [
+                'rdf:ID'
+            ],
+            'tags':
+                cim_IdentifiedObject +
+                cim_Equipment +
+                cim_Switch,
+            'refs': [
+                'cim:Equipment.EquipmentContainer',
                 'cim:ConductingEquipment.BaseVoltage'
             ]
         },
