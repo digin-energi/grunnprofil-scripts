@@ -2,22 +2,24 @@ import xml.etree.ElementTree as ET
 import json
 from xmlHelperCim17 import textImport, attributeImport, prefixListReplacer, prefixTagReplacer, refsXmlToJsonLdConverter, textsXmlToJsonLdConverter
 from configEqCim17 import configEqCim17
+from configSshCim17 import configSshCim17
 from contextData import contextClass
 from documentData import documentDataClass
 
-inputFilePath = "Python\cim-convert-tool\Data\CIMXML\DIGIN10-30-LV1_EQ.xml"
-outputFilePath = "Python\cim-convert-tool\Data\JSON-LD\DIGIN10-30-LV1_EQ.jsonld"
+inputFilePath = "Python\cim-convert-tool\Data\CIMXML\DIGIN10-30-MV1_SSH.xml"
+outputFilePath = "Python\cim-convert-tool\Data\JSON-LD\DIGIN10-30-MV1_SSH.jsonld"
 
 rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 cim = "http://iec.ch/TC57/CIM100#"
 md = "http://iec.ch/TC57/61970-552/ModelDescription/1#"
 eu = "http://iec.ch/TC57/CIM100-European#"
 
-docTitle = "DIGIN10-30-LV1_EQ"
+docTitle = "DIGIN10-30-MV1_SSH"
 companyUuid = "bd53cf0a-2e2f-4230-a591-0233290b5f9b"
 companyName = "Digin"
 isVersionOfUrl = "https://digin.no/baseprofile/"
-cimFileType = "EQ"
+cimFileType = "SSH"
+config = configSshCim17
 
 OutputJsonLD = {}
 
@@ -44,11 +46,11 @@ tree = ET.parse(inputFilePath)
 root = tree.getroot()
 
 # SubClasses
-for i in range(0, len(configEqCim17)):
+for i in range(0, len(config)):
 
-    importCimClasses = prefixListReplacer(list(configEqCim17.keys()), cim, eu, rdf, md) # Adding full prefix for import
+    importCimClasses = prefixListReplacer(list(config.keys()), cim, eu, rdf, md) # Adding full prefix for import
     importCimClass = importCimClasses[i]
-    cim17ClassList = list(configEqCim17.keys())[i] # --> ClassName
+    cim17ClassList = list(config.keys())[i] # --> ClassName
 
     for cimClass in root.findall(importCimClass):
         
@@ -57,20 +59,20 @@ for i in range(0, len(configEqCim17)):
         textTypes = []
         refs = []
 
-        cim17AttributeList = configEqCim17[cim17ClassList]['attributes']
+        cim17AttributeList = config[cim17ClassList]['attributes']
         cim17TagsList = []
-        cim17RefsList = configEqCim17[cim17ClassList]['refs']
+        cim17RefsList = config[cim17ClassList]['refs']
 
-        importAttributes = prefixListReplacer(configEqCim17[cim17ClassList]['attributes'], cim, eu, rdf, md)
+        importAttributes = prefixListReplacer(config[cim17ClassList]['attributes'], cim, eu, rdf, md)
 
         importTags = []
-        importTagsList = configEqCim17[cim17ClassList]['tags']
+        importTagsList = config[cim17ClassList]['tags']
         for i in range(0, len(importTagsList)):
             importTags.append(prefixTagReplacer(importTagsList[i][0], cim, eu, rdf, md))
             cim17TagsList.append(importTagsList[i][0])
             textTypes.append(importTagsList[i][1])
 
-        importRefs = prefixListReplacer(configEqCim17[cim17ClassList]['refs'], cim, eu, rdf, md)
+        importRefs = prefixListReplacer(config[cim17ClassList]['refs'], cim, eu, rdf, md)
 
         for i in range(0, len(importAttributes)):
             attributes.append(cimClass.get(importAttributes[i]))

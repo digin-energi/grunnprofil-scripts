@@ -8,7 +8,7 @@ cim_Switch = \
         ['cim:Switch.open', 'bool']
     ]
 
-configEqCim17 = \
+configSshCim17 = \
     {
         'cim:ACLineSegment': {
             'attributes': [
@@ -48,7 +48,7 @@ configEqCim17 = \
             'tags':
                 cim_Equipment +
                 [
-                    ['cim:EnergyConsumer.p', 'float']
+                    ['cim:EnergyConsumer.p', 'float'],
                     ['cim:EnergyConsumer.q', 'float']
                 ],
             'refs': [
