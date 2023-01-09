@@ -1,4 +1,4 @@
-class contextClass:
+class contextDataClass:
     def __init__(self, rdfVar, cimVar, mdVar, euVar):
         self.context = \
             {
@@ -8,5 +8,5 @@ class contextClass:
                 "eu": euVar
             }
 
-    def contextFunc(self):
+    def contextDataFunc(self):
         return self.context

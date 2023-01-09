@@ -3,29 +3,38 @@ import json
 from xmlHelperCim17 import textImport, attributeImport, prefixListReplacer, prefixTagReplacer, refsXmlToJsonLdConverter, textsXmlToJsonLdConverter
 from configEqCim17 import configEqCim17
 from configSshCim17 import configSshCim17
-from contextData import contextClass
+from contextData import contextDataClass
 from documentData import documentDataClass
 
-inputFilePath = "Python\cim-convert-tool\Data\CIMXML\DIGIN10-30-MV1_SSH.xml"
-outputFilePath = "Python\cim-convert-tool\Data\JSON-LD\DIGIN10-30-MV1_SSH.jsonld"
+#--------Parameters---------#
+cimFileType = "SSH"
+cimFileLevel = "MV1"
+#---------------------------#
+
+# Do not Touch
+docTitle = f"DIGIN10-30-{cimFileLevel}_{cimFileType}"
+companyUuid = "bd53cf0a-2e2f-4230-a591-0233290b5f9b"
+companyName = "Digin"
+isVersionOfUrl = "https://digin.no/baseprofile/"
+
+if cimFileType == "EQ":
+    config = configEqCim17
+elif cimFileType == "SSH":
+    config = configSshCim17
+
+inputFilePath = f"Python\cim-convert-tool\Data\CIMXML\DIGIN10-30-{cimFileLevel}_{cimFileType}.xml"
+outputFilePath = f"Python\cim-convert-tool\Data\JSON-LD\DIGIN10-30-{cimFileLevel}_{cimFileType}.jsonld"
 
 rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 cim = "http://iec.ch/TC57/CIM100#"
 md = "http://iec.ch/TC57/61970-552/ModelDescription/1#"
 eu = "http://iec.ch/TC57/CIM100-European#"
 
-docTitle = "DIGIN10-30-MV1_SSH"
-companyUuid = "bd53cf0a-2e2f-4230-a591-0233290b5f9b"
-companyName = "Digin"
-isVersionOfUrl = "https://digin.no/baseprofile/"
-cimFileType = "SSH"
-config = configSshCim17
-
 OutputJsonLD = {}
 
 # Context
-jsonldContext = contextClass(rdf, cim, md, eu) \
-    .contextFunc()
+jsonldContext = contextDataClass(rdf, cim, md, eu) \
+    .contextDataFunc()
 
 OutputJsonLD["@context"] = jsonldContext
 graphList = []
@@ -84,7 +93,7 @@ for i in range(0, len(config)):
         jsonObject = {}
 
         for i in range(0, len(attributes)):
-            jsonObject['@id'] = attributes[i].replace('_', 'urn:uuid:')
+            jsonObject['@id'] = attributes[i].replace('_', 'urn:uuid:').replace('#', '')
             jsonObject['@type'] = cim17ClassList
 
         for i in range(0, len(texts)):
