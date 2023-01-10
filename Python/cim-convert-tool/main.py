@@ -5,6 +5,7 @@ from configEqCim17 import configEqCim17
 from configSshCim17 import configSshCim17
 from contextData import contextDataClass
 from documentData import documentDataClass
+import os
 
 #--------Parameters---------#
 cimFileType = "SSH"
@@ -22,8 +23,10 @@ if cimFileType == "EQ":
 elif cimFileType == "SSH":
     config = configSshCim17
 
-inputFilePath = f"Python\cim-convert-tool\Data\CIMXML\DIGIN10-30-{cimFileLevel}_{cimFileType}.xml"
-outputFilePath = f"Python\cim-convert-tool\Data\JSON-LD\DIGIN10-30-{cimFileLevel}_{cimFileType}.jsonld"
+dir_path = os.path.dirname(os.path.realpath(__file__))
+
+inputFilePath = f"{dir_path}\Data\CIMXML\DIGIN10-30-{cimFileLevel}_{cimFileType}.xml" # Need to add relative path
+outputFilePath = f"{dir_path}\Data\JSON-LD\DIGIN10-30-{cimFileLevel}_{cimFileType}.jsonld" # Need to add relative path
 
 rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 cim = "http://iec.ch/TC57/CIM100#"
