@@ -8,7 +8,7 @@
     "@id": "urn:uuid:d12e4546-e6a5-4211-a4c8-877ac1e24d16",
     "prov:generatedAt": [
         {
-            "@value": "2023-01-06T151125Z",
+            "@value": "2023-01-17T202621Z",
             "@type": "http://www.w3.org/2001/XMLSchema#date"
         }
     ],
@@ -1025,13 +1025,7 @@
             "@id": "urn:uuid:681a1dd5-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:ControlArea",
             "cim:IdentifiedObject.description": "DSO 1 ControlArea 1",
-            "cim:IdentifiedObject.name": "DSO1 CA 1",
-            "cim:ControlArea.EnergyArea": {
-                "@id": "urn:uuid:92d33b39-7034-11eb-a65a-74e5f963e191"
-            },
-            "cim:ControlArea.type": {
-                "@id": "http://iec.ch/TC57/CIM100#ControlAreaTypeKind.Interchange"
-            }
+            "cim:IdentifiedObject.name": "DSO1 CA 1"
         },
         {
             "@id": "urn:uuid:681a26d8-5a55-11eb-a658-74e5f963e191",
@@ -1689,84 +1683,6 @@
             }
         },
         {
-            "@id": "urn:uuid:cdc8afca-5a57-ad4a-84ef-f6a236e20463",
-            "@type": "cim:Line",
-            "cim:IdentifiedObject.description": "Line 023 ZT1-EFC ACLS 1",
-            "cim:IdentifiedObject.name": "LC 023 ZT1-EFC ACLS 1"
-        },
-        {
-            "@id": "urn:uuid:cb57417c-d86a-4a42-a6a6-e0f53d9331c0",
-            "@type": "cim:Line",
-            "cim:IdentifiedObject.description": "Line 023 ZT1-EFC ACLS 2",
-            "cim:IdentifiedObject.name": "LC 023 ZT1-EFC ACLS 2"
-        },
-        {
-            "@id": "urn:uuid:7a0c868b-eaa1-814b-97a8-c7e112c7a027",
-            "@type": "cim:Line",
-            "cim:IdentifiedObject.description": "Line 04 TELEMA 2 ACLS 3",
-            "cim:IdentifiedObject.name": "LC 04 TELEMA 2 ACLS 3"
-        },
-        {
-            "@id": "urn:uuid:28412ba6-8a1b-e548-8b8e-d76b1b083afb",
-            "@type": "cim:Line",
-            "cim:IdentifiedObject.description": "Line ARENDAL-T1 ACLS 1",
-            "cim:IdentifiedObject.name": "LC 132 ARENDAL-T1 ACLS 1"
-        },
-        {
-            "@id": "urn:uuid:c7ef29bd-8a14-e343-a03f-9b1b6d343e44",
-            "@type": "cim:Line",
-            "cim:IdentifiedObject.description": "Line ENGENE-NEDENES ACLS 1",
-            "cim:IdentifiedObject.name": "LC 22 ENGENE-NEDENES ACLS 1"
-        },
-        {
-            "@id": "urn:uuid:e07eda57-aafe-384d-9f7b-3ed4ed8e1da0",
-            "@type": "cim:Line",
-            "cim:IdentifiedObject.description": "Line 22 ENGENE-T1 ACLS 1 1",
-            "cim:IdentifiedObject.name": "LC 22 ENGENE-T1 ACLS 1 1"
-        },
-        {
-            "@id": "urn:uuid:58f1a6ec-bb18-e84b-b50f-864f0eb7100d",
-            "@type": "cim:Line",
-            "cim:IdentifiedObject.description": "Line 22 ENGENE-T1 ACLS 1 2",
-            "cim:IdentifiedObject.name": "LC 22 ENGENE-T1 ACLS 1 2"
-        },
-        {
-            "@id": "urn:uuid:1622b4fa-9e46-784e-b160-1c47e1133d7e",
-            "@type": "cim:Line",
-            "cim:IdentifiedObject.description": "Line 22 ENGENE-ZT1 ACLS 1",
-            "cim:IdentifiedObject.name": "LC 22 ENGENE-ZT1 ACLS 1"
-        },
-        {
-            "@id": "urn:uuid:2dc165a0-39fb-6541-81d8-4daee82b2932",
-            "@type": "cim:Line",
-            "cim:IdentifiedObject.description": "Line 22 TELEMA 2 ACLS 4",
-            "cim:IdentifiedObject.name": "LC 22 TELEMA 2 ACLS 4"
-        },
-        {
-            "@id": "urn:uuid:d4f4ebe8-2eed-f04f-9000-676f6778a959",
-            "@type": "cim:Line",
-            "cim:IdentifiedObject.description": "Line 22 ZT1-EFC ACLS 1",
-            "cim:IdentifiedObject.name": "LC 22 ZT1-EFC ACLS 1"
-        },
-        {
-            "@id": "urn:uuid:8e0075c4-ea93-4669-b57c-3f6b229bb6d3",
-            "@type": "cim:Line",
-            "cim:IdentifiedObject.description": "Line 132 ARENDAL-FROLAND",
-            "cim:IdentifiedObject.name": "LC 132ARENDAL-FROLAND"
-        },
-        {
-            "@id": "urn:uuid:81e0db9e-aa30-474d-b017-def591771422",
-            "@type": "cim:Line",
-            "cim:IdentifiedObject.description": "Line 132 FROLAND-T_ENGENE",
-            "cim:IdentifiedObject.name": "LC 132FROLAND-T_ENGENE"
-        },
-        {
-            "@id": "urn:uuid:f677795c-3419-4623-9e5d-4a0287903492",
-            "@type": "cim:Line",
-            "cim:IdentifiedObject.description": "Line 132 T_ENGENE-ENGENE",
-            "cim:IdentifiedObject.name": "LC 132T_ENGENE-ENGENE"
-        },
-        {
             "@id": "urn:uuid:681a323d-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:LinearShuntCompensator",
             "cim:IdentifiedObject.description": "Engene 22kV A Shunt Compensator",
@@ -1795,36 +1711,13 @@
             "@id": "urn:uuid:55de4e32-8cb0-4602-9901-ec91e104b300",
             "@type": "cim:LoadBreakSwitch",
             "cim:IdentifiedObject.description": "Nedenes 22kV Engene 1 Load Break Switch",
-            "cim:IdentifiedObject.name": "NEDENES 22 E1 LB_S",
-            "cim:Switch.normalOpen": false,
-            "cim:Switch.retained": false,
-            "cim:Equipment.EquipmentContainer": {
-                "@id": "urn:uuid:e3a5b7c5-fa48-42f9-9b13-2ceb5b540bd6"
-            }
+            "cim:IdentifiedObject.name": "NEDENES 22 E1 LB_S"
         },
         {
             "@id": "urn:uuid:20605037-a626-4691-8601-89666564ff87",
             "@type": "cim:LoadBreakSwitch",
             "cim:IdentifiedObject.description": "Nedenes 22kV Transformer 1 Load Break Switch",
-            "cim:IdentifiedObject.name": "NEDENES 22 T1 ALB_S",
-            "cim:Switch.normalOpen": false,
-            "cim:Switch.retained": false,
-            "cim:Equipment.EquipmentContainer": {
-                "@id": "urn:uuid:47f5ebe7-1d03-4d20-b599-9b6068319987"
-            }
-        },
-        {
-            "@id": "urn:uuid:6963e27e-9aaa-df42-a71c-1268f02e472f",
-            "@type": "cim:LoadResponseCharacteristic",
-            "cim:IdentifiedObject.description": "Constant p and q power load response characteristic",
-            "cim:IdentifiedObject.name": "CONST_P_Q LRC",
-            "cim:LoadResponseCharacteristic.pConstantPower": 1.0,
-            "cim:LoadResponseCharacteristic.pConstantCurrent": 0.0,
-            "cim:LoadResponseCharacteristic.pConstantImpedance": 0.0,
-            "cim:LoadResponseCharacteristic.qConstantPower": 1.0,
-            "cim:LoadResponseCharacteristic.qConstantCurrent": 0.0,
-            "cim:LoadResponseCharacteristic.qConstantImpedance": 0.0,
-            "cim:LoadResponseCharacteristic.exponentModel": false
+            "cim:IdentifiedObject.name": "NEDENES 22 T1 ALB_S"
         },
         {
             "@id": "urn:uuid:105b264a-2ab7-2441-bb32-aae12a3cfa51",
@@ -2051,33 +1944,6 @@
             }
         },
         {
-            "@id": "urn:uuid:681a2679-5a55-11eb-a658-74e5f963e191",
-            "@type": "cim:OperationalLimitType",
-            "cim:IdentifiedObject.description": "Permanent Admissible Transmission Loading",
-            "cim:IdentifiedObject.name": "PATL",
-            "cim:OperationalLimitType.isInfiniteDuration": true,
-            "cim:OperationalLimitType.direction": {
-                "@id": "http://iec.ch/TC57/CIM100#OperationalLimitDirectionKind.absoluteValue"
-            },
-            "eu:OperationalLimitType.kind": {
-                "@id": "http://iec.ch/TC57/CIM100-EuropeanExtension/1/0#LimitKind.patl"
-            }
-        },
-        {
-            "@id": "urn:uuid:681a267a-5a55-11eb-a658-74e5f963e191",
-            "@type": "cim:OperationalLimitType",
-            "cim:IdentifiedObject.description": "Temporarily Admissible Transmission Loading ",
-            "cim:IdentifiedObject.name": "TATL",
-            "cim:OperationalLimitType.acceptableDuration": 7200.0,
-            "cim:OperationalLimitType.isInfiniteDuration": false,
-            "cim:OperationalLimitType.direction": {
-                "@id": "http://iec.ch/TC57/CIM100#OperationalLimitDirectionKind.absoluteValue"
-            },
-            "eu:OperationalLimitType.kind": {
-                "@id": "http://iec.ch/TC57/CIM100-EuropeanExtension/1/0#LimitKind.tatl"
-            }
-        },
-        {
             "@id": "urn:uuid:c9d5445c-9ad6-3849-9e02-08762805826b",
             "@type": "cim:PetersenCoil",
             "cim:IdentifiedObject.description": "22kV ZT1-EFC Petersen Coil",
@@ -2149,14 +2015,14 @@
             "cim:PowerTransformerEnd.ratedS": 100.0,
             "cim:PowerTransformerEnd.ratedU": 420.0,
             "cim:PowerTransformerEnd.x": 25.41,
+            "cim:PowerTransformerEnd.connectionKind": {
+                "@id": "http://iec.ch/TC57/CIM100#WindingConnection.Y"
+            },
             "cim:TransformerEnd.BaseVoltage": {
                 "@id": "urn:uuid:2dd90159-bdfb-11e5-94fa-c8f73332c8f4"
             },
             "cim:TransformerEnd.Terminal": {
                 "@id": "urn:uuid:92d33bf5-7034-11eb-a65a-74e5f963e191"
-            },
-            "cim:PowerTransformerEnd.connectionKind": {
-                "@id": "http://iec.ch/TC57/CIM100#WindingConnection.Y"
             },
             "cim:PowerTransformerEnd.PowerTransformer": {
                 "@id": "urn:uuid:681a2fdd-5a55-11eb-a658-74e5f963e191"
@@ -2174,14 +2040,14 @@
             "cim:PowerTransformerEnd.ratedS": 100.0,
             "cim:PowerTransformerEnd.ratedU": 132.0,
             "cim:PowerTransformerEnd.x": 0.0,
+            "cim:PowerTransformerEnd.connectionKind": {
+                "@id": "http://iec.ch/TC57/CIM100#WindingConnection.Y"
+            },
             "cim:TransformerEnd.BaseVoltage": {
                 "@id": "urn:uuid:2dd90174-bdfb-11e5-94fa-c8f73332c8f4"
             },
             "cim:TransformerEnd.Terminal": {
                 "@id": "urn:uuid:92d33bf7-7034-11eb-a65a-74e5f963e191"
-            },
-            "cim:PowerTransformerEnd.connectionKind": {
-                "@id": "http://iec.ch/TC57/CIM100#WindingConnection.Y"
             },
             "cim:PowerTransformerEnd.PowerTransformer": {
                 "@id": "urn:uuid:681a2fdd-5a55-11eb-a658-74e5f963e191"
@@ -2199,14 +2065,14 @@
             "cim:PowerTransformerEnd.ratedS": 100.0,
             "cim:PowerTransformerEnd.ratedU": 132.0,
             "cim:PowerTransformerEnd.x": 82.28,
+            "cim:PowerTransformerEnd.connectionKind": {
+                "@id": "http://iec.ch/TC57/CIM100#WindingConnection.Y"
+            },
             "cim:TransformerEnd.BaseVoltage": {
                 "@id": "urn:uuid:2dd90174-bdfb-11e5-94fa-c8f73332c8f4"
             },
             "cim:TransformerEnd.Terminal": {
                 "@id": "urn:uuid:05548bc6-70a0-44b7-8bac-20f745974e43"
-            },
-            "cim:PowerTransformerEnd.connectionKind": {
-                "@id": "http://iec.ch/TC57/CIM100#WindingConnection.Y"
             },
             "cim:PowerTransformerEnd.PowerTransformer": {
                 "@id": "urn:uuid:681a3087-5a55-11eb-a658-74e5f963e191"
@@ -2224,14 +2090,14 @@
             "cim:PowerTransformerEnd.ratedS": 100.0,
             "cim:PowerTransformerEnd.ratedU": 22.0,
             "cim:PowerTransformerEnd.x": 0.0,
+            "cim:PowerTransformerEnd.connectionKind": {
+                "@id": "http://iec.ch/TC57/CIM100#WindingConnection.Y"
+            },
             "cim:TransformerEnd.BaseVoltage": {
                 "@id": "urn:uuid:92d33b38-7034-11eb-a65a-74e5f963e191"
             },
             "cim:TransformerEnd.Terminal": {
                 "@id": "urn:uuid:92d33bfb-7034-11eb-a65a-74e5f963e191"
-            },
-            "cim:PowerTransformerEnd.connectionKind": {
-                "@id": "http://iec.ch/TC57/CIM100#WindingConnection.Y"
             },
             "cim:PowerTransformerEnd.PowerTransformer": {
                 "@id": "urn:uuid:681a3087-5a55-11eb-a658-74e5f963e191"
@@ -2249,14 +2115,14 @@
             "cim:PowerTransformerEnd.ratedS": 3.175,
             "cim:PowerTransformerEnd.ratedU": 22.0,
             "cim:PowerTransformerEnd.x": 7.62,
+            "cim:PowerTransformerEnd.connectionKind": {
+                "@id": "http://iec.ch/TC57/CIM100#WindingConnection.Y"
+            },
             "cim:TransformerEnd.BaseVoltage": {
                 "@id": "urn:uuid:92d33b38-7034-11eb-a65a-74e5f963e191"
             },
             "cim:TransformerEnd.Terminal": {
                 "@id": "urn:uuid:92d33bf1-7034-11eb-a65a-74e5f963e191"
-            },
-            "cim:PowerTransformerEnd.connectionKind": {
-                "@id": "http://iec.ch/TC57/CIM100#WindingConnection.Y"
             },
             "cim:PowerTransformerEnd.PowerTransformer": {
                 "@id": "urn:uuid:681a2fcb-5a55-11eb-a658-74e5f963e191"
@@ -2274,14 +2140,14 @@
             "cim:PowerTransformerEnd.ratedS": 3.175,
             "cim:PowerTransformerEnd.ratedU": 0.23,
             "cim:PowerTransformerEnd.x": 0.0,
+            "cim:PowerTransformerEnd.connectionKind": {
+                "@id": "http://iec.ch/TC57/CIM100#WindingConnection.Zn"
+            },
             "cim:TransformerEnd.BaseVoltage": {
                 "@id": "urn:uuid:830622e6-d259-4526-b14e-122d94a622a4"
             },
             "cim:TransformerEnd.Terminal": {
                 "@id": "urn:uuid:92d33bf3-7034-11eb-a65a-74e5f963e191"
-            },
-            "cim:PowerTransformerEnd.connectionKind": {
-                "@id": "http://iec.ch/TC57/CIM100#WindingConnection.Zn"
             },
             "cim:PowerTransformerEnd.PowerTransformer": {
                 "@id": "urn:uuid:681a2fcb-5a55-11eb-a658-74e5f963e191"
@@ -2299,14 +2165,14 @@
             "cim:PowerTransformerEnd.ratedS": 100.0,
             "cim:PowerTransformerEnd.ratedU": 22.0,
             "cim:PowerTransformerEnd.x": 35.45,
+            "cim:PowerTransformerEnd.connectionKind": {
+                "@id": "http://iec.ch/TC57/CIM100#WindingConnection.Y"
+            },
             "cim:TransformerEnd.BaseVoltage": {
                 "@id": "urn:uuid:92d33b38-7034-11eb-a65a-74e5f963e191"
             },
             "cim:TransformerEnd.Terminal": {
                 "@id": "urn:uuid:92d33bfd-7034-11eb-a65a-74e5f963e191"
-            },
-            "cim:PowerTransformerEnd.connectionKind": {
-                "@id": "http://iec.ch/TC57/CIM100#WindingConnection.Y"
             },
             "cim:PowerTransformerEnd.PowerTransformer": {
                 "@id": "urn:uuid:681a309b-5a55-11eb-a658-74e5f963e191"
@@ -2324,14 +2190,14 @@
             "cim:PowerTransformerEnd.ratedS": 100.0,
             "cim:PowerTransformerEnd.ratedU": 0.4,
             "cim:PowerTransformerEnd.x": 0.0,
+            "cim:PowerTransformerEnd.connectionKind": {
+                "@id": "http://iec.ch/TC57/CIM100#WindingConnection.Y"
+            },
             "cim:TransformerEnd.BaseVoltage": {
                 "@id": "urn:uuid:9598e4a0-67e5-4ad7-879c-c85a1f63159c"
             },
             "cim:TransformerEnd.Terminal": {
                 "@id": "urn:uuid:92d33bff-7034-11eb-a65a-74e5f963e191"
-            },
-            "cim:PowerTransformerEnd.connectionKind": {
-                "@id": "http://iec.ch/TC57/CIM100#WindingConnection.Y"
             },
             "cim:PowerTransformerEnd.PowerTransformer": {
                 "@id": "urn:uuid:681a309b-5a55-11eb-a658-74e5f963e191"
@@ -2406,11 +2272,11 @@
             "cim:TapChanger.neutralU": 0.4,
             "cim:TapChanger.normalStep": 4,
             "cim:RatioTapChanger.stepVoltageIncrement": 3.3333001136779785,
-            "cim:TapChanger.TapChangerControl": {
-                "@id": "urn:uuid:681a30a4-5a55-11eb-a658-74e5f963e191"
-            },
             "cim:RatioTapChanger.tculControlMode": {
                 "@id": "http://iec.ch/TC57/CIM100#TransformerControlMode.volt"
+            },
+            "cim:TapChanger.TapChangerControl": {
+                "@id": "urn:uuid:681a30a4-5a55-11eb-a658-74e5f963e191"
             },
             "cim:RatioTapChanger.TransformerEnd": {
                 "@id": "urn:uuid:681a30a8-5a55-11eb-a658-74e5f963e191"
@@ -2488,7 +2354,6 @@
             "cim:SynchronousMachine.qPercent": 100.0,
             "cim:SynchronousMachine.r": 0.43445,
             "cim:SynchronousMachine.referencePriority": 0,
-            "cim:RotatingMachine.ratedS": 350.0,
             "cim:SynchronousMachine.type": {
                 "@id": "http://iec.ch/TC57/CIM100#SynchronousMachineKind.generator"
             },

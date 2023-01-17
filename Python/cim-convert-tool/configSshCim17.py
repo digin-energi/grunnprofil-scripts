@@ -1,191 +1,191 @@
-cim_Equipment = \
-    [
-        ['cim:Equipment.inService', 'bool']
-    ]
-cim_Switch = \
-    [
-        ['cim:Switch.locked', 'bool'],
-        ['cim:Switch.open', 'bool']
-    ]
-
 configSshCim17 = \
     {
         'cim:ACLineSegment': {
-            'attributes': [
-                'rdf:about'
-            ],
-            'tags':
-                cim_Equipment,
-            'refs': [
+            'mainAttributes': {
+                'rdf:about': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                'cim:Equipment.inService': {'type': 'bool', 'list': False}
+            },
+            'attributes': {
 
-            ]
+            }
         },
         'cim:Breaker': {
-            'attributes': [
-                'rdf:about'
-            ],
-            'tags':
-                cim_Equipment +
-                cim_Switch,
-            'refs': [
+            'mainAttributes': {
+                'rdf:about': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                'cim:Equipment.inService': {'type': 'bool', 'list': False},
+                'cim:Switch.locked': {'type': 'bool', 'list': False},
+                'cim:Switch.open': {'type': 'bool', 'list': False}
+            },
+            'attributes': {
 
-            ]
+            }
         },
         'cim:BusbarSection': {
-            'attributes': [
-                'rdf:about'
-            ],
-            'tags':
-                cim_Equipment,
-            'refs': [
+            'mainAttributes': {
+                'rdf:about': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                'cim:Equipment.inService': {'type': 'bool', 'list': False}
+            },
+            'attributes': {
 
-            ]
+            }
         },
         'cim:ConformLoad': {
-            'attributes': [
-                'rdf:about'
-            ],
-            'tags':
-                cim_Equipment +
-                [
-                    ['cim:EnergyConsumer.p', 'float'],
-                    ['cim:EnergyConsumer.q', 'float']
-                ],
-            'refs': [
+            'mainAttributes': {
+                'rdf:about': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                'cim:Equipment.inService': {'type': 'bool', 'list': False},
+                'cim:EnergyConsumer.p': {'type': 'float', 'list': False},
+                'cim:EnergyConsumer.q': {'type': 'float', 'list': False}
+            },
+            'attributes': {
 
-            ]
+            }
         },
         'cim:ControlArea': {
-            'attributes': [
-                'rdf:about'
-            ],
-            'tags':
-                [
-                    ['cim:ControlArea.netInterchange', 'float']
-                ],
-            'refs': [
+            'mainAttributes': {
+                'rdf:about': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                'cim:ControlArea.netInterchange': {'type': 'float', 'list': False}
+            },
+            'attributes': {
 
-            ]
+            }
         },
         'cim:CurrentLimit': {
-            'attributes': [
-                'rdf:about'
-            ],
-            'tags':
-                [
-                    ['cim:CurrentLimit.value', 'float']
-                ],
-            'refs': [
+            'mainAttributes': {
+                'rdf:about': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                'cim:CurrentLimit.value': {'type': 'float', 'list': False}
+            },
+            'attributes': {
 
-            ]
+            }
         },
         'cim:Disconnector': {
-            'attributes': [
-                'rdf:about'
-            ],
-            'tags':
-                cim_Equipment +
-                cim_Switch,
-            'refs': [
+            'mainAttributes': {
+                'rdf:about': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                'cim:Equipment.inService': {'type': 'bool', 'list': False},
+                'cim:Switch.locked': {'type': 'bool', 'list': False},
+                'cim:Switch.open': {'type': 'bool', 'list': False}
+            },
+            'attributes': {
 
-            ]
+            }
         },
         'cim:EquivalentInjection': {
-            'attributes': [
-                'rdf:about'
-            ],
-            'tags':
-                cim_Equipment +
-                [
-                    ['cim:EquivalentInjection.p', 'float'],
-                    ['cim:EquivalentInjection.q', 'float']
-                ],
-            'refs': [
+            'mainAttributes': {
+                'rdf:about': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                'cim:Equipment.inService': {'type': 'bool', 'list': False},
+                'cim:EquivalentInjection.p': {'type': 'float', 'list': False},
+                'cim:EquivalentInjection.q': {'type': 'float', 'list': False}
+            },
+            'attributes': {
 
-            ]
+            }
         },
         'cim:Fuse': {
-            'attributes': [
-                'rdf:about'
-            ],
-            'tags':
-                cim_Equipment +
-                cim_Switch,
-            'refs': [
+            'mainAttributes': {
+                'rdf:about': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                'cim:Equipment.inService': {'type': 'bool', 'list': False},
+                'cim:Switch.locked': {'type': 'bool', 'list': False},
+                'cim:Switch.open': {'type': 'bool', 'list': False}
+            },
+            'attributes': {
 
-            ]
+            }
         },
         'cim:GeneratingUnit': {
-            'attributes': [
-                'rdf:about'
-            ],
-            'tags':
-                cim_Equipment,
-            'refs': [
+            'mainAttributes': {
+                'rdf:about': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                'cim:Equipment.inService': {'type': 'bool', 'list': False}
+            },
+            'attributes': {
 
-            ]
+            }
         },
         'cim:LinearShuntCompensator': {
-            'attributes': [
-                'rdf:about'
-            ],
-            'tags':
-                cim_Equipment,
-            'refs': [
+            'mainAttributes': {
+                'rdf:about': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                'cim:Equipment.inService': {'type': 'bool', 'list': False}
+            },
+            'attributes': {
 
-            ]
+            }
         },
         'cim:LoadBreakSwitch': {
-            'attributes': [
-                'rdf:about'
-            ],
-            'tags':
-                cim_Equipment +
-                cim_Switch,
-            'refs': [
+            'mainAttributes': {
+                'rdf:about': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                'cim:Equipment.inService': {'type': 'bool', 'list': False},
+                'cim:Switch.locked': {'type': 'bool', 'list': False},
+                'cim:Switch.open': {'type': 'bool', 'list': False}
+            },
+            'attributes': {
 
-            ]
+            }
         },
         'cim:PetersenCoil': {
-            'attributes': [
-                'rdf:about'
-            ],
-            'tags':
-                cim_Equipment,
-            'refs': [
+            'mainAttributes': {
+                'rdf:about': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                'cim:Equipment.inService': {'type': 'bool', 'list': False}
+            },
+            'attributes': {
 
-            ]
+            }
         },
         'cim:PowerTransformer': {
-            'attributes': [
-                'rdf:about'
-            ],
-            'tags':
-                cim_Equipment,
-            'refs': [
+            'mainAttributes': {
+                'rdf:about': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                'cim:Equipment.inService': {'type': 'bool', 'list': False}
+            },
+            'attributes': {
 
-            ]
+            }
         },
         'cim:SynchronousMachine': {
-            'attributes': [
-                'rdf:about'
-            ],
-            'tags':
-                cim_Equipment,
-            'refs': [
+            'mainAttributes': {
+                'rdf:about': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                'cim:Equipment.inService': {'type': 'bool', 'list': False}
+            },
+            'attributes': {
 
-            ]
+            }
         },
         'cim:Terminal': {
-            'attributes': [
-                'rdf:about'
-            ],
-            'tags':
-                [
-                    ['cim:ACDCTerminal.connected',  'bool']
-                ],
-            'refs': [
+            'mainAttributes': {
+                'rdf:about': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                'cim:ACDCTerminal.connected': {'type': 'bool', 'list': False}
+            },
+            'attributes': {
 
-            ]
+            }
         }
     }

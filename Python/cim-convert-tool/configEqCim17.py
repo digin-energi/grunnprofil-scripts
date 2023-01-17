@@ -1,475 +1,602 @@
-cim_IdentifiedObject = \
-    [
-        ['cim:IdentifiedObject.mRID', 'string'],
-        ['cim:IdentifiedObject.description', 'string'],
-        ['cim:IdentifiedObject.name', 'string']
-    ]
-cim_Equipment = \
-    [
-        ['cim:Equipment.aggregate', 'bool'],
-        #['cim:Equipment.networkAnalysisEnabled', 'bool'],
-        ['cim:Equipment.normallyInService', 'bool']
-    ]
-cim_Switch = \
-    [
-        ['cim:Switch.locked', 'bool'],
-        ['cim:Switch.normalOpen', 'bool'],
-        ['cim:Switch.ratedCurrent', 'float'],
-        ['cim:Switch.retained', 'bool']
-    ]
-
 configEqCim17 = \
     {
         'cim:ACLineSegment': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject +
-                cim_Equipment +
-            [
-                ['cim:Conductor.length', 'float'],
-                ['cim:ACLineSegment.bch', 'float'],
-                ['cim:ACLineSegment.gch', 'float'],
-                #['cim:ACLineSegment.r0', 'float'],
-                ['cim:ACLineSegment.r', 'float'],
-                ['cim:ACLineSegment.x', 'float']
-            ],
-            'refs': [
-                'cim:Equipment.EquipmentContainer',
-                'cim:ConductingEquipment.BaseVoltage'
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
+                'cim:Equipment.aggregate': {'type': 'bool', 'list': False},
+                # 'cim:Equipment.networkAnalysisEnabled': {'type': 'bool', 'list': False},
+                'cim:Equipment.normallyInService': {'type': 'bool', 'list': False},
+                'cim:Conductor.length': {'type': 'float', 'list': False},
+                'cim:ACLineSegment.bch': {'type': 'float', 'list': False},
+                'cim:ACLineSegment.gch': {'type': 'float', 'list': False},
+                # 'cim:ACLineSegment.r0': {'type': 'float', 'list': False},
+                'cim:ACLineSegment.r': {'type': 'float', 'list': False},
+                'cim:ACLineSegment.x': {'type': 'float', 'list': False}
+            },
+            'attributes': {
+                'cim:PowerSystemResource.AssetDatasheet': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:Equipment.EquipmentContainer': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:ConductingEquipment.BaseVoltage': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         },
         'cim:Bay': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags': cim_IdentifiedObject,
-            'refs': [
-                'cim:Bay.VoltageLevel'
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False}
+            },
+            'attributes': {
+                'cim:Bay.VoltageLevel': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         },
         'cim:Breaker': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject +
-                cim_Equipment +
-                cim_Switch,
-            'refs': [
-                'cim:Equipment.EquipmentContainer',
-                'cim:ConductingEquipment.BaseVoltage'
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
+                'cim:Equipment.aggregate': {'type': 'bool', 'list': False},
+                # 'cim:Equipment.networkAnalysisEnabled': {'type': 'bool', 'list': False},
+                'cim:Equipment.normallyInService': {'type': 'bool', 'list': False},
+                'cim:Switch.locked': {'type': 'bool', 'list': False},
+                'cim:Switch.normalOpen': {'type': 'bool', 'list': False},
+                'cim:Switch.ratedCurrent': {'type': 'float', 'list': False},
+                'cim:Switch.retained': {'type': 'bool', 'list': False}
+            },
+            'attributes': {
+                'cim:Equipment.EquipmentContainer': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:ConductingEquipment.BaseVoltage': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         },
         'cim:BusbarSection': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject +
-                cim_Equipment,
-            'refs': [
-                'cim:Equipment.EquipmentContainer',
-                'cim:ConductingEquipment.BaseVoltage'
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
+                'cim:Equipment.aggregate': {'type': 'bool', 'list': False},
+                # 'cim:Equipment.networkAnalysisEnabled': {'type': 'bool', 'list': False},
+                'cim:Equipment.normallyInService': {'type': 'bool', 'list': False}
+            },
+            'attributes': {
+                'cim:Equipment.EquipmentContainer': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:ConductingEquipment.BaseVoltage': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         },
         'cim:ConformLoad': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject +
-                cim_Equipment +
-            [
-                ['cim:EnergyConsumer.pfixed', 'float'],
-                ['cim:EnergyConsumer.pfixedPct', 'float'],
-                ['cim:EnergyConsumer.qfixed', 'float'],
-                ['cim:EnergyConsumer.qfixedPct', 'float']
-            ],
-            'refs': [
-                'cim:Equipment.EquipmentContainer',
-                'cim:ConductingEquipment.BaseVoltage',
-                'cim:ConformLoad.LoadGroup'
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
+                'cim:Equipment.aggregate': {'type': 'bool', 'list': False},
+                # 'cim:Equipment.networkAnalysisEnabled': {'type': 'bool', 'list': False},
+                'cim:Equipment.normallyInService': {'type': 'bool', 'list': False},
+                'cim:EnergyConsumer.pfixed': {'type': 'float', 'list': False},
+                'cim:EnergyConsumer.pfixedPct': {'type': 'float', 'list': False},
+                'cim:EnergyConsumer.qfixed': {'type': 'float', 'list': False},
+                'cim:EnergyConsumer.qfixedPct': {'type': 'float', 'list': False},
+
+            },
+            'attributes': {
+                'cim:Equipment.EquipmentContainer': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:ConductingEquipment.BaseVoltage': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:ConformLoad.LoadGroup': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         },
         'cim:ConformLoadGroup': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject,
-            'refs': [
-                'cim:LoadGroup.SubLoadArea'
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False}
+
+            },
+            'attributes': {
+                'cim:LoadGroup.SubLoadArea': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         },
         'cim:ConnectivityNode': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject,
-            'refs': [
-                'cim:ConnectivityNode.ConnectivityNodeContainer'
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False}
+
+            },
+            'attributes': {
+                'cim:ConnectivityNode.ConnectivityNodeContainer': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         },
         'cim:ControlArea': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject,
-            'refs': [
-                'cim:ControlArea.EnergyArea',
-                'cim:ControlArea.type'
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False}
+
+            },
+            'attributes': {
+                'cim:ControlArea.type': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:ControlArea.EnergyArea': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         },
         'cim:CurrentLimit': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject +
-                [
-                    ['cim:CurrentLimit.normalValue', 'float']
-                ],
-            'refs': [
-                'cim:OperationalLimit.OperationalLimitSet',
-                'cim:OperationalLimit.OperationalLimitType'
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
+                'cim:CurrentLimit.normalValue': {'type': 'float', 'list': False}
+
+            },
+            'attributes': {
+                'cim:OperationalLimit.OperationalLimitSet': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:OperationalLimit.OperationalLimitType': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         },
         'cim:Disconnector': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject +
-                cim_Equipment +
-                cim_Switch,
-            'refs': [
-                'cim:Equipment.EquipmentContainer',
-                'cim:ConductingEquipment.BaseVoltage'
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
+                'cim:Equipment.aggregate': {'type': 'bool', 'list': False},
+                # 'cim:Equipment.networkAnalysisEnabled': {'type': 'bool', 'list': False},
+                'cim:Equipment.normallyInService': {'type': 'bool', 'list': False},
+                'cim:Switch.locked': {'type': 'bool', 'list': False},
+                'cim:Switch.normalOpen': {'type': 'bool', 'list': False},
+                'cim:Switch.ratedCurrent': {'type': 'float', 'list': False},
+                'cim:Switch.retained': {'type': 'bool', 'list': False}
+            },
+            'attributes': {
+                'cim:Equipment.EquipmentContainer': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:ConductingEquipment.BaseVoltage': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         },
         'cim:EquivalentInjection': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject +
-                cim_Equipment +
-                [
-                    ['cim:EquivalentInjection.maxP', 'float'],
-                    ['cim:EquivalentInjection.maxQ', 'float'],
-                    ['cim:EquivalentInjection.minP', 'float'],
-                    ['cim:EquivalentInjection.minQ', 'float'],
-                    ['cim:EquivalentInjection.regulationCapability', 'bool']
-                ],
-            'refs': [
-                'cim:ConductingEquipment.BaseVoltage'
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
+                'cim:Equipment.aggregate': {'type': 'bool', 'list': False},
+                # 'cim:Equipment.networkAnalysisEnabled': {'type': 'bool', 'list': False},
+                'cim:Equipment.normallyInService': {'type': 'bool', 'list': False},
+                'cim:EquivalentInjection.maxP': {'type': 'float', 'list': False},
+                'cim:EquivalentInjection.maxQ': {'type': 'float', 'list': False},
+                'cim:EquivalentInjection.minP': {'type': 'float', 'list': False},
+                'cim:EquivalentInjection.minQ': {'type': 'float', 'list': False},
+                'cim:EquivalentInjection.regulationCapability': {'type': 'bool', 'list': False}
+            },
+            'attributes': {
+                'cim:ConductingEquipment.BaseVoltage': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         },
         'cim:Fuse': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject +
-                cim_Equipment +
-                cim_Switch,
-            'refs': [
-                'cim:Equipment.EquipmentContainer',
-                'cim:ConductingEquipment.BaseVoltage'
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
+                'cim:Equipment.aggregate': {'type': 'bool', 'list': False},
+                # 'cim:Equipment.networkAnalysisEnabled': {'type': 'bool', 'list': False},
+                'cim:Equipment.normallyInService': {'type': 'bool', 'list': False},
+                'cim:Switch.locked': {'type': 'bool', 'list': False},
+                'cim:Switch.normalOpen': {'type': 'bool', 'list': False},
+                'cim:Switch.ratedCurrent': {'type': 'float', 'list': False},
+                'cim:Switch.retained': {'type': 'bool', 'list': False}
+            },
+            'attributes': {
+                'cim:Equipment.EquipmentContainer': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:ConductingEquipment.BaseVoltage': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         },
         'cim:GeneratingUnit': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject +
-                cim_Equipment +
-                [
-                    ['cim:GeneratingUnit.highControlLimit', 'float'],
-                    ['cim:GeneratingUnit.initialP', 'float'],
-                    ['cim:GeneratingUnit.lowControlLimit', 'float'],
-                    ['cim:GeneratingUnit.maxEconomicP', 'float'],
-                    ['cim:GeneratingUnit.maxOperatingP', 'float'],
-                    ['cim:GeneratingUnit.minEconomicP', 'float'],
-                    ['cim:GeneratingUnit.minOperatingP', 'float'],
-                    ['cim:GeneratingUnit.nominalP', 'float'],
-                    ['cim:GeneratingUnit.ratedGrossMaxP', 'float'],
-                    ['cim:GeneratingUnit.ratedNetMaxP', 'float']
-                ],
-            'refs': [
-                'cim:Equipment.EquipmentContainer'
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
+                'cim:Equipment.aggregate': {'type': 'bool', 'list': False},
+                # 'cim:Equipment.networkAnalysisEnabled': {'type': 'bool', 'list': False},
+                'cim:Equipment.normallyInService': {'type': 'bool', 'list': False},
+                'cim:GeneratingUnit.highControlLimit': {'type': 'float', 'list': False},
+                'cim:GeneratingUnit.initialP': {'type': 'float', 'list': False},
+                'cim:GeneratingUnit.lowControlLimit': {'type': 'float', 'list': False},
+                'cim:GeneratingUnit.maxEconomicP': {'type': 'float', 'list': False},
+                'cim:GeneratingUnit.maxOperatingP': {'type': 'float', 'list': False},
+                'cim:GeneratingUnit.minEconomicP': {'type': 'float', 'list': False},
+                'cim:GeneratingUnit.minOperatingP': {'type': 'float', 'list': False},
+                'cim:GeneratingUnit.nominalP': {'type': 'float', 'list': False},
+                'cim:GeneratingUnit.ratedGrossMaxP': {'type': 'float', 'list': False},
+                'cim:GeneratingUnit.ratedNetMaxP': {'type': 'float', 'list': False}
+            },
+            'attributes': {
+                'cim:Equipment.EquipmentContainer': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         },
-        'cim:Line': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject,
-            'refs': [
-                
-            ]
+        'cim:ControlArea': {
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False}
+
+            },
+            'attributes': {
+
+            }
         },
         'cim:LinearShuntCompensator': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject +
-                cim_Equipment +
-                [
-                    ['cim:ShuntCompensator.aVRDelay', 'float'],
-                    ['cim:ShuntCompensator.maximumSections', 'int'],
-                    ['cim:ShuntCompensator.nomU', 'float'],
-                    ['cim:ShuntCompensator.normalSections', 'int'],
-                    ['cim:LinearShuntCompensator.bPerSection', 'float'],
-                    ['cim:LinearShuntCompensator.gPerSection', 'float']
-                ],
-            'refs': [
-                'cim:Equipment.EquipmentContainer',
-                'cim:RegulatingCondEq.RegulatingControl'
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
+                'cim:Equipment.aggregate': {'type': 'bool', 'list': False},
+                # 'cim:Equipment.networkAnalysisEnabled': {'type': 'bool', 'list': False},
+                'cim:Equipment.normallyInService': {'type': 'bool', 'list': False},
+                'cim:ShuntCompensator.aVRDelay': {'type': 'float', 'list': False},
+                'cim:ShuntCompensator.maximumSections': {'type': 'int', 'list': False},
+                'cim:ShuntCompensator.nomU': {'type': 'float', 'list': False},
+                'cim:ShuntCompensator.normalSections': {'type': 'int', 'list': False},
+                'cim:LinearShuntCompensator.bPerSection': {'type': 'float', 'list': False},
+                'cim:LinearShuntCompensator.gPerSection': {'type': 'float', 'list': False}
+            },
+            'attributes': {
+                'cim:Equipment.EquipmentContainer': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:RegulatingCondEq.RegulatingControl': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         },
         'cim:LoadArea': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject,
-            'refs': [
-                
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False}
+            },
+            'attributes': {
+
+            }
         },
         'cim:LoadBreakSwitch': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject +
-                cim_Equipment +
-                cim_Switch,
-            'refs': [
-                'cim:Equipment.EquipmentContainer',
-                'cim:ConductingEquipment.BaseVoltage'
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
+                'cim:Equipment.aggregate': {'type': 'bool', 'list': False},
+                # 'cim:Equipment.networkAnalysisEnabled': {'type': 'bool', 'list': False},
+                'cim:Equipment.normallyInService': {'type': 'bool', 'list': False},
+                'cim:Switch.locked': {'type': 'bool', 'list': False},
+                'cim:Switch.normalOpen': {'type': 'bool', 'list': False},
+                'cim:Switch.ratedCurrent': {'type': 'float', 'list': False},
+                'cim:Switch.retained': {'type': 'bool', 'list': False}
+            },
+            'attributes': {
+                'cim:Equipment.EquipmentContainer': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:ConductingEquipment.BaseVoltage': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         },
-        'cim:LoadResponseCharacteristic': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject +
-                [
-                    ['cim:LoadResponseCharacteristic.pConstantPower', 'float'],
-                    ['cim:LoadResponseCharacteristic.pConstantCurrent', 'float'],
-                    ['cim:LoadResponseCharacteristic.pConstantImpedance', 'float'],
-                    ['cim:LoadResponseCharacteristic.qConstantPower', 'float'],
-                    ['cim:LoadResponseCharacteristic.qConstantCurrent', 'float'],
-                    ['cim:LoadResponseCharacteristic.qConstantImpedance', 'float'],
-                    ['cim:LoadResponseCharacteristic.exponentModel', 'bool']
-                ],
-            'refs': [
-                
-            ]
+        'cim:LoadBreakSwitch': {
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
+                'cim:LoadResponseCharacteristic.pConstantPower': {'type': 'float', 'list': False},
+                'cim:LoadResponseCharacteristic.pConstantCurrent': {'type': 'float', 'list': False},
+                'cim:LoadResponseCharacteristic.pConstantImpedance': {'type': 'float', 'list': False},
+                'cim:LoadResponseCharacteristic.qConstantPower': {'type': 'float', 'list': False},
+                'cim:LoadResponseCharacteristic.qConstantCurrent': {'type': 'float', 'list': False},
+                'cim:LoadResponseCharacteristic.qConstantImpedance': {'type': 'float', 'list': False},
+                'cim:LoadResponseCharacteristic.exponentModel': {'type': 'bool', 'list': False}
+            },
+            'attributes': {
+
+            }
         },
         'cim:OperationalLimitSet': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject,
-            'refs': [
-                'cim:OperationalLimitSet.Terminal'
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False}
+            },
+            'attributes': {
+                'cim:OperationalLimitSet.Terminal': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         },
-        'cim:OperationalLimitType': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject +
-                [
-                    ['cim:OperationalLimitType.acceptableDuration', 'float'],
-                    ['cim:OperationalLimitType.isInfiniteDuration',  'bool']
-                ],
-            'refs': [
-                'cim:OperationalLimitType.direction',
-                'eu:OperationalLimitType.kind'
-            ]
+        'cim:OperationalLimitSet': {
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
+                'cim:OperationalLimitType.acceptableDuration': {'type': 'float', 'list': False},
+                'cim:OperationalLimitType.isInfiniteDuration': {'type': 'bool', 'list': False}
+            },
+            'attributes': {
+                'cim:OperationalLimitSet.Terminal': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         },
         'cim:PetersenCoil': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject +
-                cim_Equipment,
-            'refs': [
-                'cim:Equipment.EquipmentContainer'
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
+                'cim:Equipment.aggregate': {'type': 'bool', 'list': False},
+                # 'cim:Equipment.networkAnalysisEnabled': {'type': 'bool', 'list': False},
+                'cim:Equipment.normallyInService': {'type': 'bool', 'list': False}
+            },
+            'attributes': {
+                'cim:Equipment.EquipmentContainer': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         },
         'cim:PowerTransformer': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject +
-                cim_Equipment +
-                [
-                    ['cim:PowerTransformer.isPartOfGeneratorUnit',  'bool']
-                ],
-            'refs': [
-                'cim:Equipment.EquipmentContainer'
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
+                'cim:Equipment.aggregate': {'type': 'bool', 'list': False},
+                # 'cim:Equipment.networkAnalysisEnabled': {'type': 'bool', 'list': False},
+                'cim:Equipment.normallyInService': {'type': 'bool', 'list': False},
+                'cim:PowerTransformer.isPartOfGeneratorUnit': {'type': 'bool', 'list': False}
+            },
+            'attributes': {
+                'cim:Equipment.EquipmentContainer': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         },
         'cim:PowerTransformerEnd': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject +
-                [
-                    ['cim:TransformerEnd.endNumber',  'int'],
-                    ['cim:TransformerEnd.grounded',  'bool'],
-                    ['cim:PowerTransformerEnd.b',  'float'],
-                    ['cim:PowerTransformerEnd.r',  'float'],
-                    ['cim:PowerTransformerEnd.ratedS',  'float'],
-                    ['cim:PowerTransformerEnd.ratedU',  'float'],
-                    ['cim:PowerTransformerEnd.x',  'float']
-                ],
-            'refs': [
-                'cim:TransformerEnd.BaseVoltage',
-                'cim:TransformerEnd.Terminal',
-                'cim:PowerTransformerEnd.connectionKind',
-                'cim:PowerTransformerEnd.PowerTransformer'
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
+                'cim:TransformerEnd.endNumber': {'type': 'int', 'list': False},
+                'cim:TransformerEnd.grounded': {'type': 'bool', 'list': False},
+                'cim:PowerTransformerEnd.b': {'type': 'float', 'list': False},
+                'cim:PowerTransformerEnd.r': {'type': 'float', 'list': False},
+                'cim:PowerTransformerEnd.ratedS': {'type': 'float', 'list': False},
+                'cim:PowerTransformerEnd.ratedU': {'type': 'float', 'list': False},
+                'cim:PowerTransformerEnd.x': {'type': 'float', 'list': False}
+            },
+            'attributes': {
+                'cim:PowerTransformerEnd.connectionKind': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:TransformerEnd.BaseVoltage': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:TransformerEnd.Terminal': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:PowerTransformerEnd.PowerTransformer': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         },
         'cim:RatioTapChanger': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject +
-                [
-                    ['cim:TapChanger.highStep',  'int'],
-                    ['cim:TapChanger.lowStep',  'int'],
-                    ['cim:TapChanger.ltcFlag',  'bool'],
-                    ['cim:TapChanger.neutralStep',  'int'],
-                    ['cim:TapChanger.neutralU',  'float'],
-                    ['cim:TapChanger.normalStep',  'int'],
-                    ['cim:RatioTapChanger.stepVoltageIncrement',  'float']
-                ],
-            'refs': [
-                'cim:TapChanger.TapChangerControl',
-                'cim:RatioTapChanger.tculControlMode',
-                'cim:RatioTapChanger.TransformerEnd'
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
+                'cim:TapChanger.highStep': {'type': 'int', 'list': False},
+                'cim:TapChanger.lowStep': {'type': 'int', 'list': False},
+                'cim:TapChanger.ltcFlag': {'type': 'bool', 'list': False},
+                'cim:TapChanger.neutralStep': {'type': 'int', 'list': False},
+                'cim:TapChanger.neutralU': {'type': 'float', 'list': False},
+                'cim:TapChanger.normalStep': {'type': 'int', 'list': False},
+                'cim:RatioTapChanger.stepVoltageIncrement': {'type': 'float', 'list': False}
+            },
+            'attributes': {
+                'cim:RatioTapChanger.tculControlMode': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:TapChanger.TapChangerControl': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:RatioTapChanger.TransformerEnd': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         },
         'cim:RegulatingControl': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject,
-            'refs': [
-                'cim:RegulatingControl.mode',
-                'cim:RegulatingControl.Terminal'
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False}
+            },
+            'attributes': {
+                'cim:RegulatingControl.mode': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:RegulatingControl.Terminal': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         },
         'cim:SubGeographicalRegion': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject,
-            'refs': [
-                'cim:SubGeographicalRegion.Region'
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False}
+            },
+            'attributes': {
+                'cim:SubGeographicalRegion.Region': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         },
         'cim:SubLoadArea': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject,
-            'refs': [
-                'cim:SubLoadArea.LoadArea'
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False}
+            },
+            'attributes': {
+                'cim:SubLoadArea.LoadArea': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         },
         'cim:Substation': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject,
-            'refs': [
-                'cim:Substation.Region'
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False}
+            },
+            'attributes': {
+                'cim:Substation.Region': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         },
         'cim:SynchronousMachine': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject +
-                cim_Equipment +
-                [
-                    ['cim:SynchronousMachine.maxQ',  'float'],
-                    ['cim:SynchronousMachine.maxU',  'float'],
-                    ['cim:SynchronousMachine.minQ',  'float'],
-                    ['cim:SynchronousMachine.minU',  'float'],
-                    ['cim:SynchronousMachine.qPercent',  'float'],
-                    ['cim:SynchronousMachine.r',  'float'],
-                    ['cim:SynchronousMachine.referencePriority',  'int'],
-                    ['cim:RotatingMachine.ratedS',  'float']
-                ],
-            'refs': [
-                'cim:SynchronousMachine.type',
-                'cim:Equipment.EquipmentContainer',
-                'cim:RegulatingCondEq.RegulatingControl',
-                'cim:RotatingMachine.GeneratingUnit'
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
+                'cim:Equipment.aggregate': {'type': 'bool', 'list': False},
+                # 'cim:Equipment.networkAnalysisEnabled': {'type': 'bool', 'list': False},
+                'cim:Equipment.normallyInService': {'type': 'bool', 'list': False},
+                'cim:SynchronousMachine.maxQ': {'type': 'float', 'list': False},
+                'cim:SynchronousMachine.maxU': {'type': 'float', 'list': False},
+                'cim:SynchronousMachine.minQ': {'type': 'float', 'list': False},
+                'cim:SynchronousMachine.minU': {'type': 'float', 'list': False},
+                'cim:SynchronousMachine.qPercent': {'type': 'float', 'list': False},
+                'cim:SynchronousMachine.r': {'type': 'float', 'list': False},
+                'cim:SynchronousMachine.referencePriority': {'type': 'int', 'list': False},
+                'cim:SynchronousMachine.ratedS': {'type': 'float', 'list': False}
+            },
+            'attributes': {
+                'cim:SynchronousMachine.type': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:Equipment.EquipmentContainer': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:RegulatingCondEq.RegulatingControl': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:RotatingMachine.GeneratingUnit': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         },
         'cim:TapChangerControl': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject,
-            'refs': [
-                'cim:RegulatingControl.mode',
-                'cim:RegulatingControl.Terminal'
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False}
+            },
+            'attributes': {
+                'cim:RegulatingControl.mode': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:RegulatingControl.Terminal': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         },
         'cim:Terminal': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject +
-                [
-                    ['cim:ACDCTerminal.sequenceNumber',  'int']
-                ],
-            'refs': [
-                'cim:Terminal.phases',
-                'cim:Terminal.ConductingEquipment',
-                'cim:Terminal.ConnectivityNode'
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
+                'cim:ACDCTerminal.sequenceNumber': {'type': 'int', 'list': False}
+            },
+            'attributes': {
+                'cim:Terminal.phases': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:Terminal.ConductingEquipment': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:Terminal.ConnectivityNode': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         },
         'cim:VoltageLevel': {
-            'attributes': [
-                'rdf:ID'
-            ],
-            'tags':
-                cim_IdentifiedObject,
-            'refs': [
-                'cim:VoltageLevel.BaseVoltage',
-                'cim:VoltageLevel.Substation'
-            ]
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False}
+            },
+            'attributes': {
+                'cim:VoltageLevel.BaseVoltage': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:VoltageLevel.Substation': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
         }
     }

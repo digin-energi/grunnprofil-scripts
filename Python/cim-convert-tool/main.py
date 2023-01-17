@@ -1,6 +1,6 @@
 import xml.etree.ElementTree as ET
 import json
-from xmlHelperCim17 import textImport, attributeImport, prefixListReplacer, prefixTagReplacer, refsXmlToJsonLdConverter, textsXmlToJsonLdConverter
+from functions import xmlPrefixListReplacer, valueDataTypeConverter
 from configEqCim17 import configEqCim17
 from configSshCim17 import configSshCim17
 from contextData import contextDataClass
@@ -57,57 +57,95 @@ documentDataClass(
 tree = ET.parse(inputFilePath)
 root = tree.getroot()
 
-# SubClasses
-for i in range(0, len(config)):
+xmlMainTagList = xmlPrefixListReplacer(list(config.keys()), cim, eu, rdf, md)
+configMainTagList = list(config.keys())
 
-    importCimClasses = prefixListReplacer(list(config.keys()), cim, eu, rdf, md) # Adding full prefix for import
-    importCimClass = importCimClasses[i]
-    cim17ClassList = list(config.keys())[i] # --> ClassName
+for i in range(0, len(configMainTagList)):
+    xmlMainTag = xmlMainTagList[i]
+    configMainTag = configMainTagList[i]
 
-    for cimClass in root.findall(importCimClass):
+    for mainTags in root.findall(xmlMainTag):
+        xmlMainAttributeList = xmlPrefixListReplacer(list(config[configMainTag]['mainAttributes'].keys()), cim, eu, rdf, md)
+        configMainAttributeList = list(config[configMainTag]['mainAttributes'].keys())
+
+        # MainAttributes ######################################
+        dictionaryClass = {}
+
+        for i in range(0, len(xmlMainAttributeList)):
+            xmlMainAttribute = xmlMainAttributeList[i]
+            configMainAttribute = configMainAttributeList[i]
+
+            mainAttributeValue = f'urn:uuid:{mainTags.get(xmlMainAttribute)[1:]}'
+            mainAttributeType = config[configMainTag]['mainAttributes'][configMainAttribute]['type']
+
+            dictionaryClass["@id"] = valueDataTypeConverter(mainAttributeValue, mainAttributeType)
+            dictionaryClass["@type"] = configMainTag
+
+        # Tags ################################################
+        xmlTagList = xmlPrefixListReplacer(list(config[configMainTag]['tags'].keys()), cim, eu, rdf, md)
+        configTagList = list(config[configMainTag]['tags'].keys())
+
+        for i in range(0, len(xmlTagList)):
+            xmlTag = xmlTagList[i]
+            configTag = configTagList[i]
+
+            textType = config[configMainTag]['tags'][configTag]['type']
+            textList = config[configMainTag]['tags'][configTag]['list']
+
+            if textList == True:
+                dictionaryClass[configTag] = []
+
+            for tags in mainTags.findall(xmlTag):
+                
+                textValue = tags.text
+    
+                if textList == True:
+                    dictionaryClass[configTag].append(valueDataTypeConverter(textValue, textType))
+                else:
+                    dictionaryClass[configTag] = valueDataTypeConverter(textValue, textType)
         
-        attributes = []
-        texts = []
-        textTypes = []
-        refs = []
+        # Attributes ##########################################
+        xmlAttributeTagList = xmlPrefixListReplacer(list(config[configMainTag]['attributes'].keys()), cim, eu, rdf, md)
+        configAttributeTagList = list(config[configMainTag]['attributes'].keys())
 
-        cim17AttributeList = config[cim17ClassList]['attributes']
-        cim17TagsList = []
-        cim17RefsList = config[cim17ClassList]['refs']
+        for i in range(0, len(xmlAttributeTagList)):
+            xmlAttributeTag = xmlAttributeTagList[i]
+            configAttributeTag = configAttributeTagList[i]
 
-        importAttributes = prefixListReplacer(config[cim17ClassList]['attributes'], cim, eu, rdf, md)
+            attributeList = config[configMainTag]['attributes'][configAttributeTag]['list']
 
-        importTags = []
-        importTagsList = config[cim17ClassList]['tags']
-        for i in range(0, len(importTagsList)):
-            importTags.append(prefixTagReplacer(importTagsList[i][0], cim, eu, rdf, md))
-            cim17TagsList.append(importTagsList[i][0])
-            textTypes.append(importTagsList[i][1])
+            if attributeList == True:
+                    dictionaryClass[configAttributeTag] = []
 
-        importRefs = prefixListReplacer(config[cim17ClassList]['refs'], cim, eu, rdf, md)
+            for attributeTags in mainTags.findall(xmlAttributeTag):
+                
+                xmlAttributeSubTagList = xmlPrefixListReplacer(list(config[configMainTag]['attributes'][configAttributeTag].keys()), cim, eu, rdf, md)
+                configAttributeSubTagList = list(config[configMainTag]['attributes'][configAttributeTag].keys())
 
-        for i in range(0, len(importAttributes)):
-            attributes.append(cimClass.get(importAttributes[i]))
-        for i in range(0, len(importTags)):
-            texts.append(textImport(cimClass, importTags[i]))
-        for i in range(0, len(importRefs)):
-            refs.append(attributeImport(cimClass, importRefs[i], '{' + rdf + '}' + 'resource'))
+                for i in range(0, len(xmlAttributeSubTagList)):
+                    xmlAttributeSubTag = xmlAttributeSubTagList[i]
+                    configAttributeSubTag = configAttributeSubTagList[i]
 
-        jsonObject = {}
+                    if attributeTags.get(xmlAttributeSubTag)[:2] == '#_':
+                        attributeValue = f'urn:uuid:{attributeTags.get(xmlAttributeSubTag)[2:]}'
+                    else:
+                        attributeValue = attributeTags.get(xmlAttributeSubTag)
+                        
+                    attributeType = config[configMainTag]['attributes'][configAttributeTag][configAttributeSubTag]['type']
 
-        for i in range(0, len(attributes)):
-            jsonObject['@id'] = attributes[i].replace('_', 'urn:uuid:').replace('#', '')
-            jsonObject['@type'] = cim17ClassList
+                    subDictionaryClass = {}
+                    subDictionaryClass['@id'] = valueDataTypeConverter(attributeValue, attributeType)
 
-        for i in range(0, len(texts)):
-            textsXmlToJsonLdConverter(jsonObject, cim17TagsList[i], texts[i], textTypes[i])
+                    if attributeList == True:
+                        dictionaryClass[configAttributeTag].append(subDictionaryClass)
+                    else:
+                        dictionaryClass[configAttributeTag] = subDictionaryClass
 
-        for i in range(0, len(refs)):
-            refsXmlToJsonLdConverter(jsonObject, cim17RefsList[i], refs[i])
-        
-        graphList.append(jsonObject)
+        graphList.append(dictionaryClass)
 
-    OutputJsonLD["@graph"] = graphList
+OutputJsonLD["@graph"] = graphList
+
+# Output
 
 # Converting output to json
 json_data = json.dumps(OutputJsonLD, indent=4, ensure_ascii=False)
