@@ -5,7 +5,10 @@ class contextDataClass:
                 "rdf": rdfVar,
                 "cim": cimVar,
                 "md": mdVar,
-                "eu": euVar
+                "eu": euVar,
+                "dcterms": "http://purl.org/dc/terms/",
+                "dcat": "http://www.w3.org/ns/dcat#",
+                "prov": "http://www.w3.org/ns/prov#"
             }
 
     def contextDataFunc(self):

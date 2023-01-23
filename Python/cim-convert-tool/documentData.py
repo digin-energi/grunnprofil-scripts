@@ -1,9 +1,10 @@
 import xml.etree.ElementTree as ET
-from datetime import datetime
+from datetime import datetime, timedelta
 
 def modellInfoFunc(
     fullModelRdfAbout,
     fullModelModelCreated,
+    fullModelModelScenarioTime,
     docTitle,
     fullModelModelDescription,
     fullModelModelVersion,
@@ -16,22 +17,19 @@ def modellInfoFunc(
     fullModelDependentOn,
     dictionary
     ):
-    dateTimeNow = datetime.now().strftime("%Y-%m-%dT%H%M%SZ")
+    dateTimeNow = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
     yearNow = datetime.now().strftime("%Y")
+    scenarioTime = datetime.strptime(fullModelModelScenarioTime, "%Y-%m-%dT%H:%M:%SZ") + timedelta(days=1)
 
     dictionary["@id"] = fullModelRdfAbout
-    dictionary["prov:generatedAt"] = [
-        {
+    dictionary["prov:generatedAtTime"] = {
             "@value": dateTimeNow,
-            "@type": "http://www.w3.org/2001/XMLSchema#date"
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
         }
-    ]
-    dictionary["dcterm:created"] = [
-        {
+    dictionary["dcterms:created"] = {
             "@value": fullModelModelCreated,
             "@type": "http://www.w3.org/2001/XMLSchema#date"
         }
-    ]
     dictionary["dcterms:title"] = docTitle #DIGIN10-30-MV1_EQ
     dictionary["dcterms:description"] = [
         {
@@ -40,16 +38,45 @@ def modellInfoFunc(
         }
     ]
     dictionary["dcat:version"] = fullModelModelVersion
-    dictionary["dcterms:publisher"] = [
-        {
+    dictionary["dcterms:publisher"] = {
             "@id": f"urn:uuid:{companyUuid}", #Digin uuid
             "dcterms:title": companyName #Digin
         }
-    ]
+    if cimFileType in ["SSH", "TP", "SV"]:
+        dictionary["dcterms:temporal"] = {
+            "@type": "http://purl.org/dc/terms/PeriodOfTime",
+            "dcat:startDate": { # --> Alle
+                "@value": fullModelModelScenarioTime, # ScenarioTime
+                "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                },
+                "dcat:endDate": { #  --> SSH, TP, SV
+                    "@value": str(scenarioTime.strftime("%Y-%m-%dT%H:%M:%SZ")), # ScenarioTime + 1d
+                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                    }
+            }
+        dictionary["dcterms:temporalResolution"] = { # --> SSH, TP, SV
+                "@type": "http://www.w3.org/2001/XMLSchema#duration",
+                "@value": "PT1H"
+            }
+    else:
+        dictionary["dcterms:temporal"] = {
+            "@type": "http://purl.org/dc/terms/PeriodOfTime",
+            "dcat:startDate": { # --> Alle
+                "@value": fullModelModelScenarioTime, # ScenarioTime
+                "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                }
+            }
+
     dictionary["dcterms:rights"] = f"© {yearNow} Copyright"
     dictionary["dcterms:rightHolder"] = companyName
-    dictionary["dcterms:license"] = "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-    dictionary["dcterms:accessRights"] = "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
+    dictionary["dcterms:license"] = {
+            "@id": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+            "dcterms:title": "CC BY-NC-SA 4.0"
+    }
+    dictionary["dcterms:accessRights"] = {
+            "@id": "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
+            "dcterms:title": "PUBLIC"
+        }
     dictionary["dcat:isVersionOf"] = f"{isVersionOfUrl}{docTitle}" #https://digin.no/baseprofile/DIGIN10-30-MV1_EQ
     dictionary["dcat:keyword"] = cimFileType #EQ
     dictionary["dcterms:LocationPeriodOrJurisdiction"] = fullModelModelingAuthoritySet
@@ -68,6 +95,7 @@ class documentDataClass:
 
         fullModelRdfAbout = ""
         fullModelModelCreated = ""
+        fullModelModelScenarioTime = ""
         fullModelModelDescription = ""
         fullModelModelVersion = ""
         fullModelModelingAuthoritySet = ""
@@ -86,6 +114,7 @@ class documentDataClass:
         fullModelRdfAbout = root[0].get('{http://www.w3.org/1999/02/22-rdf-syntax-ns#}about')
         for i in range(0, len(root[fullModelIndex])):
                 if root[fullModelIndex][i].tag == "{http://iec.ch/TC57/61970-552/ModelDescription/1#}Model.created": fullModelModelCreated = root[fullModelIndex][i].text
+                if root[fullModelIndex][i].tag == "{http://iec.ch/TC57/61970-552/ModelDescription/1#}Model.scenarioTime": fullModelModelScenarioTime = root[fullModelIndex][i].text
                 if root[fullModelIndex][i].tag == "{http://iec.ch/TC57/61970-552/ModelDescription/1#}Model.description": fullModelModelDescription = root[fullModelIndex][i].text
                 if root[fullModelIndex][i].tag == "{http://iec.ch/TC57/61970-552/ModelDescription/1#}Model.version": fullModelModelVersion = root[fullModelIndex][i].text
                 if root[fullModelIndex][i].tag == "{http://iec.ch/TC57/61970-552/ModelDescription/1#}Model.modelingAuthoritySet": fullModelModelingAuthoritySet = root[fullModelIndex][i].text
@@ -95,6 +124,7 @@ class documentDataClass:
         self.fullModelJsonLd = modellInfoFunc(
                 fullModelRdfAbout,
                 fullModelModelCreated,
+                fullModelModelScenarioTime,
                 docTitle,
                 fullModelModelDescription,
                 fullModelModelVersion,

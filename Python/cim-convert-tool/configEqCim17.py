@@ -5,7 +5,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
@@ -30,7 +30,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False}
@@ -44,7 +44,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
@@ -66,7 +66,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
@@ -84,7 +84,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
@@ -108,7 +108,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False}
@@ -123,7 +123,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False}
@@ -138,7 +138,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False}
@@ -154,7 +154,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
@@ -171,7 +171,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
@@ -193,7 +193,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
@@ -215,7 +215,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
@@ -237,7 +237,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
@@ -264,7 +264,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False}
@@ -279,7 +279,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
@@ -303,7 +303,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False}
@@ -317,7 +317,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
@@ -339,7 +339,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
@@ -360,7 +360,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False}
@@ -374,7 +374,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
@@ -390,7 +390,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
@@ -407,7 +407,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
@@ -425,7 +425,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
@@ -449,7 +449,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
@@ -472,7 +472,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False}
@@ -487,7 +487,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False}
@@ -501,7 +501,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False}
@@ -515,7 +515,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False}
@@ -529,7 +529,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
@@ -557,7 +557,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False}
@@ -572,7 +572,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
@@ -589,7 +589,7 @@ configEqCim17 = \
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                # 'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False}

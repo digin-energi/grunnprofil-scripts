@@ -3,21 +3,20 @@
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "cim": "http://iec.ch/TC57/CIM100#",
         "md": "http://iec.ch/TC57/61970-552/ModelDescription/1#",
-        "eu": "http://iec.ch/TC57/CIM100-European#"
+        "eu": "http://iec.ch/TC57/CIM100-European#",
+        "dcterms": "http://purl.org/dc/terms/",
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "prov": "http://www.w3.org/ns/prov#"
     },
     "@id": "urn:uuid:a529556e-aa95-4b28-b729-e9114f90880a",
-    "prov:generatedAt": [
-        {
-            "@value": "2023-01-17T202556Z",
-            "@type": "http://www.w3.org/2001/XMLSchema#date"
-        }
-    ],
-    "dcterm:created": [
-        {
-            "@value": "2022-03-30T16:26:37.958Z",
-            "@type": "http://www.w3.org/2001/XMLSchema#date"
-        }
-    ],
+    "prov:generatedAtTime": {
+        "@value": "2023-01-23T15:03:53Z",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "dcterms:created": {
+        "@value": "2022-03-30T16:26:37.958Z",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+    },
     "dcterms:title": "DIGIN10-30-LV1_SSH",
     "dcterms:description": [
         {
@@ -26,16 +25,35 @@
         }
     ],
     "dcat:version": "1",
-    "dcterms:publisher": [
-        {
-            "@id": "urn:uuid:bd53cf0a-2e2f-4230-a591-0233290b5f9b",
-            "dcterms:title": "Digin"
+    "dcterms:publisher": {
+        "@id": "urn:uuid:bd53cf0a-2e2f-4230-a591-0233290b5f9b",
+        "dcterms:title": "DIGIN"
+    },
+    "dcterms:temporal": {
+        "@type": "http://purl.org/dc/terms/PeriodOfTime",
+        "dcat:startDate": {
+            "@value": "2022-03-30T23:00:00Z",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "dcat:endDate": {
+            "@value": "2022-03-31T23:00:00Z",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
         }
-    ],
+    },
+    "dcterms:temporalResolution": {
+        "@type": "http://www.w3.org/2001/XMLSchema#duration",
+        "@value": "PT1H"
+    },
     "dcterms:rights": "© 2023 Copyright",
-    "dcterms:rightHolder": "Digin",
-    "dcterms:license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "dcterms:accessRights": "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
+    "dcterms:rightHolder": "DIGIN",
+    "dcterms:license": {
+        "@id": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "dcterms:title": "CC BY-NC-SA 4.0"
+    },
+    "dcterms:accessRights": {
+        "@id": "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
+        "dcterms:title": "PUBLIC"
+    },
     "dcat:isVersionOf": "https://digin.no/baseprofile/DIGIN10-30-LV1_SSH",
     "dcat:keyword": "SSH",
     "dcterms:LocationPeriodOrJurisdiction": "https://diginenergi.no/DIGIN10/LV1",

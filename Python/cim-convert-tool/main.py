@@ -15,7 +15,7 @@ cimFileLevel = "MV1"
 # Do not Touch
 docTitle = f"DIGIN10-30-{cimFileLevel}_{cimFileType}"
 companyUuid = "bd53cf0a-2e2f-4230-a591-0233290b5f9b"
-companyName = "Digin"
+companyName = "DIGIN"
 isVersionOfUrl = "https://digin.no/baseprofile/"
 
 if cimFileType == "EQ":
