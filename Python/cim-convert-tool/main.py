@@ -9,7 +9,7 @@ import os
 
 #--------Parameters---------#
 cimFileType = "SSH"
-cimFileLevel = "LV1"
+cimFileLevel = "MV1"
 #---------------------------#
 
 # Do not Touch
@@ -36,7 +36,7 @@ eu = "http://iec.ch/TC57/CIM100-European#"
 OutputJsonLD = {}
 
 # Context
-jsonldContext = contextDataClass(rdf, cim, md, eu) \
+jsonldContext = contextDataClass() \
     .contextDataFunc()
 
 OutputJsonLD["@context"] = jsonldContext
@@ -98,7 +98,10 @@ for i in range(0, len(configMainTagList)):
             for tags in mainTags.findall(xmlTag):
                 
                 textValue = tags.text
-    
+
+                if configTag == 'cim:IdentifiedObject.mRID':
+                    textValue = f'urn:uuid:{textValue}'
+
                 if textList == True: # Checking if Tag can be list
                     if 'CIMDatatype' in config[configMainTag]['tags'][configTag].keys(): # Checking if Tag has CIMDatatype
                         dictionaryClass[configTag].append({config[configMainTag]['tags'][configTag]['CIMDatatype']: valueDataTypeConverter(textValue, textType)})
