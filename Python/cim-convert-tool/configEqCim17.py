@@ -12,12 +12,13 @@ configEqCim17 = \
                 'cim:Equipment.aggregate': {'type': 'bool', 'list': False},
                 # 'cim:Equipment.networkAnalysisEnabled': {'type': 'bool', 'list': False},
                 'cim:Equipment.normallyInService': {'type': 'bool', 'list': False},
-                'cim:Conductor.length': {'type': 'float', 'list': False},
-                'cim:ACLineSegment.bch': {'type': 'float', 'list': False},
-                'cim:ACLineSegment.gch': {'type': 'float', 'list': False},
-                # 'cim:ACLineSegment.r0': {'type': 'float', 'list': False},
-                'cim:ACLineSegment.r': {'type': 'float', 'list': False},
-                'cim:ACLineSegment.x': {'type': 'float', 'list': False}
+                'cim:Conductor.length': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:Length.value'},
+                'cim:ACLineSegment.bch': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:Susceptance.value'},
+                'cim:ACLineSegment.gch': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:Conductance.value'},
+                # 'cim:ACLineSegment.r0': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:Resistance.value'},
+                'cim:ACLineSegment.r': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:Resistance.value'},
+                'cim:ACLineSegment.x': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:Reactance.value'}
+                # 'cim:ACLineSegment.x0': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:Reactance.value'}
             },
             'attributes': {
                 'cim:PowerSystemResource.AssetDatasheet': {'rdf:resource': {'type': 'string'}, 'list': False},
@@ -53,7 +54,7 @@ configEqCim17 = \
                 'cim:Equipment.normallyInService': {'type': 'bool', 'list': False},
                 'cim:Switch.locked': {'type': 'bool', 'list': False},
                 'cim:Switch.normalOpen': {'type': 'bool', 'list': False},
-                'cim:Switch.ratedCurrent': {'type': 'float', 'list': False},
+                'cim:Switch.ratedCurrent': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:CurrentFlow.value'},
                 'cim:Switch.retained': {'type': 'bool', 'list': False}
             },
             'attributes': {
@@ -91,11 +92,10 @@ configEqCim17 = \
                 'cim:Equipment.aggregate': {'type': 'bool', 'list': False},
                 # 'cim:Equipment.networkAnalysisEnabled': {'type': 'bool', 'list': False},
                 'cim:Equipment.normallyInService': {'type': 'bool', 'list': False},
-                'cim:EnergyConsumer.pfixed': {'type': 'float', 'list': False},
-                'cim:EnergyConsumer.pfixedPct': {'type': 'float', 'list': False},
-                'cim:EnergyConsumer.qfixed': {'type': 'float', 'list': False},
-                'cim:EnergyConsumer.qfixedPct': {'type': 'float', 'list': False},
-
+                'cim:EnergyConsumer.pfixed': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ActivePower.value'},
+                'cim:EnergyConsumer.pfixedPct': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ActivePower.value'},
+                'cim:EnergyConsumer.qfixed': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ReactivePower.value'},
+                'cim:EnergyConsumer.qfixedPct': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ReactivePower.value'}
             },
             'attributes': {
                 'cim:Equipment.EquipmentContainer': {'rdf:resource': {'type': 'string'}, 'list': False},
@@ -158,7 +158,7 @@ configEqCim17 = \
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
-                'cim:CurrentLimit.normalValue': {'type': 'float', 'list': False}
+                'cim:CurrentLimit.normalValue': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:CurrentFlow.value'}
 
             },
             'attributes': {
@@ -180,7 +180,7 @@ configEqCim17 = \
                 'cim:Equipment.normallyInService': {'type': 'bool', 'list': False},
                 'cim:Switch.locked': {'type': 'bool', 'list': False},
                 'cim:Switch.normalOpen': {'type': 'bool', 'list': False},
-                'cim:Switch.ratedCurrent': {'type': 'float', 'list': False},
+                'cim:Switch.ratedCurrent': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:CurrentFlow.value'},
                 'cim:Switch.retained': {'type': 'bool', 'list': False}
             },
             'attributes': {
@@ -200,10 +200,10 @@ configEqCim17 = \
                 'cim:Equipment.aggregate': {'type': 'bool', 'list': False},
                 # 'cim:Equipment.networkAnalysisEnabled': {'type': 'bool', 'list': False},
                 'cim:Equipment.normallyInService': {'type': 'bool', 'list': False},
-                'cim:EquivalentInjection.maxP': {'type': 'float', 'list': False},
-                'cim:EquivalentInjection.maxQ': {'type': 'float', 'list': False},
-                'cim:EquivalentInjection.minP': {'type': 'float', 'list': False},
-                'cim:EquivalentInjection.minQ': {'type': 'float', 'list': False},
+                'cim:EquivalentInjection.maxP': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ActivePower.value'},
+                'cim:EquivalentInjection.maxQ': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ReactivePower.value'},
+                'cim:EquivalentInjection.minP': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ActivePower.value'},
+                'cim:EquivalentInjection.minQ': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ReactivePower.value'},
                 'cim:EquivalentInjection.regulationCapability': {'type': 'bool', 'list': False}
             },
             'attributes': {
@@ -224,7 +224,7 @@ configEqCim17 = \
                 'cim:Equipment.normallyInService': {'type': 'bool', 'list': False},
                 'cim:Switch.locked': {'type': 'bool', 'list': False},
                 'cim:Switch.normalOpen': {'type': 'bool', 'list': False},
-                'cim:Switch.ratedCurrent': {'type': 'float', 'list': False},
+                'cim:Switch.ratedCurrent': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:CurrentFlow.value'},
                 'cim:Switch.retained': {'type': 'bool', 'list': False}
             },
             'attributes': {
@@ -244,16 +244,16 @@ configEqCim17 = \
                 'cim:Equipment.aggregate': {'type': 'bool', 'list': False},
                 # 'cim:Equipment.networkAnalysisEnabled': {'type': 'bool', 'list': False},
                 'cim:Equipment.normallyInService': {'type': 'bool', 'list': False},
-                'cim:GeneratingUnit.highControlLimit': {'type': 'float', 'list': False},
-                'cim:GeneratingUnit.initialP': {'type': 'float', 'list': False},
-                'cim:GeneratingUnit.lowControlLimit': {'type': 'float', 'list': False},
-                'cim:GeneratingUnit.maxEconomicP': {'type': 'float', 'list': False},
-                'cim:GeneratingUnit.maxOperatingP': {'type': 'float', 'list': False},
-                'cim:GeneratingUnit.minEconomicP': {'type': 'float', 'list': False},
-                'cim:GeneratingUnit.minOperatingP': {'type': 'float', 'list': False},
-                'cim:GeneratingUnit.nominalP': {'type': 'float', 'list': False},
-                'cim:GeneratingUnit.ratedGrossMaxP': {'type': 'float', 'list': False},
-                'cim:GeneratingUnit.ratedNetMaxP': {'type': 'float', 'list': False}
+                'cim:GeneratingUnit.highControlLimit': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ActivePower.value'},
+                'cim:GeneratingUnit.initialP': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ActivePower.value'},
+                'cim:GeneratingUnit.lowControlLimit': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ActivePower.value'},
+                'cim:GeneratingUnit.maxEconomicP': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ActivePower.value'},
+                'cim:GeneratingUnit.maxOperatingP': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ActivePower.value'},
+                'cim:GeneratingUnit.minEconomicP': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ActivePower.value'},
+                'cim:GeneratingUnit.minOperatingP': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ActivePower.value'},
+                'cim:GeneratingUnit.nominalP': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ActivePower.value'},
+                'cim:GeneratingUnit.ratedGrossMaxP': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ActivePower.value'},
+                'cim:GeneratingUnit.ratedNetMaxP': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ActivePower.value'}
             },
             'attributes': {
                 'cim:Equipment.EquipmentContainer': {'rdf:resource': {'type': 'string'}, 'list': False}
@@ -286,12 +286,12 @@ configEqCim17 = \
                 'cim:Equipment.aggregate': {'type': 'bool', 'list': False},
                 # 'cim:Equipment.networkAnalysisEnabled': {'type': 'bool', 'list': False},
                 'cim:Equipment.normallyInService': {'type': 'bool', 'list': False},
-                'cim:ShuntCompensator.aVRDelay': {'type': 'float', 'list': False},
+                'cim:ShuntCompensator.aVRDelay': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:Seconds.value'},
                 'cim:ShuntCompensator.maximumSections': {'type': 'int', 'list': False},
-                'cim:ShuntCompensator.nomU': {'type': 'float', 'list': False},
+                'cim:ShuntCompensator.nomU': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:Voltage.value'},
                 'cim:ShuntCompensator.normalSections': {'type': 'int', 'list': False},
-                'cim:LinearShuntCompensator.bPerSection': {'type': 'float', 'list': False},
-                'cim:LinearShuntCompensator.gPerSection': {'type': 'float', 'list': False}
+                'cim:LinearShuntCompensator.bPerSection': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:Susceptance.value'},
+                'cim:LinearShuntCompensator.gPerSection': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:Conductance.value'}
             },
             'attributes': {
                 'cim:Equipment.EquipmentContainer': {'rdf:resource': {'type': 'string'}, 'list': False},
@@ -326,7 +326,7 @@ configEqCim17 = \
                 'cim:Equipment.normallyInService': {'type': 'bool', 'list': False},
                 'cim:Switch.locked': {'type': 'bool', 'list': False},
                 'cim:Switch.normalOpen': {'type': 'bool', 'list': False},
-                'cim:Switch.ratedCurrent': {'type': 'float', 'list': False},
+                'cim:Switch.ratedCurrent': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:CurrentFlow.value'},
                 'cim:Switch.retained': {'type': 'bool', 'list': False}
             },
             'attributes': {
@@ -334,7 +334,7 @@ configEqCim17 = \
                 'cim:ConductingEquipment.BaseVoltage': {'rdf:resource': {'type': 'string'}, 'list': False}
             }
         },
-        'cim:LoadBreakSwitch': {
+        'cim:LoadResponseCharacteristic': {
             'mainAttributes': {
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
@@ -378,7 +378,7 @@ configEqCim17 = \
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
-                'cim:OperationalLimitType.acceptableDuration': {'type': 'float', 'list': False},
+                'cim:OperationalLimitType.acceptableDuration': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:Seconds.value'},
                 'cim:OperationalLimitType.isInfiniteDuration': {'type': 'bool', 'list': False}
             },
             'attributes': {
@@ -431,11 +431,11 @@ configEqCim17 = \
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
                 'cim:TransformerEnd.endNumber': {'type': 'int', 'list': False},
                 'cim:TransformerEnd.grounded': {'type': 'bool', 'list': False},
-                'cim:PowerTransformerEnd.b': {'type': 'float', 'list': False},
-                'cim:PowerTransformerEnd.r': {'type': 'float', 'list': False},
-                'cim:PowerTransformerEnd.ratedS': {'type': 'float', 'list': False},
-                'cim:PowerTransformerEnd.ratedU': {'type': 'float', 'list': False},
-                'cim:PowerTransformerEnd.x': {'type': 'float', 'list': False}
+                'cim:PowerTransformerEnd.b': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:Susceptance.value'},
+                'cim:PowerTransformerEnd.r': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:Resistance.value'},
+                'cim:PowerTransformerEnd.ratedS': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ApparentPower.value'},
+                'cim:PowerTransformerEnd.ratedU': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:Voltage.value'},
+                'cim:PowerTransformerEnd.x': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:Reactance.value'}
             },
             'attributes': {
                 'cim:PowerTransformerEnd.connectionKind': {'rdf:resource': {'type': 'string'}, 'list': False},
@@ -457,9 +457,9 @@ configEqCim17 = \
                 'cim:TapChanger.lowStep': {'type': 'int', 'list': False},
                 'cim:TapChanger.ltcFlag': {'type': 'bool', 'list': False},
                 'cim:TapChanger.neutralStep': {'type': 'int', 'list': False},
-                'cim:TapChanger.neutralU': {'type': 'float', 'list': False},
+                'cim:TapChanger.neutralU': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:Voltage.value'},
                 'cim:TapChanger.normalStep': {'type': 'int', 'list': False},
-                'cim:RatioTapChanger.stepVoltageIncrement': {'type': 'float', 'list': False}
+                'cim:RatioTapChanger.stepVoltageIncrement': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:PerCent.value'}
             },
             'attributes': {
                 'cim:RatioTapChanger.tculControlMode': {'rdf:resource': {'type': 'string'}, 'list': False},
@@ -536,14 +536,14 @@ configEqCim17 = \
                 'cim:Equipment.aggregate': {'type': 'bool', 'list': False},
                 # 'cim:Equipment.networkAnalysisEnabled': {'type': 'bool', 'list': False},
                 'cim:Equipment.normallyInService': {'type': 'bool', 'list': False},
-                'cim:SynchronousMachine.maxQ': {'type': 'float', 'list': False},
-                'cim:SynchronousMachine.maxU': {'type': 'float', 'list': False},
-                'cim:SynchronousMachine.minQ': {'type': 'float', 'list': False},
-                'cim:SynchronousMachine.minU': {'type': 'float', 'list': False},
-                'cim:SynchronousMachine.qPercent': {'type': 'float', 'list': False},
-                'cim:SynchronousMachine.r': {'type': 'float', 'list': False},
+                'cim:SynchronousMachine.maxQ': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ReactivePower.value'},
+                'cim:SynchronousMachine.maxU': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:Voltage.value'},
+                'cim:SynchronousMachine.minQ': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ReactivePower.value'},
+                'cim:SynchronousMachine.minU': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:Voltage.value'},
+                'cim:SynchronousMachine.qPercent': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:PerCent.value'},
+                'cim:SynchronousMachine.r': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:Resistance.value'},
                 'cim:SynchronousMachine.referencePriority': {'type': 'int', 'list': False},
-                'cim:SynchronousMachine.ratedS': {'type': 'float', 'list': False}
+                'cim:SynchronousMachine.ratedS': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ApparentPower.value'}
             },
             'attributes': {
                 'cim:SynchronousMachine.type': {'rdf:resource': {'type': 'string'}, 'list': False},

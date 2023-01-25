@@ -6,16 +6,17 @@
         "eu": "http://iec.ch/TC57/CIM100-European#",
         "dcterms": "http://purl.org/dc/terms/",
         "dcat": "http://www.w3.org/ns/dcat#",
-        "prov": "http://www.w3.org/ns/prov#"
+        "prov": "http://www.w3.org/ns/prov#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@id": "urn:uuid:c47d4310-b8ee-480d-9cf3-e53a81630981",
     "prov:generatedAtTime": {
-        "@value": "2023-01-23T15:03:40Z",
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        "@value": "2023-01-25T15:36:28Z",
+        "@type": "xsd:dateTime"
     },
-    "dcterms:created": {
+    "dcterms:issued": {
         "@value": "2022-03-30T16:26:37.958Z",
-        "@type": "http://www.w3.org/2001/XMLSchema#date"
+        "@type": "xsd:date"
     },
     "dcterms:title": "DIGIN10-30-LV1_EQ",
     "dcterms:description": [
@@ -33,11 +34,11 @@
         "@type": "http://purl.org/dc/terms/PeriodOfTime",
         "dcat:startDate": {
             "@value": "2022-03-30T23:00:00Z",
-            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+            "@type": "xsd:dateTime"
         }
     },
     "dcterms:rights": "© 2023 Copyright",
-    "dcterms:rightHolder": "DIGIN",
+    "dcterms:rightsHolder": "DIGIN",
     "dcterms:license": {
         "@id": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
         "dcterms:title": "CC BY-NC-SA 4.0"
@@ -68,11 +69,21 @@
             "cim:IdentifiedObject.name": "04 TELEMA2 ACLS1",
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
-            "cim:Conductor.length": 50.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.gch": 0.0,
-            "cim:ACLineSegment.r": 0.015999999945951,
-            "cim:ACLineSegment.x": 0.003769911221053,
+            "cim:Conductor.length": {
+                "cim:Length.value": 50.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.gch": {
+                "cim:Conductance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 0.015999999945951
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 0.003769911221053
+            },
             "cim:PowerSystemResource.AssetDatasheet": {
                 "@id": "urn:uuid:d25f35ca-69fb-4c06-905b-67ec532e5f14"
             },
@@ -91,11 +102,21 @@
             "cim:IdentifiedObject.name": "04 TELEMA2 ACLS10",
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
-            "cim:Conductor.length": 40.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.gch": 0.0,
-            "cim:ACLineSegment.r": 0.012799999956761,
-            "cim:ACLineSegment.x": 0.003015928976843,
+            "cim:Conductor.length": {
+                "cim:Length.value": 40.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.gch": {
+                "cim:Conductance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 0.012799999956761
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 0.003015928976843
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:03e72ecd-6be1-354e-a213-e66520dd2d34"
             },
@@ -111,11 +132,21 @@
             "cim:IdentifiedObject.name": "04 TELEMA2 ACLS11",
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
-            "cim:Conductor.length": 40.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.gch": 0.0,
-            "cim:ACLineSegment.r": 0.012799999956761,
-            "cim:ACLineSegment.x": 0.003015928976843,
+            "cim:Conductor.length": {
+                "cim:Length.value": 40.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.gch": {
+                "cim:Conductance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 0.012799999956761
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 0.003015928976843
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:34795eaa-eabb-3a4e-be8a-6e4bd9ee7fb3"
             },
@@ -131,11 +162,21 @@
             "cim:IdentifiedObject.name": "04 TELEMA2 ACLS12",
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
-            "cim:Conductor.length": 50.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.gch": 0.0,
-            "cim:ACLineSegment.r": 0.015999999945951,
-            "cim:ACLineSegment.x": 0.003769911221053,
+            "cim:Conductor.length": {
+                "cim:Length.value": 50.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.gch": {
+                "cim:Conductance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 0.015999999945951
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 0.003769911221053
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:771462f6-6a78-104f-9d11-54ce568ea9c8"
             },
@@ -151,11 +192,21 @@
             "cim:IdentifiedObject.name": "04 TELEMA2 ACLS13",
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
-            "cim:Conductor.length": 40.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.gch": 0.0,
-            "cim:ACLineSegment.r": 0.012799999956761,
-            "cim:ACLineSegment.x": 0.003015928976843,
+            "cim:Conductor.length": {
+                "cim:Length.value": 40.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.gch": {
+                "cim:Conductance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 0.012799999956761
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 0.003015928976843
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:6ce10f1e-5f92-3f4b-a0db-1a1a7179b175"
             },
@@ -171,11 +222,21 @@
             "cim:IdentifiedObject.name": "04 TELEMA2 ACLS14",
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
-            "cim:Conductor.length": 50.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.gch": 0.0,
-            "cim:ACLineSegment.r": 0.015999999945951,
-            "cim:ACLineSegment.x": 0.003769911221053,
+            "cim:Conductor.length": {
+                "cim:Length.value": 50.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.gch": {
+                "cim:Conductance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 0.015999999945951
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 0.003769911221053
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:a656957e-7e5b-9a4e-84b9-13224bc443b9"
             },
@@ -191,11 +252,21 @@
             "cim:IdentifiedObject.name": "04 TELEMA2 ACLS15",
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
-            "cim:Conductor.length": 40.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.gch": 0.0,
-            "cim:ACLineSegment.r": 0.012799999956761,
-            "cim:ACLineSegment.x": 0.003015928976843,
+            "cim:Conductor.length": {
+                "cim:Length.value": 40.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.gch": {
+                "cim:Conductance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 0.012799999956761
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 0.003015928976843
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:c671456c-8b2f-a149-95f6-138da0a62f62"
             },
@@ -211,11 +282,21 @@
             "cim:IdentifiedObject.name": "04 TELEMA2 ACLS16",
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
-            "cim:Conductor.length": 40.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.gch": 0.0,
-            "cim:ACLineSegment.r": 0.012799999956761,
-            "cim:ACLineSegment.x": 0.003015928976843,
+            "cim:Conductor.length": {
+                "cim:Length.value": 40.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.gch": {
+                "cim:Conductance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 0.012799999956761
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 0.003015928976843
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:4a48c790-94e4-0d4d-885c-9d7e498b8b67"
             },
@@ -231,11 +312,21 @@
             "cim:IdentifiedObject.name": "04 TELEMA2 ACLS17",
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
-            "cim:Conductor.length": 60.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.gch": 0.0,
-            "cim:ACLineSegment.r": 0.019199999935141,
-            "cim:ACLineSegment.x": 0.004523893465264,
+            "cim:Conductor.length": {
+                "cim:Length.value": 60.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.gch": {
+                "cim:Conductance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 0.019199999935141
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 0.004523893465264
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:d7743146-6eff-ce40-a20e-809d5bd46552"
             },
@@ -251,11 +342,21 @@
             "cim:IdentifiedObject.name": "04 TELEMA2 ACLS18",
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
-            "cim:Conductor.length": 50.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.gch": 0.0,
-            "cim:ACLineSegment.r": 0.015999999945951,
-            "cim:ACLineSegment.x": 0.003769911221053,
+            "cim:Conductor.length": {
+                "cim:Length.value": 50.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.gch": {
+                "cim:Conductance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 0.015999999945951
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 0.003769911221053
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:1e55c99b-f32c-9247-b44e-7f787d0faf62"
             },
@@ -271,11 +372,21 @@
             "cim:IdentifiedObject.name": "04 TELEMA2 ACLS19",
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
-            "cim:Conductor.length": 40.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.gch": 0.0,
-            "cim:ACLineSegment.r": 0.012799999956761,
-            "cim:ACLineSegment.x": 0.003015928976843,
+            "cim:Conductor.length": {
+                "cim:Length.value": 40.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.gch": {
+                "cim:Conductance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 0.012799999956761
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 0.003015928976843
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:723f8e86-5519-fa46-82c5-84ac836ea34d"
             },
@@ -291,11 +402,21 @@
             "cim:IdentifiedObject.name": "04 TELEMA2 ACLS2",
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
-            "cim:Conductor.length": 40.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.gch": 0.0,
-            "cim:ACLineSegment.r": 0.012799999956761,
-            "cim:ACLineSegment.x": 0.003015928976843,
+            "cim:Conductor.length": {
+                "cim:Length.value": 40.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.gch": {
+                "cim:Conductance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 0.012799999956761
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 0.003015928976843
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:bc8f4ae8-02d0-0d4d-8938-889f7b36cee7"
             },
@@ -311,11 +432,21 @@
             "cim:IdentifiedObject.name": "04 TELEMA2 ACLS20",
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
-            "cim:Conductor.length": 40.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.gch": 0.0,
-            "cim:ACLineSegment.r": 0.012799999956761,
-            "cim:ACLineSegment.x": 0.003015928976843,
+            "cim:Conductor.length": {
+                "cim:Length.value": 40.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.gch": {
+                "cim:Conductance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 0.012799999956761
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 0.003015928976843
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:61f474ac-eb0c-4349-a364-ce47fb60cebb"
             },
@@ -331,11 +462,21 @@
             "cim:IdentifiedObject.name": "04 TELEMA2 ACLS21",
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
-            "cim:Conductor.length": 50.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.gch": 0.0,
-            "cim:ACLineSegment.r": 0.015999999945951,
-            "cim:ACLineSegment.x": 0.003769911221053,
+            "cim:Conductor.length": {
+                "cim:Length.value": 50.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.gch": {
+                "cim:Conductance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 0.015999999945951
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 0.003769911221053
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:411f9805-7d3c-ea43-9686-ad770566e962"
             },
@@ -351,11 +492,21 @@
             "cim:IdentifiedObject.name": "04 TELEMA2 ACLS22",
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
-            "cim:Conductor.length": 40.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.gch": 0.0,
-            "cim:ACLineSegment.r": 0.012799999956761,
-            "cim:ACLineSegment.x": 0.003015928976843,
+            "cim:Conductor.length": {
+                "cim:Length.value": 40.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.gch": {
+                "cim:Conductance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 0.012799999956761
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 0.003015928976843
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:129f8045-d9f2-fe4a-a905-6c4be6db5318"
             },
@@ -371,11 +522,21 @@
             "cim:IdentifiedObject.name": "04 TELEMA2 ACLS23",
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
-            "cim:Conductor.length": 60.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.gch": 0.0,
-            "cim:ACLineSegment.r": 0.019199999935141,
-            "cim:ACLineSegment.x": 0.004523893465264,
+            "cim:Conductor.length": {
+                "cim:Length.value": 60.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.gch": {
+                "cim:Conductance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 0.019199999935141
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 0.004523893465264
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:d53c319b-358e-e942-83c1-4105781e6ee7"
             },
@@ -391,11 +552,21 @@
             "cim:IdentifiedObject.name": "04 TELEMA2 ACLS4",
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
-            "cim:Conductor.length": 40.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.gch": 0.0,
-            "cim:ACLineSegment.r": 0.012799999956761,
-            "cim:ACLineSegment.x": 0.003015928976843,
+            "cim:Conductor.length": {
+                "cim:Length.value": 40.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.gch": {
+                "cim:Conductance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 0.012799999956761
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 0.003015928976843
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:3c96e990-1a9e-f444-a4bf-ae25b951413b"
             },
@@ -411,11 +582,21 @@
             "cim:IdentifiedObject.name": "04 TELEMA2 ACLS5",
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
-            "cim:Conductor.length": 50.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.gch": 0.0,
-            "cim:ACLineSegment.r": 0.015999999945951,
-            "cim:ACLineSegment.x": 0.003769911221053,
+            "cim:Conductor.length": {
+                "cim:Length.value": 50.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.gch": {
+                "cim:Conductance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 0.015999999945951
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 0.003769911221053
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:d22a1110-d7ed-c045-9243-06d1a05979e5"
             },
@@ -431,11 +612,21 @@
             "cim:IdentifiedObject.name": "04 TELEMA2 ACLS6",
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
-            "cim:Conductor.length": 40.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.gch": 0.0,
-            "cim:ACLineSegment.r": 0.012799999956761,
-            "cim:ACLineSegment.x": 0.003015928976843,
+            "cim:Conductor.length": {
+                "cim:Length.value": 40.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.gch": {
+                "cim:Conductance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 0.012799999956761
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 0.003015928976843
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:da8af45c-5a67-7049-b34c-d36779c66904"
             },
@@ -451,11 +642,21 @@
             "cim:IdentifiedObject.name": "04 TELEMA2 ACLS7",
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
-            "cim:Conductor.length": 40.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.gch": 0.0,
-            "cim:ACLineSegment.r": 0.012799999956761,
-            "cim:ACLineSegment.x": 0.003015928976843,
+            "cim:Conductor.length": {
+                "cim:Length.value": 40.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.gch": {
+                "cim:Conductance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 0.012799999956761
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 0.003015928976843
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:0e9bf120-2b51-4347-9390-b2ae42d3492b"
             },
@@ -471,11 +672,21 @@
             "cim:IdentifiedObject.name": "04 TELEMA2 ACLS8",
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
-            "cim:Conductor.length": 40.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.gch": 0.0,
-            "cim:ACLineSegment.r": 0.012799999956761,
-            "cim:ACLineSegment.x": 0.003015928976843,
+            "cim:Conductor.length": {
+                "cim:Length.value": 40.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.gch": {
+                "cim:Conductance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 0.012799999956761
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 0.003015928976843
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:f2d58ba1-f6c5-cb4d-ba62-a52687a3cfc3"
             },
@@ -491,11 +702,21 @@
             "cim:IdentifiedObject.name": "04 TELEMA2 ACLS9",
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
-            "cim:Conductor.length": 50.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.gch": 0.0,
-            "cim:ACLineSegment.r": 0.015999999945951,
-            "cim:ACLineSegment.x": 0.003769911221053,
+            "cim:Conductor.length": {
+                "cim:Length.value": 50.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.gch": {
+                "cim:Conductance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 0.015999999945951
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 0.003769911221053
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:16df6f4a-e95d-8746-83a2-cf165145d799"
             },
@@ -832,7 +1053,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": true,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:c15f3cd9-580d-44e1-92db-10bd41d87bad"
@@ -847,7 +1070,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": true,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:c5571223-50fe-4a26-a24f-7f1cabf61137"
@@ -944,10 +1169,18 @@
             "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Conform Load 1",
             "cim:IdentifiedObject.name": "TELEMA2 04 CL1",
             "cim:Equipment.aggregate": false,
-            "cim:EnergyConsumer.pfixed": 0.0,
-            "cim:EnergyConsumer.pfixedPct": 0.0,
-            "cim:EnergyConsumer.qfixed": 0.0,
-            "cim:EnergyConsumer.qfixedPct": 0.0,
+            "cim:EnergyConsumer.pfixed": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.pfixedPct": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.qfixed": {
+                "cim:ReactivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.qfixedPct": {
+                "cim:ReactivePower.value": 0.0
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:91ef68b3-8878-47a4-b24f-66f42bb459ba"
             },
@@ -962,10 +1195,18 @@
             "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Conform Load 10",
             "cim:IdentifiedObject.name": "TELEMA2 04 CL10",
             "cim:Equipment.aggregate": false,
-            "cim:EnergyConsumer.pfixed": 0.0,
-            "cim:EnergyConsumer.pfixedPct": 0.0,
-            "cim:EnergyConsumer.qfixed": 0.0,
-            "cim:EnergyConsumer.qfixedPct": 0.0,
+            "cim:EnergyConsumer.pfixed": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.pfixedPct": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.qfixed": {
+                "cim:ReactivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.qfixedPct": {
+                "cim:ReactivePower.value": 0.0
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:8da6d670-4607-4432-abce-49614b85fd8e"
             },
@@ -980,10 +1221,18 @@
             "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Conform Load 11",
             "cim:IdentifiedObject.name": "TELEMA2 04 CL11",
             "cim:Equipment.aggregate": false,
-            "cim:EnergyConsumer.pfixed": 0.0,
-            "cim:EnergyConsumer.pfixedPct": 0.0,
-            "cim:EnergyConsumer.qfixed": 0.0,
-            "cim:EnergyConsumer.qfixedPct": 0.0,
+            "cim:EnergyConsumer.pfixed": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.pfixedPct": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.qfixed": {
+                "cim:ReactivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.qfixedPct": {
+                "cim:ReactivePower.value": 0.0
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:d82114b7-09c0-4cb4-b9c8-19a5fdaf991a"
             },
@@ -998,10 +1247,18 @@
             "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Conform Load 12",
             "cim:IdentifiedObject.name": "TELEMA2 04 CL12",
             "cim:Equipment.aggregate": false,
-            "cim:EnergyConsumer.pfixed": 0.0,
-            "cim:EnergyConsumer.pfixedPct": 0.0,
-            "cim:EnergyConsumer.qfixed": 0.0,
-            "cim:EnergyConsumer.qfixedPct": 0.0,
+            "cim:EnergyConsumer.pfixed": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.pfixedPct": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.qfixed": {
+                "cim:ReactivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.qfixedPct": {
+                "cim:ReactivePower.value": 0.0
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:d82114b7-09c0-4cb4-b9c8-19a5fdaf991a"
             },
@@ -1016,10 +1273,18 @@
             "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Conform Load 13",
             "cim:IdentifiedObject.name": "TELEMA2 04 CL13",
             "cim:Equipment.aggregate": false,
-            "cim:EnergyConsumer.pfixed": 0.0,
-            "cim:EnergyConsumer.pfixedPct": 0.0,
-            "cim:EnergyConsumer.qfixed": 0.0,
-            "cim:EnergyConsumer.qfixedPct": 0.0,
+            "cim:EnergyConsumer.pfixed": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.pfixedPct": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.qfixed": {
+                "cim:ReactivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.qfixedPct": {
+                "cim:ReactivePower.value": 0.0
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:bb017e3b-c1e1-463c-b719-fe73df802624"
             },
@@ -1034,10 +1299,18 @@
             "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Conform Load 2",
             "cim:IdentifiedObject.name": "TELEMA2 04 CL2",
             "cim:Equipment.aggregate": false,
-            "cim:EnergyConsumer.pfixed": 0.0,
-            "cim:EnergyConsumer.pfixedPct": 0.0,
-            "cim:EnergyConsumer.qfixed": 0.0,
-            "cim:EnergyConsumer.qfixedPct": 0.0,
+            "cim:EnergyConsumer.pfixed": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.pfixedPct": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.qfixed": {
+                "cim:ReactivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.qfixedPct": {
+                "cim:ReactivePower.value": 0.0
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:91ef68b3-8878-47a4-b24f-66f42bb459ba"
             },
@@ -1052,10 +1325,18 @@
             "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Conform Load 3",
             "cim:IdentifiedObject.name": "TELEMA2 04 CL3",
             "cim:Equipment.aggregate": false,
-            "cim:EnergyConsumer.pfixed": 0.0,
-            "cim:EnergyConsumer.pfixedPct": 0.0,
-            "cim:EnergyConsumer.qfixed": 0.0,
-            "cim:EnergyConsumer.qfixedPct": 0.0,
+            "cim:EnergyConsumer.pfixed": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.pfixedPct": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.qfixed": {
+                "cim:ReactivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.qfixedPct": {
+                "cim:ReactivePower.value": 0.0
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:d87764a9-3363-4342-908f-d96f8e7ef71d"
             },
@@ -1070,10 +1351,18 @@
             "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Conform Load 4",
             "cim:IdentifiedObject.name": "TELEMA2 04 CL4",
             "cim:Equipment.aggregate": false,
-            "cim:EnergyConsumer.pfixed": 0.0,
-            "cim:EnergyConsumer.pfixedPct": 0.0,
-            "cim:EnergyConsumer.qfixed": 0.0,
-            "cim:EnergyConsumer.qfixedPct": 0.0,
+            "cim:EnergyConsumer.pfixed": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.pfixedPct": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.qfixed": {
+                "cim:ReactivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.qfixedPct": {
+                "cim:ReactivePower.value": 0.0
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:d87764a9-3363-4342-908f-d96f8e7ef71d"
             },
@@ -1088,10 +1377,18 @@
             "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Conform Load 5",
             "cim:IdentifiedObject.name": "TELEMA2 04 CL5",
             "cim:Equipment.aggregate": false,
-            "cim:EnergyConsumer.pfixed": 0.0,
-            "cim:EnergyConsumer.pfixedPct": 0.0,
-            "cim:EnergyConsumer.qfixed": 0.0,
-            "cim:EnergyConsumer.qfixedPct": 0.0,
+            "cim:EnergyConsumer.pfixed": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.pfixedPct": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.qfixed": {
+                "cim:ReactivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.qfixedPct": {
+                "cim:ReactivePower.value": 0.0
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:d87764a9-3363-4342-908f-d96f8e7ef71d"
             },
@@ -1106,10 +1403,18 @@
             "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Conform Load 6",
             "cim:IdentifiedObject.name": "TELEMA2 04 CL6",
             "cim:Equipment.aggregate": false,
-            "cim:EnergyConsumer.pfixed": 0.0,
-            "cim:EnergyConsumer.pfixedPct": 0.0,
-            "cim:EnergyConsumer.qfixed": 0.0,
-            "cim:EnergyConsumer.qfixedPct": 0.0,
+            "cim:EnergyConsumer.pfixed": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.pfixedPct": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.qfixed": {
+                "cim:ReactivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.qfixedPct": {
+                "cim:ReactivePower.value": 0.0
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:791059a4-3f6e-4242-a478-1fbbf1abc328"
             },
@@ -1124,10 +1429,18 @@
             "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Conform Load 7",
             "cim:IdentifiedObject.name": "TELEMA2 04 CL7",
             "cim:Equipment.aggregate": false,
-            "cim:EnergyConsumer.pfixed": 0.0,
-            "cim:EnergyConsumer.pfixedPct": 0.0,
-            "cim:EnergyConsumer.qfixed": 0.0,
-            "cim:EnergyConsumer.qfixedPct": 0.0,
+            "cim:EnergyConsumer.pfixed": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.pfixedPct": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.qfixed": {
+                "cim:ReactivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.qfixedPct": {
+                "cim:ReactivePower.value": 0.0
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:791059a4-3f6e-4242-a478-1fbbf1abc328"
             },
@@ -1142,10 +1455,18 @@
             "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Conform Load 8",
             "cim:IdentifiedObject.name": "TELEMA2 04 CL8",
             "cim:Equipment.aggregate": false,
-            "cim:EnergyConsumer.pfixed": 0.0,
-            "cim:EnergyConsumer.pfixedPct": 0.0,
-            "cim:EnergyConsumer.qfixed": 0.0,
-            "cim:EnergyConsumer.qfixedPct": 0.0,
+            "cim:EnergyConsumer.pfixed": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.pfixedPct": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.qfixed": {
+                "cim:ReactivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.qfixedPct": {
+                "cim:ReactivePower.value": 0.0
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:277ce47c-fa5b-438d-9f82-346c887b57fd"
             },
@@ -1160,10 +1481,18 @@
             "cim:IdentifiedObject.description": "Telemarkstien2 400 Volt Conform Load 9",
             "cim:IdentifiedObject.name": "TELEMA2 04 CL9",
             "cim:Equipment.aggregate": false,
-            "cim:EnergyConsumer.pfixed": 0.0,
-            "cim:EnergyConsumer.pfixedPct": 0.0,
-            "cim:EnergyConsumer.qfixed": 0.0,
-            "cim:EnergyConsumer.qfixedPct": 0.0,
+            "cim:EnergyConsumer.pfixed": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.pfixedPct": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.qfixed": {
+                "cim:ReactivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.qfixedPct": {
+                "cim:ReactivePower.value": 0.0
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:8da6d670-4607-4432-abce-49614b85fd8e"
             },
@@ -1696,7 +2025,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "9ff945ef-e893-4c68-b514-ff8940c01f17",
             "cim:IdentifiedObject.name": "PATL TELEMA2 04 ACLS1",
-            "cim:CurrentLimit.normalValue": 400.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:af33e871-8764-4203-af6c-1d4a1108a28a"
             },
@@ -1709,7 +2040,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "e34ca4c2-8bd7-4d41-b407-bfde09878fe2",
             "cim:IdentifiedObject.name": "PATL TELEMA2 04 ACLS10",
-            "cim:CurrentLimit.normalValue": 400.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:7babf53a-ab6f-4416-a520-8f51fd9500a9"
             },
@@ -1722,7 +2055,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "9b95046e-3a0b-4bf4-9ac8-b16ae30dd99f",
             "cim:IdentifiedObject.name": "PATL TELEMA2 04 ACLS11",
-            "cim:CurrentLimit.normalValue": 400.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:0c6efae5-ca1c-4102-bee9-018a254c9d94"
             },
@@ -1735,7 +2070,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "2fe2f098-bef7-46ce-a283-4a533a07dbfc",
             "cim:IdentifiedObject.name": "PATL TELEMA2 04 ACLS12",
-            "cim:CurrentLimit.normalValue": 400.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:63ca2c35-2b11-4268-842f-6e96831d6746"
             },
@@ -1748,7 +2085,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "af9b16b2-d918-445c-a2aa-5b116efe6ced",
             "cim:IdentifiedObject.name": "PATL TELEMA2 04 ACLS13",
-            "cim:CurrentLimit.normalValue": 400.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:4e8d57cc-1a5f-4062-a671-32827a18ec3b"
             },
@@ -1761,7 +2100,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "71d437d2-b5dc-48d7-9250-e558e8811ff3",
             "cim:IdentifiedObject.name": "PATL TELEMA2 04 ACLS14",
-            "cim:CurrentLimit.normalValue": 400.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:f03c9323-a46f-4ee0-949e-9b55090e1a17"
             },
@@ -1774,7 +2115,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "b964f2e5-1c68-4b5f-abb7-11a4f84650bd",
             "cim:IdentifiedObject.name": "PATL TELEMA2 04 ACLS15",
-            "cim:CurrentLimit.normalValue": 400.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:032ea6c0-6443-4275-9f83-cdab10df7c1c"
             },
@@ -1787,7 +2130,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "11f01e0a-8233-458f-b427-666f0fb53736",
             "cim:IdentifiedObject.name": "PATL TELEMA2 04 ACLS16",
-            "cim:CurrentLimit.normalValue": 400.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:536252a1-0f38-4450-a57b-15e60ad67f82"
             },
@@ -1800,7 +2145,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "5457ebb3-1f51-483e-b49a-4424ec03840e",
             "cim:IdentifiedObject.name": "PATL TELEMA2 04 ACLS17",
-            "cim:CurrentLimit.normalValue": 400.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:d9189c94-291e-4dc4-8fb3-1939bcca5395"
             },
@@ -1813,7 +2160,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "b059c518-fa8e-484a-a426-8766c56275ad",
             "cim:IdentifiedObject.name": "PATL TELEMA2 04 ACLS18",
-            "cim:CurrentLimit.normalValue": 400.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:5fb918e2-f25c-4c99-b218-8faf5fcd1a8f"
             },
@@ -1826,7 +2175,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "9bff3a3c-5a06-4538-b04c-6cdeaa4e709c",
             "cim:IdentifiedObject.name": "PATL TELEMA2 04 ACLS19",
-            "cim:CurrentLimit.normalValue": 400.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:42de2d1b-146a-4d63-889f-b748a145dda9"
             },
@@ -1839,7 +2190,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "927aa241-7249-4362-83de-e2ff3da337da",
             "cim:IdentifiedObject.name": "PATL TELEMA2 04 ACLS2",
-            "cim:CurrentLimit.normalValue": 400.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:13c61cd0-00fc-4017-ad7d-c22a26466ea9"
             },
@@ -1852,7 +2205,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "aaed6c4c-abfb-49d0-bf54-a29398344a0f",
             "cim:IdentifiedObject.name": "PATL TELEMA2 04 ACLS20",
-            "cim:CurrentLimit.normalValue": 400.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:ab525b0a-b602-4b30-ae4b-807304f44dea"
             },
@@ -1865,7 +2220,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "94686647-b1d0-4214-ace2-4ec6879fffda",
             "cim:IdentifiedObject.name": "PATL TELEMA2 04 ACLS21",
-            "cim:CurrentLimit.normalValue": 400.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:cb1f5118-e3de-49cb-b13c-1adc0a6fa7b4"
             },
@@ -1878,7 +2235,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "e50656d8-81e1-49b6-8960-120cdf90d351",
             "cim:IdentifiedObject.name": "PATL TELEMA2 04 ACLS22",
-            "cim:CurrentLimit.normalValue": 400.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:9b7b67c2-a328-4833-a578-e55bc683f411"
             },
@@ -1891,7 +2250,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "d2124105-10f2-42c0-a16a-6c47b5edb485",
             "cim:IdentifiedObject.name": "PATL TELEMA2 04 ACLS23",
-            "cim:CurrentLimit.normalValue": 400.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:3d59fc57-038c-4289-b6ef-354bc9fdc97d"
             },
@@ -1904,7 +2265,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "0fdd0101-d830-4751-8500-158d70bfeed6",
             "cim:IdentifiedObject.name": "PATL TELEMA2 04 ACLS4",
-            "cim:CurrentLimit.normalValue": 400.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:ab611771-ae03-4703-962e-fcaf59fe63c3"
             },
@@ -1917,7 +2280,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "ca7b66d4-f320-4d41-a7d7-81e178fad8fa",
             "cim:IdentifiedObject.name": "PATL TELEMA2 04 ACLS5",
-            "cim:CurrentLimit.normalValue": 400.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:f78dbcfb-2e3e-489a-a610-a32367c9aa97"
             },
@@ -1930,7 +2295,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "d0cad0ac-ccd0-4fa1-ad9d-042a953f267e",
             "cim:IdentifiedObject.name": "PATL TELEMA2 04 ACLS6",
-            "cim:CurrentLimit.normalValue": 400.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:abefc574-304a-4e40-845f-95923b8f314f"
             },
@@ -1943,7 +2310,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "c7a834b4-a64f-4e17-a09a-d922527cd824",
             "cim:IdentifiedObject.name": "PATL TELEMA2 04 ACLS7",
-            "cim:CurrentLimit.normalValue": 400.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:c4e10d80-3494-4cec-b836-8b8abe738892"
             },
@@ -1956,7 +2325,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "1a367f73-c961-4f37-937f-9ee7d7a812a5",
             "cim:IdentifiedObject.name": "PATL TELEMA2 04 ACLS8",
-            "cim:CurrentLimit.normalValue": 400.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:33886096-f017-47ba-8cc6-ff1279c662ed"
             },
@@ -1969,7 +2340,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "d600cd39-c90d-41d4-94c2-6899a02507c9",
             "cim:IdentifiedObject.name": "PATL TELEMA2 04 ACLS9",
-            "cim:CurrentLimit.normalValue": 400.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:1216b9d8-8945-4ec3-91d8-b8d5203315fa"
             },
@@ -1983,10 +2356,18 @@
             "cim:IdentifiedObject.mRID": "4abb4cf4-5b33-4e16-b4f4-7b7dbf45e90a",
             "cim:IdentifiedObject.description": "Telemarkstien2 400V Low Voltage Equivalent",
             "cim:IdentifiedObject.name": "Telemarkstien2 04 LV EQV",
-            "cim:EquivalentInjection.maxP": 0.065,
-            "cim:EquivalentInjection.maxQ": 0.00728,
-            "cim:EquivalentInjection.minP": 0.0013,
-            "cim:EquivalentInjection.minQ": 0.00143,
+            "cim:EquivalentInjection.maxP": {
+                "cim:ActivePower.value": 0.065
+            },
+            "cim:EquivalentInjection.maxQ": {
+                "cim:ReactivePower.value": 0.00728
+            },
+            "cim:EquivalentInjection.minP": {
+                "cim:ActivePower.value": 0.0013
+            },
+            "cim:EquivalentInjection.minQ": {
+                "cim:ReactivePower.value": 0.00143
+            },
             "cim:EquivalentInjection.regulationCapability": false
         },
         {
@@ -1998,7 +2379,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:d4067150-d743-4e1d-a48d-7a8d20de4c06"
@@ -2013,7 +2396,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:91b33a38-c99c-4bc1-a05c-bc0852aca841"
@@ -2028,7 +2413,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:6bda8694-d83f-467f-ba31-a3a155a1b803"
@@ -2043,7 +2430,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:61ad7a21-f7bd-40c0-8f86-2d1f07bbef3b"
@@ -2058,7 +2447,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:eeded44f-071c-471f-952f-4be5134b40bc"
@@ -2073,7 +2464,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:ce116534-d9bd-4929-be64-4d43ea0f1803"
@@ -2088,7 +2481,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:1cf342d4-9dfe-4cd8-ab14-b11c48e59b84"
@@ -2103,7 +2498,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:8cae3059-9886-40db-befa-ddfa56ba94cd"
@@ -2118,7 +2515,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:0acd4d2c-1cc2-4b9b-8277-f3763b0ed6ab"
@@ -2133,7 +2532,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:b1626403-9c0c-4f0c-a072-b7d5d86cdb58"
@@ -2148,7 +2549,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:de4c9f33-bceb-4355-afc6-c725bda819e3"
@@ -2163,7 +2566,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:321f4b75-4cc7-4e4c-874e-cf20693886cf"
@@ -2178,7 +2583,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:876f7fb1-8568-4024-bbd2-664b9503adeb"
@@ -2193,7 +2600,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:a9ceb50c-8ed0-47a0-9738-e556cf09a0f0"
@@ -2208,7 +2617,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:32bc8225-a8b7-45eb-a1ad-9adb4648f1dc"
@@ -2223,7 +2634,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:14c73969-0d0b-436e-be34-8e8f5593c351"
@@ -2238,7 +2651,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:76cfe1e0-43f8-4783-8110-a93ee808d6d6"
@@ -2253,7 +2668,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:d01ae8b2-c93b-4147-bc81-f593dda56773"
@@ -2268,7 +2685,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:6ef007de-6d2c-4ab9-ab5b-b2571b714d8d"
@@ -2283,7 +2702,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:c0fe3dc4-dcc1-43b9-afe8-c5d4e76a2470"
@@ -2298,7 +2719,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:719ee1dd-0516-4873-be5e-8e9da1507818"
@@ -2313,7 +2736,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:1231dfc8-411f-4de0-88fe-cdfa58ed470e"
@@ -2328,7 +2753,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:c937c7d7-777e-45dd-a01d-d792ba4efec4"
@@ -2343,7 +2770,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:93e2b374-b3b5-40d7-8723-285903e47a05"
@@ -2358,7 +2787,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:4e192fee-c90d-4e29-80b6-3e71dc353a79"
@@ -2373,7 +2804,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:2fc9b615-5925-4e2a-baaa-165ee4f51910"
@@ -2388,7 +2821,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:1358279b-5a65-4b15-b277-a9bd5ca011e4"
@@ -2403,7 +2838,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:0d6af688-1749-4a34-93ca-ae6c87989cd2"
@@ -2418,7 +2855,9 @@
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 400.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 400.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:1a7ff7f1-a631-4d72-84cd-c35000acda8d"

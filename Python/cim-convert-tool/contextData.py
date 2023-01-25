@@ -8,7 +8,8 @@ class contextDataClass:
                 "eu": euVar,
                 "dcterms": "http://purl.org/dc/terms/",
                 "dcat": "http://www.w3.org/ns/dcat#",
-                "prov": "http://www.w3.org/ns/prov#"
+                "prov": "http://www.w3.org/ns/prov#",
+                "xsd": "http://www.w3.org/2001/XMLSchema#"
             }
 
     def contextDataFunc(self):

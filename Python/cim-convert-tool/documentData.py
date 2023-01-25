@@ -24,11 +24,11 @@ def modellInfoFunc(
     dictionary["@id"] = fullModelRdfAbout
     dictionary["prov:generatedAtTime"] = {
             "@value": dateTimeNow,
-            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+            "@type": "xsd:dateTime"
         }
-    dictionary["dcterms:created"] = {
+    dictionary["dcterms:issued"] = {
             "@value": fullModelModelCreated,
-            "@type": "http://www.w3.org/2001/XMLSchema#date"
+            "@type": "xsd:date"
         }
     dictionary["dcterms:title"] = docTitle #DIGIN10-30-MV1_EQ
     dictionary["dcterms:description"] = [
@@ -44,18 +44,18 @@ def modellInfoFunc(
         }
     if cimFileType in ["SSH", "TP", "SV"]:
         dictionary["dcterms:temporal"] = {
-            "@type": "http://purl.org/dc/terms/PeriodOfTime",
+            "@type": "dcterms:PeriodOfTime",
             "dcat:startDate": { # --> Alle
                 "@value": fullModelModelScenarioTime, # ScenarioTime
-                "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                "@type": "xsd:dateTime"
                 },
                 "dcat:endDate": { #  --> SSH, TP, SV
                     "@value": str(scenarioTime.strftime("%Y-%m-%dT%H:%M:%SZ")), # ScenarioTime + 1d
-                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                    "@type": "xsd:dateTime"
                     }
             }
-        dictionary["dcterms:temporalResolution"] = { # --> SSH, TP, SV
-                "@type": "http://www.w3.org/2001/XMLSchema#duration",
+        dictionary["dcat:temporalResolution"] = { # --> SSH, TP, SV
+                "@type": "xsd:duration",
                 "@value": "PT1H"
             }
     else:
@@ -63,12 +63,12 @@ def modellInfoFunc(
             "@type": "http://purl.org/dc/terms/PeriodOfTime",
             "dcat:startDate": { # --> Alle
                 "@value": fullModelModelScenarioTime, # ScenarioTime
-                "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                "@type": "xsd:dateTime"
                 }
             }
 
     dictionary["dcterms:rights"] = f"© {yearNow} Copyright"
-    dictionary["dcterms:rightHolder"] = companyName
+    dictionary["dcterms:rightsHolder"] = companyName
     dictionary["dcterms:license"] = {
             "@id": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
             "dcterms:title": "CC BY-NC-SA 4.0"

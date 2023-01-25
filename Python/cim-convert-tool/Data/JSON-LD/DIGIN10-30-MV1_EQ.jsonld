@@ -6,16 +6,17 @@
         "eu": "http://iec.ch/TC57/CIM100-European#",
         "dcterms": "http://purl.org/dc/terms/",
         "dcat": "http://www.w3.org/ns/dcat#",
-        "prov": "http://www.w3.org/ns/prov#"
+        "prov": "http://www.w3.org/ns/prov#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@id": "urn:uuid:d12e4546-e6a5-4211-a4c8-877ac1e24d16",
     "prov:generatedAtTime": {
-        "@value": "2023-01-23T15:05:23Z",
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        "@value": "2023-01-25T15:36:32Z",
+        "@type": "xsd:dateTime"
     },
-    "dcterms:created": {
+    "dcterms:issued": {
         "@value": "2022-03-30T16:26:37.958Z",
-        "@type": "http://www.w3.org/2001/XMLSchema#date"
+        "@type": "xsd:date"
     },
     "dcterms:title": "DIGIN10-30-MV1_EQ",
     "dcterms:description": [
@@ -33,11 +34,11 @@
         "@type": "http://purl.org/dc/terms/PeriodOfTime",
         "dcat:startDate": {
             "@value": "2022-03-30T23:00:00Z",
-            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+            "@type": "xsd:dateTime"
         }
     },
     "dcterms:rights": "© 2023 Copyright",
-    "dcterms:rightHolder": "DIGIN",
+    "dcterms:rightsHolder": "DIGIN",
     "dcterms:license": {
         "@id": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
         "dcterms:title": "CC BY-NC-SA 4.0"
@@ -67,10 +68,18 @@
             "cim:IdentifiedObject.description": "230V ZT1-EFC ACLineSegment 1",
             "cim:IdentifiedObject.name": "023 ZT1-EFC ACLS 1",
             "cim:Equipment.aggregate": false,
-            "cim:Conductor.length": 21.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.r": 25.0,
-            "cim:ACLineSegment.x": 1.7,
+            "cim:Conductor.length": {
+                "cim:Length.value": 21.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 25.0
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 1.7
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:cdc8afca-5a57-ad4a-84ef-f6a236e20463"
             },
@@ -85,10 +94,18 @@
             "cim:IdentifiedObject.description": "230V ZT1-EFC ACLineSegment 2",
             "cim:IdentifiedObject.name": "023 ZT1-EFC ACLS 2",
             "cim:Equipment.aggregate": false,
-            "cim:Conductor.length": 10.5,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.r": 12.5,
-            "cim:ACLineSegment.x": 0.85,
+            "cim:Conductor.length": {
+                "cim:Length.value": 10.5
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 12.5
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 0.85
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:cb57417c-d86a-4a42-a6a6-e0f53d9331c0"
             },
@@ -103,10 +120,18 @@
             "cim:IdentifiedObject.description": "400V Telemarkstien 2 ACLineSegment 3",
             "cim:IdentifiedObject.name": "04 TELEMA 2 ACLS 3",
             "cim:Equipment.aggregate": false,
-            "cim:Conductor.length": 4.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.r": 0.001278,
-            "cim:ACLineSegment.x": 0.0003016,
+            "cim:Conductor.length": {
+                "cim:Length.value": 4.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 0.001278
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 0.0003016
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:7a0c868b-eaa1-814b-97a8-c7e112c7a027"
             },
@@ -121,10 +146,18 @@
             "cim:IdentifiedObject.description": "132kV Arendal-Froland 1 ACLineSegment 1",
             "cim:IdentifiedObject.name": "132 ARENDAL-FROLAND ACLS 1",
             "cim:Equipment.aggregate": false,
-            "cim:Conductor.length": 590.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.r": 176.0,
-            "cim:ACLineSegment.x": 35.0,
+            "cim:Conductor.length": {
+                "cim:Length.value": 590.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 176.0
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 35.0
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:8e0075c4-ea93-4669-b57c-3f6b229bb6d3"
             },
@@ -139,10 +172,18 @@
             "cim:IdentifiedObject.description": "132kV Arendal-T1 ACLineSegment 1",
             "cim:IdentifiedObject.name": "132 ARENDAL-T1 ACLS 1",
             "cim:Equipment.aggregate": false,
-            "cim:Conductor.length": 35.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.r": 1.6,
-            "cim:ACLineSegment.x": 5.9,
+            "cim:Conductor.length": {
+                "cim:Length.value": 35.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 1.6
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 5.9
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:28412ba6-8a1b-e548-8b8e-d76b1b083afb"
             },
@@ -157,10 +198,18 @@
             "cim:IdentifiedObject.description": "132kV Froland-T-Engene ACLineSegment 1",
             "cim:IdentifiedObject.name": "132 FROLAND-T_ENGENE ACLS 1",
             "cim:Equipment.aggregate": false,
-            "cim:Conductor.length": 27070.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.r": 1950.0,
-            "cim:ACLineSegment.x": 10530.0,
+            "cim:Conductor.length": {
+                "cim:Length.value": 27070.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 1950.0
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 10530.0
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:81e0db9e-aa30-474d-b017-def591771422"
             },
@@ -175,10 +224,18 @@
             "cim:IdentifiedObject.description": "132kV T-Engene Engene 1 ACLineSegment 1",
             "cim:IdentifiedObject.name": "132 T_ENGENE-ENGENE ACLS 1 1",
             "cim:Equipment.aggregate": false,
-            "cim:Conductor.length": 2680.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.r": 320.0,
-            "cim:ACLineSegment.x": 1080.0,
+            "cim:Conductor.length": {
+                "cim:Length.value": 2680.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 320.0
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 1080.0
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:f677795c-3419-4623-9e5d-4a0287903492"
             },
@@ -193,10 +250,18 @@
             "cim:IdentifiedObject.description": "22kV Engene Nedenes ACLineSegment 1",
             "cim:IdentifiedObject.name": "22 ENGENE-NEDENES ACLS 1",
             "cim:Equipment.aggregate": false,
-            "cim:Conductor.length": 500.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.r": 26.0,
-            "cim:ACLineSegment.x": 45.0,
+            "cim:Conductor.length": {
+                "cim:Length.value": 500.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 26.0
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 45.0
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:c7ef29bd-8a14-e343-a03f-9b1b6d343e44"
             },
@@ -211,10 +276,18 @@
             "cim:IdentifiedObject.description": "22kV Engene Transformer 1 Cable 1",
             "cim:IdentifiedObject.name": "22 ENGENE-T1 ACLS 1 1",
             "cim:Equipment.aggregate": false,
-            "cim:Conductor.length": 20.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.r": 1.6,
-            "cim:ACLineSegment.x": 3.4,
+            "cim:Conductor.length": {
+                "cim:Length.value": 20.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 1.6
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 3.4
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:e07eda57-aafe-384d-9f7b-3ed4ed8e1da0"
             },
@@ -229,10 +302,18 @@
             "cim:IdentifiedObject.description": "22kV Engene Transformer 1 Cable 2",
             "cim:IdentifiedObject.name": "22 ENGENE-T1 ACLS 1 2",
             "cim:Equipment.aggregate": false,
-            "cim:Conductor.length": 20.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.r": 1.6,
-            "cim:ACLineSegment.x": 3.4,
+            "cim:Conductor.length": {
+                "cim:Length.value": 20.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 1.6
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 3.4
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:58f1a6ec-bb18-e84b-b50f-864f0eb7100d"
             },
@@ -247,10 +328,18 @@
             "cim:IdentifiedObject.description": "22kV Engene-ZT1 ACLineSegment 1",
             "cim:IdentifiedObject.name": "22 ENGENE-ZT1 ACLS 1",
             "cim:Equipment.aggregate": false,
-            "cim:Conductor.length": 28.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.r": 7.4,
-            "cim:ACLineSegment.x": 2.8,
+            "cim:Conductor.length": {
+                "cim:Length.value": 28.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 7.4
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 2.8
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:1622b4fa-9e46-784e-b160-1c47e1133d7e"
             },
@@ -265,10 +354,18 @@
             "cim:IdentifiedObject.description": "22kV Telemarkstien 2 ACLineSegment 4",
             "cim:IdentifiedObject.name": "22 TELEMA 2 ACLS 4",
             "cim:Equipment.aggregate": false,
-            "cim:Conductor.length": 5.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.r": 3.1,
-            "cim:ACLineSegment.x": 0.7,
+            "cim:Conductor.length": {
+                "cim:Length.value": 5.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 3.1
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 0.7
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:2dc165a0-39fb-6541-81d8-4daee82b2932"
             },
@@ -283,10 +380,18 @@
             "cim:IdentifiedObject.description": "22kV ZT1-EFC ACLineSegment 1",
             "cim:IdentifiedObject.name": "22 ZT1-EFC ACLS 1",
             "cim:Equipment.aggregate": false,
-            "cim:Conductor.length": 13.0,
-            "cim:ACLineSegment.bch": 0.0,
-            "cim:ACLineSegment.r": 1.9,
-            "cim:ACLineSegment.x": 0.7,
+            "cim:Conductor.length": {
+                "cim:Length.value": 13.0
+            },
+            "cim:ACLineSegment.bch": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:ACLineSegment.r": {
+                "cim:Resistance.value": 1.9
+            },
+            "cim:ACLineSegment.x": {
+                "cim:Reactance.value": 0.7
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:d4f4ebe8-2eed-f04f-9000-676f6778a959"
             },
@@ -452,7 +557,9 @@
             "cim:IdentifiedObject.name": "ARENDAL 132 T1E",
             "cim:Equipment.aggregate": false,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 4000.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 4000.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:5b498a4e-d2de-7f41-8f17-be255b3489db"
@@ -466,7 +573,9 @@
             "cim:IdentifiedObject.name": "ARENDAL 132 T1SP1E",
             "cim:Equipment.aggregate": false,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 630.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 630.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:bec6d236-5e89-403b-b7d5-5799eaeea1ce"
@@ -480,7 +589,9 @@
             "cim:IdentifiedObject.name": "ENGENE 132 T1E",
             "cim:Equipment.aggregate": false,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 1600.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 1600.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:9441fd8e-3941-4e4f-844d-223701649f52"
@@ -494,7 +605,9 @@
             "cim:IdentifiedObject.name": "NEDENES 22 TELEMA 2 BR1",
             "cim:Equipment.aggregate": false,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 630.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 630.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:47f5ebe7-1d03-4d20-b599-9b6068319987"
@@ -508,7 +621,9 @@
             "cim:IdentifiedObject.name": "ENGENE 22 NE1 E",
             "cim:Equipment.aggregate": false,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 630.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 630.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:9b11eb79-4938-451f-84cd-8d2be79a03e9"
@@ -522,7 +637,9 @@
             "cim:IdentifiedObject.name": "ENGENE 22 NT1E",
             "cim:Equipment.aggregate": false,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 630.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 630.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:7aff3ae4-1afa-b046-af50-4e8222f094ef"
@@ -536,7 +653,9 @@
             "cim:IdentifiedObject.name": "ENGENE 22 SBE",
             "cim:Equipment.aggregate": false,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 630.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 630.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:5b299df4-d232-4348-9d1e-096f6d10fb5a"
@@ -550,7 +669,9 @@
             "cim:IdentifiedObject.name": "ENGENE 22 T1E",
             "cim:Equipment.aggregate": false,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 1250.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 1250.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:29ace056-c4e8-46ea-8935-38f32ddbee49"
@@ -564,7 +685,9 @@
             "cim:IdentifiedObject.name": "ENGENE 023 NT1BR",
             "cim:Equipment.aggregate": false,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 32.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 32.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:7544cd75-be72-9644-b333-a932ff3ba603"
@@ -578,7 +701,9 @@
             "cim:IdentifiedObject.name": "FROLAND 132 AR1E",
             "cim:Equipment.aggregate": false,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 2500.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 2500.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:4d1852d5-5acc-4e31-bf1e-320aa6a7ba5b"
@@ -592,7 +717,9 @@
             "cim:IdentifiedObject.name": "FROLAND 132 BA1E",
             "cim:Equipment.aggregate": false,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 2500.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 2500.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:f2b5acf1-6067-4d18-9d75-ea1611013a3d"
@@ -606,7 +733,9 @@
             "cim:IdentifiedObject.name": "FROLAND 132 EN1E",
             "cim:Equipment.aggregate": false,
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 2500.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 2500.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:12c2570d-d7d8-445b-865d-eb981c7603de"
@@ -1138,7 +1267,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "681a26d8-5a55-11eb-a658-74e5f963e191",
             "cim:IdentifiedObject.name": "PATL T2 22 ENGENE-ZT1 ACLS 1",
-            "cim:CurrentLimit.normalValue": 275.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 275.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:681a26d7-5a55-11eb-a658-74e5f963e191"
             },
@@ -1151,7 +1282,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "681a2a1c-5a55-11eb-a658-74e5f963e191",
             "cim:IdentifiedObject.name": "PATL T2 22 ENGENE-T1 ACLS 1 2",
-            "cim:CurrentLimit.normalValue": 590.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 590.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:681a2a1b-5a55-11eb-a658-74e5f963e191"
             },
@@ -1164,7 +1297,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "681a2a84-5a55-11eb-a658-74e5f963e191",
             "cim:IdentifiedObject.name": "PATL T1 22 ENGENE-T1 ACLS 1 1",
-            "cim:CurrentLimit.normalValue": 590.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 590.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:681a2a83-5a55-11eb-a658-74e5f963e191"
             },
@@ -1177,7 +1312,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "681a2a88-5a55-11eb-a658-74e5f963e191",
             "cim:IdentifiedObject.name": "PATL T2 22 ENGENE-T1 ACLS 1 1",
-            "cim:CurrentLimit.normalValue": 590.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 590.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:681a2a87-5a55-11eb-a658-74e5f963e191"
             },
@@ -1190,7 +1327,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "92d33bd5-7034-11eb-a65a-74e5f963e191",
             "cim:IdentifiedObject.name": "PATL T2 132 T_ENGENE-ENGENE ACLS 1 1",
-            "cim:CurrentLimit.normalValue": 727.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 727.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:92d33bd4-7034-11eb-a65a-74e5f963e191"
             },
@@ -1203,7 +1342,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "681a26e0-5a55-11eb-a658-74e5f963e191",
             "cim:IdentifiedObject.name": "PATL T1 NEDENES T1 22 P",
-            "cim:CurrentLimit.normalValue": 275.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 275.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:681a26df-5a55-11eb-a658-74e5f963e191"
             },
@@ -1216,7 +1357,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "92d33be9-7034-11eb-a65a-74e5f963e191",
             "cim:IdentifiedObject.name": "PATL T1 22 ENGENE-NEDENES ACLS1",
-            "cim:CurrentLimit.normalValue": 745.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 745.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:92d33be8-7034-11eb-a65a-74e5f963e191"
             },
@@ -1229,7 +1372,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "681a2a18-5a55-11eb-a658-74e5f963e191",
             "cim:IdentifiedObject.name": "PATL T1 22 ENGENE-T1 ACLS 1 2",
-            "cim:CurrentLimit.normalValue": 590.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 590.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:681a2a17-5a55-11eb-a658-74e5f963e191"
             },
@@ -1242,7 +1387,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "92d33bed-7034-11eb-a65a-74e5f963e191",
             "cim:IdentifiedObject.name": "PATL T2 22 ENGENE-NEDENES ACLS1",
-            "cim:CurrentLimit.normalValue": 745.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 745.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:92d33bec-7034-11eb-a65a-74e5f963e191"
             },
@@ -1255,7 +1402,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "92d33b9e-7034-11eb-a65a-74e5f963e191",
             "cim:IdentifiedObject.name": "PATL T1 132 FROLAND-T_ENGENE ACLS 1",
-            "cim:CurrentLimit.normalValue": 1020.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 1020.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:92d33b9d-7034-11eb-a65a-74e5f963e191"
             },
@@ -1268,7 +1417,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "681a3096-5a55-11eb-a658-74e5f963e191",
             "cim:IdentifiedObject.name": "PATL T2 ENGENE T1 22 S",
-            "cim:CurrentLimit.normalValue": 656.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 656.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:681a3095-5a55-11eb-a658-74e5f963e191"
             },
@@ -1281,7 +1432,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "681a2fd0-5a55-11eb-a658-74e5f963e191",
             "cim:IdentifiedObject.name": "PATL T1 ENGENE NT1 22 P",
-            "cim:CurrentLimit.normalValue": 83.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 83.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:681a2fcf-5a55-11eb-a658-74e5f963e191"
             },
@@ -1294,7 +1447,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "92d33bd6-7034-11eb-a65a-74e5f963e191",
             "cim:IdentifiedObject.name": "TATL T2 132 T_ENGENE-ENGENE ACLS 1 1",
-            "cim:CurrentLimit.normalValue": 727.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 727.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:92d33bd4-7034-11eb-a65a-74e5f963e191"
             },
@@ -1307,7 +1462,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "92d33b9f-7034-11eb-a65a-74e5f963e191",
             "cim:IdentifiedObject.name": "TATL T1 132 FROLAND-T_ENGENE ACLS 1",
-            "cim:CurrentLimit.normalValue": 1020.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 1020.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:92d33b9d-7034-11eb-a65a-74e5f963e191"
             },
@@ -1320,7 +1477,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "0f183ae8-bf40-4c42-ba28-aff0684ec683",
             "cim:IdentifiedObject.name": "PATL T1 22 ENGENE-ZT1 ACLS 1",
-            "cim:CurrentLimit.normalValue": 275.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 275.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:ee06cf5c-6eeb-1141-bf78-24098e198fc0"
             },
@@ -1333,7 +1492,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "245cd84e-872f-d141-b6ae-c791424d0237",
             "cim:IdentifiedObject.name": "PATL T2 22 TELEMA 2 ACLS 4",
-            "cim:CurrentLimit.normalValue": 275.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 275.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:f4e2587e-c4f9-e34c-a20e-d724f9e89af1"
             },
@@ -1346,7 +1507,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "10d3dc6c-c98a-df45-b1ce-c043dbfeef25",
             "cim:IdentifiedObject.name": "PATL T1 22 TELEMA 2 ACLS 4",
-            "cim:CurrentLimit.normalValue": 275.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 275.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:8c9343e1-3296-3241-baf6-1e33351236a3"
             },
@@ -1359,7 +1522,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "f822f3a2-4516-9048-913a-b808866ec168",
             "cim:IdentifiedObject.name": "PATL T2 22 TELEMA 2 ACLS 4",
-            "cim:CurrentLimit.normalValue": 275.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 275.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:e7c2e720-4e7c-bc4d-a38b-e5b7fafe09b0"
             },
@@ -1372,7 +1537,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "bd381b90-7f6e-8a45-bff0-1370214c234c",
             "cim:IdentifiedObject.name": "PATL T1 ENGENE T1 132 P",
-            "cim:CurrentLimit.normalValue": 275.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 275.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:5a7908d7-612b-2346-918a-b7b6d458475a"
             },
@@ -1385,7 +1552,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "c8231145-5610-4245-b1a1-572fecb643d8",
             "cim:IdentifiedObject.name": "PATL T2 132 FROLAND-T_ENGENE ACLS 1",
-            "cim:CurrentLimit.normalValue": 1020.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 1020.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:105b264a-2ab7-2441-bb32-aae12a3cfa51"
             },
@@ -1398,7 +1567,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "df8139f5-361f-9846-b6ff-aaa351935dbb",
             "cim:IdentifiedObject.name": "TATL T2 132 FROLAND-T_ENGENE ACLS 1",
-            "cim:CurrentLimit.normalValue": 1020.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 1020.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:105b264a-2ab7-2441-bb32-aae12a3cfa51"
             },
@@ -1411,7 +1582,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "c3594d55-896e-7447-a90b-6b3c087b788e",
             "cim:IdentifiedObject.name": "PATL T2 132 T_ENGENE-ENGENE ACLS 1 1",
-            "cim:CurrentLimit.normalValue": 727.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 727.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:5227cc47-799d-3b4f-bf79-c0fee6d63e4a"
             },
@@ -1424,7 +1597,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "87f5ed47-2758-514e-9a13-ef692d942321",
             "cim:IdentifiedObject.name": "TATL T2 132 T_ENGENE-ENGENE ACLS 1 1",
-            "cim:CurrentLimit.normalValue": 727.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 727.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:5227cc47-799d-3b4f-bf79-c0fee6d63e4a"
             },
@@ -1437,7 +1612,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "e5e585f8-423e-c049-8e8e-58bda1ec78e8",
             "cim:IdentifiedObject.name": "PATL T1 132 ARENDAL-T1 ACLS 1",
-            "cim:CurrentLimit.normalValue": 1020.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 1020.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:2b69675e-dd3b-0e47-9039-845c5b5095f4"
             },
@@ -1450,7 +1627,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "859d05d5-cdac-f849-81a2-4f0593c6c824",
             "cim:IdentifiedObject.name": "TATL T1 132 ARENDAL-T1 ACLS 1",
-            "cim:CurrentLimit.normalValue": 1020.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 1020.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:2b69675e-dd3b-0e47-9039-845c5b5095f4"
             },
@@ -1463,7 +1642,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "7b025cfa-4526-6f49-a420-ea211e8eceba",
             "cim:IdentifiedObject.name": "TATL T2 132 ARENDAL-T1 ACLS 1",
-            "cim:CurrentLimit.normalValue": 1020.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 1020.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:d975d3c6-4aa8-e143-9188-a86cee4db583"
             },
@@ -1476,7 +1657,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "1ab33989-6134-7f4f-876d-9fcd150fd081",
             "cim:IdentifiedObject.name": "PATL T2 132 ARENDAL-T1 ACLS 1",
-            "cim:CurrentLimit.normalValue": 1020.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 1020.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:d975d3c6-4aa8-e143-9188-a86cee4db583"
             },
@@ -1489,7 +1672,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "a982d4f5-7307-3942-ab95-b3cac858d733",
             "cim:IdentifiedObject.name": "TATL T1 132 ARENDAL-FROLAND ACLS 1",
-            "cim:CurrentLimit.normalValue": 1020.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 1020.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:940fdf54-1e42-9840-a37f-7806a54f9e4b"
             },
@@ -1502,7 +1687,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "11e9226e-e3cf-0f48-b691-8dfa2d25ae7b",
             "cim:IdentifiedObject.name": "PATL T1 132 ARENDAL-FROLAND ACLS 1",
-            "cim:CurrentLimit.normalValue": 1020.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 1020.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:940fdf54-1e42-9840-a37f-7806a54f9e4b"
             },
@@ -1515,7 +1702,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "57661de3-c67c-b74b-8729-912a82eeec22",
             "cim:IdentifiedObject.name": "PATL T2 132 ARENDAL-FROLAND ACLS 1",
-            "cim:CurrentLimit.normalValue": 1020.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 1020.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:4219ab33-927a-bb43-9506-b9b1b3487afd"
             },
@@ -1528,7 +1717,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "de98fb60-241a-5e47-a390-ac62f1d20079",
             "cim:IdentifiedObject.name": "TATL T2 132 ARENDAL-FROLAND ACLS 1",
-            "cim:CurrentLimit.normalValue": 1020.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 1020.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:4219ab33-927a-bb43-9506-b9b1b3487afd"
             },
@@ -1541,7 +1732,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "3401221c-3b67-7144-981f-94a1d57a77a1",
             "cim:IdentifiedObject.name": "PATL T1 ARENDAL T1 420 P",
-            "cim:CurrentLimit.normalValue": 412.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 412.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:17264ab0-1492-6243-8e2d-44d85d0841fc"
             },
@@ -1554,7 +1747,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "1d069b92-4138-454e-9db4-c05f38f767ca",
             "cim:IdentifiedObject.name": "TATL T1 ARENDAL T1 420 P",
-            "cim:CurrentLimit.normalValue": 412.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 412.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:17264ab0-1492-6243-8e2d-44d85d0841fc"
             },
@@ -1567,7 +1762,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "3817162d-5e9d-d243-be82-10c2eca33b5b",
             "cim:IdentifiedObject.name": "PATL T2 ARENDAL T1 132 S",
-            "cim:CurrentLimit.normalValue": 275.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 275.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:f681a7bd-f378-4c49-89b9-2fb70ec52c6a"
             },
@@ -1580,7 +1777,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "a3dceeba-ffb3-4349-9c4f-efb8c5c05923",
             "cim:IdentifiedObject.name": "TATL T2 ARENDAL T1 132 S",
-            "cim:CurrentLimit.normalValue": 275.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 275.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:f681a7bd-f378-4c49-89b9-2fb70ec52c6a"
             },
@@ -1593,7 +1792,9 @@
             "@type": "cim:CurrentLimit",
             "cim:IdentifiedObject.mRID": "b0e72714-9f93-c444-913f-a2437efb1d7e",
             "cim:IdentifiedObject.name": "TATL T1 ENGENE T1 132 P",
-            "cim:CurrentLimit.normalValue": 275.0,
+            "cim:CurrentLimit.normalValue": {
+                "cim:CurrentFlow.value": 275.0
+            },
             "cim:OperationalLimit.OperationalLimitSet": {
                 "@id": "urn:uuid:5a7908d7-612b-2346-918a-b7b6d458475a"
             },
@@ -1608,7 +1809,9 @@
             "cim:IdentifiedObject.description": "Arendal 132kV T1 L Disconnector",
             "cim:IdentifiedObject.name": "ARENDAL 132 T1 LD_S",
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 1600.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 1600.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:5b498a4e-d2de-7f41-8f17-be255b3489db"
@@ -1621,7 +1824,9 @@
             "cim:IdentifiedObject.description": "Arendal 132kV T1 S Disconnector",
             "cim:IdentifiedObject.name": "ARENDAL 132 T1 SD_S",
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 1600.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 1600.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:5b498a4e-d2de-7f41-8f17-be255b3489db"
@@ -1634,7 +1839,9 @@
             "cim:IdentifiedObject.description": "Engene 132kV Transformer 1 A Disconnector",
             "cim:IdentifiedObject.name": "ENGENE 132 T1 AD_S",
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 1600.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 1600.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:b2fe839d-37f8-42f6-a52c-5cea12165e60"
@@ -1647,7 +1854,9 @@
             "cim:IdentifiedObject.description": "Engene 132kV Transformer 1 S Disconnector",
             "cim:IdentifiedObject.name": "ENGENE 132 T1 SD_S",
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 1600.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 1600.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:9441fd8e-3941-4e4f-844d-223701649f52"
@@ -1660,7 +1869,9 @@
             "cim:IdentifiedObject.description": "Engene 22kV Nedenes 1 A Disconnector",
             "cim:IdentifiedObject.name": "ENGENE 22 NE1 AD_S",
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 630.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 630.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:9b11eb79-4938-451f-84cd-8d2be79a03e9"
@@ -1673,7 +1884,9 @@
             "cim:IdentifiedObject.description": "Engene 22kV Neutral Transformer 1 A Disconnector",
             "cim:IdentifiedObject.name": "ENGENE 22 NT1 AD_S",
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 630.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 630.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:7aff3ae4-1afa-b046-af50-4e8222f094ef"
@@ -1686,7 +1899,9 @@
             "cim:IdentifiedObject.description": "Engene 22kV Shunt battery A Disconnector",
             "cim:IdentifiedObject.name": "ENGENE 22 SB AD_S",
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 630.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 630.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:5b299df4-d232-4348-9d1e-096f6d10fb5a"
@@ -1699,7 +1914,9 @@
             "cim:IdentifiedObject.description": "Engene 22kV Transformer 1 A Disconnector",
             "cim:IdentifiedObject.name": "ENGENE 22T1 AD_S",
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 1250.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 1250.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:29ace056-c4e8-46ea-8935-38f32ddbee49"
@@ -1712,7 +1929,9 @@
             "cim:IdentifiedObject.description": "Froland 132kV Arendal 1 A Disconnector ",
             "cim:IdentifiedObject.name": "FROLAND 132 AR1 AD_S",
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 2500.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 2500.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:4d1852d5-5acc-4e31-bf1e-320aa6a7ba5b"
@@ -1725,7 +1944,9 @@
             "cim:IdentifiedObject.description": "Froland 132kV Arendal 1 L Disconnector",
             "cim:IdentifiedObject.name": "FROLAND 132 AR1 LD_S",
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 2500.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 2500.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:4d1852d5-5acc-4e31-bf1e-320aa6a7ba5b"
@@ -1738,7 +1959,9 @@
             "cim:IdentifiedObject.description": "Froland 132kV Bamble 1 A Disconnector",
             "cim:IdentifiedObject.name": "FROLAND 132 BA1 AD_S",
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 2500.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 2500.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:f2b5acf1-6067-4d18-9d75-ea1611013a3d"
@@ -1751,7 +1974,9 @@
             "cim:IdentifiedObject.description": "Froland 132kV Bamble 1 L Disconnector L",
             "cim:IdentifiedObject.name": "FROLAND 132 BA1 LD_S",
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 2500.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 2500.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:f2b5acf1-6067-4d18-9d75-ea1611013a3d"
@@ -1764,7 +1989,9 @@
             "cim:IdentifiedObject.description": "Froland 132kV Engene 1 A Disconnector",
             "cim:IdentifiedObject.name": "FROLAND 132 EN1 AD_S",
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 2500.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 2500.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:12c2570d-d7d8-445b-865d-eb981c7603de"
@@ -1777,7 +2004,9 @@
             "cim:IdentifiedObject.description": "Froland 132kV Engene 1 L Disconnector ",
             "cim:IdentifiedObject.name": "FROLAND 132 EN1 LD_S",
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 2500.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 2500.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:12c2570d-d7d8-445b-865d-eb981c7603de"
@@ -1790,7 +2019,9 @@
             "cim:IdentifiedObject.description": "T-junction_Engene 132kV Engene 1 L Disconnector ",
             "cim:IdentifiedObject.name": "T_ENGENE 132 EN1 LD_S",
             "cim:Switch.normalOpen": false,
-            "cim:Switch.ratedCurrent": 2500.0,
+            "cim:Switch.ratedCurrent": {
+                "cim:CurrentFlow.value": 2500.0
+            },
             "cim:Switch.retained": false,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:2d80e032-6152-0a44-8206-45b04656dc85"
@@ -1802,10 +2033,18 @@
             "cim:IdentifiedObject.mRID": "ed8865cf-8b36-42ce-acdc-0627b5f55802",
             "cim:IdentifiedObject.description": "Arendal 420kV Transmission Equivalent",
             "cim:IdentifiedObject.name": "ARENDAL 420 TM EQV",
-            "cim:EquivalentInjection.maxP": 300.0,
-            "cim:EquivalentInjection.maxQ": 100.0,
-            "cim:EquivalentInjection.minP": 0.0,
-            "cim:EquivalentInjection.minQ": -100.0,
+            "cim:EquivalentInjection.maxP": {
+                "cim:ActivePower.value": 300.0
+            },
+            "cim:EquivalentInjection.maxQ": {
+                "cim:ReactivePower.value": 100.0
+            },
+            "cim:EquivalentInjection.minP": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EquivalentInjection.minQ": {
+                "cim:ReactivePower.value": -100.0
+            },
             "cim:EquivalentInjection.regulationCapability": false
         },
         {
@@ -1814,10 +2053,18 @@
             "cim:IdentifiedObject.mRID": "c70c1ea0-c58b-624b-ab6a-0072ad2eea25",
             "cim:IdentifiedObject.description": "Nedenes 400V Low Voltage Equivalent",
             "cim:IdentifiedObject.name": "NEDENES 04 LV EQV",
-            "cim:EquivalentInjection.maxP": 0.065,
-            "cim:EquivalentInjection.maxQ": 0.00728,
-            "cim:EquivalentInjection.minP": 0.013,
-            "cim:EquivalentInjection.minQ": 0.00143,
+            "cim:EquivalentInjection.maxP": {
+                "cim:ActivePower.value": 0.065
+            },
+            "cim:EquivalentInjection.maxQ": {
+                "cim:ReactivePower.value": 0.00728
+            },
+            "cim:EquivalentInjection.minP": {
+                "cim:ActivePower.value": 0.013
+            },
+            "cim:EquivalentInjection.minQ": {
+                "cim:ReactivePower.value": 0.00143
+            },
             "cim:EquivalentInjection.regulationCapability": false
         },
         {
@@ -1828,16 +2075,36 @@
             "cim:IdentifiedObject.name": "ARENDAL 420  G1",
             "cim:Equipment.aggregate": false,
             "cim:Equipment.normallyInService": true,
-            "cim:GeneratingUnit.highControlLimit": 380.0,
-            "cim:GeneratingUnit.initialP": 178.0,
-            "cim:GeneratingUnit.lowControlLimit": 0.0,
-            "cim:GeneratingUnit.maxEconomicP": 280.0,
-            "cim:GeneratingUnit.maxOperatingP": 300.0,
-            "cim:GeneratingUnit.minEconomicP": 0.0,
-            "cim:GeneratingUnit.minOperatingP": 0.0,
-            "cim:GeneratingUnit.nominalP": 200.0,
-            "cim:GeneratingUnit.ratedGrossMaxP": 380.0,
-            "cim:GeneratingUnit.ratedNetMaxP": 350.0,
+            "cim:GeneratingUnit.highControlLimit": {
+                "cim:ActivePower.value": 380.0
+            },
+            "cim:GeneratingUnit.initialP": {
+                "cim:ActivePower.value": 178.0
+            },
+            "cim:GeneratingUnit.lowControlLimit": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:GeneratingUnit.maxEconomicP": {
+                "cim:ActivePower.value": 280.0
+            },
+            "cim:GeneratingUnit.maxOperatingP": {
+                "cim:ActivePower.value": 300.0
+            },
+            "cim:GeneratingUnit.minEconomicP": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:GeneratingUnit.minOperatingP": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:GeneratingUnit.nominalP": {
+                "cim:ActivePower.value": 200.0
+            },
+            "cim:GeneratingUnit.ratedGrossMaxP": {
+                "cim:ActivePower.value": 380.0
+            },
+            "cim:GeneratingUnit.ratedNetMaxP": {
+                "cim:ActivePower.value": 350.0
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:f1769670-9aeb-11e5-91da-b8763fd99c5f"
             }
@@ -1849,12 +2116,20 @@
             "cim:IdentifiedObject.description": "Engene 22kV A Shunt Compensator",
             "cim:IdentifiedObject.name": "ENGENE 22 SC1",
             "cim:Equipment.aggregate": false,
-            "cim:ShuntCompensator.aVRDelay": 1.0,
+            "cim:ShuntCompensator.aVRDelay": {
+                "cim:Seconds.value": 1.0
+            },
             "cim:ShuntCompensator.maximumSections": 1,
-            "cim:ShuntCompensator.nomU": 22.0,
+            "cim:ShuntCompensator.nomU": {
+                "cim:Voltage.value": 22.0
+            },
             "cim:ShuntCompensator.normalSections": 1,
-            "cim:LinearShuntCompensator.bPerSection": 0.01983500085771084,
-            "cim:LinearShuntCompensator.gPerSection": 0.0,
+            "cim:LinearShuntCompensator.bPerSection": {
+                "cim:Susceptance.value": 0.01983500085771084
+            },
+            "cim:LinearShuntCompensator.gPerSection": {
+                "cim:Conductance.value": 0.0
+            },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:681a1e4e-5a55-11eb-a658-74e5f963e191"
             },
@@ -1874,14 +2149,38 @@
             "@type": "cim:LoadBreakSwitch",
             "cim:IdentifiedObject.mRID": "55de4e32-8cb0-4602-9901-ec91e104b300",
             "cim:IdentifiedObject.description": "Nedenes 22kV Engene 1 Load Break Switch",
-            "cim:IdentifiedObject.name": "NEDENES 22 E1 LB_S"
+            "cim:IdentifiedObject.name": "NEDENES 22 E1 LB_S",
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:e3a5b7c5-fa48-42f9-9b13-2ceb5b540bd6"
+            }
         },
         {
             "@id": "urn:uuid:20605037-a626-4691-8601-89666564ff87",
             "@type": "cim:LoadBreakSwitch",
             "cim:IdentifiedObject.mRID": "20605037-a626-4691-8601-89666564ff87",
             "cim:IdentifiedObject.description": "Nedenes 22kV Transformer 1 Load Break Switch",
-            "cim:IdentifiedObject.name": "NEDENES 22 T1 ALB_S"
+            "cim:IdentifiedObject.name": "NEDENES 22 T1 ALB_S",
+            "cim:Switch.normalOpen": false,
+            "cim:Switch.retained": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:47f5ebe7-1d03-4d20-b599-9b6068319987"
+            }
+        },
+        {
+            "@id": "urn:uuid:6963e27e-9aaa-df42-a71c-1268f02e472f",
+            "@type": "cim:LoadResponseCharacteristic",
+            "cim:IdentifiedObject.mRID": "6963e27e-9aaa-df42-a71c-1268f02e472f",
+            "cim:IdentifiedObject.description": "Constant p and q power load response characteristic",
+            "cim:IdentifiedObject.name": "CONST_P_Q LRC",
+            "cim:LoadResponseCharacteristic.pConstantPower": 1.0,
+            "cim:LoadResponseCharacteristic.pConstantCurrent": 0.0,
+            "cim:LoadResponseCharacteristic.pConstantImpedance": 0.0,
+            "cim:LoadResponseCharacteristic.qConstantPower": 1.0,
+            "cim:LoadResponseCharacteristic.qConstantCurrent": 0.0,
+            "cim:LoadResponseCharacteristic.qConstantImpedance": 0.0,
+            "cim:LoadResponseCharacteristic.exponentModel": false
         },
         {
             "@id": "urn:uuid:105b264a-2ab7-2441-bb32-aae12a3cfa51",
@@ -2209,11 +2508,21 @@
             "cim:IdentifiedObject.name": "ARENDAL T1 420 P",
             "cim:TransformerEnd.endNumber": 1,
             "cim:TransformerEnd.grounded": false,
-            "cim:PowerTransformerEnd.b": 0.0,
-            "cim:PowerTransformerEnd.r": 0.84,
-            "cim:PowerTransformerEnd.ratedS": 100.0,
-            "cim:PowerTransformerEnd.ratedU": 420.0,
-            "cim:PowerTransformerEnd.x": 25.41,
+            "cim:PowerTransformerEnd.b": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:PowerTransformerEnd.r": {
+                "cim:Resistance.value": 0.84
+            },
+            "cim:PowerTransformerEnd.ratedS": {
+                "cim:ApparentPower.value": 100.0
+            },
+            "cim:PowerTransformerEnd.ratedU": {
+                "cim:Voltage.value": 420.0
+            },
+            "cim:PowerTransformerEnd.x": {
+                "cim:Reactance.value": 25.41
+            },
             "cim:PowerTransformerEnd.connectionKind": {
                 "@id": "http://iec.ch/TC57/CIM100#WindingConnection.Y"
             },
@@ -2235,11 +2544,21 @@
             "cim:IdentifiedObject.name": "ARENDAL T1 132 S",
             "cim:TransformerEnd.endNumber": 2,
             "cim:TransformerEnd.grounded": false,
-            "cim:PowerTransformerEnd.b": 0.0,
-            "cim:PowerTransformerEnd.r": 0.0,
-            "cim:PowerTransformerEnd.ratedS": 100.0,
-            "cim:PowerTransformerEnd.ratedU": 132.0,
-            "cim:PowerTransformerEnd.x": 0.0,
+            "cim:PowerTransformerEnd.b": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:PowerTransformerEnd.r": {
+                "cim:Resistance.value": 0.0
+            },
+            "cim:PowerTransformerEnd.ratedS": {
+                "cim:ApparentPower.value": 100.0
+            },
+            "cim:PowerTransformerEnd.ratedU": {
+                "cim:Voltage.value": 132.0
+            },
+            "cim:PowerTransformerEnd.x": {
+                "cim:Reactance.value": 0.0
+            },
             "cim:PowerTransformerEnd.connectionKind": {
                 "@id": "http://iec.ch/TC57/CIM100#WindingConnection.Y"
             },
@@ -2261,11 +2580,21 @@
             "cim:IdentifiedObject.name": "ENGENE T1 132 P",
             "cim:TransformerEnd.endNumber": 1,
             "cim:TransformerEnd.grounded": false,
-            "cim:PowerTransformerEnd.b": 0.0,
-            "cim:PowerTransformerEnd.r": 2.37,
-            "cim:PowerTransformerEnd.ratedS": 100.0,
-            "cim:PowerTransformerEnd.ratedU": 132.0,
-            "cim:PowerTransformerEnd.x": 82.28,
+            "cim:PowerTransformerEnd.b": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:PowerTransformerEnd.r": {
+                "cim:Resistance.value": 2.37
+            },
+            "cim:PowerTransformerEnd.ratedS": {
+                "cim:ApparentPower.value": 100.0
+            },
+            "cim:PowerTransformerEnd.ratedU": {
+                "cim:Voltage.value": 132.0
+            },
+            "cim:PowerTransformerEnd.x": {
+                "cim:Reactance.value": 82.28
+            },
             "cim:PowerTransformerEnd.connectionKind": {
                 "@id": "http://iec.ch/TC57/CIM100#WindingConnection.Y"
             },
@@ -2287,11 +2616,21 @@
             "cim:IdentifiedObject.name": "ENGENE T1 22 S",
             "cim:TransformerEnd.endNumber": 2,
             "cim:TransformerEnd.grounded": false,
-            "cim:PowerTransformerEnd.b": 0.0,
-            "cim:PowerTransformerEnd.r": 0.0,
-            "cim:PowerTransformerEnd.ratedS": 100.0,
-            "cim:PowerTransformerEnd.ratedU": 22.0,
-            "cim:PowerTransformerEnd.x": 0.0,
+            "cim:PowerTransformerEnd.b": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:PowerTransformerEnd.r": {
+                "cim:Resistance.value": 0.0
+            },
+            "cim:PowerTransformerEnd.ratedS": {
+                "cim:ApparentPower.value": 100.0
+            },
+            "cim:PowerTransformerEnd.ratedU": {
+                "cim:Voltage.value": 22.0
+            },
+            "cim:PowerTransformerEnd.x": {
+                "cim:Reactance.value": 0.0
+            },
             "cim:PowerTransformerEnd.connectionKind": {
                 "@id": "http://iec.ch/TC57/CIM100#WindingConnection.Y"
             },
@@ -2313,11 +2652,21 @@
             "cim:IdentifiedObject.name": "ENGENE ZT1 22 P",
             "cim:TransformerEnd.endNumber": 1,
             "cim:TransformerEnd.grounded": false,
-            "cim:PowerTransformerEnd.b": 0.0,
-            "cim:PowerTransformerEnd.r": 1.52,
-            "cim:PowerTransformerEnd.ratedS": 3.175,
-            "cim:PowerTransformerEnd.ratedU": 22.0,
-            "cim:PowerTransformerEnd.x": 7.62,
+            "cim:PowerTransformerEnd.b": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:PowerTransformerEnd.r": {
+                "cim:Resistance.value": 1.52
+            },
+            "cim:PowerTransformerEnd.ratedS": {
+                "cim:ApparentPower.value": 3.175
+            },
+            "cim:PowerTransformerEnd.ratedU": {
+                "cim:Voltage.value": 22.0
+            },
+            "cim:PowerTransformerEnd.x": {
+                "cim:Reactance.value": 7.62
+            },
             "cim:PowerTransformerEnd.connectionKind": {
                 "@id": "http://iec.ch/TC57/CIM100#WindingConnection.Y"
             },
@@ -2339,11 +2688,21 @@
             "cim:IdentifiedObject.name": "ENGENE ZT1 023 S",
             "cim:TransformerEnd.endNumber": 2,
             "cim:TransformerEnd.grounded": false,
-            "cim:PowerTransformerEnd.b": 0.0,
-            "cim:PowerTransformerEnd.r": 0.0,
-            "cim:PowerTransformerEnd.ratedS": 3.175,
-            "cim:PowerTransformerEnd.ratedU": 0.23,
-            "cim:PowerTransformerEnd.x": 0.0,
+            "cim:PowerTransformerEnd.b": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:PowerTransformerEnd.r": {
+                "cim:Resistance.value": 0.0
+            },
+            "cim:PowerTransformerEnd.ratedS": {
+                "cim:ApparentPower.value": 3.175
+            },
+            "cim:PowerTransformerEnd.ratedU": {
+                "cim:Voltage.value": 0.23
+            },
+            "cim:PowerTransformerEnd.x": {
+                "cim:Reactance.value": 0.0
+            },
             "cim:PowerTransformerEnd.connectionKind": {
                 "@id": "http://iec.ch/TC57/CIM100#WindingConnection.Zn"
             },
@@ -2365,11 +2724,21 @@
             "cim:IdentifiedObject.name": "NEDENES T1 22 P",
             "cim:TransformerEnd.endNumber": 1,
             "cim:TransformerEnd.grounded": false,
-            "cim:PowerTransformerEnd.b": 0.0,
-            "cim:PowerTransformerEnd.r": 5.081,
-            "cim:PowerTransformerEnd.ratedS": 100.0,
-            "cim:PowerTransformerEnd.ratedU": 22.0,
-            "cim:PowerTransformerEnd.x": 35.45,
+            "cim:PowerTransformerEnd.b": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:PowerTransformerEnd.r": {
+                "cim:Resistance.value": 5.081
+            },
+            "cim:PowerTransformerEnd.ratedS": {
+                "cim:ApparentPower.value": 100.0
+            },
+            "cim:PowerTransformerEnd.ratedU": {
+                "cim:Voltage.value": 22.0
+            },
+            "cim:PowerTransformerEnd.x": {
+                "cim:Reactance.value": 35.45
+            },
             "cim:PowerTransformerEnd.connectionKind": {
                 "@id": "http://iec.ch/TC57/CIM100#WindingConnection.Y"
             },
@@ -2391,11 +2760,21 @@
             "cim:IdentifiedObject.name": "NEDENES T1 04 S",
             "cim:TransformerEnd.endNumber": 2,
             "cim:TransformerEnd.grounded": false,
-            "cim:PowerTransformerEnd.b": 0.0,
-            "cim:PowerTransformerEnd.r": 0.0,
-            "cim:PowerTransformerEnd.ratedS": 100.0,
-            "cim:PowerTransformerEnd.ratedU": 0.4,
-            "cim:PowerTransformerEnd.x": 0.0,
+            "cim:PowerTransformerEnd.b": {
+                "cim:Susceptance.value": 0.0
+            },
+            "cim:PowerTransformerEnd.r": {
+                "cim:Resistance.value": 0.0
+            },
+            "cim:PowerTransformerEnd.ratedS": {
+                "cim:ApparentPower.value": 100.0
+            },
+            "cim:PowerTransformerEnd.ratedU": {
+                "cim:Voltage.value": 0.4
+            },
+            "cim:PowerTransformerEnd.x": {
+                "cim:Reactance.value": 0.0
+            },
             "cim:PowerTransformerEnd.connectionKind": {
                 "@id": "http://iec.ch/TC57/CIM100#WindingConnection.Y"
             },
@@ -2419,9 +2798,13 @@
             "cim:TapChanger.lowStep": 1,
             "cim:TapChanger.ltcFlag": true,
             "cim:TapChanger.neutralStep": 17,
-            "cim:TapChanger.neutralU": 132.0,
+            "cim:TapChanger.neutralU": {
+                "cim:Voltage.value": 132.0
+            },
             "cim:TapChanger.normalStep": 17,
-            "cim:RatioTapChanger.stepVoltageIncrement": 0.625,
+            "cim:RatioTapChanger.stepVoltageIncrement": {
+                "cim:PerCent.value": 0.625
+            },
             "cim:RatioTapChanger.tculControlMode": {
                 "@id": "http://iec.ch/TC57/CIM100#TransformerControlMode.volt"
             },
@@ -2439,9 +2822,13 @@
             "cim:TapChanger.lowStep": 1,
             "cim:TapChanger.ltcFlag": true,
             "cim:TapChanger.neutralStep": 17,
-            "cim:TapChanger.neutralU": 22.0,
+            "cim:TapChanger.neutralU": {
+                "cim:Voltage.value": 22.0
+            },
             "cim:TapChanger.normalStep": 18,
-            "cim:RatioTapChanger.stepVoltageIncrement": 0.625,
+            "cim:RatioTapChanger.stepVoltageIncrement": {
+                "cim:PerCent.value": 0.625
+            },
             "cim:RatioTapChanger.tculControlMode": {
                 "@id": "http://iec.ch/TC57/CIM100#TransformerControlMode.volt"
             },
@@ -2459,9 +2846,13 @@
             "cim:TapChanger.lowStep": 1,
             "cim:TapChanger.ltcFlag": true,
             "cim:TapChanger.neutralStep": 17,
-            "cim:TapChanger.neutralU": 0.23,
+            "cim:TapChanger.neutralU": {
+                "cim:Voltage.value": 0.23
+            },
             "cim:TapChanger.normalStep": 17,
-            "cim:RatioTapChanger.stepVoltageIncrement": 0.625,
+            "cim:RatioTapChanger.stepVoltageIncrement": {
+                "cim:PerCent.value": 0.625
+            },
             "cim:RatioTapChanger.tculControlMode": {
                 "@id": "http://iec.ch/TC57/CIM100#TransformerControlMode.volt"
             },
@@ -2479,9 +2870,13 @@
             "cim:TapChanger.lowStep": 1,
             "cim:TapChanger.ltcFlag": true,
             "cim:TapChanger.neutralStep": 4,
-            "cim:TapChanger.neutralU": 0.4,
+            "cim:TapChanger.neutralU": {
+                "cim:Voltage.value": 0.4
+            },
             "cim:TapChanger.normalStep": 4,
-            "cim:RatioTapChanger.stepVoltageIncrement": 3.3333001136779785,
+            "cim:RatioTapChanger.stepVoltageIncrement": {
+                "cim:PerCent.value": 3.3333001136779785
+            },
             "cim:RatioTapChanger.tculControlMode": {
                 "@id": "http://iec.ch/TC57/CIM100#TransformerControlMode.volt"
             },
@@ -2564,12 +2959,24 @@
             "cim:IdentifiedObject.mRID": "33666962-c2f9-4f6b-af5a-2ef1982ac282",
             "cim:IdentifiedObject.description": "Arendal 420kV Transmission Equivalent",
             "cim:IdentifiedObject.name": "ARENDAL 420 M1",
-            "cim:SynchronousMachine.maxQ": 300.0,
-            "cim:SynchronousMachine.maxU": 100.0,
-            "cim:SynchronousMachine.minQ": -100.0,
-            "cim:SynchronousMachine.minU": 0.0,
-            "cim:SynchronousMachine.qPercent": 100.0,
-            "cim:SynchronousMachine.r": 0.43445,
+            "cim:SynchronousMachine.maxQ": {
+                "cim:ReactivePower.value": 300.0
+            },
+            "cim:SynchronousMachine.maxU": {
+                "cim:Voltage.value": 100.0
+            },
+            "cim:SynchronousMachine.minQ": {
+                "cim:ReactivePower.value": -100.0
+            },
+            "cim:SynchronousMachine.minU": {
+                "cim:Voltage.value": 0.0
+            },
+            "cim:SynchronousMachine.qPercent": {
+                "cim:PerCent.value": 100.0
+            },
+            "cim:SynchronousMachine.r": {
+                "cim:Resistance.value": 0.43445
+            },
             "cim:SynchronousMachine.referencePriority": 0,
             "cim:SynchronousMachine.type": {
                 "@id": "http://iec.ch/TC57/CIM100#SynchronousMachineKind.generator"

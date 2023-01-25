@@ -9,7 +9,7 @@ import os
 
 #--------Parameters---------#
 cimFileType = "SSH"
-cimFileLevel = "MV1"
+cimFileLevel = "LV1"
 #---------------------------#
 
 # Do not Touch
@@ -92,17 +92,23 @@ for i in range(0, len(configMainTagList)):
             textType = config[configMainTag]['tags'][configTag]['type']
             textList = config[configMainTag]['tags'][configTag]['list']
 
-            if textList == True:
+            if textList == True: # Checking if Tag can be list
                 dictionaryClass[configTag] = []
 
             for tags in mainTags.findall(xmlTag):
                 
                 textValue = tags.text
     
-                if textList == True:
-                    dictionaryClass[configTag].append(valueDataTypeConverter(textValue, textType))
+                if textList == True: # Checking if Tag can be list
+                    if 'CIMDatatype' in config[configMainTag]['tags'][configTag].keys(): # Checking if Tag has CIMDatatype
+                        dictionaryClass[configTag].append({config[configMainTag]['tags'][configTag]['CIMDatatype']: valueDataTypeConverter(textValue, textType)})
+                    else:
+                        dictionaryClass[configTag].append(valueDataTypeConverter(textValue, textType))
                 else:
-                    dictionaryClass[configTag] = valueDataTypeConverter(textValue, textType)
+                    if 'CIMDatatype' in config[configMainTag]['tags'][configTag].keys(): # Checking if Tag has CIMDatatype
+                        dictionaryClass[configTag] = {config[configMainTag]['tags'][configTag]['CIMDatatype']: valueDataTypeConverter(textValue, textType)}
+                    else:
+                        dictionaryClass[configTag] = valueDataTypeConverter(textValue, textType)
         
         # Attributes ##########################################
         xmlAttributeTagList = xmlPrefixListReplacer(list(config[configMainTag]['attributes'].keys()), cim, eu, rdf, md)

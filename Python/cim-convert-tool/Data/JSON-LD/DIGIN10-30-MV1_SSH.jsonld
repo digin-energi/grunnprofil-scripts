@@ -6,16 +6,17 @@
         "eu": "http://iec.ch/TC57/CIM100-European#",
         "dcterms": "http://purl.org/dc/terms/",
         "dcat": "http://www.w3.org/ns/dcat#",
-        "prov": "http://www.w3.org/ns/prov#"
+        "prov": "http://www.w3.org/ns/prov#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@id": "urn:uuid:f19668c6-e0a1-4db7-bfee-7645392d0021",
     "prov:generatedAtTime": {
-        "@value": "2023-01-23T15:05:26Z",
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        "@value": "2023-01-25T15:36:37Z",
+        "@type": "xsd:dateTime"
     },
-    "dcterms:created": {
+    "dcterms:issued": {
         "@value": "2021-04-28T20:55:46.000Z",
-        "@type": "http://www.w3.org/2001/XMLSchema#date"
+        "@type": "xsd:date"
     },
     "dcterms:title": "DIGIN10-30-MV1_SSH",
     "dcterms:description": [
@@ -30,22 +31,22 @@
         "dcterms:title": "DIGIN"
     },
     "dcterms:temporal": {
-        "@type": "http://purl.org/dc/terms/PeriodOfTime",
+        "@type": "dcterms:PeriodOfTime",
         "dcat:startDate": {
             "@value": "2021-04-28T20:54:27Z",
-            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+            "@type": "xsd:dateTime"
         },
         "dcat:endDate": {
             "@value": "2021-04-29T20:54:27Z",
-            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+            "@type": "xsd:dateTime"
         }
     },
-    "dcterms:temporalResolution": {
-        "@type": "http://www.w3.org/2001/XMLSchema#duration",
+    "dcat:temporalResolution": {
+        "@type": "xsd:duration",
         "@value": "PT1H"
     },
     "dcterms:rights": "© 2023 Copyright",
-    "dcterms:rightHolder": "DIGIN",
+    "dcterms:rightsHolder": "DIGIN",
     "dcterms:license": {
         "@id": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
         "dcterms:title": "CC BY-NC-SA 4.0"
@@ -261,15 +262,23 @@
             "@id": "urn:uuid:_eb9b50c9-e363-0940-a177-2b7abd47f398",
             "@type": "cim:ConformLoad",
             "cim:Equipment.inService": true,
-            "cim:EnergyConsumer.p": 0.002,
-            "cim:EnergyConsumer.q": 0.0002
+            "cim:EnergyConsumer.p": {
+                "cim:ActivePower.value": 0.002
+            },
+            "cim:EnergyConsumer.q": {
+                "cim:ReactivePower.value": 0.0002
+            }
         },
         {
             "@id": "urn:uuid:_69a8ceaa-e0a2-8744-a258-2f572ba4bd9f",
             "@type": "cim:ConformLoad",
             "cim:Equipment.inService": true,
-            "cim:EnergyConsumer.p": 10.5,
-            "cim:EnergyConsumer.q": 2.077
+            "cim:EnergyConsumer.p": {
+                "cim:ActivePower.value": 10.5
+            },
+            "cim:EnergyConsumer.q": {
+                "cim:ReactivePower.value": 2.077
+            }
         },
         {
             "@id": "urn:uuid:_681a1dd5-5a55-11eb-a658-74e5f963e191",
@@ -565,15 +574,23 @@
             "@id": "urn:uuid:_ed8865cf-8b36-42ce-acdc-0627b5f55802",
             "@type": "cim:EquivalentInjection",
             "cim:Equipment.inService": true,
-            "cim:EquivalentInjection.p": 161.2559967041,
-            "cim:EquivalentInjection.q": 0.0
+            "cim:EquivalentInjection.p": {
+                "cim:ActivePower.value": 161.2559967041
+            },
+            "cim:EquivalentInjection.q": {
+                "cim:ReactivePower.value": 0.0
+            }
         },
         {
             "@id": "urn:uuid:_c70c1ea0-c58b-624b-ab6a-0072ad2eea25",
             "@type": "cim:EquivalentInjection",
             "cim:Equipment.inService": true,
-            "cim:EquivalentInjection.p": 0.065,
-            "cim:EquivalentInjection.q": 0.00728
+            "cim:EquivalentInjection.p": {
+                "cim:ActivePower.value": 0.065
+            },
+            "cim:EquivalentInjection.q": {
+                "cim:ReactivePower.value": 0.00728
+            }
         },
         {
             "@id": "urn:uuid:_b7057d99-e21a-4ba1-9cef-15aeeee4232a",

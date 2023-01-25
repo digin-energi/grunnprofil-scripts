@@ -41,8 +41,8 @@ configSshCim17 = \
             },
             'tags': {
                 'cim:Equipment.inService': {'type': 'bool', 'list': False},
-                'cim:EnergyConsumer.p': {'type': 'float', 'list': False},
-                'cim:EnergyConsumer.q': {'type': 'float', 'list': False}
+                'cim:EnergyConsumer.p': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ActivePower.value'},
+                'cim:EnergyConsumer.q': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ReactivePower.value'}
             },
             'attributes': {
 
@@ -89,8 +89,8 @@ configSshCim17 = \
             },
             'tags': {
                 'cim:Equipment.inService': {'type': 'bool', 'list': False},
-                'cim:EquivalentInjection.p': {'type': 'float', 'list': False},
-                'cim:EquivalentInjection.q': {'type': 'float', 'list': False}
+                'cim:EquivalentInjection.p': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ActivePower.value'},
+                'cim:EquivalentInjection.q': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ReactivePower.value'}
             },
             'attributes': {
 
