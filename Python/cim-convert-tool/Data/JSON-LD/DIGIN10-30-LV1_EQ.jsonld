@@ -11,7 +11,7 @@
     },
     "@id": "urn:uuid:c47d4310-b8ee-480d-9cf3-e53a81630981",
     "prov:generatedAtTime": {
-        "@value": "2023-01-25T16:06:00Z",
+        "@value": "2023-01-27T16:08:54Z",
         "@type": "xsd:dateTime"
     },
     "dcterms:issued": {
@@ -2368,7 +2368,10 @@
             "cim:EquivalentInjection.minQ": {
                 "cim:ReactivePower.value": 0.00143
             },
-            "cim:EquivalentInjection.regulationCapability": false
+            "cim:EquivalentInjection.regulationCapability": false,
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:681a21b6-5a55-11eb-a658-74e5f963e191"
+            }
         },
         {
             "@id": "urn:uuid:8aad5c29-6039-4321-8f8a-ad1c186dd145",
@@ -2864,6 +2867,138 @@
             }
         },
         {
+            "@id": "urn:uuid:64e21d95-8b55-b941-a923-b74087410a66",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:64e21d95-8b55-b941-a923-b74087410a66",
+            "cim:IdentifiedObject.name": "04 TELEMA2 ACLS1"
+        },
+        {
+            "@id": "urn:uuid:03e72ecd-6be1-354e-a213-e66520dd2d34",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:03e72ecd-6be1-354e-a213-e66520dd2d34",
+            "cim:IdentifiedObject.name": "04 TELEMA2 ACLS10"
+        },
+        {
+            "@id": "urn:uuid:34795eaa-eabb-3a4e-be8a-6e4bd9ee7fb3",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:34795eaa-eabb-3a4e-be8a-6e4bd9ee7fb3",
+            "cim:IdentifiedObject.name": "04 TELEMA2 ACLS11"
+        },
+        {
+            "@id": "urn:uuid:771462f6-6a78-104f-9d11-54ce568ea9c8",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:771462f6-6a78-104f-9d11-54ce568ea9c8",
+            "cim:IdentifiedObject.name": "04 TELEMA2 ACLS12"
+        },
+        {
+            "@id": "urn:uuid:6ce10f1e-5f92-3f4b-a0db-1a1a7179b175",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:6ce10f1e-5f92-3f4b-a0db-1a1a7179b175",
+            "cim:IdentifiedObject.name": "04 TELEMA2 ACLS13"
+        },
+        {
+            "@id": "urn:uuid:a656957e-7e5b-9a4e-84b9-13224bc443b9",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:a656957e-7e5b-9a4e-84b9-13224bc443b9",
+            "cim:IdentifiedObject.name": "04 TELEMA2 ACLS14"
+        },
+        {
+            "@id": "urn:uuid:c671456c-8b2f-a149-95f6-138da0a62f62",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:c671456c-8b2f-a149-95f6-138da0a62f62",
+            "cim:IdentifiedObject.name": "04 TELEMA2 ACLS15"
+        },
+        {
+            "@id": "urn:uuid:4a48c790-94e4-0d4d-885c-9d7e498b8b67",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:4a48c790-94e4-0d4d-885c-9d7e498b8b67",
+            "cim:IdentifiedObject.name": "04 TELEMA2 ACLS16"
+        },
+        {
+            "@id": "urn:uuid:d7743146-6eff-ce40-a20e-809d5bd46552",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:d7743146-6eff-ce40-a20e-809d5bd46552",
+            "cim:IdentifiedObject.name": "04 TELEMA2 ACLS17"
+        },
+        {
+            "@id": "urn:uuid:1e55c99b-f32c-9247-b44e-7f787d0faf62",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:1e55c99b-f32c-9247-b44e-7f787d0faf62",
+            "cim:IdentifiedObject.name": "04 TELEMA2 ACLS18"
+        },
+        {
+            "@id": "urn:uuid:723f8e86-5519-fa46-82c5-84ac836ea34d",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:723f8e86-5519-fa46-82c5-84ac836ea34d",
+            "cim:IdentifiedObject.name": "04 TELEMA2 ACLS19"
+        },
+        {
+            "@id": "urn:uuid:bc8f4ae8-02d0-0d4d-8938-889f7b36cee7",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:bc8f4ae8-02d0-0d4d-8938-889f7b36cee7",
+            "cim:IdentifiedObject.name": "04 TELEMA2 ACLS2"
+        },
+        {
+            "@id": "urn:uuid:61f474ac-eb0c-4349-a364-ce47fb60cebb",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:61f474ac-eb0c-4349-a364-ce47fb60cebb",
+            "cim:IdentifiedObject.name": "04 TELEMA2 ACLS20"
+        },
+        {
+            "@id": "urn:uuid:411f9805-7d3c-ea43-9686-ad770566e962",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:411f9805-7d3c-ea43-9686-ad770566e962",
+            "cim:IdentifiedObject.name": "04 TELEMA2 ACLS21"
+        },
+        {
+            "@id": "urn:uuid:129f8045-d9f2-fe4a-a905-6c4be6db5318",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:129f8045-d9f2-fe4a-a905-6c4be6db5318",
+            "cim:IdentifiedObject.name": "04 TELEMA2 ACLS22"
+        },
+        {
+            "@id": "urn:uuid:d53c319b-358e-e942-83c1-4105781e6ee7",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:d53c319b-358e-e942-83c1-4105781e6ee7",
+            "cim:IdentifiedObject.name": "04 TELEMA2 ACLS23"
+        },
+        {
+            "@id": "urn:uuid:3c96e990-1a9e-f444-a4bf-ae25b951413b",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:3c96e990-1a9e-f444-a4bf-ae25b951413b",
+            "cim:IdentifiedObject.name": "04 TELEMA2 ACLS4"
+        },
+        {
+            "@id": "urn:uuid:d22a1110-d7ed-c045-9243-06d1a05979e5",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:d22a1110-d7ed-c045-9243-06d1a05979e5",
+            "cim:IdentifiedObject.name": "04 TELEMA2 ACLS5"
+        },
+        {
+            "@id": "urn:uuid:da8af45c-5a67-7049-b34c-d36779c66904",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:da8af45c-5a67-7049-b34c-d36779c66904",
+            "cim:IdentifiedObject.name": "04 TELEMA2 ACLS6"
+        },
+        {
+            "@id": "urn:uuid:0e9bf120-2b51-4347-9390-b2ae42d3492b",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:0e9bf120-2b51-4347-9390-b2ae42d3492b",
+            "cim:IdentifiedObject.name": "04 TELEMA2 ACLS7"
+        },
+        {
+            "@id": "urn:uuid:f2d58ba1-f6c5-cb4d-ba62-a52687a3cfc3",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:f2d58ba1-f6c5-cb4d-ba62-a52687a3cfc3",
+            "cim:IdentifiedObject.name": "04 TELEMA2 ACLS8"
+        },
+        {
+            "@id": "urn:uuid:16df6f4a-e95d-8746-83a2-cf165145d799",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:16df6f4a-e95d-8746-83a2-cf165145d799",
+            "cim:IdentifiedObject.name": "04 TELEMA2 ACLS9"
+        },
+        {
             "@id": "urn:uuid:d9bff920-f767-4fd9-96c7-4b87585a8cc2",
             "@type": "cim:LoadArea",
             "cim:IdentifiedObject.mRID": "urn:uuid:d9bff920-f767-4fd9-96c7-4b87585a8cc2",
@@ -3088,6 +3223,16 @@
             "cim:IdentifiedObject.name": "04 TELEMA 2 OLS9 ACLS9",
             "cim:OperationalLimitSet.Terminal": {
                 "@id": "urn:uuid:bf2c7b69-3bea-4fcc-958d-7b3c48a7a857"
+            }
+        },
+        {
+            "@id": "urn:uuid:a7d9b42e-0f87-4882-903d-1cf454f85df4",
+            "@type": "cim:OperationalLimitType",
+            "cim:IdentifiedObject.mRID": "urn:uuid:a7d9b42e-0f87-4882-903d-1cf454f85df4",
+            "cim:IdentifiedObject.description": "Permanent Admissible Transmission Loading",
+            "cim:IdentifiedObject.name": "PATL",
+            "cim:OperationalLimitType.direction": {
+                "@id": "http://iec.ch/TC57/CIM100#OperationalLimitDirectionKind.absoluteValue"
             }
         },
         {

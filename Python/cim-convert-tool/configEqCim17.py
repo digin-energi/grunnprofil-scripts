@@ -100,6 +100,7 @@ configEqCim17 = \
             'attributes': {
                 'cim:Equipment.EquipmentContainer': {'rdf:resource': {'type': 'string'}, 'list': False},
                 'cim:ConductingEquipment.BaseVoltage': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:EnergyConsumer.LoadResponse': {'rdf:resource': {'type': 'string'}, 'list': False},
                 'cim:ConformLoad.LoadGroup': {'rdf:resource': {'type': 'string'}, 'list': False}
             }
         },
@@ -204,9 +205,12 @@ configEqCim17 = \
                 'cim:EquivalentInjection.maxQ': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ReactivePower.value'},
                 'cim:EquivalentInjection.minP': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ActivePower.value'},
                 'cim:EquivalentInjection.minQ': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ReactivePower.value'},
-                'cim:EquivalentInjection.regulationCapability': {'type': 'bool', 'list': False}
+                'cim:EquivalentInjection.r': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:Resistance.value'},
+                'cim:EquivalentInjection.regulationCapability': {'type': 'bool', 'list': False},
+                'cim:EquivalentInjection.x': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:Reactance.value'}
             },
             'attributes': {
+                'cim:Equipment.EquipmentContainer': {'rdf:resource': {'type': 'string'}, 'list': False},
                 'cim:ConductingEquipment.BaseVoltage': {'rdf:resource': {'type': 'string'}, 'list': False}
             }
         },
@@ -272,6 +276,21 @@ configEqCim17 = \
             },
             'attributes': {
 
+            }
+        },
+        'cim:Line': {
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False}
+
+            },
+            'attributes': {
+                'cim:Line.Region': {'rdf:resource': {'type': 'string'}, 'list': False}
             }
         },
         'cim:LinearShuntCompensator': {
@@ -369,7 +388,7 @@ configEqCim17 = \
                 'cim:OperationalLimitSet.Terminal': {'rdf:resource': {'type': 'string'}, 'list': False}
             }
         },
-        'cim:OperationalLimitSet': {
+        'cim:OperationalLimitType': {
             'mainAttributes': {
                 'rdf:ID': {'type': 'string', 'list': False} # @id
             },
@@ -378,11 +397,11 @@ configEqCim17 = \
                 # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
-                'cim:OperationalLimitType.acceptableDuration': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:Seconds.value'},
-                'cim:OperationalLimitType.isInfiniteDuration': {'type': 'bool', 'list': False}
+                'cim:OperationalLimitType.acceptableDuration': {'type': 'bool', 'list': False}
             },
             'attributes': {
-                'cim:OperationalLimitSet.Terminal': {'rdf:resource': {'type': 'string'}, 'list': False}
+                'cim:OperationalLimitType.direction': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:OperationalLimitType.kind': {'rdf:resource': {'type': 'string'}, 'list': False}
             }
         },
         'cim:PetersenCoil': {
@@ -480,6 +499,27 @@ configEqCim17 = \
             'attributes': {
                 'cim:RegulatingControl.mode': {'rdf:resource': {'type': 'string'}, 'list': False},
                 'cim:RegulatingControl.Terminal': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
+        },
+        'cim:StationSupply': {
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
+                'cim:Equipment.aggregate': {'type': 'bool', 'list': False},
+                # 'cim:Equipment.networkAnalysisEnabled': {'type': 'bool', 'list': False},
+                'cim:Equipment.normallyInService': {'type': 'bool', 'list': False},
+                'cim:EnergyConsumer.pfixed': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ActivePower.value'},
+                'cim:EnergyConsumer.pfixedPct': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ActivePower.value'},
+                'cim:EnergyConsumer.qfixed': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ReactivePower.value'},
+                'cim:EnergyConsumer.qfixedPct': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ReactivePower.value'}
+            },
+            'attributes': {
+                'cim:Equipment.EquipmentContainer': {'rdf:resource': {'type': 'string'}, 'list': False}
             }
         },
         'cim:SubGeographicalRegion': {

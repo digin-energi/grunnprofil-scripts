@@ -11,7 +11,7 @@
     },
     "@id": "urn:uuid:d12e4546-e6a5-4211-a4c8-877ac1e24d16",
     "prov:generatedAtTime": {
-        "@value": "2023-01-25T16:06:43Z",
+        "@value": "2023-01-27T16:08:51Z",
         "@type": "xsd:dateTime"
     },
     "dcterms:issued": {
@@ -831,6 +831,9 @@
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:d4addb12-e956-e44b-9a9d-f118fdbe49f8"
             },
+            "cim:EnergyConsumer.LoadResponse": {
+                "@id": "urn:uuid:6963e27e-9aaa-df42-a71c-1268f02e472f"
+            },
             "cim:ConformLoad.LoadGroup": {
                 "@id": "urn:uuid:0b8f03ae-b704-664c-8665-49300c9c1fff"
             }
@@ -844,6 +847,9 @@
             "cim:Equipment.aggregate": true,
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:681a1e65-5a55-11eb-a658-74e5f963e191"
+            },
+            "cim:EnergyConsumer.LoadResponse": {
+                "@id": "urn:uuid:6963e27e-9aaa-df42-a71c-1268f02e472f"
             },
             "cim:ConformLoad.LoadGroup": {
                 "@id": "urn:uuid:0b8f03ae-b704-664c-8665-49300c9c1fff"
@@ -2045,7 +2051,16 @@
             "cim:EquivalentInjection.minQ": {
                 "cim:ReactivePower.value": -100.0
             },
-            "cim:EquivalentInjection.regulationCapability": false
+            "cim:EquivalentInjection.r": {
+                "cim:Resistance.value": 0.43445
+            },
+            "cim:EquivalentInjection.regulationCapability": false,
+            "cim:EquivalentInjection.x": {
+                "cim:Reactance.value": 4.3445
+            },
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:1f4fabd4-8c57-c245-b107-4e64c9007ae3"
+            }
         },
         {
             "@id": "urn:uuid:c70c1ea0-c58b-624b-ab6a-0072ad2eea25",
@@ -2065,7 +2080,16 @@
             "cim:EquivalentInjection.minQ": {
                 "cim:ReactivePower.value": 0.00143
             },
-            "cim:EquivalentInjection.regulationCapability": false
+            "cim:EquivalentInjection.r": {
+                "cim:Resistance.value": 0.316799999
+            },
+            "cim:EquivalentInjection.regulationCapability": false,
+            "cim:EquivalentInjection.x": {
+                "cim:Reactance.value": 0.074644242
+            },
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:681a21b6-5a55-11eb-a658-74e5f963e191"
+            }
         },
         {
             "@id": "urn:uuid:b7057d99-e21a-4ba1-9cef-15aeeee4232a",
@@ -2107,6 +2131,136 @@
             },
             "cim:Equipment.EquipmentContainer": {
                 "@id": "urn:uuid:f1769670-9aeb-11e5-91da-b8763fd99c5f"
+            }
+        },
+        {
+            "@id": "urn:uuid:cdc8afca-5a57-ad4a-84ef-f6a236e20463",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:cdc8afca-5a57-ad4a-84ef-f6a236e20463",
+            "cim:IdentifiedObject.description": "Line 023 ZT1-EFC ACLS 1",
+            "cim:IdentifiedObject.name": "LC 023 ZT1-EFC ACLS 1",
+            "cim:Line.Region": {
+                "@id": "urn:uuid:f176965f-9aeb-11e5-91da-b8763fd99c5f"
+            }
+        },
+        {
+            "@id": "urn:uuid:cb57417c-d86a-4a42-a6a6-e0f53d9331c0",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:cb57417c-d86a-4a42-a6a6-e0f53d9331c0",
+            "cim:IdentifiedObject.description": "Line 023 ZT1-EFC ACLS 2",
+            "cim:IdentifiedObject.name": "LC 023 ZT1-EFC ACLS 2",
+            "cim:Line.Region": {
+                "@id": "urn:uuid:f176965f-9aeb-11e5-91da-b8763fd99c5f"
+            }
+        },
+        {
+            "@id": "urn:uuid:7a0c868b-eaa1-814b-97a8-c7e112c7a027",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:7a0c868b-eaa1-814b-97a8-c7e112c7a027",
+            "cim:IdentifiedObject.description": "Line 04 TELEMA 2 ACLS 3",
+            "cim:IdentifiedObject.name": "LC 04 TELEMA 2 ACLS 3",
+            "cim:Line.Region": {
+                "@id": "urn:uuid:f176965f-9aeb-11e5-91da-b8763fd99c5f"
+            }
+        },
+        {
+            "@id": "urn:uuid:28412ba6-8a1b-e548-8b8e-d76b1b083afb",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:28412ba6-8a1b-e548-8b8e-d76b1b083afb",
+            "cim:IdentifiedObject.description": "Line ARENDAL-T1 ACLS 1",
+            "cim:IdentifiedObject.name": "LC 132 ARENDAL-T1 ACLS 1",
+            "cim:Line.Region": {
+                "@id": "urn:uuid:f176965f-9aeb-11e5-91da-b8763fd99c5f"
+            }
+        },
+        {
+            "@id": "urn:uuid:c7ef29bd-8a14-e343-a03f-9b1b6d343e44",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:c7ef29bd-8a14-e343-a03f-9b1b6d343e44",
+            "cim:IdentifiedObject.description": "Line ENGENE-NEDENES ACLS 1",
+            "cim:IdentifiedObject.name": "LC 22 ENGENE-NEDENES ACLS 1",
+            "cim:Line.Region": {
+                "@id": "urn:uuid:f176965f-9aeb-11e5-91da-b8763fd99c5f"
+            }
+        },
+        {
+            "@id": "urn:uuid:e07eda57-aafe-384d-9f7b-3ed4ed8e1da0",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:e07eda57-aafe-384d-9f7b-3ed4ed8e1da0",
+            "cim:IdentifiedObject.description": "Line 22 ENGENE-T1 ACLS 1 1",
+            "cim:IdentifiedObject.name": "LC 22 ENGENE-T1 ACLS 1 1",
+            "cim:Line.Region": {
+                "@id": "urn:uuid:f176965f-9aeb-11e5-91da-b8763fd99c5f"
+            }
+        },
+        {
+            "@id": "urn:uuid:58f1a6ec-bb18-e84b-b50f-864f0eb7100d",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:58f1a6ec-bb18-e84b-b50f-864f0eb7100d",
+            "cim:IdentifiedObject.description": "Line 22 ENGENE-T1 ACLS 1 2",
+            "cim:IdentifiedObject.name": "LC 22 ENGENE-T1 ACLS 1 2",
+            "cim:Line.Region": {
+                "@id": "urn:uuid:f176965f-9aeb-11e5-91da-b8763fd99c5f"
+            }
+        },
+        {
+            "@id": "urn:uuid:1622b4fa-9e46-784e-b160-1c47e1133d7e",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:1622b4fa-9e46-784e-b160-1c47e1133d7e",
+            "cim:IdentifiedObject.description": "Line 22 ENGENE-ZT1 ACLS 1",
+            "cim:IdentifiedObject.name": "LC 22 ENGENE-ZT1 ACLS 1",
+            "cim:Line.Region": {
+                "@id": "urn:uuid:f176965f-9aeb-11e5-91da-b8763fd99c5f"
+            }
+        },
+        {
+            "@id": "urn:uuid:2dc165a0-39fb-6541-81d8-4daee82b2932",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:2dc165a0-39fb-6541-81d8-4daee82b2932",
+            "cim:IdentifiedObject.description": "Line 22 TELEMA 2 ACLS 4",
+            "cim:IdentifiedObject.name": "LC 22 TELEMA 2 ACLS 4",
+            "cim:Line.Region": {
+                "@id": "urn:uuid:f176965f-9aeb-11e5-91da-b8763fd99c5f"
+            }
+        },
+        {
+            "@id": "urn:uuid:d4f4ebe8-2eed-f04f-9000-676f6778a959",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:d4f4ebe8-2eed-f04f-9000-676f6778a959",
+            "cim:IdentifiedObject.description": "Line 22 ZT1-EFC ACLS 1",
+            "cim:IdentifiedObject.name": "LC 22 ZT1-EFC ACLS 1",
+            "cim:Line.Region": {
+                "@id": "urn:uuid:f176965f-9aeb-11e5-91da-b8763fd99c5f"
+            }
+        },
+        {
+            "@id": "urn:uuid:8e0075c4-ea93-4669-b57c-3f6b229bb6d3",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:8e0075c4-ea93-4669-b57c-3f6b229bb6d3",
+            "cim:IdentifiedObject.description": "Line 132 ARENDAL-FROLAND",
+            "cim:IdentifiedObject.name": "LC 132ARENDAL-FROLAND",
+            "cim:Line.Region": {
+                "@id": "urn:uuid:f176965f-9aeb-11e5-91da-b8763fd99c5f"
+            }
+        },
+        {
+            "@id": "urn:uuid:81e0db9e-aa30-474d-b017-def591771422",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:81e0db9e-aa30-474d-b017-def591771422",
+            "cim:IdentifiedObject.description": "Line 132 FROLAND-T_ENGENE",
+            "cim:IdentifiedObject.name": "LC 132FROLAND-T_ENGENE",
+            "cim:Line.Region": {
+                "@id": "urn:uuid:f176965f-9aeb-11e5-91da-b8763fd99c5f"
+            }
+        },
+        {
+            "@id": "urn:uuid:f677795c-3419-4623-9e5d-4a0287903492",
+            "@type": "cim:Line",
+            "cim:IdentifiedObject.mRID": "urn:uuid:f677795c-3419-4623-9e5d-4a0287903492",
+            "cim:IdentifiedObject.description": "Line 132 T_ENGENE-ENGENE",
+            "cim:IdentifiedObject.name": "LC 132T_ENGENE-ENGENE",
+            "cim:Line.Region": {
+                "@id": "urn:uuid:f176965f-9aeb-11e5-91da-b8763fd99c5f"
             }
         },
         {
@@ -2432,6 +2586,27 @@
             "cim:IdentifiedObject.name": "LS T2 ARENDAL T1 132 S",
             "cim:OperationalLimitSet.Terminal": {
                 "@id": "urn:uuid:92d33bf7-7034-11eb-a65a-74e5f963e191"
+            }
+        },
+        {
+            "@id": "urn:uuid:681a2679-5a55-11eb-a658-74e5f963e191",
+            "@type": "cim:OperationalLimitType",
+            "cim:IdentifiedObject.mRID": "urn:uuid:681a2679-5a55-11eb-a658-74e5f963e191",
+            "cim:IdentifiedObject.description": "Permanent Admissible Transmission Loading",
+            "cim:IdentifiedObject.name": "PATL",
+            "cim:OperationalLimitType.direction": {
+                "@id": "http://iec.ch/TC57/CIM100#OperationalLimitDirectionKind.absoluteValue"
+            }
+        },
+        {
+            "@id": "urn:uuid:681a267a-5a55-11eb-a658-74e5f963e191",
+            "@type": "cim:OperationalLimitType",
+            "cim:IdentifiedObject.mRID": "urn:uuid:681a267a-5a55-11eb-a658-74e5f963e191",
+            "cim:IdentifiedObject.description": "Temporarily Admissible Transmission Loading ",
+            "cim:IdentifiedObject.name": "TATL",
+            "cim:OperationalLimitType.acceptableDuration": null,
+            "cim:OperationalLimitType.direction": {
+                "@id": "http://iec.ch/TC57/CIM100#OperationalLimitDirectionKind.absoluteValue"
             }
         },
         {
@@ -2911,6 +3086,29 @@
             },
             "cim:RegulatingControl.Terminal": {
                 "@id": "urn:uuid:92d33b55-7034-11eb-a65a-74e5f963e191"
+            }
+        },
+        {
+            "@id": "urn:uuid:0506353c-8adf-4f48-999f-bb1975c03467",
+            "@type": "cim:StationSupply",
+            "cim:IdentifiedObject.mRID": "urn:uuid:0506353c-8adf-4f48-999f-bb1975c03467",
+            "cim:IdentifiedObject.description": "Nedenes 400 Volt Station Supply 1",
+            "cim:IdentifiedObject.name": "NEDENES 04 SS1",
+            "cim:Equipment.aggregate": false,
+            "cim:EnergyConsumer.pfixed": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.pfixedPct": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.qfixed": {
+                "cim:ReactivePower.value": 0.0
+            },
+            "cim:EnergyConsumer.qfixedPct": {
+                "cim:ReactivePower.value": 0.0
+            },
+            "cim:Equipment.EquipmentContainer": {
+                "@id": "urn:uuid:681a21b6-5a55-11eb-a658-74e5f963e191"
             }
         },
         {
