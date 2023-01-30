@@ -263,21 +263,6 @@ configEqCim17 = \
                 'cim:Equipment.EquipmentContainer': {'rdf:resource': {'type': 'string'}, 'list': False}
             }
         },
-        'cim:ControlArea': {
-            'mainAttributes': {
-                'rdf:ID': {'type': 'string', 'list': False} # @id
-            },
-            'tags': {
-                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
-                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
-                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
-                'cim:IdentifiedObject.name': {'type': 'string', 'list': False}
-
-            },
-            'attributes': {
-
-            }
-        },
         'cim:Line': {
             'mainAttributes': {
                 'rdf:ID': {'type': 'string', 'list': False} # @id

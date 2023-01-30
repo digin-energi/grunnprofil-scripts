@@ -11,7 +11,7 @@
     },
     "@id": "urn:uuid:d12e4546-e6a5-4211-a4c8-877ac1e24d16",
     "prov:generatedAtTime": {
-        "@value": "2023-01-27T16:08:51Z",
+        "@value": "2023-01-30T12:21:02Z",
         "@type": "xsd:dateTime"
     },
     "dcterms:issued": {
@@ -1266,7 +1266,13 @@
             "@type": "cim:ControlArea",
             "cim:IdentifiedObject.mRID": "urn:uuid:681a1dd5-5a55-11eb-a658-74e5f963e191",
             "cim:IdentifiedObject.description": "DSO 1 ControlArea 1",
-            "cim:IdentifiedObject.name": "DSO1 CA 1"
+            "cim:IdentifiedObject.name": "DSO1 CA 1",
+            "cim:ControlArea.type": {
+                "@id": "http://iec.ch/TC57/CIM100#ControlAreaTypeKind.Interchange"
+            },
+            "cim:ControlArea.EnergyArea": {
+                "@id": "urn:uuid:92d33b39-7034-11eb-a65a-74e5f963e191"
+            }
         },
         {
             "@id": "urn:uuid:681a26d8-5a55-11eb-a658-74e5f963e191",
