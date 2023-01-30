@@ -11,7 +11,7 @@
     },
     "@id": "urn:uuid:a529556e-aa95-4b28-b729-e9114f90880a",
     "prov:generatedAtTime": {
-        "@value": "2023-01-27T16:08:57Z",
+        "@value": "2023-01-30T14:20:31Z",
         "@type": "xsd:dateTime"
     },
     "dcterms:issued": {
@@ -367,117 +367,163 @@
         {
             "@id": "urn:uuid:_9df7b716-0395-d14c-889e-15be72031d4a",
             "@type": "cim:ControlArea",
-            "cim:ControlArea.netInterchange": 0.0
+            "cim:ControlArea.netInterchange": {
+                "cim:ActivePower.value": 0.0
+            }
         },
         {
             "@id": "urn:uuid:_9ff945ef-e893-4c68-b514-ff8940c01f17",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 400.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 400.0
+            }
         },
         {
             "@id": "urn:uuid:_e34ca4c2-8bd7-4d41-b407-bfde09878fe2",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 400.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 400.0
+            }
         },
         {
             "@id": "urn:uuid:_9b95046e-3a0b-4bf4-9ac8-b16ae30dd99f",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 400.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 400.0
+            }
         },
         {
             "@id": "urn:uuid:_2fe2f098-bef7-46ce-a283-4a533a07dbfc",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 400.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 400.0
+            }
         },
         {
             "@id": "urn:uuid:_af9b16b2-d918-445c-a2aa-5b116efe6ced",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 400.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 400.0
+            }
         },
         {
             "@id": "urn:uuid:_71d437d2-b5dc-48d7-9250-e558e8811ff3",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 400.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 400.0
+            }
         },
         {
             "@id": "urn:uuid:_b964f2e5-1c68-4b5f-abb7-11a4f84650bd",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 400.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 400.0
+            }
         },
         {
             "@id": "urn:uuid:_11f01e0a-8233-458f-b427-666f0fb53736",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 400.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 400.0
+            }
         },
         {
             "@id": "urn:uuid:_5457ebb3-1f51-483e-b49a-4424ec03840e",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 400.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 400.0
+            }
         },
         {
             "@id": "urn:uuid:_b059c518-fa8e-484a-a426-8766c56275ad",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 400.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 400.0
+            }
         },
         {
             "@id": "urn:uuid:_9bff3a3c-5a06-4538-b04c-6cdeaa4e709c",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 400.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 400.0
+            }
         },
         {
             "@id": "urn:uuid:_927aa241-7249-4362-83de-e2ff3da337da",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 400.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 400.0
+            }
         },
         {
             "@id": "urn:uuid:_aaed6c4c-abfb-49d0-bf54-a29398344a0f",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 400.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 400.0
+            }
         },
         {
             "@id": "urn:uuid:_94686647-b1d0-4214-ace2-4ec6879fffda",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 400.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 400.0
+            }
         },
         {
             "@id": "urn:uuid:_e50656d8-81e1-49b6-8960-120cdf90d351",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 400.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 400.0
+            }
         },
         {
             "@id": "urn:uuid:_d2124105-10f2-42c0-a16a-6c47b5edb485",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 400.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 400.0
+            }
         },
         {
             "@id": "urn:uuid:_0fdd0101-d830-4751-8500-158d70bfeed6",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 400.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 400.0
+            }
         },
         {
             "@id": "urn:uuid:_ca7b66d4-f320-4d41-a7d7-81e178fad8fa",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 400.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 400.0
+            }
         },
         {
             "@id": "urn:uuid:_d0cad0ac-ccd0-4fa1-ad9d-042a953f267e",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 400.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 400.0
+            }
         },
         {
             "@id": "urn:uuid:_c7a834b4-a64f-4e17-a09a-d922527cd824",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 400.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 400.0
+            }
         },
         {
             "@id": "urn:uuid:_1a367f73-c961-4f37-937f-9ee7d7a812a5",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 400.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 400.0
+            }
         },
         {
             "@id": "urn:uuid:_d600cd39-c90d-41d4-94c2-6899a02507c9",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 400.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 400.0
+            }
         },
         {
             "@id": "urn:uuid:_4abb4cf4-5b33-4e16-b4f4-7b7dbf45e90a",

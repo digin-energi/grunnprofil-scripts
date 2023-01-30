@@ -11,7 +11,7 @@
     },
     "@id": "urn:uuid:f19668c6-e0a1-4db7-bfee-7645392d0021",
     "prov:generatedAtTime": {
-        "@value": "2023-01-27T16:08:46Z",
+        "@value": "2023-01-30T14:20:27Z",
         "@type": "xsd:dateTime"
     },
     "dcterms:issued": {
@@ -283,187 +283,264 @@
         {
             "@id": "urn:uuid:_681a1dd5-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:ControlArea",
-            "cim:ControlArea.netInterchange": 0.0
+            "cim:ControlArea.netInterchange": {
+                "cim:ActivePower.value": 0.0
+            },
+            "cim:ControlArea.pTolerance": {
+                "cim:ActivePower.value": 0.1
+            }
         },
         {
             "@id": "urn:uuid:681a26d8-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 275.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 275.0
+            }
         },
         {
             "@id": "urn:uuid:681a2a1c-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 590.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 590.0
+            }
         },
         {
             "@id": "urn:uuid:681a2a84-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 590.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 590.0
+            }
         },
         {
             "@id": "urn:uuid:681a2a88-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 590.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 590.0
+            }
         },
         {
             "@id": "urn:uuid:92d33bd5-7034-11eb-a65a-74e5f963e191",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 727.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 727.0
+            }
         },
         {
             "@id": "urn:uuid:681a26e0-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 275.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 275.0
+            }
         },
         {
             "@id": "urn:uuid:92d33be9-7034-11eb-a65a-74e5f963e191",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 745.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 745.0
+            }
         },
         {
             "@id": "urn:uuid:681a2a18-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 590.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 590.0
+            }
         },
         {
             "@id": "urn:uuid:92d33bed-7034-11eb-a65a-74e5f963e191",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 745.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 745.0
+            }
         },
         {
             "@id": "urn:uuid:92d33b9e-7034-11eb-a65a-74e5f963e191",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 1020.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 1020.0
+            }
         },
         {
             "@id": "urn:uuid:681a3096-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 656.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 656.0
+            }
         },
         {
             "@id": "urn:uuid:681a2fd0-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 83.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 83.0
+            }
         },
         {
             "@id": "urn:uuid:92d33bd6-7034-11eb-a65a-74e5f963e191",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 727.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 727.0
+            }
         },
         {
             "@id": "urn:uuid:92d33b9f-7034-11eb-a65a-74e5f963e191",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 1020.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 1020.0
+            }
         },
         {
             "@id": "urn:uuid:0f183ae8-bf40-4c42-ba28-aff0684ec683",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 275.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 275.0
+            }
         },
         {
             "@id": "urn:uuid:245cd84e-872f-d141-b6ae-c791424d0237",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 275.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 275.0
+            }
         },
         {
             "@id": "urn:uuid:10d3dc6c-c98a-df45-b1ce-c043dbfeef25",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 275.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 275.0
+            }
         },
         {
             "@id": "urn:uuid:f822f3a2-4516-9048-913a-b808866ec168",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 275.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 275.0
+            }
         },
         {
             "@id": "urn:uuid:bd381b90-7f6e-8a45-bff0-1370214c234c",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 275.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 275.0
+            }
         },
         {
             "@id": "urn:uuid:c8231145-5610-4245-b1a1-572fecb643d8",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 1020.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 1020.0
+            }
         },
         {
             "@id": "urn:uuid:df8139f5-361f-9846-b6ff-aaa351935dbb",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 1020.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 1020.0
+            }
         },
         {
             "@id": "urn:uuid:c3594d55-896e-7447-a90b-6b3c087b788e",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 727.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 727.0
+            }
         },
         {
             "@id": "urn:uuid:87f5ed47-2758-514e-9a13-ef692d942321",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 727.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 727.0
+            }
         },
         {
             "@id": "urn:uuid:e5e585f8-423e-c049-8e8e-58bda1ec78e8",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 1020.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 1020.0
+            }
         },
         {
             "@id": "urn:uuid:859d05d5-cdac-f849-81a2-4f0593c6c824",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 1020.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 1020.0
+            }
         },
         {
             "@id": "urn:uuid:7b025cfa-4526-6f49-a420-ea211e8eceba",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 1020.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 1020.0
+            }
         },
         {
             "@id": "urn:uuid:1ab33989-6134-7f4f-876d-9fcd150fd081",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 1020.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 1020.0
+            }
         },
         {
             "@id": "urn:uuid:a982d4f5-7307-3942-ab95-b3cac858d733",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 1020.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 1020.0
+            }
         },
         {
             "@id": "urn:uuid:11e9226e-e3cf-0f48-b691-8dfa2d25ae7b",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 1020.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 1020.0
+            }
         },
         {
             "@id": "urn:uuid:57661de3-c67c-b74b-8729-912a82eeec22",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 1020.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 1020.0
+            }
         },
         {
             "@id": "urn:uuid:de98fb60-241a-5e47-a390-ac62f1d20079",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 1020.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 1020.0
+            }
         },
         {
             "@id": "urn:uuid:3401221c-3b67-7144-981f-94a1d57a77a1",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 412.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 412.0
+            }
         },
         {
             "@id": "urn:uuid:1d069b92-4138-454e-9db4-c05f38f767ca",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 412.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 412.0
+            }
         },
         {
             "@id": "urn:uuid:3817162d-5e9d-d243-be82-10c2eca33b5b",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 275.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 275.0
+            }
         },
         {
             "@id": "urn:uuid:a3dceeba-ffb3-4349-9c4f-efb8c5c05923",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 275.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 275.0
+            }
         },
         {
             "@id": "urn:uuid:b0e72714-9f93-c444-913f-a2437efb1d7e",
             "@type": "cim:CurrentLimit",
-            "cim:CurrentLimit.value": 275.0
+            "cim:CurrentLimit.value": {
+                "cim:CurrentFlow.value": 275.0
+            }
         },
         {
             "@id": "urn:uuid:_a8afc199-8a20-41d8-8ada-5261202610eb",
@@ -595,12 +672,15 @@
         {
             "@id": "urn:uuid:_b7057d99-e21a-4ba1-9cef-15aeeee4232a",
             "@type": "cim:GeneratingUnit",
-            "cim:Equipment.inService": true
+            "cim:Equipment.inService": true,
+            "cim:GeneratingUnit.normalPF": 1.0
         },
         {
             "@id": "urn:uuid:_681a323d-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:LinearShuntCompensator",
-            "cim:Equipment.inService": true
+            "cim:Equipment.inService": true,
+            "cim:ShuntCompensator.sections": 1.0,
+            "cim:RegulatingCondEq.controlEnabled": true
         },
         {
             "@id": "urn:uuid:_55de4e32-8cb0-4602-9901-ec91e104b300",
@@ -647,9 +727,74 @@
             "cim:Equipment.inService": true
         },
         {
+            "@id": "urn:uuid:_681a2fe7-5a55-11eb-a658-74e5f963e191",
+            "@type": "cim:RatioTapChanger",
+            "cim:TapChanger.step": 17.0,
+            "cim:TapChanger.controlEnabled": true
+        },
+        {
+            "@id": "urn:uuid:_681a3091-5a55-11eb-a658-74e5f963e191",
+            "@type": "cim:RatioTapChanger",
+            "cim:TapChanger.step": 18.0,
+            "cim:TapChanger.controlEnabled": true
+        },
+        {
+            "@id": "urn:uuid:_681a2fd5-5a55-11eb-a658-74e5f963e191",
+            "@type": "cim:RatioTapChanger",
+            "cim:TapChanger.step": 17.0,
+            "cim:TapChanger.controlEnabled": false
+        },
+        {
+            "@id": "urn:uuid:_681a30a5-5a55-11eb-a658-74e5f963e191",
+            "@type": "cim:RatioTapChanger",
+            "cim:TapChanger.step": 4.0,
+            "cim:TapChanger.controlEnabled": true
+        },
+        {
+            "@id": "urn:uuid:_570e76de-1b18-4a92-a1a2-b6f780f5dcbe",
+            "@type": "cim:RegulatingControl",
+            "cim:RegulatingControl.discrete": false,
+            "cim:RegulatingControl.enabled": true,
+            "cim:RegulatingControl.targetValue": 420.0,
+            "cim:RegulatingControl.targetValueUnitMultiplier": {
+                "@id": "http://iec.ch/TC57/CIM100#UnitMultiplier.k"
+            }
+        },
+        {
+            "@id": "urn:uuid:_92d33c00-7034-11eb-a65a-74e5f963e191",
+            "@type": "cim:RegulatingControl",
+            "cim:RegulatingControl.discrete": true,
+            "cim:RegulatingControl.enabled": true,
+            "cim:RegulatingControl.targetValue": 22.0,
+            "cim:RegulatingControl.targetValueUnitMultiplier": {
+                "@id": "http://iec.ch/TC57/CIM100#UnitMultiplier.k"
+            }
+        },
+        {
             "@id": "urn:uuid:_33666962-c2f9-4f6b-af5a-2ef1982ac282",
             "@type": "cim:SynchronousMachine",
-            "cim:Equipment.inService": true
+            "cim:Equipment.inService": true,
+            "cim:RotatingMachine.p": {
+                "cim:ActivePower.value": -178.0
+            },
+            "cim:RotatingMachine.q": {
+                "cim:ReactivePower.value": 0.0
+            },
+            "cim:RegulatingCondEq.controlEnabled": true,
+            "cim:SynchronousMachine.operatingMode": {
+                "@id": "http://iec.ch/TC57/CIM100#SynchronousMachineOperatingMode.generator"
+            }
+        },
+        {
+            "@id": "urn:uuid:_681a30a4-5a55-11eb-a658-74e5f963e191",
+            "@type": "cim:TapChangerControl",
+            "cim:RegulatingControl.discrete": true,
+            "cim:RegulatingControl.enabled": true,
+            "cim:RegulatingControl.targetDeadband": 0.04,
+            "cim:RegulatingControl.targetValue": 0.4,
+            "cim:RegulatingControl.targetValueUnitMultiplier": {
+                "@id": "http://iec.ch/TC57/CIM100#UnitMultiplier.k"
+            }
         },
         {
             "@id": "urn:uuid:_0523e10e-4e02-48c6-94dd-ef1938932497",

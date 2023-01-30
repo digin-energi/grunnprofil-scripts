@@ -53,7 +53,8 @@ configSshCim17 = \
                 'rdf:about': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                'cim:ControlArea.netInterchange': {'type': 'float', 'list': False}
+                'cim:ControlArea.netInterchange': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ActivePower.value'},
+                'cim:ControlArea.pTolerance': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ActivePower.value'}
             },
             'attributes': {
 
@@ -64,7 +65,7 @@ configSshCim17 = \
                 'rdf:about': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                'cim:CurrentLimit.value': {'type': 'float', 'list': False}
+                'cim:CurrentLimit.value': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:CurrentFlow.value'}
             },
             'attributes': {
 
@@ -114,7 +115,8 @@ configSshCim17 = \
                 'rdf:about': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                'cim:Equipment.inService': {'type': 'bool', 'list': False}
+                'cim:Equipment.inService': {'type': 'bool', 'list': False},
+                'cim:GeneratingUnit.normalPF': {'type': 'float', 'list': False}
             },
             'attributes': {
 
@@ -125,7 +127,9 @@ configSshCim17 = \
                 'rdf:about': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                'cim:Equipment.inService': {'type': 'bool', 'list': False}
+                'cim:Equipment.inService': {'type': 'bool', 'list': False},
+                'cim:ShuntCompensator.sections': {'type': 'float', 'list': False},
+                'cim:RegulatingCondEq.controlEnabled': {'type': 'bool', 'list': False}
             },
             'attributes': {
 
@@ -166,15 +170,57 @@ configSshCim17 = \
 
             }
         },
+        'cim:RatioTapChanger': {
+            'mainAttributes': {
+                'rdf:about': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                'cim:TapChanger.step': {'type': 'float', 'list': False},
+                'cim:TapChanger.controlEnabled': {'type': 'bool', 'list': False}
+            },
+            'attributes': {
+
+            }
+        },
+        'cim:RegulatingControl': {
+            'mainAttributes': {
+                'rdf:about': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                'cim:RegulatingControl.discrete': {'type': 'bool', 'list': False},
+                'cim:RegulatingControl.enabled': {'type': 'bool', 'list': False},
+                'cim:RegulatingControl.targetValue': {'type': 'float', 'list': False}
+            },
+            'attributes': {
+                'cim:RegulatingControl.targetValueUnitMultiplier': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
+        },
         'cim:SynchronousMachine': {
             'mainAttributes': {
                 'rdf:about': {'type': 'string', 'list': False} # @id
             },
             'tags': {
-                'cim:Equipment.inService': {'type': 'bool', 'list': False}
+                'cim:Equipment.inService': {'type': 'bool', 'list': False},
+                'cim:RotatingMachine.p': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ActivePower.value'},
+                'cim:RotatingMachine.q': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:ReactivePower.value'},
+                'cim:RegulatingCondEq.controlEnabled': {'type': 'bool', 'list': False}
             },
             'attributes': {
-
+                'cim:SynchronousMachine.operatingMode': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
+        },
+        'cim:TapChangerControl': {
+            'mainAttributes': {
+                'rdf:about': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                'cim:RegulatingControl.discrete': {'type': 'bool', 'list': False},
+                'cim:RegulatingControl.enabled': {'type': 'bool', 'list': False},
+                'cim:RegulatingControl.targetDeadband': {'type': 'float', 'list': False},
+                'cim:RegulatingControl.targetValue': {'type': 'float', 'list': False}
+            },
+            'attributes': {
+                'cim:RegulatingControl.targetValueUnitMultiplier': {'rdf:resource': {'type': 'string'}, 'list': False}
             }
         },
         'cim:Terminal': {

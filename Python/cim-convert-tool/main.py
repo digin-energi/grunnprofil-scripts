@@ -8,8 +8,8 @@ from documentData import documentDataClass
 import os
 
 #--------Parameters---------#
-cimFileType = "EQ"
-cimFileLevel = "MV1"
+cimFileType = "SSH"
+cimFileLevel = "LV1"
 #---------------------------#
 
 # Do not Touch
