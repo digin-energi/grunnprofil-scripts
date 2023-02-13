@@ -1,4 +1,4 @@
-import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as ET
 import json
 from functions import xmlPrefixListReplacer, valueDataTypeConverter
 from configEqCim17 import configEqCim17

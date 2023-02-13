@@ -1,5 +1,3 @@
-import xml.etree.ElementTree as ET
-
 def xmlPrefixListReplacer(tags, cimPrefix, euPrefix, rdfPrefix, mdPrefix):
     outputtags = []
     for i in range(0, len(tags)):
