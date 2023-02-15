@@ -3,12 +3,13 @@ import json
 from functions import xmlPrefixListReplacer, valueDataTypeConverter
 from configEqCim17 import configEqCim17
 from configSshCim17 import configSshCim17
+from configAsCim17 import configAsCim17
 from contextData import contextDataClass
 from documentData import documentDataClass
 import os
 
 #--------Parameters---------#
-cimFileType = "SSH"
+cimFileType = "AS"
 cimFileLevel = "LV1"
 #---------------------------#
 
@@ -22,6 +23,8 @@ if cimFileType == "EQ":
     config = configEqCim17
 elif cimFileType == "SSH":
     config = configSshCim17
+elif cimFileType == "AS":
+    config = configAsCim17
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
