@@ -19,9 +19,10 @@ def modellInfoFunc(
     ):
     dateTimeNow = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
     yearNow = datetime.now().strftime("%Y")
-    scenarioTime = datetime.strptime(fullModelModelScenarioTime, "%Y-%m-%dT%H:%M:%SZ") + timedelta(days=1)
+    if fullModelModelScenarioTime != "": scenarioTime = datetime.strptime(fullModelModelScenarioTime, "%Y-%m-%dT%H:%M:%SZ") + timedelta(days=1)
 
     dictionary["@id"] = fullModelRdfAbout
+    dictionary["@type"] = "dcat:Dataset"
     dictionary["prov:generatedAtTime"] = {
             "@value": dateTimeNow,
             "@type": "xsd:dateTime"
@@ -37,12 +38,12 @@ def modellInfoFunc(
             "@language": "en"
         }
     ]
-    dictionary["dcat:version"] = fullModelModelVersion
+    # dictionary["dcat:version"] = fullModelModelVersion
     dictionary["dcterms:publisher"] = {
             "@id": f"urn:uuid:{companyUuid}", #Digin uuid
             "dcterms:title": companyName #Digin
         }
-    if cimFileType in ["SSH", "TP", "SV"]:
+    if cimFileType in ["SSH", "TP", "SV"] and fullModelModelScenarioTime != "":
         dictionary["dcterms:temporal"] = {
             "@type": "dcterms:PeriodOfTime",
             "dcat:startDate": { # --> Alle
@@ -58,7 +59,7 @@ def modellInfoFunc(
                 "@type": "xsd:duration",
                 "@value": "PT1H"
             }
-    else:
+    elif fullModelModelScenarioTime != "":
         dictionary["dcterms:temporal"] = {
             "@type": "http://purl.org/dc/terms/PeriodOfTime",
             "dcat:startDate": { # --> Alle
@@ -77,16 +78,17 @@ def modellInfoFunc(
             "@id": "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
             "dcterms:title": "PUBLIC"
         }
-    dictionary["dcat:isVersionOf"] = f"{isVersionOfUrl}{docTitle}" #https://digin.no/baseprofile/DIGIN10-30-MV1_EQ
+    dictionary["dcat:isVersionOf"] = {"@id": f"{isVersionOfUrl}{docTitle}"} #https://digin.no/baseprofile/DIGIN10-30-MV1_EQ
     dictionary["dcat:keyword"] = cimFileType #EQ
-    dictionary["dcterms:LocationPeriodOrJurisdiction"] = fullModelModelingAuthoritySet
+    dictionary["dcterms:spatial"] = {"@id": fullModelModelingAuthoritySet}
     dictionary["dcterms:conformsTo"] = fullModelProfileList
-    dictionary["dcterms:references"] = [
-        {
-            "@id": fullModelDependentOn,
-            "dcterms:title": docTitle #DIGIN10-30-MV1_EQ
-        }
-    ]
+    if fullModelDependentOn != "":
+        dictionary["dcterms:references"] = [
+            {
+                "@id": fullModelDependentOn,
+                "dcterms:title": docTitle #DIGIN10-30-MV1_EQ
+            }
+        ]
     return dictionary
 
 class documentDataClass:
@@ -118,7 +120,7 @@ class documentDataClass:
                 if root[fullModelIndex][i].tag == "{http://iec.ch/TC57/61970-552/ModelDescription/1#}Model.description": fullModelModelDescription = root[fullModelIndex][i].text
                 if root[fullModelIndex][i].tag == "{http://iec.ch/TC57/61970-552/ModelDescription/1#}Model.version": fullModelModelVersion = root[fullModelIndex][i].text
                 if root[fullModelIndex][i].tag == "{http://iec.ch/TC57/61970-552/ModelDescription/1#}Model.modelingAuthoritySet": fullModelModelingAuthoritySet = root[fullModelIndex][i].text
-                if root[fullModelIndex][i].tag == "{http://iec.ch/TC57/61970-552/ModelDescription/1#}Model.profile": fullModelProfileList.append(root[fullModelIndex][i].text)
+                if root[fullModelIndex][i].tag == "{http://iec.ch/TC57/61970-552/ModelDescription/1#}Model.profile": fullModelProfileList.append({"@id": root[fullModelIndex][i].text})
                 if root[fullModelIndex][i].tag == "{http://iec.ch/TC57/61970-552/ModelDescription/1#}Model.DependentOn": fullModelDependentOn = root[fullModelIndex][i].get('{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource')
 
         self.fullModelJsonLd = modellInfoFunc(

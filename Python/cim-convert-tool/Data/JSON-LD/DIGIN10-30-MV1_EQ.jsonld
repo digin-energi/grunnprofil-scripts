@@ -1,8 +1,7 @@
 {
     "@context": {
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "cim": "http://iec.ch/TC57/CIM100#",
-        "md": "http://iec.ch/TC57/61970-552/ModelDescription/1#",
+        "cim": "http://ucaiug.org/ns/CIM#",
         "eu": "http://iec.ch/TC57/CIM100-European#",
         "dcterms": "http://purl.org/dc/terms/",
         "dcat": "http://www.w3.org/ns/dcat#",
@@ -10,8 +9,9 @@
         "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@id": "urn:uuid:d12e4546-e6a5-4211-a4c8-877ac1e24d16",
+    "@type": "dcat:Dataset",
     "prov:generatedAtTime": {
-        "@value": "2023-02-13T15:47:05Z",
+        "@value": "2023-02-20T15:20:42Z",
         "@type": "xsd:dateTime"
     },
     "dcterms:issued": {
@@ -25,7 +25,6 @@
             "@language": "en"
         }
     ],
-    "dcat:version": "1",
     "dcterms:publisher": {
         "@id": "urn:uuid:bd53cf0a-2e2f-4230-a591-0233290b5f9b",
         "dcterms:title": "DIGIN"
@@ -47,12 +46,20 @@
         "@id": "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
         "dcterms:title": "PUBLIC"
     },
-    "dcat:isVersionOf": "https://digin.no/baseprofile/DIGIN10-30-MV1_EQ",
+    "dcat:isVersionOf": {
+        "@id": "https://digin.no/baseprofile/DIGIN10-30-MV1_EQ"
+    },
     "dcat:keyword": "EQ",
-    "dcterms:LocationPeriodOrJurisdiction": "https://diginenergi.no/DIGIN10/MV1",
+    "dcterms:spatial": {
+        "@id": "https://diginenergi.no/DIGIN10/MV1"
+    },
     "dcterms:conformsTo": [
-        "http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0",
-        "http://iec.ch/TC57/ns/CIM/CoreEquipment/4.0"
+        {
+            "@id": "http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0"
+        },
+        {
+            "@id": "http://iec.ch/TC57/ns/CIM/CoreEquipment/4.0"
+        }
     ],
     "dcterms:references": [
         {

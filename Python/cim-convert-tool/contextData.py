@@ -3,8 +3,8 @@ class contextDataClass:
         self.context = \
             {
                 "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-                "cim": "http://iec.ch/TC57/CIM100#",
-                "md": "http://iec.ch/TC57/61970-552/ModelDescription/1#",
+                "cim": "http://ucaiug.org/ns/CIM#", # "http://iec.ch/TC57/CIM100#",
+                # "md": "http://iec.ch/TC57/61970-552/ModelDescription/1#",
                 "eu": "http://iec.ch/TC57/CIM100-European#",
                 "dcterms": "http://purl.org/dc/terms/",
                 "dcat": "http://www.w3.org/ns/dcat#",

@@ -4,13 +4,14 @@ from functions import xmlPrefixListReplacer, valueDataTypeConverter
 from configEqCim17 import configEqCim17
 from configSshCim17 import configSshCim17
 from configAsCim17 import configAsCim17
+from configBaseVoltageCim17 import configBaseVoltageCim17
 from contextData import contextDataClass
 from documentData import documentDataClass
 import os
 
 #--------Parameters---------#
-cimFileType = "AS"
-cimFileLevel = "LV1"
+cimFileType = "EQ" # EQ, SSH, AS, RD
+cimFileLevel = "LV1" #LV1, MV1, BaseVoltage
 #---------------------------#
 
 # Do not Touch
@@ -25,6 +26,8 @@ elif cimFileType == "SSH":
     config = configSshCim17
 elif cimFileType == "AS":
     config = configAsCim17
+elif cimFileType == "RD":
+    config = configBaseVoltageCim17
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
