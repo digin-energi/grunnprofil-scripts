@@ -81,7 +81,7 @@ def modellInfoFunc(
     dictionary["dcat:isVersionOf"] = {"@id": f"{isVersionOfUrl}{docTitle}"} #https://digin.no/baseprofile/DIGIN10-30-MV1_EQ
     dictionary["dcat:keyword"] = cimFileType #EQ
     dictionary["dcterms:spatial"] = {"@id": fullModelModelingAuthoritySet}
-    dictionary["dcterms:conformsTo"] = fullModelProfileList
+    if fullModelProfileList != []: dictionary["dcterms:conformsTo"] = fullModelProfileList
     if fullModelDependentOn != "":
         dictionary["dcterms:references"] = [
             {

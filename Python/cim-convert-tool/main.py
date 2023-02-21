@@ -5,13 +5,24 @@ from configEqCim17 import configEqCim17
 from configSshCim17 import configSshCim17
 from configAsCim17 import configAsCim17
 from configBaseVoltageCim17 import configBaseVoltageCim17
+from configGeographicalRegionCim17 import configGeographicalRegionCim17
+from configBmCim17 import configBmCim17
+from configDlCim17 import configDlCim17
+from configGlCim17 import configGlCim17
+from configOpCim17 import configOpCim17
+from configScCim17 import configScCim17
+from configAcCim17 import configAcCim17
+from configMeasurementValueSourceCim17 import configMeasurementValueSourceCim17
+from configReadingQualityTypeCim17 import configReadingQualityTypeCim17
+from configReadingTypeCim17 import configReadingTypeCim17
+from configCuCim17 import configCuCim17
 from contextData import contextDataClass
 from documentData import documentDataClass
 import os
 
 #--------Parameters---------#
-cimFileType = "EQ" # EQ, SSH, AS, RD
-cimFileLevel = "LV1" #LV1, MV1, BaseVoltage
+cimFileType = "CU" # EQ, SSH, AS, RD, BM, DL, GL, OP, SC, AC, CU
+cimFileLevel = "MV1" #LV1, MV1, BaseVoltage, GeographicalRegion, HV1-MV1, M1, MeasurementValueSource, ReadingQualityType, ReadingType
 #---------------------------#
 
 # Do not Touch
@@ -26,8 +37,30 @@ elif cimFileType == "SSH":
     config = configSshCim17
 elif cimFileType == "AS":
     config = configAsCim17
-elif cimFileType == "RD":
+elif cimFileType == "RD" and cimFileLevel == "BaseVoltage":
     config = configBaseVoltageCim17
+elif cimFileType == "RD" and cimFileLevel == "GeographicalRegion":
+    config = configGeographicalRegionCim17
+elif cimFileType == "BM" and cimFileLevel == "HV1-MV1":
+    config = configBmCim17
+elif cimFileType == "DL":
+    config = configDlCim17
+elif cimFileType == "GL":
+    config = configGlCim17
+elif cimFileType == "OP":
+    config = configOpCim17
+elif cimFileType == "SC":
+    config = configScCim17
+elif cimFileType == "AC":
+    config = configAcCim17
+elif cimFileType == "RD" and cimFileLevel == "MeasurementValueSource":
+    config = configMeasurementValueSourceCim17
+elif cimFileType == "RD" and cimFileLevel == "ReadingQualityType":
+    config = configReadingQualityTypeCim17
+elif cimFileType == "RD" and cimFileLevel == "ReadingType":
+    config = configReadingTypeCim17
+elif cimFileType == "CU":
+    config = configCuCim17
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -38,11 +71,20 @@ rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 cim = "http://iec.ch/TC57/CIM100#"
 md = "http://iec.ch/TC57/61970-552/ModelDescription/1#"
 eu = "http://iec.ch/TC57/CIM100-European#"
+skos = "http://www.w3.org/2004/02/skos/core#"
 
 OutputJsonLD = {}
 
 # Context
-jsonldContext = contextDataClass() \
+
+if cimFileType == "RD" and cimFileLevel == "ReadingQualityType":
+    isSkos = True
+elif cimFileType == "RD" and cimFileLevel == "ReadingType":
+    isSkos = True
+else:
+    isSkos = False
+
+jsonldContext = contextDataClass(isSkos) \
     .contextDataFunc()
 
 OutputJsonLD["@context"] = jsonldContext
@@ -63,7 +105,7 @@ documentDataClass(
 tree = ET.parse(inputFilePath)
 root = tree.getroot()
 
-xmlMainTagList = xmlPrefixListReplacer(list(config.keys()), cim, eu, rdf, md)
+xmlMainTagList = xmlPrefixListReplacer(list(config.keys()), cim, eu, rdf, md, skos)
 configMainTagList = list(config.keys())
 
 for i in range(0, len(configMainTagList)):
@@ -71,7 +113,7 @@ for i in range(0, len(configMainTagList)):
     configMainTag = configMainTagList[i]
 
     for mainTags in root.findall(xmlMainTag):
-        xmlMainAttributeList = xmlPrefixListReplacer(list(config[configMainTag]['mainAttributes'].keys()), cim, eu, rdf, md)
+        xmlMainAttributeList = xmlPrefixListReplacer(list(config[configMainTag]['mainAttributes'].keys()), cim, eu, rdf, md, skos)
         configMainAttributeList = list(config[configMainTag]['mainAttributes'].keys())
 
         # MainAttributes ######################################
@@ -88,7 +130,7 @@ for i in range(0, len(configMainTagList)):
             dictionaryClass["@type"] = configMainTag
 
         # Tags ################################################
-        xmlTagList = xmlPrefixListReplacer(list(config[configMainTag]['tags'].keys()), cim, eu, rdf, md)
+        xmlTagList = xmlPrefixListReplacer(list(config[configMainTag]['tags'].keys()), cim, eu, rdf, md, skos)
         configTagList = list(config[configMainTag]['tags'].keys())
 
         for i in range(0, len(xmlTagList)):
@@ -120,7 +162,7 @@ for i in range(0, len(configMainTagList)):
                         dictionaryClass[configTag] = valueDataTypeConverter(textValue, textType)
         
         # Attributes ##########################################
-        xmlAttributeTagList = xmlPrefixListReplacer(list(config[configMainTag]['attributes'].keys()), cim, eu, rdf, md)
+        xmlAttributeTagList = xmlPrefixListReplacer(list(config[configMainTag]['attributes'].keys()), cim, eu, rdf, md, skos)
         configAttributeTagList = list(config[configMainTag]['attributes'].keys())
 
         for i in range(0, len(xmlAttributeTagList)):
@@ -134,18 +176,19 @@ for i in range(0, len(configMainTagList)):
 
             for attributeTags in mainTags.findall(xmlAttributeTag):
                 
-                xmlAttributeSubTagList = xmlPrefixListReplacer(list(config[configMainTag]['attributes'][configAttributeTag].keys()), cim, eu, rdf, md)
+                xmlAttributeSubTagList = xmlPrefixListReplacer(list(config[configMainTag]['attributes'][configAttributeTag].keys()), cim, eu, rdf, md, skos)
                 configAttributeSubTagList = list(config[configMainTag]['attributes'][configAttributeTag].keys())
 
                 for i in range(0, len(xmlAttributeSubTagList)):
                     xmlAttributeSubTag = xmlAttributeSubTagList[i]
                     configAttributeSubTag = configAttributeSubTagList[i]
+                    
+                    if attributeTags.get(xmlAttributeSubTag) != None:
+                        if attributeTags.get(xmlAttributeSubTag)[:2] == '#_':
+                            attributeValue = f'urn:uuid:{attributeTags.get(xmlAttributeSubTag)[2:]}'
+                        else:
+                            attributeValue = attributeTags.get(xmlAttributeSubTag)
 
-                    if attributeTags.get(xmlAttributeSubTag)[:2] == '#_':
-                        attributeValue = f'urn:uuid:{attributeTags.get(xmlAttributeSubTag)[2:]}'
-                    else:
-                        attributeValue = attributeTags.get(xmlAttributeSubTag)
-                        
                     attributeType = config[configMainTag]['attributes'][configAttributeTag][configAttributeSubTag]['type']
 
                     subDictionaryClass = {}
