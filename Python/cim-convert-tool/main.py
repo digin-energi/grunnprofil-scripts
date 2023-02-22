@@ -16,13 +16,16 @@ from configMeasurementValueSourceCim17 import configMeasurementValueSourceCim17
 from configReadingQualityTypeCim17 import configReadingQualityTypeCim17
 from configReadingTypeCim17 import configReadingTypeCim17
 from configCuCim17 import configCuCim17
+from configSvCim17 import configSvCim17
+from configTpCim17 import configTpCim17
+from configOrCim17 import configOrCim17
 from contextData import contextDataClass
 from documentData import documentDataClass
 import os
 
 #--------Parameters---------#
-cimFileType = "CU" # EQ, SSH, AS, RD, BM, DL, GL, OP, SC, AC, CU
-cimFileLevel = "MV1" #LV1, MV1, BaseVoltage, GeographicalRegion, HV1-MV1, M1, MeasurementValueSource, ReadingQualityType, ReadingType
+cimFileType = "EQ" # EQ, SSH, AS, RD, BM, DL, GL, OP, SC, AC, CU, SV, TP, OR
+cimFileLevel = "LV1" #LV1, MV1, BaseVoltage, GeographicalRegion, HV1-MV1, MV1-LV1, M1, MeasurementValueSource, ReadingQualityType, ReadingType
 #---------------------------#
 
 # Do not Touch
@@ -41,7 +44,7 @@ elif cimFileType == "RD" and cimFileLevel == "BaseVoltage":
     config = configBaseVoltageCim17
 elif cimFileType == "RD" and cimFileLevel == "GeographicalRegion":
     config = configGeographicalRegionCim17
-elif cimFileType == "BM" and cimFileLevel == "HV1-MV1":
+elif cimFileType == "BM":
     config = configBmCim17
 elif cimFileType == "DL":
     config = configDlCim17
@@ -61,6 +64,12 @@ elif cimFileType == "RD" and cimFileLevel == "ReadingType":
     config = configReadingTypeCim17
 elif cimFileType == "CU":
     config = configCuCim17
+elif cimFileType == "SV":
+    config = configSvCim17
+elif cimFileType == "TP":
+    config = configTpCim17
+elif cimFileType == "OR":
+    config = configOrCim17
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -72,6 +81,7 @@ cim = "http://iec.ch/TC57/CIM100#"
 md = "http://iec.ch/TC57/61970-552/ModelDescription/1#"
 eu = "http://iec.ch/TC57/CIM100-European#"
 skos = "http://www.w3.org/2004/02/skos/core#"
+nc = "http://entsoe.eu/ns/nc#"
 
 OutputJsonLD = {}
 
@@ -84,7 +94,12 @@ elif cimFileType == "RD" and cimFileLevel == "ReadingType":
 else:
     isSkos = False
 
-jsonldContext = contextDataClass(isSkos) \
+if cimFileType == "OR":
+    isNc = True
+else:
+    isNc = False
+
+jsonldContext = contextDataClass(isSkos, isNc) \
     .contextDataFunc()
 
 OutputJsonLD["@context"] = jsonldContext
@@ -105,7 +120,7 @@ documentDataClass(
 tree = ET.parse(inputFilePath)
 root = tree.getroot()
 
-xmlMainTagList = xmlPrefixListReplacer(list(config.keys()), cim, eu, rdf, md, skos)
+xmlMainTagList = xmlPrefixListReplacer(list(config.keys()), cim, eu, rdf, md, skos, nc)
 configMainTagList = list(config.keys())
 
 for i in range(0, len(configMainTagList)):
@@ -113,7 +128,7 @@ for i in range(0, len(configMainTagList)):
     configMainTag = configMainTagList[i]
 
     for mainTags in root.findall(xmlMainTag):
-        xmlMainAttributeList = xmlPrefixListReplacer(list(config[configMainTag]['mainAttributes'].keys()), cim, eu, rdf, md, skos)
+        xmlMainAttributeList = xmlPrefixListReplacer(list(config[configMainTag]['mainAttributes'].keys()), cim, eu, rdf, md, skos, nc)
         configMainAttributeList = list(config[configMainTag]['mainAttributes'].keys())
 
         # MainAttributes ######################################
@@ -130,7 +145,7 @@ for i in range(0, len(configMainTagList)):
             dictionaryClass["@type"] = configMainTag
 
         # Tags ################################################
-        xmlTagList = xmlPrefixListReplacer(list(config[configMainTag]['tags'].keys()), cim, eu, rdf, md, skos)
+        xmlTagList = xmlPrefixListReplacer(list(config[configMainTag]['tags'].keys()), cim, eu, rdf, md, skos, nc)
         configTagList = list(config[configMainTag]['tags'].keys())
 
         for i in range(0, len(xmlTagList)):
@@ -149,6 +164,12 @@ for i in range(0, len(configMainTagList)):
 
                 if configTag == 'cim:IdentifiedObject.mRID':
                     textValue = f'urn:uuid:{textValue}'
+                elif configTag == 'nc:Name.mRID':
+                    textValue = f'urn:uuid:{textValue}'
+                elif configTag == 'nc:NameType.mRID':
+                    textValue = f'urn:uuid:{textValue}'
+                elif configTag == 'nc:NameTypeAuthority.mRID':
+                    textValue = f'urn:uuid:{textValue}'
 
                 if textList == True: # Checking if Tag can be list
                     if 'CIMDatatype' in config[configMainTag]['tags'][configTag].keys(): # Checking if Tag has CIMDatatype
@@ -162,7 +183,7 @@ for i in range(0, len(configMainTagList)):
                         dictionaryClass[configTag] = valueDataTypeConverter(textValue, textType)
         
         # Attributes ##########################################
-        xmlAttributeTagList = xmlPrefixListReplacer(list(config[configMainTag]['attributes'].keys()), cim, eu, rdf, md, skos)
+        xmlAttributeTagList = xmlPrefixListReplacer(list(config[configMainTag]['attributes'].keys()), cim, eu, rdf, md, skos, nc)
         configAttributeTagList = list(config[configMainTag]['attributes'].keys())
 
         for i in range(0, len(xmlAttributeTagList)):
@@ -176,7 +197,7 @@ for i in range(0, len(configMainTagList)):
 
             for attributeTags in mainTags.findall(xmlAttributeTag):
                 
-                xmlAttributeSubTagList = xmlPrefixListReplacer(list(config[configMainTag]['attributes'][configAttributeTag].keys()), cim, eu, rdf, md, skos)
+                xmlAttributeSubTagList = xmlPrefixListReplacer(list(config[configMainTag]['attributes'][configAttributeTag].keys()), cim, eu, rdf, md, skos, nc)
                 configAttributeSubTagList = list(config[configMainTag]['attributes'][configAttributeTag].keys())
 
                 for i in range(0, len(xmlAttributeSubTagList)):

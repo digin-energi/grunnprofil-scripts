@@ -1,6 +1,6 @@
 from datetime import datetime
 
-def xmlPrefixListReplacer(tags, cimPrefix, euPrefix, rdfPrefix, mdPrefix, skosPrefix):
+def xmlPrefixListReplacer(tags, cimPrefix, euPrefix, rdfPrefix, mdPrefix, skosPrefix, ncPrefix):
     outputtags = []
     for i in range(0, len(tags)):
         if tags[i].startswith('cim:'):
@@ -13,6 +13,8 @@ def xmlPrefixListReplacer(tags, cimPrefix, euPrefix, rdfPrefix, mdPrefix, skosPr
             outputtags.append(tags[i].replace('md:', '{' + mdPrefix + '}'))
         elif tags[i].startswith('skos:'):
             outputtags.append(tags[i].replace('skos:', '{' + skosPrefix + '}'))
+        elif tags[i].startswith('nc:'):
+            outputtags.append(tags[i].replace('nc:', '{' + ncPrefix + '}'))
     return outputtags
 
 def valueDataTypeConverter(value, type):

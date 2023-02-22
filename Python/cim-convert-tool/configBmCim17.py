@@ -1,5 +1,19 @@
 configBmCim17 = \
     {
+        'cim:Bay': {
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False}
+            },
+            'attributes': {
+                'cim:Bay.VoltageLevel': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
+        },
         'eu:BoundaryPoint': {
             'mainAttributes': {
                 'rdf:ID': {'type': 'string', 'list': False} # @id
