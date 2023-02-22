@@ -80,15 +80,31 @@ configAcCim17 = \
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.shortName': {'type': 'string', 'list': False},
-                'cim:modelNumber': {'type': 'string', 'list': False}, # Is not this missing something?
-                'cim:modelVersion': {'type': 'string', 'list': False}, # Is not this missing something?
-                'cim:drawingNumber': {'type': 'string', 'list': False}, # Is not this missing something?
-                'cim:instructionMnaual': {'type': 'string', 'list': False}, # Is not this missing something?
-                'cim:weightTotal': {'type': 'string', 'list': False}, # Is not this missing something?
+                'cim:ProductAssetModel.modelNumber': {'type': 'string', 'list': False},
+                'cim:ProductAssetModel.modelVersion': {'type': 'string', 'list': False},
+                'cim:ProductAssetModel.drawingNumber': {'type': 'string', 'list': False},
+                'cim:ProductAssetModel.instructionMnaual': {'type': 'string', 'list': False},
+                'cim:ProductAssetModel.weightTotal': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:Mass.value'}
+            },
+            'attributes': {
+                'cim:ProductAssetModel.AssetModelCatalogueItem': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:ProductAssetModel.Manufacturer': {'rdf:resource': {'type': 'string'}, 'list': False}
+            }
+        },
+        'cim:AssetModelCatalogueItem': {
+            'mainAttributes': {
+                'rdf:ID': {'type': 'string', 'list': False} # @id
+            },
+            'tags': {
+                'cim:IdentifiedObject.mRID': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.aliasName': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
+                'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
+                # 'cim:IdentifiedObject.shortName': {'type': 'string', 'list': False},
                 'cim:AssetModelCatalogueItem.unitCost': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:Money.value'}
             },
             'attributes': {
-                'cim:ProducAssetModel.Manufacturer': {'rdf:resource': {'type': 'string'}, 'list': False}
+
             }
         }
     }

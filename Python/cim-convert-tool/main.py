@@ -24,8 +24,8 @@ from documentData import documentDataClass
 import os
 
 #--------Parameters---------#
-cimFileType = "EQ" # EQ, SSH, AS, RD, BM, DL, GL, OP, SC, AC, CU, SV, TP, OR
-cimFileLevel = "LV1" #LV1, MV1, BaseVoltage, GeographicalRegion, HV1-MV1, MV1-LV1, M1, MeasurementValueSource, ReadingQualityType, ReadingType
+cimFileType = "AC" # EQ, SSH, AS, RD, BM, DL, GL, OP, SC, AC, CU, SV, TP, OR
+cimFileLevel = "M1" #LV1, MV1, BaseVoltage, GeographicalRegion, HV1-MV1, MV1-LV1, M1, MeasurementValueSource, ReadingQualityType, ReadingType
 #---------------------------#
 
 # Do not Touch
