@@ -3,16 +3,16 @@
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "cim": "http://ucaiug.org/ns/CIM#",
         "eu": "http://iec.ch/TC57/CIM100-European#",
-        "skos": "http://www.w3.org/2004/02/skos/core#",
         "dcterms": "http://purl.org/dc/terms/",
         "dcat": "http://www.w3.org/ns/dcat#",
         "prov": "http://www.w3.org/ns/prov#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#"
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#"
     },
     "@id": "urn:uuid:5d5ea085-1ad3-4826-91db-a329818f8326",
     "@type": "dcat:Dataset",
     "prov:generatedAtTime": {
-        "@value": "2023-02-21T16:46:29Z",
+        "@value": "2023-03-08T09:27:33Z",
         "@type": "xsd:dateTime"
     },
     "dcterms:issued": {
@@ -54,6 +54,9 @@
             "cim:IdentifiedObject.mRID": "urn:uuid:c6554d99-d8d3-49db-abc6-694cec37ae10",
             "cim:IdentifiedObject.description": "sixtyMinute deltaData forward electricitySecondaryMetered energy (kWh)",
             "cim:IdentifiedObject.name": "0.0.7.4.1.1.12.0.0.0.0.0.0.0.0.3.72.0",
+            "skos:exactMatch": {
+                "@id": "http://data.europa.eu/energy/ReadingType/0.0.7.4.1.1.12.0.0.0.0.0.0.0.0.3.72.0"
+            },
             "cim:ReadingType.measuringPeriod": {
                 "@id": "http://iec.ch/TC57/CIM100#MacroPeriodKind.sixtyMinute"
             },
@@ -68,9 +71,6 @@
             },
             "cim:ReadingType.unit": {
                 "@id": "http://iec.ch/TC57/CIM100#UnitSymbol.Wh"
-            },
-            "skos:exactMatch": {
-                "@id": "http://data.europa.eu/energy/ReadingType/0.0.7.4.1.1.12.0.0.0.0.0.0.0.0.3.72.0"
             }
         },
         {
@@ -79,6 +79,9 @@
             "cim:IdentifiedObject.mRID": "urn:uuid:f89aee25-0a13-4dbd-afc7-8584c66b6317",
             "cim:IdentifiedObject.description": "forward electricitySecondaryMetered energy (kWh)",
             "cim:IdentifiedObject.name": "0.0.0.0.1.1.12.0.0.0.0.0.0.0.0.3.72.0",
+            "skos:exactMatch": {
+                "@id": "http://data.europa.eu/energy/ReadingType/0.0.0.0.1.1.12.0.0.0.0.0.0.0.0.3.72.0"
+            },
             "cim:ReadingType.flowDirection": {
                 "@id": "http://iec.ch/TC57/CIM100#FlowDirectionKind.forward"
             },
@@ -90,9 +93,6 @@
             },
             "cim:ReadingType.currency": {
                 "@id": "http://iec.ch/TC57/CIM100#UnitSymbol.Wh"
-            },
-            "skos:exactMatch": {
-                "@id": "http://data.europa.eu/energy/ReadingType/0.0.0.0.1.1.12.0.0.0.0.0.0.0.0.3.72.0"
             }
         },
         {
@@ -101,6 +101,9 @@
             "cim:IdentifiedObject.mRID": "urn:uuid:a0f5330e-1fcf-4df3-a001-ef9578ae318a",
             "cim:IdentifiedObject.description": "average tenMinute summation electricitySecondaryMetered voltage phaseA (V)",
             "cim:IdentifiedObject.name": "0.2.1.9.0.1.54.0.0.0.0.0.0.0.128.0.29.0",
+            "skos:exactMatch": {
+                "@id": "http://data.europa.eu/energy/ReadingType/0.2.1.9.0.1.54.0.0.0.0.0.0.0.128.0.29.0"
+            },
             "cim:ReadingType.aggregate": {
                 "@id": "http://iec.ch/TC57/CIM100#AggregateKind.average"
             },
@@ -116,11 +119,11 @@
             "cim:ReadingType.measurementKind": {
                 "@id": "http://iec.ch/TC57/CIM100#MeasurementKind.voltage"
             },
+            "cim:ReadingType.phases": {
+                "@id": "http://iec.ch/TC57/CIM100#PhaseCode.phaseA"
+            },
             "cim:ReadingType.unit": {
                 "@id": "http://iec.ch/TC57/CIM100#UnitSymbol.V"
-            },
-            "skos:exactMatch": {
-                "@id": "http://data.europa.eu/energy/ReadingType/0.2.1.9.0.1.54.0.0.0.0.0.0.0.128.0.29.0"
             }
         },
         {
@@ -129,6 +132,9 @@
             "cim:IdentifiedObject.mRID": "urn:uuid:86bb43dd-add2-4a44-b5aa-59b0a02b9297",
             "cim:IdentifiedObject.description": "indicating electricitySecondaryMetered current phaseA (A)",
             "cim:IdentifiedObject.name": "0.0.0.6.0.1.4.0.0.0.0.0.0.0.128.0.5.0",
+            "skos:exactMatch": {
+                "@id": "http://data.europa.eu/energy/ReadingType/0.0.0.6.0.1.4.0.0.0.0.0.0.0.128.0.5.0"
+            },
             "cim:ReadingType.accumulation": {
                 "@id": "http://iec.ch/TC57/CIM100#AccumulationKind.indicating"
             },
@@ -138,11 +144,11 @@
             "cim:ReadingType.measurementKind": {
                 "@id": "http://iec.ch/TC57/CIM100#MeasurementKind.current"
             },
+            "cim:ReadingType.phases": {
+                "@id": "http://iec.ch/TC57/CIM100#PhaseCode.phaseA"
+            },
             "cim:ReadingType.unit": {
                 "@id": "http://iec.ch/TC57/CIM100#UnitSymbol.A"
-            },
-            "skos:exactMatch": {
-                "@id": "http://data.europa.eu/energy/ReadingType/0.0.0.6.0.1.4.0.0.0.0.0.0.0.128.0.5.0"
             }
         },
         {
@@ -151,6 +157,9 @@
             "cim:IdentifiedObject.mRID": "urn:uuid:de1cd5ff-6810-42c1-af36-5b519e09042c",
             "cim:IdentifiedObject.description": "indicating electricitySecondaryMetered voltage phaseA (V)",
             "cim:IdentifiedObject.name": "0.0.0.6.0.1.54.0.0.0.0.0.0.0.128.0.29.0",
+            "skos:exactMatch": {
+                "@id": "http://data.europa.eu/energy/ReadingType/0.0.0.6.0.1.54.0.0.0.0.0.0.0.128.0.29.0"
+            },
             "cim:ReadingType.accumulation": {
                 "@id": "http://iec.ch/TC57/CIM100#AccumulationKind.indicating"
             },
@@ -160,11 +169,11 @@
             "cim:ReadingType.measurementKind": {
                 "@id": "http://iec.ch/TC57/CIM100#MeasurementKind.voltage"
             },
+            "cim:ReadingType.phases": {
+                "@id": "http://iec.ch/TC57/CIM100#PhaseCode.phaseA"
+            },
             "cim:ReadingType.unit": {
                 "@id": "http://iec.ch/TC57/CIM100#UnitSymbol.V"
-            },
-            "skos:exactMatch": {
-                "@id": "http://data.europa.eu/energy/ReadingType/0.0.0.6.0.1.54.0.0.0.0.0.0.0.128.0.29.0"
             }
         },
         {

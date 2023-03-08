@@ -12,6 +12,7 @@ configReadingTypeCim17 = \
                 # 'cim:IdentifiedObject.shortName': {'type': 'string', 'list': False},
             },
             'attributes': {
+                'skos:exactMatch': {'rdf:resource': {'type': 'string'}, 'list': False},
                 'cim:ReadingType.macroPeriod': {'rdf:resource': {'type': 'string'}, 'list': False},
                 'cim:ReadingType.aggregate': {'rdf:resource': {'type': 'string'}, 'list': False},
                 'cim:ReadingType.measuringPeriod': {'rdf:resource': {'type': 'string'}, 'list': False},
@@ -28,10 +29,10 @@ configReadingTypeCim17 = \
                 'cim:ReadingType.tou': {'rdf:resource': {'type': 'string'}, 'list': False},
                 'cim:ReadingType.cpp': {'rdf:resource': {'type': 'string'}, 'list': False},
                 'cim:ReadingType.consumptionTier': {'rdf:resource': {'type': 'string'}, 'list': False},
+                'cim:ReadingType.phases': {'rdf:resource': {'type': 'string'}, 'list': False},
                 'cim:ReadingType.multiplier': {'rdf:resource': {'type': 'string'}, 'list': False},
                 'cim:ReadingType.unit': {'rdf:resource': {'type': 'string'}, 'list': False},
-                'cim:ReadingType.currency': {'rdf:resource': {'type': 'string'}, 'list': False},
-                'skos:exactMatch': {'rdf:resource': {'type': 'string'}, 'list': False}
+                'cim:ReadingType.currency': {'rdf:resource': {'type': 'string'}, 'list': False}
             }
         }
     }
