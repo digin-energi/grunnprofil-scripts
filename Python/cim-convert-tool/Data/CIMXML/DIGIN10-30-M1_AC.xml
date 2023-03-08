@@ -34,7 +34,7 @@
         <cim:WireInfo.ratedCurrent>220</cim:WireInfo.ratedCurrent>
         <cim:WireInfo.sizeDescription></cim:WireInfo.sizeDescription>
         <cim:WireInfo.strandCount></cim:WireInfo.strandCount>
-        <cim:CableInfo.constructionKind rdf:resource="http://iec.ch/TC57/CIM100#CableConstructionKind.stranded" /> <!--No idea-->
+        <cim:CableInfo.constructionKind rdf:resource="http://iec.ch/TC57/CIM100#CableConstructionKind.stranded" />
         <cim:CableInfo.diameterOverCore></cim:CableInfo.diameterOverCore>
         <cim:CableInfo.diameterOverInsulation></cim:CableInfo.diameterOverInsulation>
         <cim:CableInfo.diameterOverJacket></cim:CableInfo.diameterOverJacket>
