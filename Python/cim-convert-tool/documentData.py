@@ -7,11 +7,11 @@ def modellInfoFunc(
     fullModelModelScenarioTime,
     docTitle,
     fullModelModelDescription,
-    fullModelModelVersion,
+    # fullModelModelVersion,
     companyUuid,
     companyName,
     isVersionOfUrl,
-    cimFileType,
+    docType,
     fullModelModelingAuthoritySet,
     fullModelProfileList,
     fullModelDependentOn,
@@ -43,7 +43,7 @@ def modellInfoFunc(
             "@id": f"urn:uuid:{companyUuid}", #Digin uuid
             "dcterms:title": companyName #Digin
         }
-    if cimFileType in ["SSH", "TP", "SV"] and fullModelModelScenarioTime != "":
+    if docType in ["SSH", "TP", "SV"] and fullModelModelScenarioTime != "":
         dictionary["dcterms:temporal"] = {
             "@type": "dcterms:PeriodOfTime",
             "dcat:startDate": { # --> Alle
@@ -79,7 +79,7 @@ def modellInfoFunc(
             "dcterms:title": "PUBLIC"
         }
     dictionary["dcat:isVersionOf"] = {"@id": f"{isVersionOfUrl}{docTitle}"} #https://digin.no/baseprofile/DIGIN10-30-MV1_EQ
-    dictionary["dcat:keyword"] = cimFileType #EQ
+    dictionary["dcat:keyword"] = docType #EQ
     dictionary["dcterms:spatial"] = {"@id": fullModelModelingAuthoritySet}
     if fullModelProfileList != []: dictionary["dcterms:conformsTo"] = fullModelProfileList
     if fullModelDependentOn != "":
@@ -93,13 +93,13 @@ def modellInfoFunc(
 
 class documentDataClass:
     def __init__(self,
-                 inputFilePath, docTitle, companyUuid, companyName, isVersionOfUrl, cimFileType, dictionary):
+                 inputFilePath, docTitle, companyUuid, companyName, isVersionOfUrl, docType, dictionary):
 
         fullModelRdfAbout = ""
         fullModelModelCreated = ""
         fullModelModelScenarioTime = ""
         fullModelModelDescription = ""
-        fullModelModelVersion = ""
+        # fullModelModelVersion = ""
         fullModelModelingAuthoritySet = ""
         fullModelProfileList = []
         fullModelDependentOn = ""
@@ -118,7 +118,7 @@ class documentDataClass:
                 if root[fullModelIndex][i].tag == "{http://iec.ch/TC57/61970-552/ModelDescription/1#}Model.created": fullModelModelCreated = root[fullModelIndex][i].text
                 if root[fullModelIndex][i].tag == "{http://iec.ch/TC57/61970-552/ModelDescription/1#}Model.scenarioTime": fullModelModelScenarioTime = root[fullModelIndex][i].text
                 if root[fullModelIndex][i].tag == "{http://iec.ch/TC57/61970-552/ModelDescription/1#}Model.description": fullModelModelDescription = root[fullModelIndex][i].text
-                if root[fullModelIndex][i].tag == "{http://iec.ch/TC57/61970-552/ModelDescription/1#}Model.version": fullModelModelVersion = root[fullModelIndex][i].text
+                # if root[fullModelIndex][i].tag == "{http://iec.ch/TC57/61970-552/ModelDescription/1#}Model.version": fullModelModelVersion = root[fullModelIndex][i].text
                 if root[fullModelIndex][i].tag == "{http://iec.ch/TC57/61970-552/ModelDescription/1#}Model.modelingAuthoritySet": fullModelModelingAuthoritySet = root[fullModelIndex][i].text
                 if root[fullModelIndex][i].tag == "{http://iec.ch/TC57/61970-552/ModelDescription/1#}Model.profile": fullModelProfileList.append({"@id": root[fullModelIndex][i].text})
                 if root[fullModelIndex][i].tag == "{http://iec.ch/TC57/61970-552/ModelDescription/1#}Model.DependentOn": fullModelDependentOn = root[fullModelIndex][i].get('{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource')
@@ -129,11 +129,11 @@ class documentDataClass:
                 fullModelModelScenarioTime,
                 docTitle,
                 fullModelModelDescription,
-                fullModelModelVersion,
+                # fullModelModelVersion,
                 companyUuid,
                 companyName,
                 isVersionOfUrl,
-                cimFileType,
+                docType,
                 fullModelModelingAuthoritySet,
                 fullModelProfileList,
                 fullModelDependentOn,

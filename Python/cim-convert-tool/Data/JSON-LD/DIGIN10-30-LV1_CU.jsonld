@@ -11,7 +11,7 @@
     "@id": "urn:uuid:596d41fa-11d3-41da-b231-e05724325e9b",
     "@type": "dcat:Dataset",
     "prov:generatedAtTime": {
-        "@value": "2023-02-21T16:55:43Z",
+        "@value": "2023-03-09T15:13:27Z",
         "@type": "xsd:dateTime"
     },
     "dcterms:issued": {
@@ -68,7 +68,7 @@
         {
             "@id": "urn:uuid:ab9eba1c-28e2-41e6-9d90-97b484581582",
             "@type": "cim:UsagePoint",
-            "cim:IdentifiedObject.mRID": "urn:uuid:ab9eba1c-28e2-41e6-9d90-97b484581582",
+            "cim:IdentifiedObject.mRID": "ab9eba1c-28e2-41e6-9d90-97b484581582",
             "cim:IdentifiedObject.description": "Telemarkstien 2 400 Volt UsagePoint 1",
             "cim:IdentifiedObject.name": "TELEMA2  04 UP001",
             "cim:UsagePoint.chekBilling": false,
@@ -114,7 +114,7 @@
         {
             "@id": "urn:uuid:0b88dcec-5657-4e00-9957-41c42dda9e90",
             "@type": "cim:UsagePoint",
-            "cim:IdentifiedObject.mRID": "urn:uuid:0b88dcec-5657-4e00-9957-41c42dda9e90",
+            "cim:IdentifiedObject.mRID": "0b88dcec-5657-4e00-9957-41c42dda9e90",
             "cim:IdentifiedObject.description": "Telemarkstien 2 400 Volt UsagePoint 2",
             "cim:IdentifiedObject.name": "TELEMA2  04 UP002",
             "cim:UsagePoint.chekBilling": false,
@@ -160,7 +160,7 @@
         {
             "@id": "urn:uuid:aa75e2ad-ac2b-476f-a20c-f7b75dec97d9",
             "@type": "cim:UsagePoint",
-            "cim:IdentifiedObject.mRID": "urn:uuid:aa75e2ad-ac2b-476f-a20c-f7b75dec97d9",
+            "cim:IdentifiedObject.mRID": "aa75e2ad-ac2b-476f-a20c-f7b75dec97d9",
             "cim:IdentifiedObject.description": "Telemarkstien 2 400 Volt UsagePoint 3",
             "cim:IdentifiedObject.name": "TELEMA2  04 UP003",
             "cim:UsagePoint.chekBilling": false,
@@ -206,7 +206,7 @@
         {
             "@id": "urn:uuid:4111f640-e2d3-49e1-a3b2-bca045db3e5b",
             "@type": "cim:UsagePoint",
-            "cim:IdentifiedObject.mRID": "urn:uuid:4111f640-e2d3-49e1-a3b2-bca045db3e5b",
+            "cim:IdentifiedObject.mRID": "4111f640-e2d3-49e1-a3b2-bca045db3e5b",
             "cim:IdentifiedObject.description": "Telemarkstien 2 400 Volt UsagePoint 4",
             "cim:IdentifiedObject.name": "TELEMA2  04 UP004",
             "cim:UsagePoint.chekBilling": false,
@@ -252,7 +252,7 @@
         {
             "@id": "urn:uuid:c07ae94f-63ac-4d65-ba38-02db925c2623",
             "@type": "cim:UsagePoint",
-            "cim:IdentifiedObject.mRID": "urn:uuid:c07ae94f-63ac-4d65-ba38-02db925c2623",
+            "cim:IdentifiedObject.mRID": "c07ae94f-63ac-4d65-ba38-02db925c2623",
             "cim:IdentifiedObject.description": "Telemarkstien 2 400 Volt UsagePoint 5",
             "cim:IdentifiedObject.name": "TELEMA2  04 UP005",
             "cim:UsagePoint.chekBilling": false,
@@ -298,7 +298,7 @@
         {
             "@id": "urn:uuid:4b7cce2d-a55f-45a3-89ef-c0fcaec6660e",
             "@type": "cim:UsagePoint",
-            "cim:IdentifiedObject.mRID": "urn:uuid:4b7cce2d-a55f-45a3-89ef-c0fcaec6660e",
+            "cim:IdentifiedObject.mRID": "4b7cce2d-a55f-45a3-89ef-c0fcaec6660e",
             "cim:IdentifiedObject.description": "Telemarkstien 2 400 Volt UsagePoint 6",
             "cim:IdentifiedObject.name": "TELEMA2  04 UP006",
             "cim:UsagePoint.chekBilling": false,
@@ -344,7 +344,7 @@
         {
             "@id": "urn:uuid:e56eef37-2b37-4eb6-bfbe-d1a693d54f48",
             "@type": "cim:UsagePoint",
-            "cim:IdentifiedObject.mRID": "urn:uuid:e56eef37-2b37-4eb6-bfbe-d1a693d54f48",
+            "cim:IdentifiedObject.mRID": "e56eef37-2b37-4eb6-bfbe-d1a693d54f48",
             "cim:IdentifiedObject.description": "Telemarkstien 2 400 Volt UsagePoint 7",
             "cim:IdentifiedObject.name": "TELEMA2  04 UP007",
             "cim:UsagePoint.chekBilling": false,
@@ -390,7 +390,7 @@
         {
             "@id": "urn:uuid:c49577df-41d9-4ce5-bf39-401980a173ba",
             "@type": "cim:UsagePoint",
-            "cim:IdentifiedObject.mRID": "urn:uuid:c49577df-41d9-4ce5-bf39-401980a173ba",
+            "cim:IdentifiedObject.mRID": "c49577df-41d9-4ce5-bf39-401980a173ba",
             "cim:IdentifiedObject.description": "Telemarkstien 2 400 Volt UsagePoint 8",
             "cim:IdentifiedObject.name": "TELEMA2  04 UP008",
             "cim:UsagePoint.chekBilling": false,
@@ -436,7 +436,7 @@
         {
             "@id": "urn:uuid:7b416d80-631d-47ff-b9c1-da3ccf35be97",
             "@type": "cim:UsagePoint",
-            "cim:IdentifiedObject.mRID": "urn:uuid:7b416d80-631d-47ff-b9c1-da3ccf35be97",
+            "cim:IdentifiedObject.mRID": "7b416d80-631d-47ff-b9c1-da3ccf35be97",
             "cim:IdentifiedObject.description": "Telemarkstien 2 400 Volt UsagePoint 9",
             "cim:IdentifiedObject.name": "TELEMA2  04 UP009",
             "cim:UsagePoint.chekBilling": false,
@@ -482,7 +482,7 @@
         {
             "@id": "urn:uuid:959cdda7-ac98-44e1-ab61-2f739702eded",
             "@type": "cim:UsagePoint",
-            "cim:IdentifiedObject.mRID": "urn:uuid:959cdda7-ac98-44e1-ab61-2f739702eded",
+            "cim:IdentifiedObject.mRID": "959cdda7-ac98-44e1-ab61-2f739702eded",
             "cim:IdentifiedObject.description": "Telemarkstien 2 400 Volt UsagePoint 10",
             "cim:IdentifiedObject.name": "TELEMA2  04 UP010",
             "cim:UsagePoint.chekBilling": false,
@@ -528,7 +528,7 @@
         {
             "@id": "urn:uuid:e3f14479-7342-4a7d-8cc5-47f14438e41e",
             "@type": "cim:UsagePoint",
-            "cim:IdentifiedObject.mRID": "urn:uuid:e3f14479-7342-4a7d-8cc5-47f14438e41e",
+            "cim:IdentifiedObject.mRID": "e3f14479-7342-4a7d-8cc5-47f14438e41e",
             "cim:IdentifiedObject.description": "Telemarkstien 2 400 Volt UsagePoint 11",
             "cim:IdentifiedObject.name": "TELEMA2  04 UP011",
             "cim:UsagePoint.chekBilling": false,
@@ -574,7 +574,7 @@
         {
             "@id": "urn:uuid:f1e8abd7-524d-483c-b20d-d895e2923a22",
             "@type": "cim:UsagePoint",
-            "cim:IdentifiedObject.mRID": "urn:uuid:f1e8abd7-524d-483c-b20d-d895e2923a22",
+            "cim:IdentifiedObject.mRID": "f1e8abd7-524d-483c-b20d-d895e2923a22",
             "cim:IdentifiedObject.description": "Telemarkstien 2 400 Volt UsagePoint 12",
             "cim:IdentifiedObject.name": "TELEMA2  04 UP012",
             "cim:UsagePoint.chekBilling": false,
@@ -620,7 +620,7 @@
         {
             "@id": "urn:uuid:a62be726-c257-42d6-82cc-33fdf9b826c8",
             "@type": "cim:UsagePoint",
-            "cim:IdentifiedObject.mRID": "urn:uuid:a62be726-c257-42d6-82cc-33fdf9b826c8",
+            "cim:IdentifiedObject.mRID": "a62be726-c257-42d6-82cc-33fdf9b826c8",
             "cim:IdentifiedObject.description": "Telemarkstien 2 400 Volt UsagePoint 13",
             "cim:IdentifiedObject.name": "TELEMA2  04 UP013",
             "cim:UsagePoint.chekBilling": false,

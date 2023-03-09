@@ -11,7 +11,7 @@
     "@id": "urn:uuid:9f36f713-b4d4-40a6-809f-9c342c3110ce",
     "@type": "dcat:Dataset",
     "prov:generatedAtTime": {
-        "@value": "2023-02-21T15:28:16Z",
+        "@value": "2023-03-09T15:13:27Z",
         "@type": "xsd:dateTime"
     },
     "dcterms:issued": {
@@ -71,7 +71,7 @@
         {
             "@id": "urn:uuid:_681a26db-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:ACLineSegment",
-            "cim:IdentifiedObject.mRID": "urn:uuid:681a26db-5a55-11eb-a658-74e5f963e191",
+            "cim:IdentifiedObject.mRID": "681a26db-5a55-11eb-a658-74e5f963e191",
             "cim:ACLineSegment.b0ch": {
                 "cim:Susceptance.value": 0.0
             },
@@ -91,7 +91,7 @@
         {
             "@id": "urn:uuid:_ab5aff23-cc0c-40a9-ab1b-7c113822358e",
             "@type": "cim:ACLineSegment",
-            "cim:IdentifiedObject.mRID": "urn:uuid:ab5aff23-cc0c-40a9-ab1b-7c113822358e",
+            "cim:IdentifiedObject.mRID": "ab5aff23-cc0c-40a9-ab1b-7c113822358e",
             "cim:ACLineSegment.b0ch": {
                 "cim:Susceptance.value": 0.0
             },
@@ -111,7 +111,7 @@
         {
             "@id": "urn:uuid:_cf484bc9-2ef9-4116-a5a9-9a5db3e09df9",
             "@type": "cim:ACLineSegment",
-            "cim:IdentifiedObject.mRID": "urn:uuid:cf484bc9-2ef9-4116-a5a9-9a5db3e09df9",
+            "cim:IdentifiedObject.mRID": "cf484bc9-2ef9-4116-a5a9-9a5db3e09df9",
             "cim:ACLineSegment.b0ch": {
                 "cim:Susceptance.value": 0.0
             },
@@ -131,7 +131,7 @@
         {
             "@id": "urn:uuid:_681a26f3-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:ACLineSegment",
-            "cim:IdentifiedObject.mRID": "urn:uuid:681a26f3-5a55-11eb-a658-74e5f963e191",
+            "cim:IdentifiedObject.mRID": "681a26f3-5a55-11eb-a658-74e5f963e191",
             "cim:ACLineSegment.b0ch": {
                 "cim:Susceptance.value": 0.0
             },
@@ -151,7 +151,7 @@
         {
             "@id": "urn:uuid:_1f19556f-4604-8545-b930-0d96b163c57a",
             "@type": "cim:ACLineSegment",
-            "cim:IdentifiedObject.mRID": "urn:uuid:1f19556f-4604-8545-b930-0d96b163c57a",
+            "cim:IdentifiedObject.mRID": "1f19556f-4604-8545-b930-0d96b163c57a",
             "cim:ACLineSegment.b0ch": {
                 "cim:Susceptance.value": 0.0
             },
@@ -171,7 +171,7 @@
         {
             "@id": "urn:uuid:_92d33b99-7034-11eb-a65a-74e5f963e191",
             "@type": "cim:ACLineSegment",
-            "cim:IdentifiedObject.mRID": "urn:uuid:92d33b99-7034-11eb-a65a-74e5f963e191",
+            "cim:IdentifiedObject.mRID": "92d33b99-7034-11eb-a65a-74e5f963e191",
             "cim:ACLineSegment.b0ch": {
                 "cim:Susceptance.value": 0.0
             },
@@ -191,7 +191,7 @@
         {
             "@id": "urn:uuid:_92d33bcc-7034-11eb-a65a-74e5f963e191",
             "@type": "cim:ACLineSegment",
-            "cim:IdentifiedObject.mRID": "urn:uuid:92d33bcc-7034-11eb-a65a-74e5f963e191",
+            "cim:IdentifiedObject.mRID": "92d33bcc-7034-11eb-a65a-74e5f963e191",
             "cim:ACLineSegment.b0ch": {
                 "cim:Susceptance.value": 0.0
             },
@@ -211,7 +211,7 @@
         {
             "@id": "urn:uuid:_92d33be4-7034-11eb-a65a-74e5f963e191",
             "@type": "cim:ACLineSegment",
-            "cim:IdentifiedObject.mRID": "urn:uuid:92d33be4-7034-11eb-a65a-74e5f963e191",
+            "cim:IdentifiedObject.mRID": "92d33be4-7034-11eb-a65a-74e5f963e191",
             "cim:ACLineSegment.b0ch": {
                 "cim:Susceptance.value": 0.0
             },
@@ -231,7 +231,7 @@
         {
             "@id": "urn:uuid:_681a2a7f-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:ACLineSegment",
-            "cim:IdentifiedObject.mRID": "urn:uuid:681a2a7f-5a55-11eb-a658-74e5f963e191",
+            "cim:IdentifiedObject.mRID": "681a2a7f-5a55-11eb-a658-74e5f963e191",
             "cim:ACLineSegment.b0ch": {
                 "cim:Susceptance.value": 0.0
             },
@@ -251,7 +251,7 @@
         {
             "@id": "urn:uuid:_681a2a13-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:ACLineSegment",
-            "cim:IdentifiedObject.mRID": "urn:uuid:681a2a13-5a55-11eb-a658-74e5f963e191",
+            "cim:IdentifiedObject.mRID": "681a2a13-5a55-11eb-a658-74e5f963e191",
             "cim:ACLineSegment.b0ch": {
                 "cim:Susceptance.value": 0.0
             },
@@ -271,7 +271,7 @@
         {
             "@id": "urn:uuid:_681a26cf-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:ACLineSegment",
-            "cim:IdentifiedObject.mRID": "urn:uuid:681a26cf-5a55-11eb-a658-74e5f963e191",
+            "cim:IdentifiedObject.mRID": "681a26cf-5a55-11eb-a658-74e5f963e191",
             "cim:ACLineSegment.b0ch": {
                 "cim:Susceptance.value": 0.0
             },
@@ -291,7 +291,7 @@
         {
             "@id": "urn:uuid:_d1afcb93-f7d9-4e93-8c91-bbeb35f2a322",
             "@type": "cim:ACLineSegment",
-            "cim:IdentifiedObject.mRID": "urn:uuid:d1afcb93-f7d9-4e93-8c91-bbeb35f2a322",
+            "cim:IdentifiedObject.mRID": "d1afcb93-f7d9-4e93-8c91-bbeb35f2a322",
             "cim:ACLineSegment.b0ch": {
                 "cim:Susceptance.value": 0.0
             },
@@ -311,7 +311,7 @@
         {
             "@id": "urn:uuid:_b1b4714b-a160-7742-84d5-d6486d776c94",
             "@type": "cim:ACLineSegment",
-            "cim:IdentifiedObject.mRID": "urn:uuid:b1b4714b-a160-7742-84d5-d6486d776c94",
+            "cim:IdentifiedObject.mRID": "b1b4714b-a160-7742-84d5-d6486d776c94",
             "cim:ACLineSegment.b0ch": {
                 "cim:Susceptance.value": 0.0
             },
@@ -331,7 +331,7 @@
         {
             "@id": "urn:uuid:_ed8865cf-8b36-42ce-acdc-0627b5f55802",
             "@type": "cim:EquivalentInjection",
-            "cim:IdentifiedObject.mRID": "urn:uuid:ed8865cf-8b36-42ce-acdc-0627b5f55802",
+            "cim:IdentifiedObject.mRID": "ed8865cf-8b36-42ce-acdc-0627b5f55802",
             "cim:EquivalentInjection.r": {
                 "cim:Resistance.value": 0.43445
             },
@@ -342,7 +342,7 @@
         {
             "@id": "urn:uuid:_c70c1ea0-c58b-624b-ab6a-0072ad2eea25",
             "@type": "cim:EquivalentInjection",
-            "cim:IdentifiedObject.mRID": "urn:uuid:c70c1ea0-c58b-624b-ab6a-0072ad2eea25",
+            "cim:IdentifiedObject.mRID": "c70c1ea0-c58b-624b-ab6a-0072ad2eea25",
             "cim:EquivalentInjection.r0": {
                 "cim:Resistance.value": 1.267199996
             },
@@ -359,7 +359,7 @@
         {
             "@id": "urn:uuid:_33666962-c2f9-4f6b-af5a-2ef1982ac282",
             "@type": "cim:SynchronousMachine",
-            "cim:IdentifiedObject.mRID": "urn:uuid:33666962-c2f9-4f6b-af5a-2ef1982ac282",
+            "cim:IdentifiedObject.mRID": "33666962-c2f9-4f6b-af5a-2ef1982ac282",
             "cim:SynchronousMachine.r": {
                 "cim:Resistance.value": 0.43445
             }
@@ -367,83 +367,83 @@
         {
             "@id": "urn:uuid:_c9d5445c-9ad6-3849-9e02-08762805826b",
             "@type": "cim:PetersenCoil",
-            "cim:IdentifiedObject.mRID": "urn:uuid:c9d5445c-9ad6-3849-9e02-08762805826b"
+            "cim:IdentifiedObject.mRID": "c9d5445c-9ad6-3849-9e02-08762805826b"
         },
         {
             "@id": "urn:uuid:_62585c75-b020-614c-89a1-fec7c118c3fa",
             "@type": "cim:PetersenCoil",
-            "cim:IdentifiedObject.mRID": "urn:uuid:62585c75-b020-614c-89a1-fec7c118c3fa"
+            "cim:IdentifiedObject.mRID": "62585c75-b020-614c-89a1-fec7c118c3fa"
         },
         {
             "@id": "urn:uuid:_681a2fdd-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:PowerTransformer",
-            "cim:IdentifiedObject.mRID": "urn:uuid:681a2fdd-5a55-11eb-a658-74e5f963e191",
+            "cim:IdentifiedObject.mRID": "681a2fdd-5a55-11eb-a658-74e5f963e191",
             "cim:PowerTransformer.isPartOfGeneratorUnit": false
         },
         {
             "@id": "urn:uuid:_681a2fcb-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:PowerTransformer",
-            "cim:IdentifiedObject.mRID": "urn:uuid:681a2fcb-5a55-11eb-a658-74e5f963e191",
+            "cim:IdentifiedObject.mRID": "681a2fcb-5a55-11eb-a658-74e5f963e191",
             "cim:PowerTransformer.isPartOfGeneratorUnit": false
         },
         {
             "@id": "urn:uuid:_681a3087-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:PowerTransformer",
-            "cim:IdentifiedObject.mRID": "urn:uuid:681a3087-5a55-11eb-a658-74e5f963e191",
+            "cim:IdentifiedObject.mRID": "681a3087-5a55-11eb-a658-74e5f963e191",
             "cim:PowerTransformer.isPartOfGeneratorUnit": false
         },
         {
             "@id": "urn:uuid:_681a309b-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:PowerTransformer",
-            "cim:IdentifiedObject.mRID": "urn:uuid:681a309b-5a55-11eb-a658-74e5f963e191",
+            "cim:IdentifiedObject.mRID": "681a309b-5a55-11eb-a658-74e5f963e191",
             "cim:PowerTransformer.isPartOfGeneratorUnit": false
         },
         {
             "@id": "urn:uuid:_681a2fe0-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:PowerTransformerEnd",
-            "cim:IdentifiedObject.mRID": "urn:uuid:681a2fe0-5a55-11eb-a658-74e5f963e191",
+            "cim:IdentifiedObject.mRID": "681a2fe0-5a55-11eb-a658-74e5f963e191",
             "cim:TransformerEnd.grounded": false
         },
         {
             "@id": "urn:uuid:_681a2fea-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:PowerTransformerEnd",
-            "cim:IdentifiedObject.mRID": "urn:uuid:681a2fea-5a55-11eb-a658-74e5f963e191",
+            "cim:IdentifiedObject.mRID": "681a2fea-5a55-11eb-a658-74e5f963e191",
             "cim:TransformerEnd.grounded": false
         },
         {
             "@id": "urn:uuid:_681a308a-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:PowerTransformerEnd",
-            "cim:IdentifiedObject.mRID": "urn:uuid:681a308a-5a55-11eb-a658-74e5f963e191",
+            "cim:IdentifiedObject.mRID": "681a308a-5a55-11eb-a658-74e5f963e191",
             "cim:TransformerEnd.grounded": false
         },
         {
             "@id": "urn:uuid:_681a3094-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:PowerTransformerEnd",
-            "cim:IdentifiedObject.mRID": "urn:uuid:681a3094-5a55-11eb-a658-74e5f963e191",
+            "cim:IdentifiedObject.mRID": "681a3094-5a55-11eb-a658-74e5f963e191",
             "cim:TransformerEnd.grounded": false
         },
         {
             "@id": "urn:uuid:_681a2fce-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:PowerTransformerEnd",
-            "cim:IdentifiedObject.mRID": "urn:uuid:681a2fce-5a55-11eb-a658-74e5f963e191",
+            "cim:IdentifiedObject.mRID": "681a2fce-5a55-11eb-a658-74e5f963e191",
             "cim:TransformerEnd.grounded": false
         },
         {
             "@id": "urn:uuid:_681a2fd8-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:PowerTransformerEnd",
-            "cim:IdentifiedObject.mRID": "urn:uuid:681a2fd8-5a55-11eb-a658-74e5f963e191",
+            "cim:IdentifiedObject.mRID": "681a2fd8-5a55-11eb-a658-74e5f963e191",
             "cim:TransformerEnd.grounded": false
         },
         {
             "@id": "urn:uuid:_681a309e-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:PowerTransformerEnd",
-            "cim:IdentifiedObject.mRID": "urn:uuid:681a309e-5a55-11eb-a658-74e5f963e191",
+            "cim:IdentifiedObject.mRID": "681a309e-5a55-11eb-a658-74e5f963e191",
             "cim:TransformerEnd.grounded": false
         },
         {
             "@id": "urn:uuid:_681a30a8-5a55-11eb-a658-74e5f963e191",
             "@type": "cim:PowerTransformerEnd",
-            "cim:IdentifiedObject.mRID": "urn:uuid:681a30a8-5a55-11eb-a658-74e5f963e191",
+            "cim:IdentifiedObject.mRID": "681a30a8-5a55-11eb-a658-74e5f963e191",
             "cim:TransformerEnd.grounded": false
         }
     ]

@@ -11,7 +11,7 @@
     "@id": "urn:uuid:7c2e25c9-331f-46f2-a4d4-d33c2e25d342",
     "@type": "dcat:Dataset",
     "prov:generatedAtTime": {
-        "@value": "2023-02-21T14:58:56Z",
+        "@value": "2023-03-09T15:13:27Z",
         "@type": "xsd:dateTime"
     },
     "dcterms:issued": {
@@ -62,7 +62,7 @@
         {
             "@id": "urn:uuid:3344a693-6818-4703-93ac-510baac566d5",
             "@type": "cim:Asset",
-            "cim:IdentifiedObject.mRID": "urn:uuid:3344a693-6818-4703-93ac-510baac566d5",
+            "cim:IdentifiedObject.mRID": "3344a693-6818-4703-93ac-510baac566d5",
             "cim:IdentifiedObject.description": "Engene Current Transformer 1 Asset 3",
             "cim:IdentifiedObject.name": "ENGENE CT1 A3",
             "cim:Asset.baselineCondition": "New",
@@ -71,7 +71,7 @@
             "cim:Asset.lotNumber": "LOT # B-01540601",
             "cim:Asset.position": "inGround",
             "cim:Asset.purchasePrice": {
-                "cim:Money.value": 100000.0
+                "cim:Money.value": "100000.00"
             },
             "cim:Asset.serialNumber": "8DuSTPRi",
             "cim:Asset.type": "CurrentTransformer",
@@ -92,7 +92,7 @@
         {
             "@id": "urn:uuid:9e9d30f5-fdb3-4d0e-9309-ad41c97f3df5",
             "@type": "cim:Asset",
-            "cim:IdentifiedObject.mRID": "urn:uuid:9e9d30f5-fdb3-4d0e-9309-ad41c97f3df5",
+            "cim:IdentifiedObject.mRID": "9e9d30f5-fdb3-4d0e-9309-ad41c97f3df5",
             "cim:IdentifiedObject.description": "Engene Current Transformer 2 Asset 4",
             "cim:IdentifiedObject.name": "ENGENE CT2 A4",
             "cim:Asset.baselineCondition": "New",
@@ -101,7 +101,7 @@
             "cim:Asset.lotNumber": "LOT # B-01550601",
             "cim:Asset.position": "inGround",
             "cim:Asset.purchasePrice": {
-                "cim:Money.value": 100000.0
+                "cim:Money.value": "100000.00"
             },
             "cim:Asset.serialNumber": "8DuSMPRi",
             "cim:Asset.type": "CurrentTransformer",
@@ -122,7 +122,7 @@
         {
             "@id": "urn:uuid:addaff9d-8a88-4f0b-8213-1a15498083a2",
             "@type": "cim:Asset",
-            "cim:IdentifiedObject.mRID": "urn:uuid:addaff9d-8a88-4f0b-8213-1a15498083a2",
+            "cim:IdentifiedObject.mRID": "addaff9d-8a88-4f0b-8213-1a15498083a2",
             "cim:IdentifiedObject.description": "Engene Current Transformer 3 Asset 5",
             "cim:IdentifiedObject.name": "ENGENE CT3 A5",
             "cim:Asset.baselineCondition": "New",
@@ -131,7 +131,7 @@
             "cim:Asset.lotNumber": "LOT # B-01560601",
             "cim:Asset.position": "inGround",
             "cim:Asset.purchasePrice": {
-                "cim:Money.value": 100000.0
+                "cim:Money.value": "100000.00"
             },
             "cim:Asset.serialNumber": "8DuSTNRi",
             "cim:Asset.type": "CurrentTransformer",
@@ -152,7 +152,7 @@
         {
             "@id": "urn:uuid:ff20c614-4797-471e-98c6-c08f7ed97ce6",
             "@type": "cim:Asset",
-            "cim:IdentifiedObject.mRID": "urn:uuid:ff20c614-4797-471e-98c6-c08f7ed97ce6",
+            "cim:IdentifiedObject.mRID": "ff20c614-4797-471e-98c6-c08f7ed97ce6",
             "cim:IdentifiedObject.description": "Engene Voltage Transformer 1 Asset 6",
             "cim:IdentifiedObject.name": "ENGENE VT1 A6",
             "cim:Asset.baselineCondition": "New",
@@ -161,7 +161,7 @@
             "cim:Asset.lotNumber": "LOT # B-01370602",
             "cim:Asset.position": "inGround",
             "cim:Asset.purchasePrice": {
-                "cim:Money.value": 100000.0
+                "cim:Money.value": "100000.00"
             },
             "cim:Asset.serialNumber": "8HuPTPRy",
             "cim:Asset.type": "PotentialTransformer",
@@ -182,7 +182,7 @@
         {
             "@id": "urn:uuid:0507d6c7-b845-4171-ad56-d531e2e52401",
             "@type": "cim:Asset",
-            "cim:IdentifiedObject.mRID": "urn:uuid:0507d6c7-b845-4171-ad56-d531e2e52401",
+            "cim:IdentifiedObject.mRID": "0507d6c7-b845-4171-ad56-d531e2e52401",
             "cim:IdentifiedObject.description": "Engene Voltage Transformer 2 Asset 7",
             "cim:IdentifiedObject.name": "ENGENE VT2 A7",
             "cim:Asset.baselineCondition": "New",
@@ -191,7 +191,7 @@
             "cim:Asset.lotNumber": "LOT # B-01370602",
             "cim:Asset.position": "inGround",
             "cim:Asset.purchasePrice": {
-                "cim:Money.value": 100000.0
+                "cim:Money.value": "100000.00"
             },
             "cim:Asset.serialNumber": "8YuPTPRy",
             "cim:Asset.type": "PotentialTransformer",
@@ -212,7 +212,7 @@
         {
             "@id": "urn:uuid:1104d9f6-95d3-463a-b8ad-6f64eb3a730b",
             "@type": "cim:Asset",
-            "cim:IdentifiedObject.mRID": "urn:uuid:1104d9f6-95d3-463a-b8ad-6f64eb3a730b",
+            "cim:IdentifiedObject.mRID": "1104d9f6-95d3-463a-b8ad-6f64eb3a730b",
             "cim:IdentifiedObject.description": "Engene Voltage Transformer 3 Asset 8",
             "cim:IdentifiedObject.name": "ENGENE VT3 A8",
             "cim:Asset.baselineCondition": "New",
@@ -221,7 +221,7 @@
             "cim:Asset.lotNumber": "LOT # B-01370602",
             "cim:Asset.position": "inGround",
             "cim:Asset.purchasePrice": {
-                "cim:Money.value": 100000.0
+                "cim:Money.value": "100000.00"
             },
             "cim:Asset.serialNumber": "8JuPTPRy",
             "cim:Asset.type": "PotentialTransformer",
@@ -242,7 +242,7 @@
         {
             "@id": "urn:uuid:6b7f7604-9f3e-479e-889f-f5d3d8ca60a1",
             "@type": "cim:Asset",
-            "cim:IdentifiedObject.mRID": "urn:uuid:6b7f7604-9f3e-479e-889f-f5d3d8ca60a1",
+            "cim:IdentifiedObject.mRID": "6b7f7604-9f3e-479e-889f-f5d3d8ca60a1",
             "cim:IdentifiedObject.description": "Engene Power Transformer",
             "cim:IdentifiedObject.name": "ENGENE PT",
             "cim:Asset.baselineCondition": "New",
@@ -275,7 +275,7 @@
         {
             "@id": "urn:uuid:4cb51263-a59e-4df2-972c-869f43a3aeaa",
             "@type": "cim:Asset",
-            "cim:IdentifiedObject.mRID": "urn:uuid:4cb51263-a59e-4df2-972c-869f43a3aeaa",
+            "cim:IdentifiedObject.mRID": "4cb51263-a59e-4df2-972c-869f43a3aeaa",
             "cim:IdentifiedObject.description": "Nedenes 400 Volt Current Transformer 4 Asset 9",
             "cim:IdentifiedObject.name": "NEDENES 04 CT4 A9",
             "cim:Asset.baselineCondition": "New",
@@ -284,7 +284,7 @@
             "cim:Asset.lotNumber": "LOT # B-01563601",
             "cim:Asset.position": "inGround",
             "cim:Asset.purchasePrice": {
-                "cim:Money.value": 100200.0
+                "cim:Money.value": "100200.00"
             },
             "cim:Asset.serialNumber": "8DuSTNRi",
             "cim:Asset.type": "CurrentTransformer",
@@ -305,7 +305,7 @@
         {
             "@id": "urn:uuid:2147932e-ba94-4cee-a9ad-a22c9c87dab5",
             "@type": "cim:Asset",
-            "cim:IdentifiedObject.mRID": "urn:uuid:2147932e-ba94-4cee-a9ad-a22c9c87dab5",
+            "cim:IdentifiedObject.mRID": "2147932e-ba94-4cee-a9ad-a22c9c87dab5",
             "cim:IdentifiedObject.description": "Nedenes 400 Volt Voltage Transformer 4 Asset 10",
             "cim:IdentifiedObject.name": "NEDENES 04 VT4 A10",
             "cim:Asset.baselineCondition": "New",
@@ -314,7 +314,7 @@
             "cim:Asset.lotNumber": "LOT # B-01370602",
             "cim:Asset.position": "inGround",
             "cim:Asset.purchasePrice": {
-                "cim:Money.value": 100000.0
+                "cim:Money.value": "100000.00"
             },
             "cim:Asset.serialNumber": "8JuPTPRy",
             "cim:Asset.type": "PotentialTransformer",
@@ -335,7 +335,7 @@
         {
             "@id": "urn:uuid:c06392cf-393b-4a4f-8e58-63af4a84380a",
             "@type": "cim:Meter",
-            "cim:IdentifiedObject.mRID": "urn:uuid:c06392cf-393b-4a4f-8e58-63af4a84380a",
+            "cim:IdentifiedObject.mRID": "c06392cf-393b-4a4f-8e58-63af4a84380a",
             "cim:IdentifiedObject.description": "Nedenes 400 Volt Meter 1",
             "cim:IdentifiedObject.name": "NEDENES 04 M1",
             "cim:Asset.baselineCondition": "New",
@@ -344,7 +344,7 @@
             "cim:Asset.lotNumber": "LOT # B-01280609",
             "cim:Asset.position": "inSubstation",
             "cim:Asset.purchasePrice": {
-                "cim:Money.value": 500.0
+                "cim:Money.value": "500.00"
             },
             "cim:Asset.serialNumber": "7359990000000001",
             "cim:Asset.type": "SmartMeter",

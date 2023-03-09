@@ -11,7 +11,7 @@
     "@id": "urn:uuid:00db75c5-d443-42e5-927b-ca9a2e14fd48",
     "@type": "dcat:Dataset",
     "prov:generatedAtTime": {
-        "@value": "2023-02-22T08:31:19Z",
+        "@value": "2023-03-09T15:13:27Z",
         "@type": "xsd:dateTime"
     },
     "dcterms:issued": {
@@ -3481,7 +3481,7 @@
         {
             "@id": "urn:uuid:734aa25e-9549-11ec-b226-48ba4eadba68",
             "@type": "cim:TopologicalIsland",
-            "cim:IdentifiedObject.mRID": "urn:uuid:734aa25e-9549-11ec-b226-48ba4eadba68",
+            "cim:IdentifiedObject.mRID": "734aa25e-9549-11ec-b226-48ba4eadba68",
             "cim:IdentifiedObject.description": "diverged",
             "cim:IdentifiedObject.name": "XARE1_XARE2 CN",
             "cim:TopologicalIsland.AngleRefTopologicalNode": {

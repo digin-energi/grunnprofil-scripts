@@ -101,7 +101,7 @@ configAcCim17 = \
                 'cim:IdentifiedObject.description': {'type': 'string', 'list': False},
                 'cim:IdentifiedObject.name': {'type': 'string', 'list': False},
                 # 'cim:IdentifiedObject.shortName': {'type': 'string', 'list': False},
-                'cim:AssetModelCatalogueItem.unitCost': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:Money.value'}
+                'cim:AssetModelCatalogueItem.unitCost': {'type': 'decimal', 'list': False, 'CIMDatatype': 'cim:Money.value'}
             },
             'attributes': {
 

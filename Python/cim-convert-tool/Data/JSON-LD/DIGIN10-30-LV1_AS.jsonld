@@ -11,7 +11,7 @@
     "@id": "urn:uuid:14a0302f-aaae-4abd-862f-7b0c86b4dca2",
     "@type": "dcat:Dataset",
     "prov:generatedAtTime": {
-        "@value": "2023-02-20T15:27:57Z",
+        "@value": "2023-03-09T15:13:27Z",
         "@type": "xsd:dateTime"
     },
     "dcterms:issued": {
@@ -62,7 +62,7 @@
         {
             "@id": "urn:uuid:6270b5e8-b307-427d-82c2-5605950145e3",
             "@type": "cim:Asset",
-            "cim:IdentifiedObject.mRID": "urn:uuid:6270b5e8-b307-427d-82c2-5605950145e3",
+            "cim:IdentifiedObject.mRID": "6270b5e8-b307-427d-82c2-5605950145e3",
             "cim:IdentifiedObject.description": "400V Telemarkstien 2 Asset 1 ACLineSegment 1",
             "cim:IdentifiedObject.name": "04 TELEMA2 Asset1 ACLS1",
             "cim:Asset.baselineCondition": "New",
@@ -71,7 +71,7 @@
             "cim:Asset.lotNumber": "LOT # B-01580609",
             "cim:Asset.position": "inGround",
             "cim:Asset.purchasePrice": {
-                "cim:Money.value": 400.0
+                "cim:Money.value": "400.00"
             },
             "cim:Asset.serialNumber": "8DuSTPRv",
             "cim:Asset.type": "UnderGroundCable",
@@ -95,7 +95,7 @@
         {
             "@id": "urn:uuid:c03f6706-21e6-4034-ab48-781c438af5a2",
             "@type": "cim:Asset",
-            "cim:IdentifiedObject.mRID": "urn:uuid:c03f6706-21e6-4034-ab48-781c438af5a2",
+            "cim:IdentifiedObject.mRID": "c03f6706-21e6-4034-ab48-781c438af5a2",
             "cim:IdentifiedObject.description": "Disruptive Technologies temperature sensor 1 Asset 2",
             "cim:IdentifiedObject.name": "DisrTechTempSensor1 Asset2",
             "cim:Asset.baselineCondition": "New",
@@ -104,7 +104,7 @@
             "cim:Asset.lotNumber": "LOT # B-01580608",
             "cim:Asset.position": "inGround",
             "cim:Asset.purchasePrice": {
-                "cim:Money.value": 10.0
+                "cim:Money.value": "10.00"
             },
             "cim:Asset.serialNumber": "8DuSTPRs",
             "cim:Asset.type": "DisrTechTemperatrueSensor",
@@ -125,7 +125,7 @@
         {
             "@id": "urn:uuid:58236274-f2dc-467b-90df-466007786b49",
             "@type": "cim:Meter",
-            "cim:IdentifiedObject.mRID": "urn:uuid:58236274-f2dc-467b-90df-466007786b49",
+            "cim:IdentifiedObject.mRID": "58236274-f2dc-467b-90df-466007786b49",
             "cim:IdentifiedObject.description": "Nedenes 400 Volt Meter 2",
             "cim:IdentifiedObject.name": "NEDENES 04 M2",
             "cim:Asset.baselineCondition": "New",
@@ -134,7 +134,7 @@
             "cim:Asset.lotNumber": "LOT # B-01280609",
             "cim:Asset.position": "inHouse",
             "cim:Asset.purchasePrice": {
-                "cim:Money.value": 500.0
+                "cim:Money.value": "500.00"
             },
             "cim:Asset.serialNumber": "7359990000000001",
             "cim:Asset.type": "SmartMeter",

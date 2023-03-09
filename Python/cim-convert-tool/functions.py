@@ -1,4 +1,4 @@
-from datetime import datetime
+from decimal import Decimal
 
 def xmlPrefixListReplacer(tags, cimPrefix, euPrefix, rdfPrefix, mdPrefix, skosPrefix, ncPrefix):
     outputtags = []
@@ -31,3 +31,5 @@ def valueDataTypeConverter(value, type):
             return value
         elif type == 'dateTime':
             return value
+        elif type == 'decimal':
+            return str(round(Decimal(value), 2))

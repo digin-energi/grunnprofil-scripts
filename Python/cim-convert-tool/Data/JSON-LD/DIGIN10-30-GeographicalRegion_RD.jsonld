@@ -11,7 +11,7 @@
     "@id": "urn:uuid:5ad50f29-f3e5-4cf9-8519-cef17d71f8de",
     "@type": "dcat:Dataset",
     "prov:generatedAtTime": {
-        "@value": "2023-02-21T13:35:11Z",
+        "@value": "2023-03-09T15:13:27Z",
         "@type": "xsd:dateTime"
     },
     "dcterms:issued": {
@@ -50,14 +50,14 @@
         {
             "@id": "urn:uuid:2dd9048c-bdfb-11e5-94fa-c8f73332c8f4",
             "@type": "cim:GeographicalRegion",
-            "cim:IdentifiedObject.mRID": "urn:uuid:2dd9048c-bdfb-11e5-94fa-c8f73332c8f4",
+            "cim:IdentifiedObject.mRID": "2dd9048c-bdfb-11e5-94fa-c8f73332c8f4",
             "cim:IdentifiedObject.description": "Nordic",
             "cim:IdentifiedObject.name": "NO"
         },
         {
             "@id": "urn:uuid:f17696b3-9aeb-11e5-91da-b8763fd99c5f",
             "@type": "cim:SubGeographicalRegion",
-            "cim:IdentifiedObject.mRID": "urn:uuid:f17696b3-9aeb-11e5-91da-b8763fd99c5f",
+            "cim:IdentifiedObject.mRID": "f17696b3-9aeb-11e5-91da-b8763fd99c5f",
             "cim:IdentifiedObject.description": "FI1 Bidding Zone",
             "cim:IdentifiedObject.name": "FI1 SGR",
             "cim:SubGeographicalRegion.Region": {
@@ -67,7 +67,7 @@
         {
             "@id": "urn:uuid:f1769609-9aeb-11e5-91da-b8763fd99c5f",
             "@type": "cim:SubGeographicalRegion",
-            "cim:IdentifiedObject.mRID": "urn:uuid:f1769609-9aeb-11e5-91da-b8763fd99c5f",
+            "cim:IdentifiedObject.mRID": "f1769609-9aeb-11e5-91da-b8763fd99c5f",
             "cim:IdentifiedObject.description": "NO1 Bidding Zone",
             "cim:IdentifiedObject.name": "NO1 SGR",
             "cim:SubGeographicalRegion.Region": {
@@ -77,7 +77,7 @@
         {
             "@id": "urn:uuid:f176965f-9aeb-11e5-91da-b8763fd99c5f",
             "@type": "cim:SubGeographicalRegion",
-            "cim:IdentifiedObject.mRID": "urn:uuid:f176965f-9aeb-11e5-91da-b8763fd99c5f",
+            "cim:IdentifiedObject.mRID": "f176965f-9aeb-11e5-91da-b8763fd99c5f",
             "cim:IdentifiedObject.description": "NO2 Bidding Zone",
             "cim:IdentifiedObject.name": "NO2 SGR",
             "cim:SubGeographicalRegion.Region": {
@@ -87,7 +87,7 @@
         {
             "@id": "urn:uuid:f1769699-9aeb-11e5-91da-b8763fd99c5f",
             "@type": "cim:SubGeographicalRegion",
-            "cim:IdentifiedObject.mRID": "urn:uuid:f1769699-9aeb-11e5-91da-b8763fd99c5f",
+            "cim:IdentifiedObject.mRID": "f1769699-9aeb-11e5-91da-b8763fd99c5f",
             "cim:IdentifiedObject.description": "NO3 Bidding Zone",
             "cim:IdentifiedObject.name": "NO3 SGR",
             "cim:SubGeographicalRegion.Region": {
@@ -97,7 +97,7 @@
         {
             "@id": "urn:uuid:f17696a3-9aeb-11e5-91da-b8763fd99c5f",
             "@type": "cim:SubGeographicalRegion",
-            "cim:IdentifiedObject.mRID": "urn:uuid:f17696a3-9aeb-11e5-91da-b8763fd99c5f",
+            "cim:IdentifiedObject.mRID": "f17696a3-9aeb-11e5-91da-b8763fd99c5f",
             "cim:IdentifiedObject.description": "NO4 Bidding Zone",
             "cim:IdentifiedObject.name": "NO4 SGR",
             "cim:SubGeographicalRegion.Region": {
@@ -107,7 +107,7 @@
         {
             "@id": "urn:uuid:f1769619-9aeb-11e5-91da-b8763fd99c5f",
             "@type": "cim:SubGeographicalRegion",
-            "cim:IdentifiedObject.mRID": "urn:uuid:f1769619-9aeb-11e5-91da-b8763fd99c5f",
+            "cim:IdentifiedObject.mRID": "f1769619-9aeb-11e5-91da-b8763fd99c5f",
             "cim:IdentifiedObject.description": "NO5 Bidding Zone",
             "cim:IdentifiedObject.name": "NO5 SGR",
             "cim:SubGeographicalRegion.Region": {
@@ -117,7 +117,7 @@
         {
             "@id": "urn:uuid:f17695cd-9aeb-11e5-91da-b8763fd99c5f",
             "@type": "cim:SubGeographicalRegion",
-            "cim:IdentifiedObject.mRID": "urn:uuid:f17695cd-9aeb-11e5-91da-b8763fd99c5f",
+            "cim:IdentifiedObject.mRID": "f17695cd-9aeb-11e5-91da-b8763fd99c5f",
             "cim:IdentifiedObject.description": "SE1 Bidding Zone",
             "cim:IdentifiedObject.name": "SE1 SGR",
             "cim:SubGeographicalRegion.Region": {
@@ -127,7 +127,7 @@
         {
             "@id": "urn:uuid:f17695c3-9aeb-11e5-91da-b8763fd99c5f",
             "@type": "cim:SubGeographicalRegion",
-            "cim:IdentifiedObject.mRID": "urn:uuid:f17695c3-9aeb-11e5-91da-b8763fd99c5f",
+            "cim:IdentifiedObject.mRID": "f17695c3-9aeb-11e5-91da-b8763fd99c5f",
             "cim:IdentifiedObject.description": "SE2 Bidding Zone",
             "cim:IdentifiedObject.name": "SE2 SGR",
             "cim:SubGeographicalRegion.Region": {
@@ -137,7 +137,7 @@
         {
             "@id": "urn:uuid:f17695af-9aeb-11e5-91da-b8763fd99c5f",
             "@type": "cim:SubGeographicalRegion",
-            "cim:IdentifiedObject.mRID": "urn:uuid:f17695af-9aeb-11e5-91da-b8763fd99c5f",
+            "cim:IdentifiedObject.mRID": "f17695af-9aeb-11e5-91da-b8763fd99c5f",
             "cim:IdentifiedObject.description": "SE3 Bidding Zone",
             "cim:IdentifiedObject.name": "SE3 SGR",
             "cim:SubGeographicalRegion.Region": {
@@ -147,7 +147,7 @@
         {
             "@id": "urn:uuid:f17696cf-9aeb-11e5-91da-b8763fd99c5f",
             "@type": "cim:SubGeographicalRegion",
-            "cim:IdentifiedObject.mRID": "urn:uuid:f17696cf-9aeb-11e5-91da-b8763fd99c5f",
+            "cim:IdentifiedObject.mRID": "f17696cf-9aeb-11e5-91da-b8763fd99c5f",
             "cim:IdentifiedObject.description": "SE4 Bidding Zone",
             "cim:IdentifiedObject.name": "SE4 SGR",
             "cim:SubGeographicalRegion.Region": {
@@ -157,7 +157,7 @@
         {
             "@id": "urn:uuid:d9b89685-1fed-4233-8f85-70fd9e6cfd23",
             "@type": "cim:SubGeographicalRegion",
-            "cim:IdentifiedObject.mRID": "urn:uuid:d9b89685-1fed-4233-8f85-70fd9e6cfd23",
+            "cim:IdentifiedObject.mRID": "d9b89685-1fed-4233-8f85-70fd9e6cfd23",
             "cim:IdentifiedObject.description": "Distribution System Operator Vest",
             "cim:IdentifiedObject.name": "DSO V",
             "cim:SubGeographicalRegion.Region": {

@@ -11,7 +11,7 @@
     "@id": "urn:uuid:309fe4e7-d477-44e1-a495-de43562b3504",
     "@type": "dcat:Dataset",
     "prov:generatedAtTime": {
-        "@value": "2023-02-22T15:35:29Z",
+        "@value": "2023-03-09T15:13:27Z",
         "@type": "xsd:dateTime"
     },
     "dcterms:issued": {
@@ -62,7 +62,7 @@
         {
             "@id": "urn:uuid:d25f35ca-69fb-4c06-905b-67ec532e5f14",
             "@type": "cim:CableInfo",
-            "cim:IdentifiedObject.mRID": "urn:uuid:d25f35ca-69fb-4c06-905b-67ec532e5f14",
+            "cim:IdentifiedObject.mRID": "d25f35ca-69fb-4c06-905b-67ec532e5f14",
             "cim:IdentifiedObject.description": "PFXP underground cable with dimension 1x4x95 and aluminum conductor for low voltage grid",
             "cim:IdentifiedObject.name": "PFXP_1x4x95_Al 1 kV",
             "cim:WireInfo.coreRadius": {
@@ -132,14 +132,14 @@
         {
             "@id": "urn:uuid:5462d46a-9ee5-4d09-9ac2-9f97933caa4d",
             "@type": "cim:PowerTransformerInfo",
-            "cim:IdentifiedObject.mRID": "urn:uuid:5462d46a-9ee5-4d09-9ac2-9f97933caa4d",
+            "cim:IdentifiedObject.mRID": "5462d46a-9ee5-4d09-9ac2-9f97933caa4d",
             "cim:IdentifiedObject.description": null,
             "cim:IdentifiedObject.name": "Engene 132-22 KV PowerTransformerInfo"
         },
         {
             "@id": "urn:uuid:6d4b7fa0-aa6e-4e82-a88e-c14b84370eec",
             "@type": "cim:Manufacturer",
-            "cim:IdentifiedObject.mRID": "urn:uuid:b0c1754b-187c-49fa-8159-6fd2f4f918ad",
+            "cim:IdentifiedObject.mRID": "b0c1754b-187c-49fa-8159-6fd2f4f918ad",
             "cim:IdentifiedObject.aliasName": "RBE",
             "cim:IdentifiedObject.name": "Reuters Borg Elektro",
             "cim:Manufacturer.ProductAssetModel": {
@@ -149,7 +149,7 @@
         {
             "@id": "urn:uuid:df774997-6a8e-47ca-9cd5-30ce2a85abf0",
             "@type": "cim:ProductAssetModel",
-            "cim:IdentifiedObject.mRID": "urn:uuid:df774997-6a8e-47ca-9cd5-30ce2a85abf0",
+            "cim:IdentifiedObject.mRID": "df774997-6a8e-47ca-9cd5-30ce2a85abf0",
             "cim:IdentifiedObject.description": "RTU skap for småkraftverk",
             "cim:IdentifiedObject.name": "RS5970P",
             "cim:ProductAssetModel.modelNumber": "28597",
@@ -169,11 +169,11 @@
         {
             "@id": "urn:uuid:99e19919-b030-4742-8609-f1230681333d",
             "@type": "cim:AssetModelCatalogueItem",
-            "cim:IdentifiedObject.mRID": "urn:uuid:99e19919-b030-4742-8609-f1230681333d",
+            "cim:IdentifiedObject.mRID": "99e19919-b030-4742-8609-f1230681333d",
             "cim:IdentifiedObject.description": "Pricing for RTU skap for småkraftverk",
             "cim:IdentifiedObject.name": "Price_RS5970P",
             "cim:AssetModelCatalogueItem.unitCost": {
-                "cim:Money.value": 38500.0
+                "cim:Money.value": "38500.00"
             }
         }
     ]

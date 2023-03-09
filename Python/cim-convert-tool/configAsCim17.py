@@ -14,7 +14,7 @@ configAsCim17 = \
                 'cim:Asset.critical': {'type': 'bool', 'list': False},
                 'cim:Asset.lotNumber': {'type': 'string', 'list': False},
                 'cim:Asset.position': {'type': 'string', 'list': False},
-                'cim:Asset.purchasePrice': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:Money.value'}, # Actually decimal
+                'cim:Asset.purchasePrice': {'type': 'decimal', 'list': False, 'CIMDatatype': 'cim:Money.value'}, # Actually decimal
                 'cim:Asset.serialNumber': {'type': 'string', 'list': False},
                 'cim:Asset.type': {'type': 'string', 'list': False},
                 'cim:Asset.utcNumber': {'type': 'string', 'list': False}
@@ -41,7 +41,7 @@ configAsCim17 = \
                 'cim:Asset.critical': {'type': 'bool', 'list': False},
                 'cim:Asset.lotNumber': {'type': 'string', 'list': False},
                 'cim:Asset.position': {'type': 'string', 'list': False},
-                'cim:Asset.purchasePrice': {'type': 'float', 'list': False, 'CIMDatatype': 'cim:Money.value'}, # Actually decimal
+                'cim:Asset.purchasePrice': {'type': 'decimal', 'list': False, 'CIMDatatype': 'cim:Money.value'}, # Actually decimal
                 'cim:Asset.serialNumber': {'type': 'string', 'list': False},
                 'cim:Asset.type': {'type': 'string', 'list': False},
                 'cim:Asset.utcNumber': {'type': 'string', 'list': False},

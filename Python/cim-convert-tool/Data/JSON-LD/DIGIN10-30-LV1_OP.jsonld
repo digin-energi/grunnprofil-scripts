@@ -11,7 +11,7 @@
     "@id": "urn:uuid:c47d4310-b8ee-480d-9cf3-e53a81630981",
     "@type": "dcat:Dataset",
     "prov:generatedAtTime": {
-        "@value": "2023-02-21T15:15:36Z",
+        "@value": "2023-03-09T15:13:27Z",
         "@type": "xsd:dateTime"
     },
     "dcterms:issued": {
@@ -71,7 +71,7 @@
         {
             "@id": "urn:uuid:173ce5e1-d16b-4015-9793-b12913c9f428",
             "@type": "cim:Analog",
-            "cim:IdentifiedObject.mRID": "urn:uuid:173ce5e1-d16b-4015-9793-b12913c9f428",
+            "cim:IdentifiedObject.mRID": "173ce5e1-d16b-4015-9793-b12913c9f428",
             "cim:IdentifiedObject.description": "400 Volt Telemarkstien 2 AC Line Segment 1 Analog 7",
             "cim:IdentifiedObject.name": "04 TELEMA 2 ACLS1 AN7",
             "cim:Measurement.measurementType": "Temperature",
@@ -95,7 +95,7 @@
         {
             "@id": "urn:uuid:ea48d543-f02a-4c6e-8c5d-6ffe3e3f763f",
             "@type": "cim:AnalogValue",
-            "cim:IdentifiedObject.mRID": "urn:uuid:ea48d543-f02a-4c6e-8c5d-6ffe3e3f763f",
+            "cim:IdentifiedObject.mRID": "ea48d543-f02a-4c6e-8c5d-6ffe3e3f763f",
             "cim:IdentifiedObject.description": "400 Volt Telemarkstien 2 Analog 7 Analog Value 7",
             "cim:IdentifiedObject.name": "04 TELEMA 2 AN7 AV7",
             "cim:MeasurementValue.sensorAccuracy": 97.2,
@@ -108,7 +108,7 @@
         {
             "@id": "urn:uuid:1fe5049c-34d7-4e30-a411-ff01c16b8f3a",
             "@type": "cim:CommunicationLink",
-            "cim:IdentifiedObject.mRID": "urn:uuid:1fe5049c-34d7-4e30-a411-ff01c16b8f3a",
+            "cim:IdentifiedObject.mRID": "1fe5049c-34d7-4e30-a411-ff01c16b8f3a",
             "cim:IdentifiedObject.description": "Disruptive Technolgies WiFi",
             "cim:IdentifiedObject.name": "DisrTechWiFi",
             "cim:CommunicationLink.RemoteUnits": [
@@ -120,7 +120,7 @@
         {
             "@id": "urn:uuid:2bf1f9fc-263d-4995-80da-9802dc087fe5",
             "@type": "cim:CommunicationLink",
-            "cim:IdentifiedObject.mRID": "urn:uuid:2bf1f9fc-263d-4995-80da-9802dc087fe5",
+            "cim:IdentifiedObject.mRID": "2bf1f9fc-263d-4995-80da-9802dc087fe5",
             "cim:IdentifiedObject.description": "Disruptive Technolgies 4G",
             "cim:IdentifiedObject.name": "DisrTech4G",
             "cim:CommunicationLink.RemoteUnits": [
@@ -132,7 +132,7 @@
         {
             "@id": "urn:uuid:055d5259-8401-4206-a483-f7fd13a87299",
             "@type": "cim:RemoteSource",
-            "cim:IdentifiedObject.mRID": "urn:uuid:055d5259-8401-4206-a483-f7fd13a87299",
+            "cim:IdentifiedObject.mRID": "055d5259-8401-4206-a483-f7fd13a87299",
             "cim:IdentifiedObject.description": "400 Volt Telemarkstien 2 Remote Source 1",
             "cim:IdentifiedObject.name": "04 TELEMA 2 RS1",
             "cim:RemoteSource.deadband": 0.0,
@@ -148,7 +148,7 @@
         {
             "@id": "urn:uuid:00160296-775f-407a-8d67-c9a5d610715a",
             "@type": "cim:RemoteUnit",
-            "cim:IdentifiedObject.mRID": "urn:uuid:00160296-775f-407a-8d67-c9a5d610715a",
+            "cim:IdentifiedObject.mRID": "00160296-775f-407a-8d67-c9a5d610715a",
             "cim:IdentifiedObject.description": "400 Volt Telemarkstien 2 Remote Unit 1",
             "cim:IdentifiedObject.name": "04 TELEMA 2 RU1",
             "cim:RemoteUnit.remoteUnitType": {

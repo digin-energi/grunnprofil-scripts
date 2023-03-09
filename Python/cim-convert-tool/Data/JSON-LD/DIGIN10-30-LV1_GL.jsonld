@@ -11,7 +11,7 @@
     "@id": "urn:uuid:9552dc72-0525-4a84-8532-81f160b8fb74",
     "@type": "dcat:Dataset",
     "prov:generatedAtTime": {
-        "@value": "2023-02-21T14:41:22Z",
+        "@value": "2023-03-09T15:13:27Z",
         "@type": "xsd:dateTime"
     },
     "dcterms:issued": {
@@ -71,14 +71,14 @@
         {
             "@id": "urn:uuid:2be52cd7-b707-4dda-9e14-4a1966e22ff9",
             "@type": "cim:CoordinateSystem",
-            "cim:IdentifiedObject.mRID": "urn:uuid:2be52cd7-b707-4dda-9e14-4a1966e22ff9",
+            "cim:IdentifiedObject.mRID": "2be52cd7-b707-4dda-9e14-4a1966e22ff9",
             "cim:IdentifiedObject.name": "EPSG 4326",
             "cim:CoordinateSystem.crsUrn": "urn:ogc:def:crs:EPSG::4326"
         },
         {
             "@id": "urn:uuid:990df1b7-bd8c-4989-808f-15b73ae0b1f4",
             "@type": "cim:Location",
-            "cim:IdentifiedObject.mRID": "urn:uuid:990df1b7-bd8c-4989-808f-15b73ae0b1f4",
+            "cim:IdentifiedObject.mRID": "990df1b7-bd8c-4989-808f-15b73ae0b1f4",
             "cim:IdentifiedObject.name": "L TELEMARKSTIEN2 CB1",
             "cim:Location.CoordinateSystem": {
                 "@id": "urn:uuid:2be52cd7-b707-4dda-9e14-4a1966e22ff9"
@@ -90,7 +90,7 @@
         {
             "@id": "urn:uuid:a46f1252-f9a1-4469-99b7-a70f1f40a0c5",
             "@type": "cim:Location",
-            "cim:IdentifiedObject.mRID": "urn:uuid:a46f1252-f9a1-4469-99b7-a70f1f40a0c5",
+            "cim:IdentifiedObject.mRID": "a46f1252-f9a1-4469-99b7-a70f1f40a0c5",
             "cim:IdentifiedObject.name": "L TELEMARKSTIEN2 CB2",
             "cim:Location.CoordinateSystem": {
                 "@id": "urn:uuid:2be52cd7-b707-4dda-9e14-4a1966e22ff9"
@@ -102,7 +102,7 @@
         {
             "@id": "urn:uuid:ce8c258e-0d2d-4485-ba6c-6e0cac041454",
             "@type": "cim:Location",
-            "cim:IdentifiedObject.mRID": "urn:uuid:ce8c258e-0d2d-4485-ba6c-6e0cac041454",
+            "cim:IdentifiedObject.mRID": "ce8c258e-0d2d-4485-ba6c-6e0cac041454",
             "cim:IdentifiedObject.name": "L TELEMARKSTIEN2 CB3",
             "cim:Location.CoordinateSystem": {
                 "@id": "urn:uuid:2be52cd7-b707-4dda-9e14-4a1966e22ff9"
@@ -114,7 +114,7 @@
         {
             "@id": "urn:uuid:d978a4dc-7d22-4b69-b148-e595558aadd5",
             "@type": "cim:Location",
-            "cim:IdentifiedObject.mRID": "urn:uuid:d978a4dc-7d22-4b69-b148-e595558aadd5",
+            "cim:IdentifiedObject.mRID": "d978a4dc-7d22-4b69-b148-e595558aadd5",
             "cim:IdentifiedObject.name": "L TELEMARKSTIEN2 CB4",
             "cim:Location.CoordinateSystem": {
                 "@id": "urn:uuid:2be52cd7-b707-4dda-9e14-4a1966e22ff9"
@@ -126,7 +126,7 @@
         {
             "@id": "urn:uuid:f3cf4fca-68fd-45b0-9f6d-2d6b960bf9d9",
             "@type": "cim:Location",
-            "cim:IdentifiedObject.mRID": "urn:uuid:f3cf4fca-68fd-45b0-9f6d-2d6b960bf9d9",
+            "cim:IdentifiedObject.mRID": "f3cf4fca-68fd-45b0-9f6d-2d6b960bf9d9",
             "cim:IdentifiedObject.name": "L TELEMARKSTIEN2 CB5",
             "cim:Location.CoordinateSystem": {
                 "@id": "urn:uuid:2be52cd7-b707-4dda-9e14-4a1966e22ff9"
@@ -149,7 +149,7 @@
         {
             "@id": "urn:uuid:d78bbdd4-b936-4c9f-bc78-13a9258e7b84",
             "@type": "cim:Location",
-            "cim:IdentifiedObject.mRID": "urn:uuid:d78bbdd4-b936-4c9f-bc78-13a9258e7b84",
+            "cim:IdentifiedObject.mRID": "d78bbdd4-b936-4c9f-bc78-13a9258e7b84",
             "cim:IdentifiedObject.name": "L TELEMARKSTIEN2 CB7",
             "cim:Location.CoordinateSystem": {
                 "@id": "urn:uuid:2be52cd7-b707-4dda-9e14-4a1966e22ff9"

@@ -11,7 +11,7 @@
     "@id": "urn:uuid:b39e7379-a9ae-4262-98dc-9ade1200adb0",
     "@type": "dcat:Dataset",
     "prov:generatedAtTime": {
-        "@value": "2023-02-21T13:45:17Z",
+        "@value": "2023-03-09T15:13:27Z",
         "@type": "xsd:dateTime"
     },
     "dcterms:issued": {
@@ -50,7 +50,7 @@
         {
             "@id": "urn:uuid:048e8349-1963-4d55-a842-f74c4de8fe0f",
             "@type": "eu:BoundaryPoint",
-            "cim:IdentifiedObject.mRID": "urn:uuid:048e8349-1963-4d55-a842-f74c4de8fe0f",
+            "cim:IdentifiedObject.mRID": "048e8349-1963-4d55-a842-f74c4de8fe0f",
             "cim:IdentifiedObject.description": "Boundary Point Arendal 420 Bus",
             "cim:IdentifiedObject.name": "XARE1_XARE2 BP",
             "eu:BoundaryPoint.isDirectCurrent": null,
@@ -68,7 +68,7 @@
         {
             "@id": "urn:uuid:cb837454-5c66-d341-be63-d0c044e5fd3c",
             "@type": "cim:ConnectivityNode",
-            "cim:IdentifiedObject.mRID": "urn:uuid:cb837454-5c66-d341-be63-d0c044e5fd3c",
+            "cim:IdentifiedObject.mRID": "cb837454-5c66-d341-be63-d0c044e5fd3c",
             "cim:IdentifiedObject.description": "Boundary on Arendal 420 Bus",
             "cim:IdentifiedObject.name": "XARE1_XARE2 CN",
             "cim:ConnectivityNode.ConnectivityNodeContainer": {
@@ -78,7 +78,7 @@
         {
             "@id": "urn:uuid:f1769670-9aeb-11e5-91da-b8763fd99c5f",
             "@type": "cim:Substation",
-            "cim:IdentifiedObject.mRID": "urn:uuid:f1769670-9aeb-11e5-91da-b8763fd99c5f",
+            "cim:IdentifiedObject.mRID": "f1769670-9aeb-11e5-91da-b8763fd99c5f",
             "cim:IdentifiedObject.name": "ARENDAL",
             "cim:Substation.Region": {
                 "@id": "urn:uuid:f176965f-9aeb-11e5-91da-b8763fd99c5f"
@@ -87,7 +87,7 @@
         {
             "@id": "urn:uuid:1f4fabd4-8c57-c245-b107-4e64c9007ae3",
             "@type": "cim:VoltageLevel",
-            "cim:IdentifiedObject.mRID": "urn:uuid:1f4fabd4-8c57-c245-b107-4e64c9007ae3",
+            "cim:IdentifiedObject.mRID": "1f4fabd4-8c57-c245-b107-4e64c9007ae3",
             "cim:IdentifiedObject.name": "ARENDAL 420",
             "cim:VoltageLevel.BaseVoltage": {
                 "@id": "urn:uuid:2dd90159-bdfb-11e5-94fa-c8f73332c8f4"
