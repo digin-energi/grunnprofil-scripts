@@ -11,7 +11,7 @@
     "@id": "urn:uuid:309fe4e7-d477-44e1-a495-de43562b3504",
     "@type": "dcat:Dataset",
     "prov:generatedAtTime": {
-        "@value": "2023-03-09T15:13:27Z",
+        "@value": "2023-03-09T15:35:51Z",
         "@type": "xsd:dateTime"
     },
     "dcterms:issued": {
@@ -173,7 +173,7 @@
             "cim:IdentifiedObject.description": "Pricing for RTU skap for småkraftverk",
             "cim:IdentifiedObject.name": "Price_RS5970P",
             "cim:AssetModelCatalogueItem.unitCost": {
-                "cim:Money.value": "38500.00"
+                "cim:Money.value": "38500"
             }
         }
     ]

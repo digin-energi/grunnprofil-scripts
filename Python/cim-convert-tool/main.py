@@ -143,7 +143,7 @@ parameters = {
     ]
 }
 
-for i in range(0, len(input["documents"])):
+for i in range(0, len(parameters["documents"])):
 
     companyUuid = parameters["companyUuid"]
     companyName = parameters["companyName"]

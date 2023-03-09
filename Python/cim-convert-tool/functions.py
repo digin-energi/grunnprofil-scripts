@@ -28,8 +28,8 @@ def valueDataTypeConverter(value, type):
         elif type == 'int':
             return int(value)
         elif type == 'string':
-            return value
+            return str(value)
         elif type == 'dateTime':
-            return value
+            return str(value)
         elif type == 'decimal':
-            return str(round(Decimal(value), 2))
+            return str(value)
