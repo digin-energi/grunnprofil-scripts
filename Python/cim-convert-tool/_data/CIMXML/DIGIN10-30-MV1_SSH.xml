@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:cim="http://iec.ch/TC57/CIM100#"
+    xmlns:cim="http://ucaiug.org/ns/CIM#"
     xmlns:md="http://iec.ch/TC57/61970-552/ModelDescription/1#"
     xmlns:eu="http://iec.ch/TC57/CIM100-European#">
  
@@ -506,7 +506,7 @@
         <cim:RegulatingControl.discrete>false</cim:RegulatingControl.discrete>
         <cim:RegulatingControl.enabled>true</cim:RegulatingControl.enabled>
         <cim:RegulatingControl.targetValue>420</cim:RegulatingControl.targetValue>
-        <cim:RegulatingControl.targetValueUnitMultiplier rdf:resource="http://iec.ch/TC57/CIM100#UnitMultiplier.k" />
+        <cim:RegulatingControl.targetValueUnitMultiplier rdf:resource="http://ucaiug.org/ns/CIM#UnitMultiplier.k" />
     </cim:RegulatingControl>
  
     <cim:RegulatingControl rdf:about="#_92d33c00-7034-11eb-a65a-74e5f963e191">
@@ -514,7 +514,7 @@
         <cim:RegulatingControl.enabled>true</cim:RegulatingControl.enabled>
         <cim:RegulatingControl.targetDeadband>2</cim:RegulatingControl.targetDeadband>
         <cim:RegulatingControl.targetValue>22</cim:RegulatingControl.targetValue>
-        <cim:RegulatingControl.targetValueUnitMultiplier rdf:resource="http://iec.ch/TC57/CIM100#UnitMultiplier.k" />
+        <cim:RegulatingControl.targetValueUnitMultiplier rdf:resource="http://ucaiug.org/ns/CIM#UnitMultiplier.k" />
     </cim:RegulatingControl>
  
     <cim:SynchronousMachine rdf:about="#_33666962-c2f9-4f6b-af5a-2ef1982ac282">
@@ -522,7 +522,7 @@
         <cim:RotatingMachine.p>-178</cim:RotatingMachine.p>
         <cim:RotatingMachine.q>0</cim:RotatingMachine.q>
         <cim:RegulatingCondEq.controlEnabled>true</cim:RegulatingCondEq.controlEnabled>
-        <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/CIM100#SynchronousMachineOperatingMode.generator" />
+        <cim:SynchronousMachine.operatingMode rdf:resource="http://ucaiug.org/ns/CIM#SynchronousMachineOperatingMode.generator" />
     </cim:SynchronousMachine>
  
     <cim:TapChangerControl rdf:about="#_681a30a4-5a55-11eb-a658-74e5f963e191">
@@ -530,7 +530,7 @@
         <cim:RegulatingControl.enabled>true</cim:RegulatingControl.enabled>
         <cim:RegulatingControl.targetDeadband>0.04</cim:RegulatingControl.targetDeadband>
         <cim:RegulatingControl.targetValue>0.4</cim:RegulatingControl.targetValue>
-        <cim:RegulatingControl.targetValueUnitMultiplier rdf:resource="http://iec.ch/TC57/CIM100#UnitMultiplier.k" />
+        <cim:RegulatingControl.targetValueUnitMultiplier rdf:resource="http://ucaiug.org/ns/CIM#UnitMultiplier.k" />
     </cim:TapChangerControl>
  
     <cim:Terminal rdf:about="#_0523e10e-4e02-48c6-94dd-ef1938932497">

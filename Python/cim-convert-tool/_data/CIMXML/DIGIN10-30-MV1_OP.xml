@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF  
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:cim="http://iec.ch/TC57/CIM100#"
+    xmlns:cim="http://ucaiug.org/ns/CIM#"
     xmlns:md="http://iec.ch/TC57/61970-552/ModelDescription/1#"
     xmlns:eu="http://iec.ch/TC57/CIM100-European#"
     >
@@ -22,9 +22,9 @@
         <cim:IdentifiedObject.description>Engene Current Transformer 1 Analog 1</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>ENGENE CT1 AN1</cim:IdentifiedObject.name>
         <cim:Measurement.measurementType>PhaseCurrent</cim:Measurement.measurementType>
-        <cim:Measurement.phases rdf:resource="http://iec.ch/TC57/CIM100#PhaseCode.A" />
-        <cim:Measurement.unitMultiplier rdf:resource="http://iec.ch/TC57/CIM100#UnitMultiplier.none" />
-        <cim:Measurement.unitSymbol rdf:resource="http://iec.ch/TC57/CIM100#UnitSymbol.A" />
+        <cim:Measurement.phases rdf:resource="http://ucaiug.org/ns/CIM#PhaseCode.A" />
+        <cim:Measurement.unitMultiplier rdf:resource="http://ucaiug.org/ns/CIM#UnitMultiplier.none" />
+        <cim:Measurement.unitSymbol rdf:resource="http://ucaiug.org/ns/CIM#UnitSymbol.A" />
         <cim:Analog.maxValue>450</cim:Analog.maxValue>
         <cim:Analog.minValue>0</cim:Analog.minValue>
         <cim:Analog.normalValue>270</cim:Analog.normalValue>
@@ -39,9 +39,9 @@
         <cim:IdentifiedObject.description>Engene Current Transformer 2 Analog 2</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>ENGENE CT2 AN2</cim:IdentifiedObject.name>
         <cim:Measurement.measurementType>PhaseCurrent</cim:Measurement.measurementType>
-        <cim:Measurement.phases rdf:resource="http://iec.ch/TC57/CIM100#PhaseCode.B" />
-        <cim:Measurement.unitMultiplier rdf:resource="http://iec.ch/TC57/CIM100#UnitMultiplier.none" />
-        <cim:Measurement.unitSymbol rdf:resource="http://iec.ch/TC57/CIM100#UnitSymbol.A" />
+        <cim:Measurement.phases rdf:resource="http://ucaiug.org/ns/CIM#PhaseCode.B" />
+        <cim:Measurement.unitMultiplier rdf:resource="http://ucaiug.org/ns/CIM#UnitMultiplier.none" />
+        <cim:Measurement.unitSymbol rdf:resource="http://ucaiug.org/ns/CIM#UnitSymbol.A" />
         <cim:Analog.maxValue>450</cim:Analog.maxValue>
         <cim:Analog.minValue>0</cim:Analog.minValue>
         <cim:Analog.normalValue>270</cim:Analog.normalValue>
@@ -56,9 +56,9 @@
         <cim:IdentifiedObject.description>Engene Current Transformer 3 Analog 3</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>ENGENE CT3 AN3</cim:IdentifiedObject.name>
         <cim:Measurement.measurementType>PhaseCurrent</cim:Measurement.measurementType>
-        <cim:Measurement.phases rdf:resource="http://iec.ch/TC57/CIM100#PhaseCode.C" />
-        <cim:Measurement.unitMultiplier rdf:resource="http://iec.ch/TC57/CIM100#UnitMultiplier.none" />
-        <cim:Measurement.unitSymbol rdf:resource="http://iec.ch/TC57/CIM100#UnitSymbol.A" />
+        <cim:Measurement.phases rdf:resource="http://ucaiug.org/ns/CIM#PhaseCode.C" />
+        <cim:Measurement.unitMultiplier rdf:resource="http://ucaiug.org/ns/CIM#UnitMultiplier.none" />
+        <cim:Measurement.unitSymbol rdf:resource="http://ucaiug.org/ns/CIM#UnitSymbol.A" />
         <cim:Analog.maxValue>450</cim:Analog.maxValue>
         <cim:Analog.minValue>0</cim:Analog.minValue>
         <cim:Analog.normalValue>270</cim:Analog.normalValue>
@@ -73,9 +73,9 @@
         <cim:IdentifiedObject.description>Engene Voltage Transformer 1 Analog 4</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>ENGENE VT1 AN4</cim:IdentifiedObject.name>
         <cim:Measurement.measurementType>PhaseVoltage</cim:Measurement.measurementType>
-        <cim:Measurement.phases rdf:resource="http://iec.ch/TC57/CIM100#PhaseCode.AB" />
-        <cim:Measurement.unitMultiplier rdf:resource="http://iec.ch/TC57/CIM100#UnitMultiplier.k" />
-        <cim:Measurement.unitSymbol rdf:resource="http://iec.ch/TC57/CIM100#UnitSymbol.V" />
+        <cim:Measurement.phases rdf:resource="http://ucaiug.org/ns/CIM#PhaseCode.AB" />
+        <cim:Measurement.unitMultiplier rdf:resource="http://ucaiug.org/ns/CIM#UnitMultiplier.k" />
+        <cim:Measurement.unitSymbol rdf:resource="http://ucaiug.org/ns/CIM#UnitSymbol.V" />
         <cim:Analog.maxValue>24</cim:Analog.maxValue>
         <cim:Analog.minValue>0</cim:Analog.minValue>
         <cim:Analog.normalValue>22</cim:Analog.normalValue>
@@ -89,9 +89,9 @@
         <cim:IdentifiedObject.description>Engene Voltage Transformer 2 Analog 5</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>ENGENE VT2 AN5</cim:IdentifiedObject.name>
         <cim:Measurement.measurementType>PhaseVoltage</cim:Measurement.measurementType>
-        <cim:Measurement.phases rdf:resource="http://iec.ch/TC57/CIM100#PhaseCode.AC" />
-        <cim:Measurement.unitMultiplier rdf:resource="http://iec.ch/TC57/CIM100#UnitMultiplier.k" />
-        <cim:Measurement.unitSymbol rdf:resource="http://iec.ch/TC57/CIM100#UnitSymbol.V" />
+        <cim:Measurement.phases rdf:resource="http://ucaiug.org/ns/CIM#PhaseCode.AC" />
+        <cim:Measurement.unitMultiplier rdf:resource="http://ucaiug.org/ns/CIM#UnitMultiplier.k" />
+        <cim:Measurement.unitSymbol rdf:resource="http://ucaiug.org/ns/CIM#UnitSymbol.V" />
         <cim:Analog.maxValue>24</cim:Analog.maxValue>
         <cim:Analog.minValue>0</cim:Analog.minValue>
         <cim:Analog.normalValue>22</cim:Analog.normalValue>
@@ -105,9 +105,9 @@
         <cim:IdentifiedObject.description>Engene Voltage Transformer 3 Analog 6</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>ENGENE VT3 AN6</cim:IdentifiedObject.name>
         <cim:Measurement.measurementType>PhaseVoltage</cim:Measurement.measurementType>
-        <cim:Measurement.phases rdf:resource="http://iec.ch/TC57/CIM100#PhaseCode.BC" />
-        <cim:Measurement.unitMultiplier rdf:resource="http://iec.ch/TC57/CIM100#UnitMultiplier.k" />
-        <cim:Measurement.unitSymbol rdf:resource="http://iec.ch/TC57/CIM100#UnitSymbol.V" />
+        <cim:Measurement.phases rdf:resource="http://ucaiug.org/ns/CIM#PhaseCode.BC" />
+        <cim:Measurement.unitMultiplier rdf:resource="http://ucaiug.org/ns/CIM#UnitMultiplier.k" />
+        <cim:Measurement.unitSymbol rdf:resource="http://ucaiug.org/ns/CIM#UnitSymbol.V" />
         <cim:Analog.maxValue>24</cim:Analog.maxValue>
         <cim:Analog.minValue>0</cim:Analog.minValue>
         <cim:Analog.normalValue>22</cim:Analog.normalValue>
@@ -121,9 +121,9 @@
         <cim:IdentifiedObject.description>Engene Active Power Analog 7</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>ENGENE TotW AN7</cim:IdentifiedObject.name>
         <cim:Measurement.measurementType>ThreePhaseActivePower</cim:Measurement.measurementType>
-        <cim:Measurement.phases rdf:resource="http://iec.ch/TC57/CIM100#PhaseCode.ABC" />
-        <cim:Measurement.unitMultiplier rdf:resource="http://iec.ch/TC57/CIM100#UnitMultiplier.M" />
-        <cim:Measurement.unitSymbol rdf:resource="http://iec.ch/TC57/CIM100#UnitSymbol.W" />
+        <cim:Measurement.phases rdf:resource="http://ucaiug.org/ns/CIM#PhaseCode.ABC" />
+        <cim:Measurement.unitMultiplier rdf:resource="http://ucaiug.org/ns/CIM#UnitMultiplier.M" />
+        <cim:Measurement.unitSymbol rdf:resource="http://ucaiug.org/ns/CIM#UnitSymbol.W" />
         <cim:Analog.maxValue>35</cim:Analog.maxValue>
         <cim:Analog.minValue>-35</cim:Analog.minValue>
         <cim:Analog.normalValue>20</cim:Analog.normalValue>
@@ -136,9 +136,9 @@
         <cim:IdentifiedObject.description>Engene Reactive Power Analog 8</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>ENGENE TotVAr AN8</cim:IdentifiedObject.name>
         <cim:Measurement.measurementType>ThreePhaseReactivePower</cim:Measurement.measurementType>
-        <cim:Measurement.phases rdf:resource="http://iec.ch/TC57/CIM100#PhaseCode.ABC" />
-        <cim:Measurement.unitMultiplier rdf:resource="http://iec.ch/TC57/CIM100#UnitMultiplier.M" />
-        <cim:Measurement.unitSymbol rdf:resource="http://iec.ch/TC57/CIM100#UnitSymbol.VAR" />
+        <cim:Measurement.phases rdf:resource="http://ucaiug.org/ns/CIM#PhaseCode.ABC" />
+        <cim:Measurement.unitMultiplier rdf:resource="http://ucaiug.org/ns/CIM#UnitMultiplier.M" />
+        <cim:Measurement.unitSymbol rdf:resource="http://ucaiug.org/ns/CIM#UnitSymbol.VAR" />
         <cim:Analog.maxValue>30</cim:Analog.maxValue>
         <cim:Analog.minValue>-30</cim:Analog.minValue>
         <cim:Analog.normalValue>15</cim:Analog.normalValue>
@@ -151,9 +151,9 @@
         <cim:IdentifiedObject.description>Engene Tap Postition Analog 9</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>ENGENE TapPos AN9</cim:IdentifiedObject.name>
         <cim:Measurement.measurementType>TapPosition</cim:Measurement.measurementType>
-        <cim:Measurement.phases rdf:resource="http://iec.ch/TC57/CIM100#PhaseCode.none" />
-        <cim:Measurement.unitMultiplier rdf:resource="http://iec.ch/TC57/CIM100#UnitMultiplier.none" />
-        <cim:Measurement.unitSymbol rdf:resource="http://iec.ch/TC57/CIM100#UnitSymbol.none" />
+        <cim:Measurement.phases rdf:resource="http://ucaiug.org/ns/CIM#PhaseCode.none" />
+        <cim:Measurement.unitMultiplier rdf:resource="http://ucaiug.org/ns/CIM#UnitMultiplier.none" />
+        <cim:Measurement.unitSymbol rdf:resource="http://ucaiug.org/ns/CIM#UnitSymbol.none" />
         <cim:Analog.maxValue>7</cim:Analog.maxValue>
         <cim:Analog.minValue>0</cim:Analog.minValue>
         <cim:Analog.normalValue>4</cim:Analog.normalValue>
@@ -166,9 +166,9 @@
         <cim:IdentifiedObject.description>Engene OilTemperature Analog 10</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>ENGENE OilTemp AN10</cim:IdentifiedObject.name>
         <cim:Measurement.measurementType>OilTemperature</cim:Measurement.measurementType>
-        <cim:Measurement.phases rdf:resource="http://iec.ch/TC57/CIM100#PhaseCode.none" />
-        <cim:Measurement.unitMultiplier rdf:resource="http://iec.ch/TC57/CIM100#UnitMultiplier.none" />
-        <cim:Measurement.unitSymbol rdf:resource="http://iec.ch/TC57/CIM100#UnitSymbol.Deg" />
+        <cim:Measurement.phases rdf:resource="http://ucaiug.org/ns/CIM#PhaseCode.none" />
+        <cim:Measurement.unitMultiplier rdf:resource="http://ucaiug.org/ns/CIM#UnitMultiplier.none" />
+        <cim:Measurement.unitSymbol rdf:resource="http://ucaiug.org/ns/CIM#UnitSymbol.Deg" />
         <cim:Analog.maxValue>140</cim:Analog.maxValue>
         <cim:Analog.minValue>-40</cim:Analog.minValue>
         <cim:Analog.normalValue>50</cim:Analog.normalValue>
@@ -292,9 +292,9 @@
         <cim:IdentifiedObject.description>Arendal 132kV Trafo 1 Breaker Switch Position</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>ARENDAL 132 T1E SWITCH POSITION</cim:IdentifiedObject.name>
         <cim:Measurement.measurementType>SwitchPosition</cim:Measurement.measurementType>
-        <cim:Measurement.phases rdf:resource="http://iec.ch/TC57/CIM100#PhaseCode.ABC" />
-        <cim:Measurement.unitMultiplier rdf:resource="http://iec.ch/TC57/CIM100#UnitMultiplier.none" />
-        <cim:Measurement.unitSymbol rdf:resource="http://iec.ch/TC57/CIM100#UnitSymbol.none" />
+        <cim:Measurement.phases rdf:resource="http://ucaiug.org/ns/CIM#PhaseCode.ABC" />
+        <cim:Measurement.unitMultiplier rdf:resource="http://ucaiug.org/ns/CIM#UnitMultiplier.none" />
+        <cim:Measurement.unitSymbol rdf:resource="http://ucaiug.org/ns/CIM#UnitSymbol.none" />
         <cim:Discrete.maxValue>3</cim:Discrete.maxValue>
         <cim:Discrete.minValue>0</cim:Discrete.minValue>
         <cim:Discrete.normalValue>0</cim:Discrete.normalValue>
@@ -407,7 +407,7 @@
         <cim:PotentialTransformer.accuracyClass>0.2</cim:PotentialTransformer.accuracyClass>
         <cim:PotentialTransformer.nominalRatio>200</cim:PotentialTransformer.nominalRatio>
         <cim:PotentialTransformer.ptClass>0.2</cim:PotentialTransformer.ptClass> <!--Need to check this-->
-        <cim:PotentialTransformer.type rdf:resource="http://iec.ch/TC57/CIM100#PotentialTransformerKind.capacitiveCoupling" />
+        <cim:PotentialTransformer.type rdf:resource="http://ucaiug.org/ns/CIM#PotentialTransformerKind.capacitiveCoupling" />
         <cim:AuxiliaryEquipment.Terminal rdf:resource="#_83bf6035-97b6-4433-b5f9-bb455444a983" />
     </cim:PotentialTransformer>
 
@@ -421,7 +421,7 @@
         <cim:PotentialTransformer.accuracyClass>0.2</cim:PotentialTransformer.accuracyClass>
         <cim:PotentialTransformer.nominalRatio>200</cim:PotentialTransformer.nominalRatio>
         <cim:PotentialTransformer.ptClass>0.2</cim:PotentialTransformer.ptClass> <!--Need to check this-->
-        <cim:PotentialTransformer.type rdf:resource="http://iec.ch/TC57/CIM100#PotentialTransformerKind.capacitiveCoupling" />
+        <cim:PotentialTransformer.type rdf:resource="http://ucaiug.org/ns/CIM#PotentialTransformerKind.capacitiveCoupling" />
         <cim:AuxiliaryEquipment.Terminal rdf:resource="#_83bf6035-97b6-4433-b5f9-bb455444a983" />
     </cim:PotentialTransformer>
 
@@ -435,7 +435,7 @@
         <cim:PotentialTransformer.accuracyClass>0.2</cim:PotentialTransformer.accuracyClass>
         <cim:PotentialTransformer.nominalRatio>200</cim:PotentialTransformer.nominalRatio>
         <cim:PotentialTransformer.ptClass>0.2</cim:PotentialTransformer.ptClass> <!--Need to check this-->
-        <cim:PotentialTransformer.type rdf:resource="http://iec.ch/TC57/CIM100#PotentialTransformerKind.capacitiveCoupling" />
+        <cim:PotentialTransformer.type rdf:resource="http://ucaiug.org/ns/CIM#PotentialTransformerKind.capacitiveCoupling" />
         <cim:AuxiliaryEquipment.Terminal rdf:resource="#_83bf6035-97b6-4433-b5f9-bb455444a983" />
     </cim:PotentialTransformer>
 
@@ -448,7 +448,7 @@
         <cim:PotentialTransformer.accuracyClass>0.2</cim:PotentialTransformer.accuracyClass>
         <cim:PotentialTransformer.nominalRatio>200</cim:PotentialTransformer.nominalRatio>
         <cim:PotentialTransformer.ptClass>0.2</cim:PotentialTransformer.ptClass> <!--Need to check this-->
-        <cim:PotentialTransformer.type rdf:resource="http://iec.ch/TC57/CIM100#PotentialTransformerKind.capacitiveCoupling" />
+        <cim:PotentialTransformer.type rdf:resource="http://ucaiug.org/ns/CIM#PotentialTransformerKind.capacitiveCoupling" />
         <cim:AuxiliaryEquipment.Terminal rdf:resource="#_c2797e60-6614-4c5f-9090-ed8cef7b15b5" />
     </cim:PotentialTransformer>
 

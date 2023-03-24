@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rdf:RDF 
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:cim="http://iec.ch/TC57/CIM100#"
+    xmlns:cim="http://ucaiug.org/ns/CIM#"
     xmlns:md="http://iec.ch/TC57/61970-552/ModelDescription/1#"
     xmlns:eu="http://iec.ch/TC57/CIM100-European#"
     >
@@ -22,9 +22,9 @@
         <cim:IdentifiedObject.description>400 Volt Telemarkstien 2 AC Line Segment 1 Analog 7</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>04 TELEMA 2 ACLS1 AN7</cim:IdentifiedObject.name>
         <cim:Measurement.measurementType>Temperature</cim:Measurement.measurementType>
-        <cim:Measurement.phases rdf:resource="http://iec.ch/TC57/CIM100#PhaseCode.ABCN" />
-        <cim:Measurement.unitMultiplier rdf:resource="http://iec.ch/TC57/CIM100#UnitMultiplier.none" />
-        <cim:Measurement.unitSymbol rdf:resource="http://iec.ch/TC57/CIM100#UnitSymbol.degC" />
+        <cim:Measurement.phases rdf:resource="http://ucaiug.org/ns/CIM#PhaseCode.ABCN" />
+        <cim:Measurement.unitMultiplier rdf:resource="http://ucaiug.org/ns/CIM#UnitMultiplier.none" />
+        <cim:Measurement.unitSymbol rdf:resource="http://ucaiug.org/ns/CIM#UnitSymbol.degC" />
         <cim:Analog.maxValue>120</cim:Analog.maxValue>
         <cim:Analog.minValue>10</cim:Analog.minValue>
         <cim:Analog.normalValue>30</cim:Analog.normalValue>
@@ -74,7 +74,7 @@
         <cim:IdentifiedObject.mRID>00160296-775f-407a-8d67-c9a5d610715a</cim:IdentifiedObject.mRID>
         <cim:IdentifiedObject.description>400 Volt Telemarkstien 2 Remote Unit 1</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>04 TELEMA 2 RU1</cim:IdentifiedObject.name>
-        <cim:RemoteUnit.remoteUnitType rdf:resource="http://iec.ch/TC57/CIM100#RemoteUnitType.IED" />
+        <cim:RemoteUnit.remoteUnitType rdf:resource="http://ucaiug.org/ns/CIM#RemoteUnitType.IED" />
     </cim:RemoteUnit>
 
 </rdf:RDF>

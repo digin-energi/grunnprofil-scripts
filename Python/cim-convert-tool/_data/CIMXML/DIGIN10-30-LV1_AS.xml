@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:cim="http://iec.ch/TC57/CIM100#"
+    xmlns:cim="http://ucaiug.org/ns/CIM#"
     xmlns:md="http://iec.ch/TC57/61970-552/ModelDescription/1#"
     xmlns:eu="http://iec.ch/TC57/CIM100-European#">
  
@@ -21,9 +21,9 @@
         <cim:Asset.baselineCondition>New</cim:Asset.baselineCondition>
         <cim:Asset.baselineLossOfLife>0</cim:Asset.baselineLossOfLife>
         <cim:Asset.critical>true</cim:Asset.critical>
-        <cim:Asset.inUseState rdf:resource="http://iec.ch/TC57/CIM100#InUseStateKind.inUse" />
-        <cim:Asset.kind rdf:resource="http://iec.ch/TC57/CIM100#AssetKind.other" />
-        <cim:Asset.lifecycleState rdf:resource="http://iec.ch/TC57/CIM100#AssetLifeCycleStateKind.received" />
+        <cim:Asset.inUseState rdf:resource="http://ucaiug.org/ns/CIM#InUseStateKind.inUse" />
+        <cim:Asset.kind rdf:resource="http://ucaiug.org/ns/CIM#AssetKind.other" />
+        <cim:Asset.lifecycleState rdf:resource="http://ucaiug.org/ns/CIM#AssetLifeCycleStateKind.received" />
         <cim:Asset.lotNumber>LOT # B-01580609</cim:Asset.lotNumber>
         <cim:Asset.position>inGround</cim:Asset.position>
         <cim:Asset.purchasePrice>400.00</cim:Asset.purchasePrice>
@@ -41,9 +41,9 @@
         <cim:Asset.baselineCondition>New</cim:Asset.baselineCondition>
         <cim:Asset.baselineLossOfLife>0</cim:Asset.baselineLossOfLife>
         <cim:Asset.critical>false</cim:Asset.critical>
-        <cim:Asset.inUseState rdf:resource="http://iec.ch/TC57/CIM100#InUseStateKind.inUse" />
-        <cim:Asset.kind rdf:resource="http://iec.ch/TC57/CIM100#AssetKind.other" />
-        <cim:Asset.lifecycleState rdf:resource="http://iec.ch/TC57/CIM100#AssetLifeCycleStateKind.received" />
+        <cim:Asset.inUseState rdf:resource="http://ucaiug.org/ns/CIM#InUseStateKind.inUse" />
+        <cim:Asset.kind rdf:resource="http://ucaiug.org/ns/CIM#AssetKind.other" />
+        <cim:Asset.lifecycleState rdf:resource="http://ucaiug.org/ns/CIM#AssetLifeCycleStateKind.received" />
         <cim:Asset.lotNumber>LOT # B-01580608</cim:Asset.lotNumber>
         <cim:Asset.position>inGround</cim:Asset.position>
         <cim:Asset.purchasePrice>10.00</cim:Asset.purchasePrice>
@@ -60,9 +60,9 @@
         <cim:Asset.baselineCondition>New</cim:Asset.baselineCondition>
         <cim:Asset.baselineLossOfLife>0</cim:Asset.baselineLossOfLife>
         <cim:Asset.critical>true</cim:Asset.critical>
-        <cim:Asset.inUseState rdf:resource="http://iec.ch/TC57/CIM100#InUseStateKind.inUse" />
-        <cim:Asset.kind rdf:resource="http://iec.ch/TC57/CIM100#AssetKind.other" />
-        <cim:Asset.lifecycleState rdf:resource="http://iec.ch/TC57/CIM100#AssetLifeCycleStateKind.received" />
+        <cim:Asset.inUseState rdf:resource="http://ucaiug.org/ns/CIM#InUseStateKind.inUse" />
+        <cim:Asset.kind rdf:resource="http://ucaiug.org/ns/CIM#AssetKind.other" />
+        <cim:Asset.lifecycleState rdf:resource="http://ucaiug.org/ns/CIM#AssetLifeCycleStateKind.received" />
         <cim:Asset.lotNumber>LOT # B-01280609</cim:Asset.lotNumber>
         <cim:Asset.position>inHouse</cim:Asset.position>
         <cim:Asset.purchasePrice>500.00</cim:Asset.purchasePrice>

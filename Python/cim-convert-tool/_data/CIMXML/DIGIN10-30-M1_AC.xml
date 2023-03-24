@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:cim="http://iec.ch/TC57/CIM100#"
+    xmlns:cim="http://ucaiug.org/ns/CIM#"
     xmlns:md="http://iec.ch/TC57/61970-552/ModelDescription/1#"
     xmlns:eu="http://iec.ch/TC57/CIM100-European#">
 
@@ -23,9 +23,9 @@
         <cim:WireInfo.coreStrandCount></cim:WireInfo.coreStrandCount>
         <cim:WireInfo.gmr></cim:WireInfo.gmr>
         <cim:WireInfo.insulated>true</cim:WireInfo.insulated>
-        <cim:WireInfo.insulationMaterial rdf:resource="http://iec.ch/TC57/CIM100#WireInsulationKind.other" />
+        <cim:WireInfo.insulationMaterial rdf:resource="http://ucaiug.org/ns/CIM#WireInsulationKind.other" />
         <cim:WireInfo.insulationThickness></cim:WireInfo.insulationThickness>
-        <cim:WireInfo.material rdf:resource="http://iec.ch/TC57/CIM100#WireMaterialKind.aluminum" />
+        <cim:WireInfo.material rdf:resource="http://ucaiug.org/ns/CIM#WireMaterialKind.aluminum" />
         <cim:WireInfo.rAC25>320</cim:WireInfo.rAC25>
         <cim:WireInfo.rAC50></cim:WireInfo.rAC50>
         <cim:WireInfo.rAC75></cim:WireInfo.rAC75>
@@ -34,16 +34,16 @@
         <cim:WireInfo.ratedCurrent>220</cim:WireInfo.ratedCurrent>
         <cim:WireInfo.sizeDescription></cim:WireInfo.sizeDescription>
         <cim:WireInfo.strandCount></cim:WireInfo.strandCount>
-        <cim:CableInfo.constructionKind rdf:resource="http://iec.ch/TC57/CIM100#CableConstructionKind.stranded" />
+        <cim:CableInfo.constructionKind rdf:resource="http://ucaiug.org/ns/CIM#CableConstructionKind.stranded" />
         <cim:CableInfo.diameterOverCore></cim:CableInfo.diameterOverCore>
         <cim:CableInfo.diameterOverInsulation></cim:CableInfo.diameterOverInsulation>
         <cim:CableInfo.diameterOverJacket></cim:CableInfo.diameterOverJacket>
         <cim:CableInfo.diameterOverScreen></cim:CableInfo.diameterOverScreen>
         <cim:CableInfo.isStrandFill></cim:CableInfo.isStrandFill>
         <cim:CableInfo.nominalTemperature></cim:CableInfo.nominalTemperature>
-        <cim:CableInfo.outerJacketKind rdf:resource="http://iec.ch/TC57/CIM100#CableOuterJacketKind.pvc" />
+        <cim:CableInfo.outerJacketKind rdf:resource="http://ucaiug.org/ns/CIM#CableOuterJacketKind.pvc" />
         <cim:CableInfo.sheathAsNeutral></cim:CableInfo.sheathAsNeutral>
-        <cim:CableInfo.shieldMaterial rdf:resource="http://iec.ch/TC57/CIM100#CableShieldMaterialKind.aluminum" />
+        <cim:CableInfo.shieldMaterial rdf:resource="http://ucaiug.org/ns/CIM#CableShieldMaterialKind.aluminum" />
     </cim:CableInfo>
 
     <cim:PowerTransformerInfo rdf:ID ="_5462d46a-9ee5-4d09-9ac2-9f97933caa4d">

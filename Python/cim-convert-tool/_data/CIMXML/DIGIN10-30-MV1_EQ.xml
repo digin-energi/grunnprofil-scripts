@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:cim="http://iec.ch/TC57/CIM100#"
+    xmlns:cim="http://ucaiug.org/ns/CIM#"
     xmlns:md="http://iec.ch/TC57/61970-552/ModelDescription/1#"
     xmlns:eu="http://iec.ch/TC57/CIM100-European#">
  
@@ -774,7 +774,7 @@
         <cim:IdentifiedObject.description>DSO 1 ControlArea 1</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>DSO1 CA 1</cim:IdentifiedObject.name>
         <cim:ControlArea.EnergyArea rdf:resource="#_92d33b39-7034-11eb-a65a-74e5f963e191" />
-        <cim:ControlArea.type rdf:resource="http://iec.ch/TC57/CIM100#ControlAreaTypeKind.Interchange" />
+        <cim:ControlArea.type rdf:resource="http://ucaiug.org/ns/CIM#ControlAreaTypeKind.Interchange" />
     </cim:ControlArea>
  
     <cim:CurrentLimit rdf:ID="_681a26d8-5a55-11eb-a658-74e5f963e191">
@@ -1406,13 +1406,6 @@
         <cim:LoadResponseCharacteristic.qConstantImpedance>0</cim:LoadResponseCharacteristic.qConstantImpedance>
         <cim:LoadResponseCharacteristic.exponentModel>false</cim:LoadResponseCharacteristic.exponentModel>
     </cim:LoadResponseCharacteristic>
-
-    <cim:OperationalLimitSet rdf:ID="_105b264a-2ab7-2441-bb32-aae12a3cfa51">
-        <cim:IdentifiedObject.mRID>105b264a-2ab7-2441-bb32-aae12a3cfa51</cim:IdentifiedObject.mRID>
-        <cim:IdentifiedObject.name>LS T2 132 FROLAND-T_ENGENE ACLS 1</cim:IdentifiedObject.name>
-        <cim:OperationalLimitSet.Terminal rdf:resource="#_9796f69a-d718-43c7-91b6-980cd96a1c50"/>
-    </cim:OperationalLimitSet>
-
     <cim:OperationalLimitSet rdf:ID="_681a3095-5a55-11eb-a658-74e5f963e191">
         <cim:IdentifiedObject.mRID>681a3095-5a55-11eb-a658-74e5f963e191</cim:IdentifiedObject.mRID>
         <cim:IdentifiedObject.name>LS T2 ENGENE T1 22 S</cim:IdentifiedObject.name>
@@ -1478,19 +1471,7 @@
         <cim:IdentifiedObject.name>LS T1 22 ZT1-EFC ACLS 1</cim:IdentifiedObject.name>
         <cim:OperationalLimitSet.Terminal rdf:resource="#_86c847a4-9732-9844-b480-c53b70f6ceec" />
     </cim:OperationalLimitSet>
- 
-    <cim:OperationalLimitSet rdf:ID="_17264ab0-1492-6243-8e2d-44d85d0841fc">
-        <cim:IdentifiedObject.mRID>17264ab0-1492-6243-8e2d-44d85d0841fc</cim:IdentifiedObject.mRID>
-        <cim:IdentifiedObject.name>LS T1 ARENDAL T1 420 P</cim:IdentifiedObject.name>
-        <cim:OperationalLimitSet.Terminal rdf:resource="#_92d33bf5-7034-11eb-a65a-74e5f963e191" />
-    </cim:OperationalLimitSet>
- 
-    <cim:OperationalLimitSet rdf:ID="_681a2fcf-5a55-11eb-a658-74e5f963e191">
-        <cim:IdentifiedObject.mRID>681a2fcf-5a55-11eb-a658-74e5f963e191</cim:IdentifiedObject.mRID>
-        <cim:IdentifiedObject.name>LS T1 ENGENE NT1 22 P</cim:IdentifiedObject.name>
-        <cim:OperationalLimitSet.Terminal rdf:resource="#_92d33bf1-7034-11eb-a65a-74e5f963e191" />
-    </cim:OperationalLimitSet>
- 
+
     <cim:OperationalLimitSet rdf:ID="_5a7908d7-612b-2346-918a-b7b6d458475a">
         <cim:IdentifiedObject.mRID>5a7908d7-612b-2346-918a-b7b6d458475a</cim:IdentifiedObject.mRID>
         <cim:IdentifiedObject.name>LS T1 ENGENE T1 132 P</cim:IdentifiedObject.name>
@@ -1580,7 +1561,7 @@
         <cim:IdentifiedObject.description>Permanent Admissible Transmission Loading</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
         <cim:OperationalLimitType.isInfiniteDuration>true</cim:OperationalLimitType.isInfiniteDuration>
-        <cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/CIM100#OperationalLimitDirectionKind.absoluteValue" />
+        <cim:OperationalLimitType.direction rdf:resource="http://ucaiug.org/ns/CIM#OperationalLimitDirectionKind.absoluteValue" />
         <eu:OperationalLimitType.kind rdf:resource="http://iec.ch/TC57/CIM100-EuropeanExtension/1/0#LimitKind.patl" />
     </cim:OperationalLimitType>
  
@@ -1590,7 +1571,7 @@
         <cim:IdentifiedObject.name>TATL</cim:IdentifiedObject.name>
         <cim:OperationalLimitType.acceptableDuration>7200</cim:OperationalLimitType.acceptableDuration>
         <cim:OperationalLimitType.isInfiniteDuration>false</cim:OperationalLimitType.isInfiniteDuration>
-        <cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/CIM100#OperationalLimitDirectionKind.absoluteValue" />
+        <cim:OperationalLimitType.direction rdf:resource="http://ucaiug.org/ns/CIM#OperationalLimitDirectionKind.absoluteValue" />
         <eu:OperationalLimitType.kind rdf:resource="http://iec.ch/TC57/CIM100-EuropeanExtension/1/0#LimitKind.tatl" />
     </cim:OperationalLimitType>
  
@@ -1655,7 +1636,7 @@
         <cim:PowerTransformerEnd.x>25.41</cim:PowerTransformerEnd.x>
         <cim:TransformerEnd.BaseVoltage rdf:resource="#_2dd90159-bdfb-11e5-94fa-c8f73332c8f4" />
         <cim:TransformerEnd.Terminal rdf:resource="#_92d33bf5-7034-11eb-a65a-74e5f963e191" />
-        <cim:PowerTransformerEnd.connectionKind rdf:resource="http://iec.ch/TC57/CIM100#WindingConnection.Y" />
+        <cim:PowerTransformerEnd.connectionKind rdf:resource="http://ucaiug.org/ns/CIM#WindingConnection.Y" />
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_681a2fdd-5a55-11eb-a658-74e5f963e191" />
     </cim:PowerTransformerEnd>
  
@@ -1672,7 +1653,7 @@
         <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
         <cim:TransformerEnd.BaseVoltage rdf:resource="#_2dd90174-bdfb-11e5-94fa-c8f73332c8f4" />
         <cim:TransformerEnd.Terminal rdf:resource="#_92d33bf7-7034-11eb-a65a-74e5f963e191" />
-        <cim:PowerTransformerEnd.connectionKind rdf:resource="http://iec.ch/TC57/CIM100#WindingConnection.Y" />
+        <cim:PowerTransformerEnd.connectionKind rdf:resource="http://ucaiug.org/ns/CIM#WindingConnection.Y" />
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_681a2fdd-5a55-11eb-a658-74e5f963e191" />
     </cim:PowerTransformerEnd>
  
@@ -1689,7 +1670,7 @@
         <cim:PowerTransformerEnd.x>82.28</cim:PowerTransformerEnd.x>
         <cim:TransformerEnd.BaseVoltage rdf:resource="#_2dd90174-bdfb-11e5-94fa-c8f73332c8f4" />
         <cim:TransformerEnd.Terminal rdf:resource="#_05548bc6-70a0-44b7-8bac-20f745974e43" />
-        <cim:PowerTransformerEnd.connectionKind rdf:resource="http://iec.ch/TC57/CIM100#WindingConnection.Y" />
+        <cim:PowerTransformerEnd.connectionKind rdf:resource="http://ucaiug.org/ns/CIM#WindingConnection.Y" />
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_681a3087-5a55-11eb-a658-74e5f963e191" />
     </cim:PowerTransformerEnd>
  
@@ -1706,7 +1687,7 @@
         <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
         <cim:TransformerEnd.BaseVoltage rdf:resource="#_92d33b38-7034-11eb-a65a-74e5f963e191" />
         <cim:TransformerEnd.Terminal rdf:resource="#_92d33bfb-7034-11eb-a65a-74e5f963e191" />
-        <cim:PowerTransformerEnd.connectionKind rdf:resource="http://iec.ch/TC57/CIM100#WindingConnection.Y" />
+        <cim:PowerTransformerEnd.connectionKind rdf:resource="http://ucaiug.org/ns/CIM#WindingConnection.Y" />
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_681a3087-5a55-11eb-a658-74e5f963e191" />
     </cim:PowerTransformerEnd>
  
@@ -1723,7 +1704,7 @@
         <cim:PowerTransformerEnd.x>7.62</cim:PowerTransformerEnd.x>
         <cim:TransformerEnd.BaseVoltage rdf:resource="#_92d33b38-7034-11eb-a65a-74e5f963e191" />
         <cim:TransformerEnd.Terminal rdf:resource="#_92d33bf1-7034-11eb-a65a-74e5f963e191" />
-        <cim:PowerTransformerEnd.connectionKind rdf:resource="http://iec.ch/TC57/CIM100#WindingConnection.Y" />
+        <cim:PowerTransformerEnd.connectionKind rdf:resource="http://ucaiug.org/ns/CIM#WindingConnection.Y" />
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_681a2fcb-5a55-11eb-a658-74e5f963e191" />
     </cim:PowerTransformerEnd>
  
@@ -1740,7 +1721,7 @@
         <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
         <cim:TransformerEnd.BaseVoltage rdf:resource="#_830622e6-d259-4526-b14e-122d94a622a4" />
         <cim:TransformerEnd.Terminal rdf:resource="#_92d33bf3-7034-11eb-a65a-74e5f963e191" />
-        <cim:PowerTransformerEnd.connectionKind rdf:resource="http://iec.ch/TC57/CIM100#WindingConnection.Zn" />
+        <cim:PowerTransformerEnd.connectionKind rdf:resource="http://ucaiug.org/ns/CIM#WindingConnection.Zn" />
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_681a2fcb-5a55-11eb-a658-74e5f963e191" />
     </cim:PowerTransformerEnd>
  
@@ -1757,7 +1738,7 @@
         <cim:PowerTransformerEnd.x>35.45</cim:PowerTransformerEnd.x>
         <cim:TransformerEnd.BaseVoltage rdf:resource="#_92d33b38-7034-11eb-a65a-74e5f963e191" />
         <cim:TransformerEnd.Terminal rdf:resource="#_92d33bfd-7034-11eb-a65a-74e5f963e191" />
-        <cim:PowerTransformerEnd.connectionKind rdf:resource="http://iec.ch/TC57/CIM100#WindingConnection.Y" />
+        <cim:PowerTransformerEnd.connectionKind rdf:resource="http://ucaiug.org/ns/CIM#WindingConnection.Y" />
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_681a309b-5a55-11eb-a658-74e5f963e191" />
     </cim:PowerTransformerEnd>
  
@@ -1774,7 +1755,7 @@
         <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
         <cim:TransformerEnd.BaseVoltage rdf:resource="#_9598e4a0-67e5-4ad7-879c-c85a1f63159c" />
         <cim:TransformerEnd.Terminal rdf:resource="#_92d33bff-7034-11eb-a65a-74e5f963e191" />
-        <cim:PowerTransformerEnd.connectionKind rdf:resource="http://iec.ch/TC57/CIM100#WindingConnection.Y" />
+        <cim:PowerTransformerEnd.connectionKind rdf:resource="http://ucaiug.org/ns/CIM#WindingConnection.Y" />
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_681a309b-5a55-11eb-a658-74e5f963e191" />
     </cim:PowerTransformerEnd>
  
@@ -1789,7 +1770,7 @@
         <cim:TapChanger.neutralU>132</cim:TapChanger.neutralU>
         <cim:TapChanger.normalStep>17</cim:TapChanger.normalStep>
         <cim:RatioTapChanger.stepVoltageIncrement>0.625</cim:RatioTapChanger.stepVoltageIncrement>
-        <cim:RatioTapChanger.tculControlMode rdf:resource="http://iec.ch/TC57/CIM100#TransformerControlMode.volt" />
+        <cim:RatioTapChanger.tculControlMode rdf:resource="http://ucaiug.org/ns/CIM#TransformerControlMode.volt" />
         <cim:RatioTapChanger.TransformerEnd rdf:resource="#_681a2fea-5a55-11eb-a658-74e5f963e191" />
     </cim:RatioTapChanger>
  
@@ -1804,7 +1785,7 @@
         <cim:TapChanger.neutralU>22</cim:TapChanger.neutralU>
         <cim:TapChanger.normalStep>18</cim:TapChanger.normalStep>
         <cim:RatioTapChanger.stepVoltageIncrement>0.625</cim:RatioTapChanger.stepVoltageIncrement>
-        <cim:RatioTapChanger.tculControlMode rdf:resource="http://iec.ch/TC57/CIM100#TransformerControlMode.volt" />
+        <cim:RatioTapChanger.tculControlMode rdf:resource="http://ucaiug.org/ns/CIM#TransformerControlMode.volt" />
         <cim:RatioTapChanger.TransformerEnd rdf:resource="#_681a3094-5a55-11eb-a658-74e5f963e191" />
     </cim:RatioTapChanger>
  
@@ -1819,7 +1800,7 @@
         <cim:TapChanger.neutralU>0.23</cim:TapChanger.neutralU>
         <cim:TapChanger.normalStep>17</cim:TapChanger.normalStep>
         <cim:RatioTapChanger.stepVoltageIncrement>0.625</cim:RatioTapChanger.stepVoltageIncrement>
-        <cim:RatioTapChanger.tculControlMode rdf:resource="http://iec.ch/TC57/CIM100#TransformerControlMode.volt" />
+        <cim:RatioTapChanger.tculControlMode rdf:resource="http://ucaiug.org/ns/CIM#TransformerControlMode.volt" />
         <cim:RatioTapChanger.TransformerEnd rdf:resource="#_681a2fd8-5a55-11eb-a658-74e5f963e191" />
     </cim:RatioTapChanger>
  
@@ -1835,7 +1816,7 @@
         <cim:TapChanger.normalStep>4</cim:TapChanger.normalStep>
         <cim:RatioTapChanger.stepVoltageIncrement>3.3333001136779785</cim:RatioTapChanger.stepVoltageIncrement>
         <cim:TapChanger.TapChangerControl rdf:resource="#_681a30a4-5a55-11eb-a658-74e5f963e191" />
-        <cim:RatioTapChanger.tculControlMode rdf:resource="http://iec.ch/TC57/CIM100#TransformerControlMode.volt" />
+        <cim:RatioTapChanger.tculControlMode rdf:resource="http://ucaiug.org/ns/CIM#TransformerControlMode.volt" />
         <cim:RatioTapChanger.TransformerEnd rdf:resource="#_681a30a8-5a55-11eb-a658-74e5f963e191" />
     </cim:RatioTapChanger>
  
@@ -1843,7 +1824,7 @@
         <cim:IdentifiedObject.mRID>570e76de-1b18-4a92-a1a2-b6f780f5dcbe</cim:IdentifiedObject.mRID>
         <cim:IdentifiedObject.description>Arendal 420kV Transmission Equivalent</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>Arendal 300kV RC1</cim:IdentifiedObject.name>
-        <cim:RegulatingControl.mode rdf:resource="http://iec.ch/TC57/CIM100#RegulatingControlModeKind.voltage" />
+        <cim:RegulatingControl.mode rdf:resource="http://ucaiug.org/ns/CIM#RegulatingControlModeKind.voltage" />
         <cim:RegulatingControl.Terminal rdf:resource="#_7d09271d-7826-442e-bc57-d1fa1955495e" />
     </cim:RegulatingControl>
  
@@ -1851,7 +1832,7 @@
         <cim:IdentifiedObject.mRID>92d33c00-7034-11eb-a65a-74e5f963e191</cim:IdentifiedObject.mRID>
         <cim:IdentifiedObject.description>Engene 22kV Shunt Compensator Regulating Control 1</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>ENGENE 22 SC1 RC</cim:IdentifiedObject.name>
-        <cim:RegulatingControl.mode rdf:resource="http://iec.ch/TC57/CIM100#RegulatingControlModeKind.voltage" />
+        <cim:RegulatingControl.mode rdf:resource="http://ucaiug.org/ns/CIM#RegulatingControlModeKind.voltage" />
         <cim:RegulatingControl.Terminal rdf:resource="#_92d33b55-7034-11eb-a65a-74e5f963e191" />
     </cim:RegulatingControl>
  
@@ -1907,7 +1888,7 @@
         <cim:SynchronousMachine.r>0.43445</cim:SynchronousMachine.r>
         <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
         <cim:RotatingMachine.ratedS>350</cim:RotatingMachine.ratedS>
-        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/CIM100#SynchronousMachineKind.generator" />
+        <cim:SynchronousMachine.type rdf:resource="http://ucaiug.org/ns/CIM#SynchronousMachineKind.generator" />
         <cim:Equipment.EquipmentContainer rdf:resource="#_1f4fabd4-8c57-c245-b107-4e64c9007ae3" />
         <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_570e76de-1b18-4a92-a1a2-b6f780f5dcbe" />
         <cim:RotatingMachine.GeneratingUnit rdf:resource="#_b7057d99-e21a-4ba1-9cef-15aeeee4232a" />
@@ -1917,7 +1898,7 @@
         <cim:IdentifiedObject.mRID>681a30a4-5a55-11eb-a658-74e5f963e191</cim:IdentifiedObject.mRID>
         <cim:IdentifiedObject.description>Nedenes 22kV T1 Tap Changer Control</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>NEDENES 22 T1 TCC</cim:IdentifiedObject.name>
-        <cim:RegulatingControl.mode rdf:resource="http://iec.ch/TC57/CIM100#RegulatingControlModeKind.voltage" />
+        <cim:RegulatingControl.mode rdf:resource="http://ucaiug.org/ns/CIM#RegulatingControlModeKind.voltage" />
         <cim:RegulatingControl.Terminal rdf:resource="#_92d33b5a-7034-11eb-a65a-74e5f963e191" />
     </cim:TapChangerControl>
  
@@ -1944,7 +1925,7 @@
         <cim:IdentifiedObject.description>Transformer Side</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>T1 132 ARENDAL-T1 ACLS 1</cim:IdentifiedObject.name>
         <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
-        <cim:Terminal.phases rdf:resource="http://iec.ch/TC57/CIM100#PhaseCode.ABC" />
+        <cim:Terminal.phases rdf:resource="http://ucaiug.org/ns/CIM#PhaseCode.ABC" />
         <cim:Terminal.ConductingEquipment rdf:resource="#_1f19556f-4604-8545-b930-0d96b163c57a" />
         <cim:Terminal.ConnectivityNode rdf:resource="#_517ac677-7ac0-dd4d-ac94-a191b7c05b13" />
     </cim:Terminal>
@@ -2006,7 +1987,7 @@
         <cim:IdentifiedObject.description>Transformer Side</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>T1 22 ZT1-EFC ACLS 1</cim:IdentifiedObject.name>
         <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
-        <cim:Terminal.phases rdf:resource="http://iec.ch/TC57/CIM100#PhaseCode.N" />
+        <cim:Terminal.phases rdf:resource="http://ucaiug.org/ns/CIM#PhaseCode.N" />
         <cim:Terminal.ConductingEquipment rdf:resource="#_b1b4714b-a160-7742-84d5-d6486d776c94" />
         <cim:Terminal.ConnectivityNode rdf:resource="#_681a1e4b-5a55-11eb-a658-74e5f963e191" />
     </cim:Terminal>
@@ -2079,7 +2060,7 @@
         <cim:IdentifiedObject.description>Transformer Side</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>T1 ARENDAL 132 T1E</cim:IdentifiedObject.name>
         <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
-        <cim:Terminal.phases rdf:resource="http://iec.ch/TC57/CIM100#PhaseCode.ABC" />
+        <cim:Terminal.phases rdf:resource="http://ucaiug.org/ns/CIM#PhaseCode.ABC" />
         <cim:Terminal.ConductingEquipment rdf:resource="#_48668646-105a-490d-aaad-3259b852aa23" />
         <cim:Terminal.ConnectivityNode rdf:resource="#_681a1e80-5a55-11eb-a658-74e5f963e191" />
     </cim:Terminal>
@@ -2089,7 +2070,7 @@
         <cim:IdentifiedObject.description>Transformer Side</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>T1 ARENDAL 132 T1SP1E</cim:IdentifiedObject.name>
         <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
-        <cim:Terminal.phases rdf:resource="http://iec.ch/TC57/CIM100#PhaseCode.N" />
+        <cim:Terminal.phases rdf:resource="http://ucaiug.org/ns/CIM#PhaseCode.N" />
         <cim:Terminal.ConductingEquipment rdf:resource="#_e3b199ca-485b-4df8-99f0-fdd5e4f3ff73" />
         <cim:Terminal.ConnectivityNode rdf:resource="#_517ac677-7ac0-dd4d-ac94-a191b7c05b13" />
     </cim:Terminal>
@@ -2271,7 +2252,7 @@
         <cim:IdentifiedObject.description>Primary Winding Side</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>T1 ENGENE NT1 22 P</cim:IdentifiedObject.name>
         <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
-        <cim:Terminal.phases rdf:resource="http://iec.ch/TC57/CIM100#PhaseCode.ABCN" />
+        <cim:Terminal.phases rdf:resource="http://ucaiug.org/ns/CIM#PhaseCode.ABCN" />
         <cim:Terminal.ConductingEquipment rdf:resource="#_681a2fcb-5a55-11eb-a658-74e5f963e191" />
         <cim:Terminal.ConnectivityNode rdf:resource="#_681a1e4b-5a55-11eb-a658-74e5f963e191" />
     </cim:Terminal>
@@ -2497,7 +2478,7 @@
         <cim:IdentifiedObject.description>Fuse Side</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>T2 22 ZT1-EFC ACLS 1</cim:IdentifiedObject.name>
         <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
-        <cim:Terminal.phases rdf:resource="http://iec.ch/TC57/CIM100#PhaseCode.N" />
+        <cim:Terminal.phases rdf:resource="http://ucaiug.org/ns/CIM#PhaseCode.N" />
         <cim:Terminal.ConductingEquipment rdf:resource="#_b1b4714b-a160-7742-84d5-d6486d776c94" />
         <cim:Terminal.ConnectivityNode rdf:resource="#_39082cb0-8808-b047-893c-ba0503a458d6" />
     </cim:Terminal>
@@ -2605,7 +2586,7 @@
         <cim:IdentifiedObject.description>Coil Side</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>T2 ARENDAL 132 T1SP1E</cim:IdentifiedObject.name>
         <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
-        <cim:Terminal.phases rdf:resource="http://iec.ch/TC57/CIM100#PhaseCode.N" />
+        <cim:Terminal.phases rdf:resource="http://ucaiug.org/ns/CIM#PhaseCode.N" />
         <cim:Terminal.ConductingEquipment rdf:resource="#_e3b199ca-485b-4df8-99f0-fdd5e4f3ff73" />
         <cim:Terminal.ConnectivityNode rdf:resource="#_8f69bfc5-3f5a-7f49-aeab-7df584878465" />
     </cim:Terminal>
@@ -2615,7 +2596,7 @@
         <cim:IdentifiedObject.description>Secondary Winding Side</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>T2 ARENDAL T1 132 S</cim:IdentifiedObject.name>
         <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
-        <cim:Terminal.phases rdf:resource="http://iec.ch/TC57/CIM100#PhaseCode.ABCN" />
+        <cim:Terminal.phases rdf:resource="http://ucaiug.org/ns/CIM#PhaseCode.ABCN" />
         <cim:Terminal.ConductingEquipment rdf:resource="#_681a2fdd-5a55-11eb-a658-74e5f963e191" />
         <cim:Terminal.ConnectivityNode rdf:resource="#_517ac677-7ac0-dd4d-ac94-a191b7c05b13" />
     </cim:Terminal>
@@ -2662,7 +2643,7 @@
     </cim:Terminal>
  
     <cim:Terminal rdf:ID="_83bf6035-97b6-4433-b5f9-bb455444a983">
-        <cim:IdentifiedObject.mRID>d1b627f7-1429-4a78-845a-17e9a7068a4f</cim:IdentifiedObject.mRID>
+        <cim:IdentifiedObject.mRID>83bf6035-97b6-4433-b5f9-bb455444a983</cim:IdentifiedObject.mRID>
         <cim:IdentifiedObject.name>T2 ENGENE 22 N1E</cim:IdentifiedObject.name>
         <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
         <cim:Terminal.ConductingEquipment rdf:resource="#_12156bb5-7a82-4e95-8ea4-2ff8573133fe" />
@@ -2840,7 +2821,7 @@
         <cim:IdentifiedObject.description>Single</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>T1 ARENDAL 132 T1 PC</cim:IdentifiedObject.name>
         <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
-        <cim:Terminal.phases rdf:resource="http://iec.ch/TC57/CIM100#PhaseCode.N" />
+        <cim:Terminal.phases rdf:resource="http://ucaiug.org/ns/CIM#PhaseCode.N" />
         <cim:Terminal.ConductingEquipment rdf:resource="#_62585c75-b020-614c-89a1-fec7c118c3fa" />
         <cim:Terminal.ConnectivityNode rdf:resource="#_8f69bfc5-3f5a-7f49-aeab-7df584878465" />
     </cim:Terminal>
@@ -2850,7 +2831,7 @@
         <cim:IdentifiedObject.description>Single</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>T1 22 ZT1-EFC PC</cim:IdentifiedObject.name>
         <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
-        <cim:Terminal.phases rdf:resource="http://iec.ch/TC57/CIM100#PhaseCode.N" />
+        <cim:Terminal.phases rdf:resource="http://ucaiug.org/ns/CIM#PhaseCode.N" />
         <cim:Terminal.ConductingEquipment rdf:resource="#_c9d5445c-9ad6-3849-9e02-08762805826b" />
         <cim:Terminal.ConnectivityNode rdf:resource="#_39082cb0-8808-b047-893c-ba0503a458d6" />
     </cim:Terminal>
@@ -2860,7 +2841,7 @@
         <cim:IdentifiedObject.description>Nedenes 400 Volt Terminal 128 Station Supply 1</cim:IdentifiedObject.description>
         <cim:IdentifiedObject.name>NEDENES 04 T128 SS1</cim:IdentifiedObject.name>
         <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
-        <cim:Terminal.phases rdf:resource="http://iec.ch/TC57/CIM100#PhaseCode.ABCN" />
+        <cim:Terminal.phases rdf:resource="http://ucaiug.org/ns/CIM#PhaseCode.ABCN" />
         <cim:Terminal.ConductingEquipment rdf:resource="#_0506353c-8adf-4f48-999f-bb1975c03467" />
         <cim:Terminal.ConnectivityNode rdf:resource="#_45fed034-857e-48df-b6ad-45d82eec564d" />
     </cim:Terminal>

@@ -61,7 +61,7 @@ def modellInfoFunc(
             }
     elif fullModelModelScenarioTime != "":
         dictionary["dcterms:temporal"] = {
-            "@type": "http://purl.org/dc/terms/PeriodOfTime",
+            "@type": "dcterms:PeriodOfTime",
             "dcat:startDate": { # --> Alle
                 "@value": fullModelModelScenarioTime, # ScenarioTime
                 "@type": "xsd:dateTime"
@@ -85,8 +85,8 @@ def modellInfoFunc(
     if fullModelDependentOn != "":
         dictionary["dcterms:references"] = [
             {
-                "@id": fullModelDependentOn,
-                "dcterms:title": docTitle #DIGIN10-30-MV1_EQ
+                "@id": fullModelDependentOn#,
+                #"dcterms:title": docTitle #DIGIN10-30-MV1_EQ
             }
         ]
     return dictionary

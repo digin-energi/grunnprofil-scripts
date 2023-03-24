@@ -68,7 +68,7 @@ def xmlToJsonLDConverter(companyUuid, companyName, isVersionOfUrl, docType, docT
         config = configOrCim17
 
     rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    cim = "http://iec.ch/TC57/CIM100#"
+    cim = "http://ucaiug.org/ns/CIM#"
     md = "http://iec.ch/TC57/61970-552/ModelDescription/1#"
     eu = "http://iec.ch/TC57/CIM100-European#"
     skos = "http://www.w3.org/2004/02/skos/core#"
@@ -199,7 +199,9 @@ def xmlToJsonLDConverter(companyUuid, companyName, isVersionOfUrl, docType, docT
                             if attributeTags.get(xmlAttributeSubTag)[:2] == '#_':
                                 attributeValue = f'urn:uuid:{attributeTags.get(xmlAttributeSubTag)[2:]}'
                             else:
-                                attributeValue = attributeTags.get(xmlAttributeSubTag)
+                                attributeValue = attributeTags.get(xmlAttributeSubTag)\
+                                    .replace("http://ucaiug.org/ns/CIM#", "cim:")\
+                                    .replace("http://iec.ch/TC57/CIM100-European#", "eu:") # Handling conversion from "url" to prefix
 
                         attributeType = config[configMainTag]['attributes'][configAttributeTag][configAttributeSubTag]['type']
 
