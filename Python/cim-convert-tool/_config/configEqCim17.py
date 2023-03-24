@@ -386,7 +386,7 @@ configEqCim17 = \
             },
             'attributes': {
                 'cim:OperationalLimitType.direction': {'rdf:resource': {'type': 'string'}, 'list': False},
-                'cim:OperationalLimitType.kind': {'rdf:resource': {'type': 'string'}, 'list': False}
+                'eu:OperationalLimitType.kind': {'rdf:resource': {'type': 'string'}, 'list': False}
             }
         },
         'cim:PetersenCoil': {
