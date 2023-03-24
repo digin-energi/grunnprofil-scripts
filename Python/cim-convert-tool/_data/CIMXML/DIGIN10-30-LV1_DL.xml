@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rdf:RDF 
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:cim="http://iec.ch/TC57/CIM100#"
+  xmlns:cim="http://ucaiug.org/ns/CIM#"
   xmlns:md="http://iec.ch/TC57/61970-552/ModelDescription/1#"
   xmlns:eu="http://iec.ch/TC57/CIM100-European#"
   >
@@ -19,7 +19,7 @@
   <cim:Diagram rdf:ID="_6e7d0428-fc30-43dc-a9d6-42aa5c9d6168">
     <cim:IdentifiedObject.mRID>6e7d0428-fc30-43dc-a9d6-42aa5c9d6168</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>DIGIN10 Low Voltage</cim:IdentifiedObject.name>
-    <cim:Diagram.orientation rdf:resource="http://iec.ch/TC57/CIM100#OrientationKind.negative"/>
+    <cim:Diagram.orientation rdf:resource="http://ucaiug.org/ns/CIM#OrientationKind.negative"/>
   </cim:Diagram>
 
 </rdf:RDF>

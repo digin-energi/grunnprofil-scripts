@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rdf:RDF  
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:cim="http://iec.ch/TC57/CIM100#"
+    xmlns:cim="http://ucaiug.org/ns/CIM#"
     xmlns:md="http://iec.ch/TC57/61970-552/ModelDescription/1#"
     xmlns:eu="http://iec.ch/TC57/CIM100-European#"
     >
@@ -18,7 +18,7 @@
 
     <cim:Diagram rdf:ID="_7340e79a-9cff-4bb5-bddc-389e3358f71b">
         <cim:IdentifiedObject.name>NEDENES</cim:IdentifiedObject.name>
-        <cim:Diagram.orientation rdf:resource="http://iec.ch/TC57/CIM100#OrientationKind.negative"/>
+        <cim:Diagram.orientation rdf:resource="http://ucaiug.org/ns/CIM#OrientationKind.negative"/>
     </cim:Diagram>
     <cim:DiagramObject rdf:ID="_e254be2d-e622-4e68-ab67-d288cee4a197">
         <cim:IdentifiedObject.name>Breaker_NEDENES 22 E1 LB_S</cim:IdentifiedObject.name>
