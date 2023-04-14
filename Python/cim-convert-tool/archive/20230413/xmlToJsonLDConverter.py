@@ -19,13 +19,13 @@ from _config.configCuCim17 import configCuCim17
 from _config.configSvCim17 import configSvCim17
 from _config.configTpCim17 import configTpCim17
 from _config.configOrCim17 import configOrCim17
-from contextData import contextDataFunc
+from contextData import contextDataClass
 from documentData import documentDataClass
 import os
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-def xmlToJsonLDConverter(companyUuid, companyName, isVersionOfUrl, docType, docTopic, docTitle, wantDiginNameSpaces):
+def xmlToJsonLDConverter(companyUuid, companyName, isVersionOfUrl, docType, docTopic, docTitle):
 
     inputFilePath = f"{dir_path}\_data\CIMXML\{docTitle}.xml"
     outputFilePath = f"{dir_path}\_data\JSON-LD\{docTitle}.jsonld"
@@ -67,13 +67,31 @@ def xmlToJsonLDConverter(companyUuid, companyName, isVersionOfUrl, docType, docT
     elif docType == "OR":
         config = configOrCim17
 
-    my_namespaces = dict([node for _, node in ET.iterparse(inputFilePath, events=['start-ns'])])
+    rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    cim = "http://ucaiug.org/ns/CIM#"
+    md = "http://iec.ch/TC57/61970-552/ModelDescription/1#"
+    eu = "http://iec.ch/TC57/CIM100-European#"
+    skos = "http://www.w3.org/2004/02/skos/core#"
+    nc = "http://entsoe.eu/ns/nc#"
 
     OutputJsonLD = {}
 
     # Context
 
-    jsonldContext = contextDataFunc(my_namespaces, wantDiginNameSpaces)
+    if docTopic == "Reading Quality Type":
+        isSkos = True
+    elif docTopic == "Reading Type":
+        isSkos = True
+    else:
+        isSkos = False
+
+    if docType == "OR":
+        isNc = True
+    else:
+        isNc = False
+
+    jsonldContext = contextDataClass(isSkos, isNc) \
+        .contextDataFunc()
 
     OutputJsonLD["@context"] = jsonldContext
     graphList = []
@@ -93,7 +111,7 @@ def xmlToJsonLDConverter(companyUuid, companyName, isVersionOfUrl, docType, docT
     tree = ET.parse(inputFilePath)
     root = tree.getroot()
 
-    xmlMainTagList = xmlPrefixListReplacer(list(config.keys()), my_namespaces)
+    xmlMainTagList = xmlPrefixListReplacer(list(config.keys()), cim, eu, rdf, md, skos, nc)
     configMainTagList = list(config.keys())
 
     for i in range(0, len(configMainTagList)):
@@ -101,7 +119,7 @@ def xmlToJsonLDConverter(companyUuid, companyName, isVersionOfUrl, docType, docT
         configMainTag = configMainTagList[i]
 
         for mainTags in root.findall(xmlMainTag):
-            xmlMainAttributeList = xmlPrefixListReplacer(list(config[configMainTag]['mainAttributes'].keys()), my_namespaces)
+            xmlMainAttributeList = xmlPrefixListReplacer(list(config[configMainTag]['mainAttributes'].keys()), cim, eu, rdf, md, skos, nc)
             configMainAttributeList = list(config[configMainTag]['mainAttributes'].keys())
 
             # MainAttributes ######################################
@@ -118,7 +136,7 @@ def xmlToJsonLDConverter(companyUuid, companyName, isVersionOfUrl, docType, docT
                 dictionaryClass["@type"] = configMainTag
 
             # Tags ################################################
-            xmlTagList = xmlPrefixListReplacer(list(config[configMainTag]['tags'].keys()), my_namespaces)
+            xmlTagList = xmlPrefixListReplacer(list(config[configMainTag]['tags'].keys()), cim, eu, rdf, md, skos, nc)
             configTagList = list(config[configMainTag]['tags'].keys())
 
             for i in range(0, len(xmlTagList)):
@@ -156,7 +174,7 @@ def xmlToJsonLDConverter(companyUuid, companyName, isVersionOfUrl, docType, docT
                             dictionaryClass[configTag] = valueDataTypeConverter(textValue, textType)
             
             # Attributes ##########################################
-            xmlAttributeTagList = xmlPrefixListReplacer(list(config[configMainTag]['attributes'].keys()), my_namespaces)
+            xmlAttributeTagList = xmlPrefixListReplacer(list(config[configMainTag]['attributes'].keys()), cim, eu, rdf, md, skos, nc)
             configAttributeTagList = list(config[configMainTag]['attributes'].keys())
 
             for i in range(0, len(xmlAttributeTagList)):
@@ -170,7 +188,7 @@ def xmlToJsonLDConverter(companyUuid, companyName, isVersionOfUrl, docType, docT
 
                 for attributeTags in mainTags.findall(xmlAttributeTag):
                     
-                    xmlAttributeSubTagList = xmlPrefixListReplacer(list(config[configMainTag]['attributes'][configAttributeTag].keys()), my_namespaces)
+                    xmlAttributeSubTagList = xmlPrefixListReplacer(list(config[configMainTag]['attributes'][configAttributeTag].keys()), cim, eu, rdf, md, skos, nc)
                     configAttributeSubTagList = list(config[configMainTag]['attributes'][configAttributeTag].keys())
 
                     for i in range(0, len(xmlAttributeSubTagList)):

@@ -17,8 +17,8 @@ def modellInfoFunc(
     fullModelDependentOn,
     dictionary
     ):
-    dateTimeNow = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
-    yearNow = datetime.now().strftime("%Y")
+    dateTimeNow = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+    yearNow = datetime.utcnow().strftime("%Y")
     if fullModelModelScenarioTime != "": scenarioTime = datetime.strptime(fullModelModelScenarioTime, "%Y-%m-%dT%H:%M:%SZ") + timedelta(days=1)
 
     dictionary["@id"] = fullModelRdfAbout
