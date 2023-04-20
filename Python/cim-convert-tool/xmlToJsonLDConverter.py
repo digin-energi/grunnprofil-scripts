@@ -1,27 +1,10 @@
 import defusedxml.ElementTree as ET
 import json
+import os
 from functions import xmlPrefixListReplacer, valueDataTypeConverter
-from _config.configEqCim17 import configEqCim17
-from _config.configSshCim17 import configSshCim17
-from _config.configAsCim17 import configAsCim17
-from _config.configBaseVoltageCim17 import configBaseVoltageCim17
-from _config.configGeographicalRegionCim17 import configGeographicalRegionCim17
-from _config.configBmCim17 import configBmCim17
-from _config.configDlCim17 import configDlCim17
-from _config.configGlCim17 import configGlCim17
-from _config.configOpCim17 import configOpCim17
-from _config.configScCim17 import configScCim17
-from _config.configAcCim17 import configAcCim17
-from _config.configMeasurementValueSourceCim17 import configMeasurementValueSourceCim17
-from _config.configReadingQualityTypeCim17 import configReadingQualityTypeCim17
-from _config.configReadingTypeCim17 import configReadingTypeCim17
-from _config.configCuCim17 import configCuCim17
-from _config.configSvCim17 import configSvCim17
-from _config.configTpCim17 import configTpCim17
-from _config.configOrCim17 import configOrCim17
 from contextData import contextDataFunc
 from documentData import documentDataClass
-import os
+from configPicker import configPicker
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -30,42 +13,7 @@ def xmlToJsonLDConverter(companyUuid, companyName, isVersionOfUrl, docType, docT
     inputFilePath = f"{dir_path}\_data\CIMXML\{docTitle}.xml"
     outputFilePath = f"{dir_path}\_data\JSON-LD\{docTitle}.jsonld"
 
-    if docType == "EQ":
-        config = configEqCim17
-    elif docType == "SSH":
-        config = configSshCim17
-    elif docType == "AS":
-        config = configAsCim17
-    elif docType == "RD" and docTopic == 'Base Voltage':
-        config = configBaseVoltageCim17
-    elif docType == "RD" and docTopic == 'Geographical Region':
-        config = configGeographicalRegionCim17
-    elif docType == "BM":
-        config = configBmCim17
-    elif docType == "DL":
-        config = configDlCim17
-    elif docType == "GL":
-        config = configGlCim17
-    elif docType == "OP":
-        config = configOpCim17
-    elif docType == "SC":
-        config = configScCim17
-    elif docType == "AC":
-        config = configAcCim17
-    elif docType == "RD" and docTopic == 'Measurement Value Source':
-        config = configMeasurementValueSourceCim17
-    elif docType == "RD" and docTopic == 'Reading Quality Type':
-        config = configReadingQualityTypeCim17
-    elif docType == "RD" and docTopic == 'Reading Type':
-        config = configReadingTypeCim17
-    elif docType == "CU":
-        config = configCuCim17
-    elif docType == "SV":
-        config = configSvCim17
-    elif docType == "TP":
-        config = configTpCim17
-    elif docType == "OR":
-        config = configOrCim17
+    config = configPicker(docType, docTopic)
 
     my_namespaces = dict([node for _, node in ET.iterparse(inputFilePath, events=['start-ns'])])
 

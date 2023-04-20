@@ -79,7 +79,7 @@ parameters = {
         },
         {
             "docType": "AC",
-            "docTopic": "AssetCatalogue",
+            "docTopic": "Asset Catalogue",
             "docTitle": "DIGIN10-30-M1_AC",
             "wantDiginNameSpaces": True
         },
