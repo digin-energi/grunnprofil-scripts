@@ -62,7 +62,10 @@ def createEntities(root, rdf, data):
             if childKey == "@type":
                 continue
             if childKey == "@id":
-                childTag.setAttribute("rdf:ID", childData[childKey])
+                if data["dcat:keyword"] in {"SSH", "SC", "TP"}:
+                    childTag.setAttribute("rdf:about", childData[childKey].replace("urn:uuid:", "#_"))
+                else :
+                    childTag.setAttribute("rdf:ID", childData[childKey].replace("urn:uuid:", "_"))
             else:
                 if isinstance(childData[childKey], str):
                     createTextTag(root, childKey, childTag, childData[childKey])
@@ -72,8 +75,7 @@ def createEntities(root, rdf, data):
                     createTextTag(root, childKey, childTag, str(childData[childKey]).lower())
                 if isinstance(childData[childKey], dict):
                     attributeData = replacePrefixWithUrl(data["@context"], childData[childKey]["@id"])
-                    # print(attributeData)
-                    createAttributeTag(root, childKey, childTag, "rdf:resource", attributeData)
+                    createAttributeTag(root, childKey, childTag, "rdf:resource", attributeData.replace("urn:uuid:", "#_"))
 
 def jsonToXmlConverter(docTitle):
     docTitle = docTitle

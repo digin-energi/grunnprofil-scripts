@@ -59,7 +59,11 @@ def xmlToJsonLDConverter(companyUuid, companyName, isVersionOfUrl, docType, docT
                 xmlMainAttribute = xmlMainAttributeList[i]
                 configMainAttribute = configMainAttributeList[i]
 
-                mainAttributeValue = f'urn:uuid:{mainTags.get(xmlMainAttribute)[1:]}'
+                if mainTags.get(xmlMainAttribute)[:2] == '#_':
+                    mainAttributeValue = f'urn:uuid:{mainTags.get(xmlMainAttribute)[2:]}'
+                elif mainTags.get(xmlMainAttribute)[:2] != '#_' and mainTags.get(xmlMainAttribute)[:1] == '_':
+                    mainAttributeValue = f"urn:uuid:{mainTags.get(xmlMainAttribute)[1:]}"
+
                 mainAttributeType = config[configMainTag]['mainAttributes'][configMainAttribute]['type']
 
                 dictionaryClass["@id"] = valueDataTypeConverter(mainAttributeValue, mainAttributeType)

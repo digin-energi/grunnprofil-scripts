@@ -2,8 +2,8 @@ parameters = {
     "companyUuid": "bd53cf0a-2e2f-4230-a591-0233290b5f9b",
     "companyName": "DIGIN",
     "isVersionOfUrl": "https://digin.no/baseprofile/",
-    "xmlToJsonld": False,
-    "jsonldToXml": True,
+    "xmlToJsonld": True,
+    "jsonldToXml": False,
     "documents": [
         {
             "docType": "RD",

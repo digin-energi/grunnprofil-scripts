@@ -6,7 +6,7 @@
 		<md:Model.modelingAuthoritySet>https://diginenergi.no/DIGIN10/HV1-MV1</md:Model.modelingAuthoritySet>
 		<md:Model.version>1</md:Model.version>
 	</md:FullModel>
-	<eu:BoundaryPoint rdf:ID="urn:uuid:048e8349-1963-4d55-a842-f74c4de8fe0f">
+	<eu:BoundaryPoint rdf:ID="_048e8349-1963-4d55-a842-f74c4de8fe0f">
 		<cim:IdentifiedObject.mRID>048e8349-1963-4d55-a842-f74c4de8fe0f</cim:IdentifiedObject.mRID>
 		<cim:IdentifiedObject.description>Boundary Point Arendal 420 Bus</cim:IdentifiedObject.description>
 		<cim:IdentifiedObject.name>XARE1_XARE2 BP</cim:IdentifiedObject.name>
@@ -16,23 +16,23 @@
 		<eu:BoundaryPoint.toEndIsoCode>NO</eu:BoundaryPoint.toEndIsoCode>
 		<eu:BoundaryPoint.toEndName>ARENDAL</eu:BoundaryPoint.toEndName>
 		<eu:BoundaryPoint.toEndNameTso>DSO1</eu:BoundaryPoint.toEndNameTso>
-		<eu:BoundaryPoint.ConnectivityNode rdf:resource="urn:uuid:cb837454-5c66-d341-be63-d0c044e5fd3c"/>
+		<eu:BoundaryPoint.ConnectivityNode rdf:resource="#_cb837454-5c66-d341-be63-d0c044e5fd3c"/>
 	</eu:BoundaryPoint>
-	<cim:ConnectivityNode rdf:ID="urn:uuid:cb837454-5c66-d341-be63-d0c044e5fd3c">
+	<cim:ConnectivityNode rdf:ID="_cb837454-5c66-d341-be63-d0c044e5fd3c">
 		<cim:IdentifiedObject.mRID>cb837454-5c66-d341-be63-d0c044e5fd3c</cim:IdentifiedObject.mRID>
 		<cim:IdentifiedObject.description>Boundary on Arendal 420 Bus</cim:IdentifiedObject.description>
 		<cim:IdentifiedObject.name>XARE1_XARE2 CN</cim:IdentifiedObject.name>
-		<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="urn:uuid:1f4fabd4-8c57-c245-b107-4e64c9007ae3"/>
+		<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_1f4fabd4-8c57-c245-b107-4e64c9007ae3"/>
 	</cim:ConnectivityNode>
-	<cim:Substation rdf:ID="urn:uuid:f1769670-9aeb-11e5-91da-b8763fd99c5f">
+	<cim:Substation rdf:ID="_f1769670-9aeb-11e5-91da-b8763fd99c5f">
 		<cim:IdentifiedObject.mRID>f1769670-9aeb-11e5-91da-b8763fd99c5f</cim:IdentifiedObject.mRID>
 		<cim:IdentifiedObject.name>ARENDAL</cim:IdentifiedObject.name>
-		<cim:Substation.Region rdf:resource="urn:uuid:f176965f-9aeb-11e5-91da-b8763fd99c5f"/>
+		<cim:Substation.Region rdf:resource="#_f176965f-9aeb-11e5-91da-b8763fd99c5f"/>
 	</cim:Substation>
-	<cim:VoltageLevel rdf:ID="urn:uuid:1f4fabd4-8c57-c245-b107-4e64c9007ae3">
+	<cim:VoltageLevel rdf:ID="_1f4fabd4-8c57-c245-b107-4e64c9007ae3">
 		<cim:IdentifiedObject.mRID>1f4fabd4-8c57-c245-b107-4e64c9007ae3</cim:IdentifiedObject.mRID>
 		<cim:IdentifiedObject.name>ARENDAL 420</cim:IdentifiedObject.name>
-		<cim:VoltageLevel.BaseVoltage rdf:resource="urn:uuid:2dd90159-bdfb-11e5-94fa-c8f73332c8f4"/>
-		<cim:VoltageLevel.Substation rdf:resource="urn:uuid:f1769670-9aeb-11e5-91da-b8763fd99c5f"/>
+		<cim:VoltageLevel.BaseVoltage rdf:resource="#_2dd90159-bdfb-11e5-94fa-c8f73332c8f4"/>
+		<cim:VoltageLevel.Substation rdf:resource="#_f1769670-9aeb-11e5-91da-b8763fd99c5f"/>
 	</cim:VoltageLevel>
 </rdf:RDF>
